@@ -1,0 +1,56 @@
+<footer class="bg-black ph3 pv4 white">
+
+	<div class="mw7 center pt3">
+
+		<div class="measure-narrow center mb4">
+
+			<img src="/img/logo_drupal_fr.png" alt="Logo Drupal France" class="db w4 center mb4 br0" />
+			<p class="f3 lh-title light-gray b tc mb2">{{ .Site.Data.footer.title }}</p>
+			<p>{{ .Site.Data.footer.blurb }}</p>
+
+			{{ partial "newsletter-form" . }}
+
+		</div>
+
+		<div class="flex-ns justify-between">
+
+			<div>
+				<h3 class="f4 b lh-title mb1 primary">Drupalcamp Rennes 2024</h3>
+				<ul class="mb3">
+					<li><a href="/" class="link">Accueil</a></li>
+					<li><a href="/programme" class="link">Programme</a></li>
+					<li><a href="/communauté" class="link">Communauté</a></li>
+					<li><a href="/sponsors" class="link">Sponsors</a></li>
+					<li><a href="/infos/accès" class="link">Accès</a></li>
+					<li><a href="/infos/hébergement" class="link">Hébergement</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="f4 b lh-title mb1 primary">Restons en contact</h3>
+				<ul class="mb3">
+					<li><a href="/contact" class="link">Nous contacter</a></li>
+					<li><a href="/infos/actualités" class="link">Dernières informations</a></li>
+				</ul>
+				<h3 class="f4 b lh-title mb1 primary">Suivre l'association</h3>
+				<ul class="mb3">
+					<li><a href="https://drupal.fr" class="link" >Site officiel Drupal FR</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="f4 b lh-title mb2 primary">Réseaux sociaux</h3>
+				<ul class="mhn2">
+					{{ partial "social-icon" (dict "link" "https://drupal.community/@drupalfr" "svg" "icons-mastodon" "alt" "Drupal FR sur Mastodon") }}
+					{{ partial "social-icon" (dict "link" "https://twitter.com/drupalcampfr" "svg" "icons-twitter" "alt" "Drupal FR sur Twitter") }}
+					{{ partial "social-icon" (dict "link" "https://www.facebook.com/groups/49522240874/" "svg" "icons-facebook" "alt" "Drupal FR sur Facebook") }}
+					{{ partial "social-icon" (dict "link" "https://www.instagram.com/drupalfrance/" "svg" "icons-instagram" "alt" "Drupal FR sur Instagram") }}
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</footer>
+
+{{ partial "svg" . }}
