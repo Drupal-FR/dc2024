@@ -7,7 +7,7 @@
   "scripts": {
     "compile": "node-sass --omit-source-map-url src/css/main.scss site/static/css/main.css",
     "watch": "node-sass --watch src/css/ -o site/static/css/",
-    "netlify-build": "yarn install && yarn run compile && hugo"
+    "netlify-build": "yarn install && yarn run compile && hugo --config site/config.toml"
   },
   "dependencies": {
     "node-sass": "^9.0.0"
