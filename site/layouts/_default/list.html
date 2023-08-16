@@ -2,11 +2,10 @@
 
 {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Modèle liste par défaut") }}
 
-<div class="mw7 center">
-
-  <ul id="blog-list" class="flex-ns flex-wrap mhn1-ns pa3">
+<div class="collection">
+  <ul class="collection__items">
     {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-    <li class="w-50-ns ph1-ns flex">
+    <li class="collection__child-item">
       {{ .Render "li"}}
     </li>
     {{ end }}
