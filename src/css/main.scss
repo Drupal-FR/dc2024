@@ -3,14 +3,17 @@
 @import './imports/_fonts';
 
 :root {
-  --text-color: #262525;
+  --text-color: #1F2937;
   --accent-color: #42afce;
 }
 
 /* General base */
 body {
   color: var(--text-color);
-  font-family: sans-serif;
+  font-family: inter, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  font-feature-settings: normal;
   width: 60%;
   margin: auto;
   padding-block-start: 2rem;
@@ -32,7 +35,6 @@ a {
     "logo menu";
   grid-template-columns: 68px 1fr;
   grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
   margin-block-end: 2rem;
 }
 
@@ -54,26 +56,57 @@ a {
   font-weight: bolder;
   font-size: 1.5rem;
   letter-spacing: -2.5px;
+  margin: 0;
 }
 
 .menu__items {
   grid-area: menu;
   display: flex;
-  gap: 0.8rem;
+  gap: 1.2rem;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
-
+.menu__item {
+  list-style: none;
+}
 .menu__item a {
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: -1px;
 }
 .menu__item--submenu {
-  border-right: solid 4px red;
+  position: relative;
+  &:after {
+    color: var(--accent-color);
+    content: '✚';
+    opacity: 0.7;
+    font-size: 0.75em;
+    padding-inline-start: 0.25rem;
+  }
+  &:hover .menu__items--submenu,
+  &:focus .menu__items--submenu,
+  .menu__items--submenu:focus-within {
+    opacity: 1;
+    transform: none;
+  }
 }
+
 .menu__items--submenu {
+  position: absolute;
+  inset-inline-end: 0;
+  top: 100%;
   display: flex;
-  flex-direction: column;
-  margin-block-start: 1rem;
+  flex-flow: column;
+  padding: 1em;
+  gap: 0.5em;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 5px 30px rgba(0,0,0,0.05);
+  transition: all 0.10s ease;
+  /* hide it by default */
+  opacity: 0;
+  transform-origin: top;
+  transform: scaleY(0);
 }
 /* END - MENU */
