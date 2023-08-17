@@ -1,6 +1,69 @@
 /* Classic CSS reset */
 @import './imports/_reset';
 
-body {
-
+:root {
+  --text-color: #262525;
+  --accent-color: #1d7f9f;
 }
+
+/* General base */
+body {
+  color: var(--text-color);
+  font-family: sans-serif;
+  width: 60%;
+  margin: auto;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+}
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+/* END - General base */
+
+/* MENU */
+.menu {
+  display: grid;
+  grid-template-areas: "logo name"
+    "logo menu";
+  grid-template-columns: 68px 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+
+.menu__logo {
+  grid-area: logo;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: solid 2px var(--accent-color);
+  padding: 2px;
+
+  > img {
+    width: 100%;
+  }
+}
+
+.menu__site-name {
+  grid-area: name;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  letter-spacing: -2.5px;
+}
+
+.menu__items {
+  grid-area: menu;
+  display: flex;
+  gap: 0.8rem;
+  text-transform: uppercase;
+}
+
+.menu__item a {
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: -1px;
+}
+/* END - MENU */

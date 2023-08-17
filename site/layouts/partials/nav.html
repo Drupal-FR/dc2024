@@ -2,18 +2,19 @@
 
 	<!-- Logo -->
 	<a href="/" class="menu__logo">
-		<img src="/img/logo_drupal_fr.png" alt="Logo Drupal France" />
+		<img src="/img/logo_drupal_fr_only.png" alt="Logo Drupal France" />
 	</a>
+	<p class="menu__site-name">{{ $.Site.Title }}</p>
 
 	<ul class="menu__items">
-		<li><a href="/programme" class="menu__item">Programme</a></li>
-		<li><a href="/communauté" class="menu__item">Communauté</a></li>
-		<li><a href="/sponsors" class="menu__item">Sponsors</a></li>
-		<li>Infos pratiques<ul class="menu__items menu__items--submenu">
-			<li><a href="/infos/accès" class="menu__item">Accès</a></li>
-			<li><a href="/infos/hébergement" class="menu__item">Hébergement</a></li>
+		<li class="menu__item"><a href="/programme">Programme</a></li>
+		<li class="menu__item"><a href="/communauté">Communauté</a></li>
+		<li class="menu__item"><a href="/sponsors">Sponsors</a></li>
+		<li class="menu__item">Infos pratiques<ul class="menu__items menu__items--submenu">
+			<li class="menu__item"><a href="/infos/accès">Accès</a></li>
+			<li class="menu__item"><a href="/infos/hébergement">Hébergement</a></li>
 		</ul></li>
-		<li><a href="/actualites" class="menu__item">Actualités</a></li>
-		<li><a href="/contact" class="menu__item">Contact</a></li>
+		<li class="menu__item"><a href="/actualites">Actualités</a></li>
+		<li class="menu__item"><a href="/contact">Contact</a></li>
 	</ul>
 </nav>
