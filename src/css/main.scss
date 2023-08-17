@@ -3,7 +3,7 @@
 
 :root {
   --text-color: #262525;
-  --accent-color: #1d7f9f;
+  --accent-color: #42afce;
 }
 
 /* General base */
@@ -32,15 +32,16 @@ a {
   grid-template-columns: 68px 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+  margin-block-end: 2rem;
 }
 
 .menu__logo {
+  background-color: #70dcff;
   grid-area: logo;
   width: 60px;
   height: 60px;
   border-radius: 60px;
-  border: solid 2px var(--accent-color);
-  padding: 2px;
+  padding: 0.5rem;
 
   > img {
     width: 100%;
@@ -65,5 +66,13 @@ a {
   font-weight: bold;
   font-size: 0.9rem;
   letter-spacing: -1px;
+}
+.menu__item--submenu {
+  border-right: solid 4px red;
+}
+.menu__items--submenu {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 1rem;
 }
 /* END - MENU */
