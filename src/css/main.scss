@@ -1,6 +1,8 @@
 /* CSS normalizer */
 @import './imports/_normalize';
 @import './imports/_fonts';
+@import './imports/_breakpoints';
+@import './imports/_include_media';
 
 :root {
   --text-color: #1F2937;
@@ -14,10 +16,22 @@ body {
   font-size: 18px;
   line-height: 1.55;
   font-feature-settings: normal;
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding-block-start: 2rem;
   padding-block-end: 2rem;
+  @include media('>=phablet') {
+    width: 480px;
+  }
+  @include media('>=tablet') {
+    width: 680px;
+  }
+  @include media('>=desktop') {
+    width: 960px;
+  }
+  @include media('>=wide') {
+    width: 1140px;
+  }
 }
 a {
   text-decoration: none;

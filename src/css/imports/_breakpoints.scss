@@ -1,0 +1,24 @@
+$breakpoints: (
+  'phablet': 450px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'wide': 1280px
+) !default;
+//
+//$breakpoints: (
+//  // DO NOT include 'mobile' in this array to allow mobile first calls.
+//        mobile-only: 'max-width: 767px',
+//        mobile-tablet-only: 'max-width: 1023px',
+//        under-wide: 'max-width: 1279px',
+//        under-wider: 'max-width: 1439px',
+//        under-hd: 'max-width: 1919px',
+//        phablet: 'min-width: 425px',
+//        phablet-big: 'min-width: 550px',
+//        tablet-small: 'min-width: 660px',
+//        tablet: 'min-width: 768px',
+//        tablet-big: 'min-width: 880px',
+//        desktop: 'min-width: 1024px',
+//        wide: 'min-width: 1280px',
+//        wider: 'min-width: 1440px',
+//        hd: 'min-width: 1920px'
+//);
