@@ -1,7 +1,7 @@
 ---
 title: "Drupalcamp Rennes 2024"
 subtitle: Rejoignez la communauté Drupal France du 28 au 30 mars 2024
-image: /img/home-jumbotron.jpg
+image: /img/cover/republique.jpg
 blurb:
     heading: De quoi s'agit-il ?
     text: "Le drupalcamp est proposé par l'association Drupal France et francophonie. Cette année encore, il se déroulera sur 3 jours, du 28 au 30 mars 2024, à Rennes (35)."
