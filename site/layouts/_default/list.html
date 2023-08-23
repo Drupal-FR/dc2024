@@ -2,15 +2,17 @@
 
 {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Modèle liste par défaut") }}
 
-<div class="collection">
-  <ul class="collection__items">
-    {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-    <li class="collection__child-item">
-      {{ .Render "li"}}
-    </li>
-    {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
+<div class="main-content">
+  <div class="collection">
+    <ul class="collection__items">
+      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+      <li class="collection__child-item">
+        {{ .Render "li"}}
+      </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination" . }}
+  </div>
 </div>
 
 {{end}}
