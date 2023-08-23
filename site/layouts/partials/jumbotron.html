@@ -1,10 +1,17 @@
 <div class="jumbotron" style="background-image: url('{{.imageUrl}}')">
-  <h1 class="jumbotron__title">
-    {{.title}}
-  </h1>
-  {{ if .subtitle }}
-  <p class="jumbotron__subtitle">
-    {{.subtitle}}
-  </p>
+  {{ if .title | or  .subtitle }}
+  <div class="jumbotron__title-wrapper">
+    <div class="jumbotron__title-wrapper-foreground">
+      <h1 class="jumbotron__title">
+        {{.title}}
+      </h1>
+      {{ if .subtitle }}
+      <p class="jumbotron__subtitle">
+        {{.subtitle}}
+      </p>
+      {{ end }}
+    </div>
+    <div class="jumbotron__title-wrapper-background"></div>
+  </div>
   {{ end }}
 </div>
