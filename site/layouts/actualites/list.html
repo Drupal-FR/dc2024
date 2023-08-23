@@ -1,16 +1,17 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Actualités") }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
-<div class="news-list">
-  <ul class="news-list__items">
-    {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-    <li class="news-list__child-item">
-      {{ .Render "li"}}
-    </li>
-    {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
+<div class="main-content">
+  <div class="news-list">
+    <div class="news-list__items">
+      {{ range .Pages.ByPublishDate.Reverse }}
+      <div class="news-list__child-item">
+        {{ .Render "news-card"}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
 </div>
 
 {{end}}
