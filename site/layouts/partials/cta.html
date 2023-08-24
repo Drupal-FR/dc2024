@@ -1,0 +1,11 @@
+<div class="cta">
+  {{ if .title }}
+  <header class="cta__header">
+    <h3 class="cta__title">{{.title}}</h3>
+  </header>
+  {{ end }}
+  <div class="cta__content">
+    <div class="cta__description">{{.description}}</div>
+    <a class="cta__link_wrapper" href="{{.link_url}}" title="{{.link_title}}">{{.link_label}}</a>
+  </div>
+</div>

@@ -7,6 +7,8 @@
 :root {
   --text-color: #1D2D35;
   --accent-color: #42afce;
+  --accent-complement: #bd3c6d;
+  --accent-complement-hover: #ac1950;
 }
 
 /* General base */
@@ -339,3 +341,44 @@ h1 {
   margin: 0;
 }
 /* END - News push list */
+
+/* CTA */
+.cta {
+  background-color: var(--accent-complement);
+  padding: 1rem 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+.cta__title {
+  margin: 0;
+  margin-block-end: 0.6rem;
+}
+.cta__content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  @include media('>=desktop') {
+    flex-direction: row;
+  }
+}
+.cta__link_wrapper {
+  background-color: white;
+  border: solid 2px transparent;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  @include media('>=desktop') {
+    flex: 0 0 13rem;
+  }
+  color: var(--accent-complement);
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover,
+  &:focus-visible {
+    background-color: var(--accent-complement-hover);
+    color: white;
+    text-decoration: none;
+  }
+}
+/* END - CTA */
