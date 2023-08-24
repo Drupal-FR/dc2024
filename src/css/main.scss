@@ -31,12 +31,13 @@ h1 {
 }
 .content-container {
   margin: auto;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
   @include media('>=phablet') {
     width: 480px;
   }
   @include media('>=tablet') {
     width: 680px;
+    padding: 2rem 4rem;
   }
   @include media('>=desktop') {
     width: 960px;
@@ -94,6 +95,13 @@ h1 {
   font-size: 1.5rem;
   letter-spacing: -2.5px;
   margin: 0;
+  max-width: 300px;
+  @include media('>=tablet') {
+    max-width: 500px;
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .menu__items {
@@ -159,6 +167,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+  margin-block-end: 2rem;
 }
 .jumbotron__title {
   margin: 0;
