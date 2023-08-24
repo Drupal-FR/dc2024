@@ -1,7 +1,6 @@
 <footer class="site-extra">
   <div class="site-extra__wrapper">
     <div class="site-extra__newsletter">
-      <img src="/img/logo_drupal_fr.png" alt="Logo Drupal France"/>
       <p class="site-extra__newsletter-title">{{ .Site.Data.footer.title }}</p>
       <p class="site-extra__newsletter-subtitle">{{ .Site.Data.footer.blurb }}</p>
       {{ partial "newsletter-form" . }}
@@ -33,6 +32,7 @@
       </div>
 
       <div class="site-extra__column">
+        <img src="/img/logo_dfr.svg" alt="Logo Drupal France"/>
         <h3 class="site-extra__column-title">Réseaux sociaux</h3>
         <ul class="site-extra__column-content site-extra__column-content--social">
           <li class="site-extra__column-content-link">{{ partial "social-icon" (dict "link" "https://drupal.community/@drupalfr" "svg" "icons-mastodon" "alt" "Drupal FR sur Mastodon") }}</li>
