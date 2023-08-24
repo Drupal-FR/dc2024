@@ -49,7 +49,7 @@ h1 {
   margin-block-start: 4rem;
   margin-block-end: 4rem;
 }
-.external-link a:after {
+.external-link:after {
   background-image: url("/icons/external.svg");
   background-size: 1rem 1rem;
   content: '';
