@@ -1,3 +1,6 @@
 {{ define "main" }}
+
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
+
 <p>Mon truc accès</p>
 {{ end }}

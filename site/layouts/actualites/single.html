@@ -3,7 +3,7 @@
 {{ $subtitle := printf "%s / Lecture en %d minutes" $postDate .ReadingTime}}
 <div class="news">
   {{ if .Params.image }}
-  {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" $subtitle) }}
+  {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" $subtitle "credits" .Params.credits) }}
   {{ else }}
   <h1 class="news__title">{{.Title}}</h1>
   <p class="news__meta">Lecture en {{ .ReadingTime }} minutes</p>

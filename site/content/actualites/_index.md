@@ -2,6 +2,7 @@
 title: "Actualités"
 subtitle: Les dernières informations
 image: /img/cover/quais.jpg
+credits: '<a href="https://visualhunt.co/a7/826bcb4f">Jeanne Menjoulet</a> on <a href="https://visualhunt.com/re10/ec1fb909">VisualHunt.com</a>'
 blurb:
     heading: De quoi s'agit-il ?
     text: "Le drupalcamp est proposé par l'association Drupal France et francophonie. Cette année encore, il se déroulera sur 3 jours, du 28 au 30 mars 2024, à Rennes (35)."

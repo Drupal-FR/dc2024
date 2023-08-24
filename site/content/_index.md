@@ -1,7 +1,8 @@
 ---
 title: "Drupalcamp Rennes 2024"
-subtitle: Rejoignez la communauté Drupal France du 28 au 30 mars 2024
+subtitle: "Rejoignez la communauté Drupal France du 28 au 30 mars 2024"
 image: /img/cover/republique.jpg
+credits: '<a href="https://visualhunt.co/a7/5b072d53">Francisco Anzola</a> on <a href="https://visualhunt.com/re10/392aa3ce">Visualhunt.com</a>'
 blurb:
     heading: De quoi s'agit-il ?
     text: "Le drupalcamp est proposé par l'association Drupal France et francophonie. Cette année encore, il se déroulera sur 3 jours, du 28 au 30 mars 2024, à Rennes (35)."
