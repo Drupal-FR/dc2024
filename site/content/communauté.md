@@ -6,4 +6,4 @@ description: >-
   Mountain coffee beans in our store next week.
 ---
 
-À rédiger.
+Contenu de la page communauté
