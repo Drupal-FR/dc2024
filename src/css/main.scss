@@ -112,6 +112,7 @@ h1 {
   .menu__items--submenu:focus-within {
     opacity: 1;
     transform: none;
+    z-index: 10;
   }
 }
 
@@ -155,21 +156,67 @@ h1 {
 .jumbotron__title-wrapper {
   position: relative;
   text-shadow: black 3px 3px 6px;
-  .jumbotron__title-wrapper-foreground {
-    padding: 1rem 2rem;
-    position: relative;
-    z-index: 2;
-  }
-  .jumbotron__title-wrapper-background {
-    //z-index: 1;
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    content: '';
-    bottom: 0;
-    background: linear-gradient(0deg, rgba(1,31,40,0.7385154745491946) 0%, rgba(1,31,40,0.2595238779105392) 69%, rgba(1,31,40,0) 86%);
-  }
+}
+.jumbotron__title-wrapper-foreground {
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+.jumbotron__title-wrapper-background {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  content: '';
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(1,31,40,0.7385154745491946) 0%, rgba(1,31,40,0.2595238779105392) 69%, rgba(1,31,40,0) 86%);
+}
+.jumbotron__credit-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+}
+.jumbotron__credit-icon-wrapper {
+  inset-block-end: 1rem;
+  inset-inline-end: 1rem;
+}
+.jumbotron__credit-icon {
+  width: 1rem;
+  height: 1rem;
+  border: solid 1px white;
+  border-radius: 1rem;
+  fill: white;
+  z-index: 2;
+  position: relative;
+}
+.jumbotron__credit {
+  position: absolute;
+  inset-inline-end: 0;
+  top: 0;
+  transition: all 0.10s ease;
+  /* hide it by default */
+  opacity: 0;
+  transform-origin: top;
+  transform: scaleY(0);
+  text-align: right;
+  width: max-content;
+  padding: 0.3rem 1.5rem 0.3rem 0.5rem;
+  line-height: 1;
+  color: black;
+}
+.jumbotron__credit-icon-wrapper:hover .jumbotron__credit,
+.jumbotron__credit-icon-wrapper:focus .jumbotron__credit,
+.jumbotron__credit:focus-within {
+  position: absolute;
+  opacity: 1;
+  transform: none;
+  background-color: white;
+  border-radius: 1rem;
+}
+.jumbotron__credit-icon-wrapper:hover .jumbotron__credit-icon,
+.jumbotron__credit-icon-wrapper:focus .jumbotron__credit-icon {
+  fill: black;
 }
 /* END - Jumbotron */
 
@@ -204,6 +251,7 @@ h1 {
   list-style: none;
   margin: 0;
 }
+
 /* END - Footer links */
 
 /* News list */

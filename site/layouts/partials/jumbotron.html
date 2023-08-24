@@ -14,4 +14,16 @@
     <div class="jumbotron__title-wrapper-background"></div>
   </div>
   {{ end }}
+  {{ if .credits }}
+  <div class="jumbotron__credit-wrapper">
+    <div class="jumbotron__credit-icon-wrapper">
+      <svg class="jumbotron__credit-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" viewBox="0 0 32 40" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><g
+     transform="translate(0,-44)"
+     id="g1"><path
+       d="M 19,76 V 61 c 0,-1.105 -0.895,-2 -2,-2 h -2 c -1.105,0 -2,0.895 -2,2 v 15 c 0,1.105 0.895,2 2,2 h 2 c 1.105,0 2,-0.895 2,-2 z M 16,50 c -1.932,0 -3.5,1.568 -3.5,3.5 0,1.932 1.568,3.5 3.5,3.5 1.932,0 3.5,-1.568 3.5,-3.5 C 19.5,51.568 17.932,50 16,50 Z"
+       id="path1" /></g></svg>
+      <div class="jumbotron__credit">Crédits : {{ .credits | safeHTML }}</div>
+    </div>
+  </div>
+  {{ end }}
 </div>
