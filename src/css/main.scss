@@ -9,6 +9,8 @@
   --accent-color: #42afce;
   --accent-complement: #bd3c6d;
   --accent-complement-hover: #ac1950;
+  --accent-alternative: #208206;
+  --accent-alternative-hover: #1e620f;
 }
 
 /* General base */
@@ -385,12 +387,13 @@ a[href^="http"]:after {
   text-align: center;
   padding: 0.5rem;
   font-weight: bold;
-  @include media('>=desktop') {
-    flex: 0 0 13rem;
-  }
   color: var(--accent-complement);
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 200ms;
+  @include media('>=desktop') {
+    flex: 0 0 13rem;
+  }
   &:hover,
   &:focus-visible {
     background-color: var(--accent-complement-hover);
@@ -426,3 +429,32 @@ a[href^="http"]:after {
   flex-direction: row-reverse;
 }
 /* END - Illustrated Cardssssss */
+
+/* Site extra newsletter */
+.site-extra__newsletter {
+  background-color: #28a108;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 2rem;
+}
+.site-extra__newsletter-text {
+  margin: 0;
+}
+.site-extra__newsletter-link {
+  background-color: white;
+  padding: 0.5rem;
+  color: var(--accent-alternative);
+  text-transform: uppercase;
+  transition: all 200ms;
+  &:hover {
+    background-color: var(--accent-alternative-hover);
+    color: white;
+    text-decoration: none;
+  }
+}
+/* END - Site extra newsletter */
