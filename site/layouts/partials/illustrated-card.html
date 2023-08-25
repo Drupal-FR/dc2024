@@ -1,0 +1,14 @@
+<div class="illustrated-card">
+  <div class="illustrated-card__content">
+    <h3 class="illustrated-card__title">{{ .title }}</h3>
+    <div class="illustrated-card__description">
+      {{ .description | safeHTML }}
+      {{ if .link_url | and .link_label }}
+        <p class="illustrated-card__description-link">
+          <a href="{{ .link_url }}">{{ .link_label }}</a>
+        </p>
+      {{ end }}
+    </div>
+  </div>
+  <img src="/img/content/{{ .image }}" class="illustrated-card__image" />
+</div>
