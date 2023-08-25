@@ -444,6 +444,11 @@ a[href^="http"]:after {
   justify-content: space-between;
   align-items: center;
   margin-block-end: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  @include media('>=desktop') {
+    flex-direction: row;
+  }
 }
 .site-extra__newsletter-text {
   margin: 0;
@@ -454,6 +459,7 @@ a[href^="http"]:after {
   color: var(--accent-alternative);
   text-transform: uppercase;
   transition: all 200ms;
+  text-align: center;
   &:hover {
     background-color: var(--accent-alternative-hover);
     color: white;
