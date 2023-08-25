@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
-<main>
+<main class="main-content">
   {{ partial "short-text" .Params.blurb}}
   {{ partial "cta" (dict "title" "Réservez votre billet" "description" "Participez aux conférences et à la journée de contribution avec le reste de la communauté. Un Drupalcamp est l'occasion de faire des rencontres et d'apprendre en un temps record !" "link_url" "#" "link_label" "Accéder à la billetterie" "link_title" "Acheter mon billet pour la conférence.") }}
   {{ partial "actualites-push" . }}

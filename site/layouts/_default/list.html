@@ -2,7 +2,7 @@
 
 {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Modèle liste par défaut" "credits" .Params.credits) }}
 
-<div class="main-content">
+<main class="main-content">
   <div class="collection">
     <ul class="collection__items">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
@@ -13,6 +13,6 @@
     </ul>
     {{ partial "pagination" . }}
   </div>
-</div>
+</main>
 
 {{end}}

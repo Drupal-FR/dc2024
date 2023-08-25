@@ -2,7 +2,7 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
 
-<div class="main-content">
+<main class="main-content">
   <div class="news-list">
     <div class="news-list__items">
       {{ range .Pages.ByPublishDate.Reverse }}
@@ -12,6 +12,6 @@
       {{ end }}
     </div>
   </div>
-</div>
+</main>
 
 {{end}}
