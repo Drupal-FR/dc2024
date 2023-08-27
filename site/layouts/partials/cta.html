@@ -5,7 +5,7 @@
   </header>
   {{ end }}
   <div class="cta__content">
-    <div class="cta__description">{{.description}}</div>
+    <div class="cta__description">{{.description |safeHTML}}</div>
     <a class="cta__link_wrapper" href="{{.link_url}}" title="{{.link_title}}">{{.link_label}}</a>
   </div>
 </div>
