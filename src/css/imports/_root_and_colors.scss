@@ -1,0 +1,54 @@
+:root {
+  --text-color: #1D2D35;
+  --accent-color: #42afce;
+  --accent-color-border: #1b91af;
+  --accent-complement: #bd3c6d;
+  --accent-complement-hover: #ac1950;
+  --accent-alternative: #208206;
+  --accent-alternative-hover: #1e620f;
+  --package-advantage-in: #369c1a;
+  --package-advantage-out: #bd3c6d;
+  --table-border: #b3cdd4;
+  --table-alternate-background: #e5eef1;
+}
+
+/* Structural */
+.content-container {
+  margin: auto;
+  padding: 2rem 2rem;
+  @include media('>=phablet') {
+    width: 480px;
+  }
+  @include media('>=tablet') {
+    width: 680px;
+    padding: 2rem 4rem;
+  }
+  @include media('>=desktop') {
+    width: 960px;
+  }
+  @include media('>=wide') {
+    width: 1140px;
+  }
+}
+.main-content {
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+}
+.images-credits {
+  text-align: center;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+/* END - Structural */

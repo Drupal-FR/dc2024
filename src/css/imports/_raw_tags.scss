@@ -1,0 +1,49 @@
+/* General base */
+body {
+  color: var(--text-color);
+  background-color: #f5fbfd;
+  font-family: inter, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  font-feature-settings: normal;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+accronym {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  &:hover {
+    cursor: help;
+  }
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+ul {
+  padding-inline-start: 1rem;
+}
+a[href^="http"]:after {
+  content: '';
+  width: 0.85rem;
+  height: 1rem;
+  display: inline-block;
+  margin-left: 0.2rem;
+  mask-image: url("/icons/external.svg");
+  background-color: currentColor;
+}
+table {
+  margin-block-end: 2rem;
+}
+input {
+  padding: 0.25rem;
+}
+/* END - General base */

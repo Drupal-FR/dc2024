@@ -1,0 +1,15 @@
+<div class="news-push">
+  <div class="news-push__wrapper">
+    <header class="news-push__header">
+      <h2 class="news-push__title">Dernières actualités</h2>
+      <a href="/actualites" class="news-push__readmore-link">Toutes les actualités</a>
+    </header>
+    <div class="news-push__items">
+      {{ range first 2 (where site.RegularPages "Type" "actualites") }}
+      <div class="news-push__item">
+        {{ .Render "news-card" }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
