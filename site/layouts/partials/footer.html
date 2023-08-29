@@ -5,6 +5,29 @@
       <a href="#" class="site-extra__newsletter-link">S'inscrire à la newsletter</a>
     </div>
 
+    <div class="site-extra__sponsors-collection">
+      {{ $pages := .Site.Pages }}
+      {{ $sponsoring_types := dict
+        "Menhir" "gold"
+        "Paquetage de marin" "silver"
+        "Paquet de biscuits" "bronze"
+      }}
+
+      <h2>Merci à nos sponsors sans qui l'événement ne pourrait pas avoir lieu</h2>
+      {{ range $sponsor_type_label, $sponsor_type_machine_name := $sponsoring_types }}
+        {{ $sponsors_all := where $pages "Type" "sponsors" }}
+        {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
+        {{ $sponsors := $sponsors_all | intersect $type_filtered | shuffle }}
+        {{ if $sponsors }}
+          <h3>{{ $sponsor_type_label }}</h3>
+          {{ range $sponsors }}
+            {{ .Render "sponsor-logo" }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      <a href="/sponsors">Explorer la liste complète de nos sponsors</a>
+    </div>
+
     <div class="site-extra__links_collection">
       <div class="site-extra__column">
         <h3 class="site-extra__column-title">Drupalcamp Rennes 2024</h3>
