@@ -21,13 +21,11 @@
           {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
           {{ $sponsors := $sponsors_all | intersect $type_filtered | shuffle }}
           {{ if $sponsors }}
-        <div class="site-extra__sponsors-type">
           <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--{{$sponsor_type_machine_name}}">
             {{ range $sponsors }}
             <li class="site-extra__sponsors-type-item">{{ .Render "sponsor-logo" }}</li>
             {{ end }}
           </ul>
-        </div>
         {{ end }}
         {{ end }}
       </div>
