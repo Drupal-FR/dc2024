@@ -1,6 +1,6 @@
 ---
-title: 'Partenaire 5'
-sponsor_logo: '/img/sponsors/logo_partenaire_5.jpg'
+title: 'Partenaire 6'
+sponsor_logo: 'logo/logo_partenaire_6.jpg'
 sponsor_site: 'https://example.com'
 sponsor_type: 'silver'
 type: sponsors
