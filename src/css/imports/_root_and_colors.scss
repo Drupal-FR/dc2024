@@ -1,16 +1,55 @@
+$blue-pastel: #e5eef1;
+$blue-aqua: #70dcff;
+$blue-ocean-troubled:  #b3cdd4;
+$blue-ocean:  #42afce;
+$blue-ocean-deep:  #1b91af;
+$blue-ocean-deeper:  #17809b;
+
+$black: #1D2D35;
+
+$white-light: #f5fbfd;
+
+$gray-light: #e9ecef;
+
+$pink: #bd3c6d;
+$pink-dark: #ac1950;
+
+$grass: #28a108;
+$grass-wet: #208206;
+$grass-wetter: #1e620f;
+
 :root {
-  --text-color: #1D2D35;
-  --accent-color: #42afce;
-  --accent-color-border: #1b91af;
-  --accent-complement: #bd3c6d;
-  --accent-complement-hover: #ac1950;
-  --accent-alternative: #208206;
-  --accent-alternative-hover: #1e620f;
-  --package-advantage-in: #369c1a;
-  --package-advantage-out: #bd3c6d;
-  --table-border: #b3cdd4;
-  --table-alternate-background: #e5eef1;
-  --table-head-text: #017a99;
+  --site-background-color: #{$white-light};
+  --text-color: #{$black};
+  --logo-background: #{$blue-aqua};
+  --nav-submenu-background: white;
+  --accent-color: #{$blue-ocean};
+  --accent-color-border: #{$blue-ocean-deep};
+  --accent-complement: #{$pink};
+  --accent-complement-hover: #{$pink-dark};
+  --accent-alternative: #{$grass};
+  --accent-alternative-hover: #{$grass-wetter};
+  --newsletter-push-background: #{$grass};
+  --newsletter-push-text: white;
+  --newsletter-push-link-background: white;
+  --newsletter-push-link-text: #{$grass};
+  --newsletter-push-link-hover-background: #{$grass-wetter};
+  --newsletter-push-link-hover-text: white;
+  --news-card-border: #{$gray-light};
+  --news-card-background: white;
+  --package-advantage-out: #{$pink};
+  --package-advantage-in: #{$grass};
+  --sponsors-list-background: white;
+  --sponsors-list-border: #{$gray-light};
+  --table-border: #{$blue-ocean-troubled};
+  --table-alternate-background: #{$blue-pastel};
+  --table-accent-background: #{$blue-ocean-deeper};
+  --table-head-text: #{$blue-ocean-deeper};
+  --jumbotron--text: white;
+  --cta-background: #{$pink};
+  --cta-text: white;
+  --cta-hover-background: #{$pink-dark};
+  --cta-hover-text: white;
 }
 
 /* Structural */

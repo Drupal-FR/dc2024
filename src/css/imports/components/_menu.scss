@@ -9,7 +9,7 @@
 }
 
 .menu__logo {
-  background-color: #70dcff;
+  background-color: var(--logo-background);
   grid-area: logo;
   width: 60px;
   height: 60px;
@@ -78,7 +78,7 @@
   flex-flow: column;
   padding: 1em;
   gap: 0.5em;
-  background-color: white;
+  background-color: var(--nav-submenu-background);
   border-radius: 0.5em;
   box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 5px 30px rgba(0,0,0,0.05);
   transition: all 0.10s ease;

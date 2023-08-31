@@ -1,8 +1,8 @@
 /* CTA */
 .cta {
-  background-color: var(--accent-complement);
+  background-color: var(--cta-background);
   padding: 1rem 1.4rem;
-  color: white;
+  color: var(--cta-text);
   border-radius: 0.5rem;
   margin-block-end: 2rem;
 }
@@ -25,7 +25,7 @@
   text-align: center;
   padding: 0.5rem;
   font-weight: bold;
-  color: var(--accent-complement);
+  color: var(--cta-background);
   text-transform: uppercase;
   text-decoration: none;
   transition: all 200ms;
@@ -34,8 +34,8 @@
   }
   &:hover,
   &:focus-visible {
-    background-color: var(--accent-complement-hover);
-    color: white;
+    background-color: var(--cta-hover-background);
+    color: var(--cta-hover-text);
     text-decoration: none;
   }
 }
