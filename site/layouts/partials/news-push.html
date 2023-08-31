@@ -1,12 +1,12 @@
 <div class="news-push">
-  <div class="news-push__wrapper">
-    <header class="news-push__header">
-      <h2 class="news-push__title">Dernières actualités</h2>
-      <a href="/actualites" class="news-push__readmore-link">Toutes les actualités</a>
+  <div class="collection-readmore collection-readmore--titled">
+    <header class="collection-readmore__header">
+      <h2 class="collection-readmore__title">Dernières actualités</h2>
+      <a href="/actualites" class="collection-readmore__readmore-link">Toutes les actualités</a>
     </header>
-    <div class="news-push__items">
+    <div class="collection-readmore__items">
       {{ range first 2 (where site.RegularPages "Type" "actualites") }}
-      <div class="news-push__item">
+      <div class="collection-readmore__item">
         {{ .Render "news-card" }}
       </div>
       {{ end }}

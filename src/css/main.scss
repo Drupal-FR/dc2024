@@ -4,17 +4,19 @@
 @import './imports/_breakpoints';
 @import './imports/_include_media';
 @import './imports/_root_and_colors';
-@import './imports/_raw_tags';
-@import './imports/_form';
-@import './imports/_menu';
-@import './imports/_jumbotron';
-@import './imports/_site_extra';
-@import './imports/_news_list';
-@import './imports/_news_push';
-@import './imports/_cta';
-@import './imports/_illustrated_card';
-@import './imports/_illustrated_cards';
-@import './imports/_sponsoring';
+@import './imports/components/_raw_tags';
+@import './imports/components/_form';
+@import './imports/components/_menu';
+@import './imports/components/_jumbotron';
+@import './imports/components/_site_extra';
+@import './imports/components/_news_list';
+@import './imports/components/_news_card';
+@import './imports/components/_news_push';
+@import './imports/components/_cta';
+@import './imports/components/_illustrated_card';
+@import './imports/components/_illustrated_cards';
+@import './imports/components/_sponsoring';
+@import './imports/components/_collection_readmore';
 
 
 $blue-pastel: #e5eef1;
