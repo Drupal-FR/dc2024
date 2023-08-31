@@ -81,6 +81,15 @@
   text-align: center;
   font-size: 0.85rem;
 }
+.sponsor-logo {
+  color: var(--text-color);
+  &:hover {
+    text-decoration: none;
+  }
+}
+a.sponsor-logo[href^="http"]:after {
+  content: none;
+}
 .sponsor-logo__image-frame {
   width: 60px;
   height: 60px;
@@ -99,6 +108,15 @@
 .sponsor-logo__image {
   display: block;
   margin: auto;
+  opacity: 0.65;
+  filter: grayscale(100);
+  transition: all 150ms;
+  &:hover,
+  &:focus-visible,
+  &:focus-within {
+    opacity: 1;
+    filter: grayscale(0);
+  }
 }
 a.sponsor-logo__site {
   color: var(--text-color);

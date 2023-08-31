@@ -1,4 +1,4 @@
-<div class="sponsor-logo">
+<a href="{{ .Params.sponsor_site }}" class="sponsor-logo" title="Visiter le site du sponsor {{ .Title }}">
   {{ $image := .Resources.Get .Params.sponsor_logo }}
   {{ $dim := "" }}
   {{ $type := .Params.sponsor_type }}
@@ -20,5 +20,5 @@
            src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
     </div>
   {{ end }}
-  <a href="{{ .Params.sponsor_site }}" class="sponsor-logo__site" title="Visiter le site du sponsor {{ .Title }}">{{ .Title }} <span class="sr-only">Sponsor {{ .Params.sponsor_type }}</span></a>
-</div>
+  {{ .Title }} <span class="sr-only">Sponsor {{ .Params.sponsor_type }}</span>
+</a>
