@@ -1,6 +1,10 @@
+$blue-pastel-sky: #e3f5fb;
 $blue-pastel: #e5eef1;
+$blue-pastel-sky-gray:  #cfe8f5;
+$blue-pastel-sky-grayer:  #b3cdd4;
+
 $blue-aqua: #70dcff;
-$blue-ocean-troubled:  #b3cdd4;
+$blue-night: #2a7fca;
 $blue-ocean:  #42afce;
 $blue-ocean-deep:  #1b91af;
 $blue-ocean-deeper:  #17809b;
@@ -23,30 +27,40 @@ $grass-wetter: #1e620f;
   --text-color: #{$black};
   --link-color: #{$blue-ocean};
   --logo-background: #{$blue-aqua};
+
   --nav-submenu-background: white;
+  --nav-mobile-active-background: #{$blue-pastel-sky};
+  --nav-mobile-active-hover: #{$blue-pastel-sky-gray};
+
   --accent-color: #{$blue-ocean};
   --accent-color-border: #{$blue-ocean-deep};
   --accent-complement: #{$pink};
   --accent-complement-hover: #{$pink-dark};
   --accent-alternative: #{$grass};
   --accent-alternative-hover: #{$grass-wetter};
+
   --newsletter-push-background: #{$grass};
   --newsletter-push-text: white;
   --newsletter-push-link-background: white;
   --newsletter-push-link-text: #{$grass};
   --newsletter-push-link-hover-background: #{$grass-wetter};
   --newsletter-push-link-hover-text: white;
+
   --news-card-border: #{$gray-light};
   --news-card-background: white;
+
   --package-advantage-out: #{$pink};
   --package-advantage-in: #{$grass};
   --sponsors-list-background: white;
   --sponsors-list-border: #{$gray-light};
-  --table-border: #{$blue-ocean-troubled};
+
+  --table-border: #{$blue-pastel-sky-grayer};
   --table-alternate-background: #{$blue-pastel};
   --table-accent-background: #{$blue-ocean-deeper};
   --table-head-text: #{$blue-ocean-deeper};
+
   --jumbotron--text: white;
+
   --cta-background: #{$pink};
   --cta-text: white;
   --cta-hover-background: #{$pink-dark};
