@@ -56,9 +56,9 @@ $grass-wetter: #1e620f;
 /* Structural */
 .content-container {
   margin: auto;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   @include media('>=phablet') {
-    width: 480px;
+    width: 480px
   }
   @include media('>=tablet') {
     width: 680px;

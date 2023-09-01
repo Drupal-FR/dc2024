@@ -1,20 +1,27 @@
 /* MENU */
 .menu {
   display: grid;
-  grid-template-areas: "logo name"
-    "logo menu";
-  grid-template-columns: 68px 1fr;
-  grid-column-gap: 2rem;
+  grid-template-areas: "name"
+    "menu";
   margin-block-end: 2rem;
+  @include media('>=desktop') {
+    grid-template-areas: "logo name"
+    "logo menu";
+    grid-template-columns: 68px 1fr;
+    grid-column-gap: 2rem;
+  }
 }
 
 .menu__logo {
-  background-color: var(--logo-background);
-  grid-area: logo;
-  width: 60px;
-  height: 60px;
-  border-radius: 60px;
-  padding: 0.5rem;
+  display: none;
+  @include media('>=desktop') {
+    background-color: var(--logo-background);
+    grid-area: logo;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    padding: 0.5rem;
+  }
 
   > img {
     width: 100%;
@@ -39,13 +46,19 @@
 .menu__items {
   grid-area: menu;
   display: flex;
-  gap: 1.2rem;
+  flex-direction: column;
   text-transform: uppercase;
-  padding: 0;
   margin: 0;
+  @include media('>=desktop') {
+   flex-direction: row;
+    gap: 1.2rem;
+    padding: 0;
+  }
 }
 .menu__item {
-  list-style: none;
+  @include media('>=desktop') {
+    list-style: none;
+  }
 }
 .menu__item a {
   font-weight: bold;
@@ -53,38 +66,42 @@
   letter-spacing: -1px;
 }
 .menu__item--submenu {
-  position: relative;
-  &:after {
-    color: var(--accent-color);
-    content: '✚';
-    opacity: 0.7;
-    font-size: 0.75em;
-    padding-inline-start: 0.25rem;
-  }
-  &:hover .menu__items--submenu,
-  &:focus .menu__items--submenu,
-  .menu__items--submenu:focus-within {
-    opacity: 1;
-    transform: none;
-    z-index: 10;
+  @include media('>=desktop') {
+    position: relative;
+    &:after {
+      color: var(--accent-color);
+      content: '✚';
+      opacity: 0.7;
+      font-size: 0.75em;
+      padding-inline-start: 0.25rem;
+    }
+    &:hover .menu__items--submenu,
+    &:focus .menu__items--submenu,
+    .menu__items--submenu:focus-within {
+      opacity: 1;
+      transform: none;
+      z-index: 10;
+    }
   }
 }
 
 .menu__items--submenu {
-  position: absolute;
-  inset-inline-end: 0;
-  top: 100%;
-  display: flex;
-  flex-flow: column;
-  padding: 1em;
-  gap: 0.5em;
-  background-color: var(--nav-submenu-background);
-  border-radius: 0.5em;
-  box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 5px 30px rgba(0,0,0,0.05);
-  transition: all 0.10s ease;
-  /* hide it by default */
-  opacity: 0;
-  transform-origin: top;
-  transform: scaleY(0);
+  @include media('>=desktop') {
+    position: absolute;
+    inset-inline-end: 0;
+    top: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: 1em;
+    gap: 0.5em;
+    background-color: var(--nav-submenu-background);
+    border-radius: 0.5em;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 5px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.10s ease;
+    /* hide it by default */
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+  }
 }
 /* END - MENU */

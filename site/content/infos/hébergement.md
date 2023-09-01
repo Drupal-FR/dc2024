@@ -1,4 +1,8 @@
 ---
+menu:
+  main:
+    parent: 'Infos pratiques'
+    weight: 20
 title: 'Hébergement'
 subtitle: 'Où dormir dans la ville'
 image: '/img/cover/thabor.jpg'

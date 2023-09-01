@@ -1,4 +1,7 @@
 ---
+menu:
+  main:
+    weight: 1
 title: "Actualités"
 subtitle: "Parce qu'une personne informée en vaut deux"
 image: /img/cover/quais.jpg

@@ -1,0 +1,55 @@
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+<nav class="menu">
+  <a href="/" class="menu__logo">
+    <img src="/img/logo_hermine.svg" alt="" />
+  </a>
+  <p class="menu__site-name"><a href="/"><img src="/img/name-vecto.svg" alt="{{ $.Site.Title }}" /></a></p>
+  <ul class="menu__items">
+    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+  </ul>
+</nav>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $li_classes := slice "menu__item" }}
+    {{- $attrs := dict "href" .URL }}
+
+    {{ if .Children }}
+      {{- $li_classes = union $li_classes (slice "menu__item--submenu") }}
+    {{ end }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+      {{- $li_classes = union $li_classes (slice "active") }}
+    {{- else if $page.HasMenuCurrent .Menu .}}
+      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+    {{- end }}
+
+    {{/* Aggregate li classes final string */}}
+    {{ $class_str := "" }}
+    {{ range $v := $li_classes }}
+      {{ with $v }}
+        {{ $class_str = printf "%s %s" $class_str $v}}
+      {{ end }}
+    {{ end }}
+    <li class="{{$class_str}}">
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >{{ or (T .Identifier) .Name | safeHTML }}</a>
+      {{- with .Children }}
+        <ul class="menu__items menu__items--submenu">
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+      {{- end }}
+    </li>
+  {{- end }}
+{{- end }}

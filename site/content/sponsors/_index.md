@@ -1,4 +1,7 @@
 ---
+menu:
+  main:
+    weight: 10
 title: 'Sponsors'
 subtitle: 'Découvrez comment soutenir Drupal en France'
 image: /img/cover/ddd.jpg

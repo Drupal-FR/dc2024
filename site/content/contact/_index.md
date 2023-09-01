@@ -1,4 +1,7 @@
 ---
+menu:
+  main:
+    weight: 40
 title: "Contacter l'équipe"
 subtitle: "Pourquoi le cheval blanc d'Henri IV est blanc ? À quelle heure se couchent les poules ? Nous aurons la réponse (si possible)."
 image: '/img/cover/magdelaine.jpg'

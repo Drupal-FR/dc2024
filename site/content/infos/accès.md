@@ -1,4 +1,8 @@
 ---
+menu:
+  main:
+    parent: 'Infos pratiques'
+    weight: 10
 title: 'Accès'
 subtitle: 'Repérez-vous dans la ville'
 image: '/img/cover/colombage.jpg'
