@@ -9,9 +9,6 @@ blurb:
       Le Drupalcamp est un événement sur 3 jours proposé par l'association Drupal France et francophonie.
       Cette année, il se déroulera du 28 au 30 mars 2024, à Rennes (35).
       Les deux premières journées seront dédiées au partage de connaissances via des conférences et la troisième journée sera orientée contribution.
-intro:
-    heading: "What we offer"
-    text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."
 about_extra:
   - title: "Où se déroule le Drupalcamp ?"
     description: >-
