@@ -31,6 +31,7 @@ $grass-wetter: #1e620f;
   --nav-submenu-background: white;
   --nav-mobile-active-background: #{$blue-pastel-sky};
   --nav-mobile-active-hover: #{$blue-pastel-sky-gray};
+  --nav-mobile-active-text: #{$blue-night};
 
   --accent-color: #{$blue-ocean};
   --accent-color-border: #{$blue-ocean-deep};
@@ -76,10 +77,11 @@ $grass-wetter: #1e620f;
   }
   @include media('>=tablet') {
     width: 680px;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
   @include media('>=desktop') {
     width: 960px;
+    padding: 2rem 0rem;
   }
   @include media('>=wide') {
     width: 1140px;

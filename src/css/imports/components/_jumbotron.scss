@@ -13,18 +13,35 @@
 .jumbotron__title {
   margin: 0;
   margin-bottom: 0.25rem;
+  font-size: 1.4rem;
+  @include media('>=tablet') {
+    font-size: 1.75rem;
+  }
+  @include media('>=desktop') {
+    font-size: 2rem;
+  }
 }
 .jumbotron__subtitle {
+  display: none;
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+  @include media('>=phablet') {
+    display: block;
+    font-size: 1rem;
+  }
 }
 .jumbotron__title-wrapper {
   position: relative;
   text-shadow: black 3px 3px 6px;
 }
 .jumbotron__title-wrapper-foreground {
-  padding: 1rem 2rem;
+  padding: 1rem;
   position: relative;
   z-index: 2;
+  @include media('>=tablet') {
+    padding: 1rem 2rem;
+  }
 }
 .jumbotron__title-wrapper-background {
   position: absolute;
@@ -65,6 +82,7 @@
   transform: scaleY(0);
   text-align: right;
   width: max-content;
+  max-width: 11rem;
   padding: 0.3rem 1.5rem 0.3rem 0.5rem;
   line-height: 1;
   color: black;
@@ -76,7 +94,11 @@
   opacity: 1;
   transform: none;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+  text-align: left;
+  line-height: 1.1;
+  padding: 0.3rem 0.5rem 0.5rem ;
 }
 .jumbotron__credit-icon-wrapper:hover .jumbotron__credit-icon,
 .jumbotron__credit-icon-wrapper:focus .jumbotron__credit-icon {
