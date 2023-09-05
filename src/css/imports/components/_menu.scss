@@ -84,9 +84,14 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+
   &[aria-expanded=true] {
     display: flex;
+    .menu__items--submenu {
+      display: flex;
+    }
   }
+
   @include media('>=tablet') {
     display: flex;
     flex-direction: row;
