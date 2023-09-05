@@ -4,6 +4,10 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  flex-direction: column;
+  @include media('>=tablet') {
+    flex-direction: row;
+  }
 }
 .illustrated-card__content {
   flex: 1 0 min-content;

@@ -73,7 +73,8 @@ $grass-wetter: #1e620f;
   margin: auto;
   padding: 1rem 2rem;
   @include media('>=phablet') {
-    width: 480px
+    width: 425px;
+    padding: 1rem 1rem;
   }
   @include media('>=tablet') {
     width: 680px;
