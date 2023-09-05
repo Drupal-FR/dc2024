@@ -12,8 +12,9 @@ if ($button) {
         $button.setAttribute('aria-label', button_label);
         $content.setAttribute('aria-expanded', expanded_state);
       }
+
       // Toggle status.
-      else if (expanded_state == "true") {
+      if (expanded_state == "true") {
         button_label = 'Afficher la navigation';
         $button.setAttribute('aria-label', button_label);
         $button.classList.remove('js-close');
