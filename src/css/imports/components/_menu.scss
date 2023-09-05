@@ -39,8 +39,38 @@
   letter-spacing: -2.5px;
   margin: 0;
   max-width: 300px;
+  display: flex;
+  gap: 0.7rem;
   @include media('>=tablet') {
     max-width: 500px;
+  }
+  > button {
+    border: none;
+    background: none;
+    padding: 0;
+    &:hover {
+      cursor: pointer;
+    }
+    &:before {
+      content: '';
+      width: 30px;
+      height: 32px;
+      display: block;
+      mask-image: url("/icons/menu.svg");
+      mask-repeat: no-repeat;
+      background-color: currentColor;
+      mask-size: 100% 100%;
+      mask-position-y: 2px;
+    }
+    &.js-close:before {
+      mask-image: url("/icons/close.svg");
+      mask-size: 32px 39px;
+      mask-position-y: -1px;
+      mask-position-x: -1px;
+    }
+    @include media('>=tablet') {
+      display: none;
+    }
   }
   img {
     width: 100%;
@@ -48,13 +78,17 @@
 }
 
 .menu__items {
+  display: none;
   grid-area: menu;
-  display: flex;
   flex-direction: column;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  &[aria-expanded=true] {
+    display: flex;
+  }
   @include media('>=tablet') {
+    display: flex;
     flex-direction: row;
     gap: 0.6rem;
   }

@@ -2,12 +2,15 @@
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-<nav class="menu">
+<nav aria-label="Menu principal" class="menu" xmlns="http://www.w3.org/1999/html">
   <a href="/" class="menu__logo" title="Retourner à la page d'accueil">
     <img src="/img/logo_hermine.svg" alt="Logo de l'événement, une hermine, symbole de la bretagne." />
   </a>
-  <p class="menu__site-name"><a href="/"><img src="/img/name-vecto.svg" alt="{{ $.Site.Title }}" /></a></p>
-  <ul class="menu__items">
+  <p class="menu__site-name">
+    <button data-js-selector="navigation" aria-controls="nav-main" aria-label="Afficher la navigation"></button>
+    <a href="/"><img src="/img/name-vecto.svg" alt="{{ $.Site.Title }}" /></a>
+  </p>
+  <ul class="menu__items" id="nav-main">
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </ul>
 </nav>

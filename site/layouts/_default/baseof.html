@@ -8,10 +8,9 @@
       {{ block "main" . }}{{ end }}
 
       {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-      {{ $script := .Site.Data.webpack.main }}
-      {{ with $script.js }}
-        <script src="{{ relURL . }}"></script>
+      {{ $site_js := resources.Get "js/camp.js" }}
+      {{ with $site_js }}
+      <script src="{{ $site_js.RelPermalink }}"></script>
       {{ end }}
     </div>
   </body>
