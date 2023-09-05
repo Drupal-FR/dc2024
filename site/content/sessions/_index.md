@@ -1,7 +1,12 @@
 ---
-title: Sessions
+menu:
+  main:
+    weight: 10
 type: sessions
-image: /img/products-jumbotron.jpg
+title: "Sessions"
+subtitle: "Rejoignez la communauté Drupal France du 28 au 30 mars 2024"
+image: /img/cover/angie.jpg
+credits: 'Nicolas MEYER'
 intro:
   heading: Nos sessions
   description: >-
