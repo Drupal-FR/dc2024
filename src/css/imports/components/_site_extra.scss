@@ -148,6 +148,7 @@ a.sponsor-logo__site {
 .site-extra__newsletter-link {
   background-color: var(--newsletter-push-link-background);
   padding: 0.5rem;
+  border-radius: 4px;
   color: var(--newsletter-push-link-text);
   text-transform: uppercase;
   transition: all 200ms;
