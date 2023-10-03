@@ -47,3 +47,6 @@ Vos données seront conservées jusqu'à 1 an après la date de l'événement.
 Si vous avez souscrit à un contrat de sponsoring, votre nom, prénom, email, numéro de téléphone seront partagés avec les administrateurs du camp.
 Vos données seront conservées jusqu'à 3 ans après la date de l'événement pour les données de facturation.
 
+### Newsletter
+
+En vous inscrivant à la newsletter, nous ne conservons aucune donnée personnelle. La newsletter est hébergée chez notre prestataire Mailjet. Voici [le lien vers leur politique de confidentialité](https://www.mailjet.com/fr/legal/politique-confidentialite/). 
