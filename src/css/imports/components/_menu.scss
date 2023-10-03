@@ -4,7 +4,7 @@
   grid-template-areas: "name"
     "menu";
   margin-block-end: 2rem;
-  @include media('>=tablet') {
+  @include media('>=desktop') {
     grid-template-areas: "logo name"
     "logo menu";
     grid-template-columns: 68px 1fr;
@@ -17,7 +17,7 @@
 
 .menu__logo {
   display: none;
-  @include media('>=tablet') {
+  @include media('>=desktop') {
     background-color: var(--logo-background);
     grid-area: logo;
     width: 60px;
@@ -41,7 +41,7 @@
   max-width: 300px;
   display: flex;
   gap: 0.7rem;
-  @include media('>=tablet') {
+  @include media('>=desktop') {
     max-width: 500px;
   }
   > button {
@@ -68,7 +68,7 @@
       mask-position-y: -1px;
       mask-position-x: -1px;
     }
-    @include media('>=tablet') {
+    @include media('>=desktop') {
       display: none;
     }
   }
@@ -92,7 +92,7 @@
     }
   }
 
-  @include media('>=tablet') {
+  @include media('>=desktop') {
     display: flex;
     flex-direction: row;
     gap: 0.6rem;
@@ -104,7 +104,7 @@
 .menu__item {
   list-style: none;
   padding: 0.3rem 0.5rem;
-  @include media('>=tablet') {
+  @include media('>=desktop') {
     padding: 0.1rem 0.5rem;
   }
   &.active:not(.menu__item--submenu) {
@@ -129,14 +129,13 @@
   white-space: nowrap;
 }
 .menu__item--submenu {
-  @include media('>=tablet') {
+  @include media('>=desktop') {
     position: relative;
     &:after {
       color: var(--accent-color);
       content: '✚';
       opacity: 0.7;
       font-size: 0.75em;
-      padding-inline-start: 0.25rem;
     }
     &:hover .menu__items--submenu,
     &:focus .menu__items--submenu,
@@ -150,7 +149,7 @@
 
 .menu__items--submenu {
   padding-inline-start: 0.8rem;
-  @include media('>=tablet') {
+  @include media('>=desktop') {
     position: absolute;
     inset-inline-end: 0;
     top: 100%;
