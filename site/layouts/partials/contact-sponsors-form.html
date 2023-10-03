@@ -1,0 +1,37 @@
+<!-- Contact -->
+<div class="form form--contact">
+  <form action="">
+    <p>L'association Drupal France et Francophonie ne collecte pas la TVA.<br />
+      Les champs munis d'un astérisque sont obligatoires.</p>
+    <div class="form__field">
+      <label for="name">Nom de votre structure<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input type="text" id="name" name="name" required="required" class="">
+    </div>
+    <div class="form__field">
+      <label for="email">E-mail de contact<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input type="email" id="email" name="email" required="required" class="">
+    </div>
+    <div class="form__field">
+      <label for="responsable_name">Nom de la personne responsable de la structure<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input type="text" id="responsable_name" name="responsable_name" required="required" class="">
+    </div>
+    <div class="form__field">
+      <label for="pack">Type de pack qui vous intéresse<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <select id="pack" required="required" name="pack">
+        <option value="gold">XL - Menhir</option>
+        <option value="silver">M - Marin</option>
+        <option value="bronze">S - Biscuit</option>
+      </select>
+    </div>
+    <div class="form__field  form__field--block">
+      <label for="message">Votre message</label>
+      <textarea id="message" name="message" placeholder="Contenu de votre demande" rows="8" cols="80" class=""></textarea>
+    </div>
+    <div class="form__rgpd">
+      Le contenu de ce message sera transmis aux administrateurs du site sur <a href="https://www.netlify.com/gdpr-ccpa/" title="Modalités RGPD de Netlify (EN)">la plateforme Netlify</a>.
+    </div>
+    <div class="form__button">
+      <button type="submit" class="">Envoyer</button>
+    </div>
+  </form>
+</div>

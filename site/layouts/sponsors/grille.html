@@ -5,7 +5,7 @@
 <main class="main-content">
   {{ .Content }}
 
-  {{ partial "cta" (dict "title" "Un package vous intéresse ?" "description" "Vous avez pris le temps d'évaluer la grille ci-dessous et avez l'option qui vous convient. Contactez-nous pour que nous vous réservions votre package.<br />Vous avez une demande particulière ? Contactez-vous." "link_url" "/contact/" "link_label" "Réserver votre package") }}
+  {{ partial "cta" (dict "title" "Un package vous intéresse ?" "description" "Vous avez pris le temps d'évaluer la grille ci-dessous et avez l'option qui vous convient. Contactez-nous pour que nous vous réservions votre package.<br />Vous avez une demande particulière ? Contactez-vous." "link_url" "/sponsors/contact-sponsors/" "link_label" "Réserver votre package") }}
 
   <table class="sponsoring">
     <caption>Grille des packages pour sponsors</caption>
@@ -20,8 +20,8 @@
     </thead>
     <tbody>
     <tr>
-      <td class="row-title">Prix</td>
-      <td>1 500 €</td>
+      <td class="row-title">Tarif (TTC, TVA 0%)</td>
+      <td>2 500 €</td>
       <td>750 €</td>
       <td>250 €</td>
       <td>Libre</td>
@@ -37,52 +37,48 @@
       <td colspan="5">Avantages</td>
     </tr>
     <tr>
-      <td class="row-title">NB journée/repas gratuites</td>
+      <td class="row-title">Nombre de pass 3 jours inclus</td>
       <td>4</td>
       <td>2</td>
       <td>1</td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr class="group-title">
-      <td colspan="5">Site internet</td>
+      <td colspan="5">Votre page sponsor sur le site</td>
     </tr>
     <tr>
-      <td class="row-title">Interview vidéo ou promotion (fournie par le sponsor)</td>
+      <td class="row-title">Mise en avant d'une vidéo promotion (vidéo à fournir)</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Offres d'emploi (3 par sponsor)</td>
-      <td class="option-yes"><span class="sr-only">Oui</span></td>
-      <td class="option-yes"><span class="sr-only">Oui</span></td>
-      <td class="option-no"><span class="sr-only">Non</span></td>
-      <td class="option-no"><span class="sr-only">Non</span></td>
-    </tr>
-    <tr>
-      <td class="row-title">Visible sur toutes les pages</td>
+      <td class="row-title">1 à 3 offres d'emploi</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Visible sur la page d'accueil</td>
+      <td class="row-title">Page dédiée pour partager sur les réseaux sociaux</td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
+    </tr>
+    <tr class="group-title">
+      <td colspan="5">Visibilité site Drupalcamp</td>
+    </tr>
+    <tr>
+      <td class="row-title">Visible sur toutes les pages (logo à fournir)</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Certificat sponsoring drupal.fr et LinkedIn</td>
-      <td class="option-yes"><span class="sr-only">Oui</span></td>
-      <td class="option-yes"><span class="sr-only">Oui</span></td>
-      <td class="option-yes"><span class="sr-only">Oui</span></td>
-      <td class="option-no"><span class="sr-only">Non</span></td>
-    </tr>
-    <tr>
-      <td class="row-title">Visible sur page sponsor de l'événement</td>
+      <td class="row-title">Visible sur page des sponsors de l'évènement (logo à fournir)</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
@@ -93,13 +89,13 @@
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
-      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr class="group-title">
       <td colspan="5">Programme</td>
     </tr>
     <tr>
-      <td class="row-title">Logo sur programme papier / en ligne</td>
+      <td class="row-title">Logo sur programme papier</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
@@ -116,7 +112,14 @@
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Kakémono dans l'auditorium / salle restauration (à fournir)</td>
+      <td class="row-title">Kakémono dans l'auditorium / salle restauration J1+J2 (à fournir)</td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
+    </tr>
+    <tr>
+      <td class="row-title">Kakémono dans la salle de contribution J3 (à fournir)</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
@@ -125,6 +128,13 @@
     <tr>
       <td class="row-title">Kakémono dans les autres salles</td>
       <td class="option-no"><span class="sr-only">Non</span></td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
+    </tr>
+    <tr>
+      <td class="row-title">Mise à disposition de contenu promotionnel sur tables pendant les pauses</td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
@@ -140,28 +150,28 @@
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Logo aux participants dans la newsletter</td>
+      <td class="row-title">Visibilité logo dans la newsletter aux participants</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Communication Twitter avant l'événement</td>
+      <td class="row-title">Communication réseaux sociaux avant l'événement</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
-      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Communication Twitter pendant l'événement</td>
+      <td class="row-title">Communication réseaux sociaux pendant l'événement</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr class="group-title">
-      <td colspan="5">Keynote</td>
+      <td colspan="5">Sessions plénières</td>
     </tr>
     <tr>
       <td class="row-title">Intervention introductive (2 minutes)</td>
@@ -171,14 +181,24 @@
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
     <tr>
-      <td class="row-title">Vidéo à projeter en début de sessions pleinière</td>
+      <td class="row-title">Vidéo à projeter en début de session plénière</td>
       <td class="option-yes"><span class="sr-only">Oui</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
       <td class="option-no"><span class="sr-only">Non</span></td>
     </tr>
+    <tr>
+      <td class="row-title">Mention pendant sessions plénières (début / fin)</td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-yes"><span class="sr-only">Oui</span></td>
+      <td class="option-no"><span class="sr-only">Non</span></td>
+    </tr>
     </tbody>
   </table>
+  <p>
+    Pour devenir un sponsor libre, il suffit de faire un don lors de votre passage sur <a href="/billetterie">la billetterie du Drupalcamp</a>.
+  </p>
 </main>
 
 {{ end }}

@@ -1,3 +1,9 @@
+.required-info::after {
+  content: "*";
+  color: var(--form-required);
+  padding-inline-start: 0.5rem;
+}
+
 .form__field {
   display: flex;
   gap: 0.2rem;

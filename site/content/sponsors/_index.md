@@ -8,6 +8,5 @@ image: /img/cover/ddd.jpg
 credits: '<a href="https://www.flickr.com/photos/amazeelabs/">Amazee labs</a> CC BY-NC-SA 2.0'
 ---
 
-Pour qu'un Drupalcamp ait lieu, nous avons besoin de sponsors.\
-Si vous souhaitez soutenir la communauté Drupal en France, voilà les types de sponsoring pour l'édition 2024.\
-Découvrez le type qui vous convient parmis les 3 disponibles.
+Merci à chacun de nos sponsors.\
+C'est grace à chacune de ces structures que le Drupalcamp peut se dérouler dans de bonnes conditions et pour un tarif abordable. Prenez le temps de les remercier.

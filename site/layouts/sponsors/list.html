@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
+
+<main class="main-content">
+  {{ .Content }}
+  {{ $pages := .Site.Pages }}
+  {{ $sponsoring_types := dict
+  "Menhir" "gold"
+  "Paquetage de marin" "silver"
+  "Paquet de biscuits" "bronze"
+  }}
+  <div class="">
+    {{ range $sponsor_type_label, $sponsor_type_machine_name := $sponsoring_types }}
+    <h3>{{ $sponsor_type_label }}</h3>
+    {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
+    {{ $sponsors_all := where $pages "Type" "sponsors" }}
+    {{ $sponsors := $type_filtered | intersect $sponsors_all | shuffle }}
+    {{ if $sponsors }}
+    <ul class="">
+      {{ range $sponsors }}
+      <li class="">{{ .Render "sponsor-logo" }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+
+    {{ partial "cta" (dict "title" "Soutenez l'événement" "description" "Vous êtes une structure et souhaitez soutenir l'organisation de l'événement ? Nous avons besoin de sponsors et vous pouvez aider le Drupalcamp de plusieurs façons. Découvrez le tarif des packs et les contreparties proposées." "link_url" "/sponsors/grille" "link_label" "Découvrir les packs" "link_title" "Découvrir les différents packs de sponsoring") }}
+
+</main>
+{{end}}
