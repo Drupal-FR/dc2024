@@ -18,7 +18,8 @@ Le Drupalcamp c'est :
 
 Vous pouvez acheter votre place pour la journée de contribution si vous voulez découvrir Drupal et la communauté. Si le cœur vous en dit, vous pouvez acheter votre place pour les deux jours de conférence et si vous voulez profiter de l'expérience complète vous pouvez acheter une place pour l'ensemble des trois journées.
 
-**Note :** Pensez bien à cocher l'option repas du samedi si vous comptez participer à la journée de contribution. Nous ne commanderons des repas que pour les personnes ayant réservé afin d'éviter le gaspillage alimentaire.
+**Note à propos des repas :** Pensez bien à cocher l'option repas du samedi si vous comptez participer à la journée de contribution. Nous ne commanderons des repas que pour les personnes ayant réservé afin d'éviter le gaspillage alimentaire.\
+Si prévoyez de rester un jour de plus à la dernière minute, sachez que de nombreuses options de restauration seront à votre disposition autour du lieu de conférence.
 
 ## Tarifs préférentiels
 
