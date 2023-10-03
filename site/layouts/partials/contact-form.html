@@ -3,17 +3,18 @@
   <h4 class="contact-form__title">Posez-nous votre question</h4>
 
   <form action="">
+    <p>Les champs munis d'un astérisque sont obligatoires.</p>
     <div class="form__field">
-      <label for="name">Votre nom</label>
-      <input type="text" id="name" name="name" placeholder="Comment devons-nous vous appeler ?" class="">
+      <label for="name">Votre nom<span class="required-info"></span></label>
+      <input type="text" id="name" name="name" required="required" placeholder="Comment devons-nous vous appeler ?" class="">
     </div>
     <div class="form__field">
-      <label for="email">Votre e-mail</label>
-      <input type="email" id="email" name="email" placeholder="Email" class="">
+      <label for="email">Votre e-mail<span class="required-info"></span></label>
+      <input type="email" id="email" required="required" name="email" placeholder="Email" class="">
     </div>
     <div class="form__field  form__field--block">
-      <label for="message">Votre message</label>
-      <textarea id="message" name="message" placeholder="Contenu de votre demande" rows="8" cols="80" class=""></textarea>
+      <label for="message">Votre message<span class="required-info"></span></label>
+      <textarea id="message" required="required" name="message" placeholder="Contenu de votre demande" rows="8" cols="80" class=""></textarea>
     </div>
     <div class="form__rgpd">
       Le contenu de ce message sera transmis aux administrateurs du site sur <a href="https://www.netlify.com/gdpr-ccpa/" title="Modalités RGPD de Netlify (EN)">la plateforme Netlify</a>.
