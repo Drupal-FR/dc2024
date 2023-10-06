@@ -14,9 +14,20 @@ description: >-
 layout: 'acces'
 ---
 
-Mon truc custom  er
-<strong>zerzer</strong>  
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+## Comment s’y rendre ?
 
-zerzer
+MÉTRO Charles de Gaulle
+
+A 5 minutes à pied de la Gare SNCF
+
+## Ouverture de l’accueil
+
+Du lundi au vendredi de 9h à 12h45 et de 13h45 à 18h30.
+
+## Amplitude de location *:
+
+Du lundi au samedi de 8h30 à 23h45 et le dimanche sous condition
+Fermeture annuelle : 4 semaines en été et 1 semaine à Noël
+
+*Horaires susceptibles de changements en période de vacances scolaires
 
