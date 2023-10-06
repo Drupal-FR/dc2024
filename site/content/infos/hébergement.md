@@ -16,4 +16,4 @@ layout: 'hebergement'
 
 ## Page hébergement à écrire !
 
-Hihi.
+Hihi. Avec du cohébergement.
