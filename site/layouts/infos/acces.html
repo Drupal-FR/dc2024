@@ -2,5 +2,9 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
 
-<p>Mon truc accès</p>
+<main class="main-content">
+  {{ .Content }}
+  <iframe width="80%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/fr/map/dc-rennes-2024_949518?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=datafilters&captionBar=false&captionMenus=true"></iframe><p><a href="//umap.openstreetmap.fr/fr/map/dc-rennes-2024_949518?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=datafilters&captionBar=false&captionMenus=true">Voir en plein écran</a></p>
+</main>
+
 {{ end }}
