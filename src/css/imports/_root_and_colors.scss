@@ -74,21 +74,40 @@ $grass-wetter: #1e620f;
 .content-container {
   margin: auto;
   padding: 1rem 2rem;
+  text-align: center;
   @include media('>=phablet') {
     width: 430px;
   }
   @include media('>=tablet') {
-    width: 680px;
+    width: 700px;
     padding: 2rem 2rem;
   }
   @include media('>=desktop') {
     width: 960px;
-    padding: 2rem 0rem;
-  }
-  @include media('>=wide') {
-    width: 1140px;
   }
 }
+
+.site-logo {
+  width: 240px;
+  margin: auto;
+  @include media('>=phablet') {
+    width: 430px;
+  }
+  img {
+    width: 100%;
+  }
+}
+.newsletter-wrapper {
+  width: 300px;
+  @include media('>=tablet') {
+    width: 600px;
+    margin: auto;
+  }
+  @include media('>=desktop') {
+    width: 800px;
+  }
+}
+
 .main-content {
   margin-block-start: 2rem;
   margin-block-end: 2rem;
