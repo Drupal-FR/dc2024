@@ -85,6 +85,9 @@ $grass-wetter: #1e620f;
   @include media('>=desktop') {
     width: 960px;
   }
+  &.page-newsletter-subscribe {
+    width: auto;
+  }
 }
 
 .site-logo {
@@ -97,17 +100,68 @@ $grass-wetter: #1e620f;
     width: 100%;
   }
 }
-.newsletter-wrapper {
-  width: 300px;
+.page-newsletter-subscribe .site-logo {
+  display: none;
+}
+.page-newsletter-subscribe__content {
+  display: grid;
+  grid-template-areas:
+      "mascot"
+      "form"
+      "footer";
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 1fr;
+  max-width: 1100px;
+  margin: auto;
   @include media('>=tablet') {
-    width: 600px;
+    grid-template-areas:
+      "mascot form"
+      "mascot footer";
+    gap: 3rem;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include media('>=desktop') {
+    gap: 6rem;
+    grid-template-columns: 220px 1fr;
+  }
+  @include media('>=wide') {
+    gap: 8rem;
+    grid-template-columns: 300px 1fr;
+  }
+  > .main-content {
+    grid-area: form;
+    margin-block-start: 0;
+  }
+}
+.site-footer {
+  grid-area: footer;
+}
+.newsletter-wrapper {
+  @include media('>=tablet') {
+    width: 500px;
     margin: auto;
   }
   @include media('>=desktop') {
+    width: 600px;
+  }
+  @include media('>=wide') {
     width: 800px;
   }
 }
-
+.page-newsletter-subscribe__mascot {
+  grid-area: mascot;
+  background: transparent url("/img/logo_hermine_text.svg") no-repeat;
+  background-size: contain;
+  background-position: center center;
+  @include media('>=tablet') {
+    background-position: left 20%;
+  }
+}
+.newsletter-subscribe__form {
+  grid-area: form;
+}
 .main-content {
   margin-block-start: 2rem;
   margin-block-end: 2rem;
