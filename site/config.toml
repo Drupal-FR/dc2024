@@ -6,6 +6,7 @@ baseurl = "/"
 languageCode = "fr-fr"
 languageLang = "fr"
 title = "Drupalcamp Rennes 2024"
+enableRobotsTXT = true
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
