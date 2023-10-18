@@ -5,7 +5,7 @@
   "author": "Artusamak <julien@happyculture.coop>",
   "license": "MIT",
   "scripts": {
-    "compile": "node-sass --omit-source-map-url src/css/main.scss site/static/css/main.css",
+    "compile": "node-sass --omit-source-map-url --output-style compressed src/css/main.scss site/static/css/main.css",
     "watch": "node-sass --watch src/css/ -o site/static/css/",
     "netlify-build": "yarn install && yarn run compile && hugo -s site"
   },
