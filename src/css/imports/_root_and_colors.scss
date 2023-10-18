@@ -112,7 +112,7 @@ $grass-wetter: #1e620f;
   gap: 2rem;
   grid-template-columns: 1fr;
   grid-template-rows: 200px 1fr;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: auto;
   @include media('>=tablet') {
     grid-template-areas:
