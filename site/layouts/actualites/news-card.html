@@ -3,6 +3,6 @@
 	<p class="news-card__description">{{ .Description }}</p>
 	<div class="news-card__meta">
     <div class="news-card__date">{{ .Date.Format "2 Jan 2006" }}</div>
-    <div class="news-card__readmore">Lire la suite →</div>
+    <div class="news-card__readmore">Lire la suite <span class="sr-only">de l'actualité {{ .Title }}</span> →</div>
   </div>
 </a>
