@@ -118,6 +118,11 @@ a.sponsor-logo[href^="http"]:after {
     filter: grayscale(0);
   }
 }
+.sponsor-logo-dedicated_page .sponsor-logo__image {
+  display: block;
+  margin: initial;
+  filter: none;
+}
 a.sponsor-logo__site {
   color: var(--text-color);
   display: block;

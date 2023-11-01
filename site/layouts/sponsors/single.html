@@ -2,7 +2,14 @@
 
 <main class="main-content">
   <h2>{{ .Title }}</h2>
+  <div class="sponsor-logo sponsor-logo-dedicated_page">
+    {{ $image := .Resources.Get .Params.sponsor_logo }}
+    {{ partial "sponsor-logo-image" (dict "logo" $image "type" .Params.sponsor_type) }}
+  </div>
   {{ .Content | safeHTML }}
+  <p>
+    <a href="{{ .Params.sponsor_site }}" title="Accéder au site de {{ .Title }}">{{.Params.sponsor_site}}</a>
+  </p>
 </main>
 
 {{ end }}
