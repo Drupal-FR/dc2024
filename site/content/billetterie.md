@@ -1,8 +1,5 @@
 ---
 title: 'Billetterie'
-menu:
-  main:
-    weight: -10
 type: sessions
 subtitle: "Rejoignez la communauté Drupal France du 28 au 30 mars 2024"
 image: /img/cover/angie.jpg
