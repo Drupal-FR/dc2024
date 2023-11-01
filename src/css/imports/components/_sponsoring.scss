@@ -81,3 +81,25 @@
   }
 }
 /* END - Sponsoring */
+.sponsors-collection-full {
+  margin-block-end: 2rem;
+}
+.sponsor-level-collection {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  margin-block-end: 3rem;
+  padding: 0;
+  @include media('>=desktop') {
+    gap: 5rem;
+  }
+  &:last-child {
+    margin-block-end: 0rem;
+  }
+}
+.sponsor-level-collection__entry {
+  list-style: none;
+  text-align: center;
+  font-size: 0.9rem;
+}

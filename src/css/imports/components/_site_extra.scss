@@ -105,6 +105,11 @@ a.sponsor-logo[href^="http"]:after {
   width: 80px;
   height: 80px;
 }
+.sponsors-collection-full .site-extra__sponsors-type-items--01_gold,
+.sponsors-collection-full .site-extra__sponsors-type-items--02_silver,
+.sponsors-collection-full .site-extra__sponsors-type-items--03_bronze {
+  justify-content: flex-start;
+}
 .sponsor-logo__image {
   display: block;
   margin: auto;
@@ -122,6 +127,12 @@ a.sponsor-logo[href^="http"]:after {
   display: block;
   margin: initial;
   filter: none;
+}
+.sponsors-collection-full .sponsor-logo__image {
+  display: block;
+  margin: initial;
+  filter: none;
+  opacity: 1;
 }
 a.sponsor-logo__site {
   color: var(--text-color);

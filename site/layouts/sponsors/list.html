@@ -10,7 +10,7 @@
   "02_silver" "Paquetage de marin"
   "03_bronze" "Paquet de biscuits"
   }}
-  <div class="">
+  <div class="sponsors-collection-full">
     {{ range $sponsor_type_machine_name, $sponsor_type_label := $sponsoring_types }}
     <h3>{{ $sponsor_type_label }}</h3>
     {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
@@ -18,15 +18,14 @@
     {{ $sponsors_all := sort $sponsors_all "Type" }}
     {{ $sponsors := $type_filtered | intersect $sponsors_all | shuffle }}
     {{ if $sponsors }}
-    <ul class="">
+    <ul class="sponsors-collection-full__level_wrapper sponsor-level-collection site-extra__sponsors-type-items--{{$sponsor_type_machine_name}}">
       {{ range $sponsors }}
-      <li class="">{{ .Render "sponsor-logo" }}</li>
+      <li class="sponsor-level-collection__entry">{{ .Render "sponsor-logo" }}</li>
       {{ end }}
     </ul>
     {{ end }}
     {{ end }}
-
-    {{ partial "cta" (dict "title" "Soutenez l'événement" "description" "Vous êtes une structure et souhaitez soutenir l'organisation de l'événement ? Nous avons besoin de sponsors et vous pouvez aider le Drupalcamp de plusieurs façons. Découvrez le tarif des packs et les contreparties proposées." "link_url" "/sponsors/grille" "link_label" "Découvrir les packs" "link_title" "Découvrir les différents packs de sponsoring") }}
-
+  </div>
+  {{ partial "cta" (dict "title" "Soutenez l'événement" "description" "Vous êtes une structure et souhaitez soutenir l'organisation de l'événement ? Nous avons besoin de sponsors et vous pouvez aider le Drupalcamp de plusieurs façons. Découvrez le tarif des packs et les contreparties proposées." "link_url" "/sponsors/grille" "link_label" "Découvrir les packs" "link_title" "Découvrir les différents packs de sponsoring") }}
 </main>
 {{end}}
