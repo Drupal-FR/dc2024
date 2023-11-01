@@ -8,15 +8,15 @@
     <div class="site-extra__sponsors collection-readmore--titled">
       {{ $pages := .Site.Pages }}
       {{ $sponsoring_types := dict
-      "Menhir" "gold"
-      "Paquetage de marin" "silver"
+      "01_gold" "Menhir"
+      "02_silver" "Paquetage de marin"
       }}
       <header class="collection-readmore__header">
         <h2 class="collection-readmore__title">Merci à nos sponsors sans qui l'événement ne pourrait pas avoir lieu</h2>
         <a href="/sponsors" class="collection-readmore__readmore-link" title="Explorer la liste complète de nos sponsors">Tous nos sponsors</a>
       </header>
       <div class="site-extra__sponsors-collection collection-readmore__items">
-        {{ range $sponsor_type_label, $sponsor_type_machine_name := $sponsoring_types }}
+        {{ range $sponsor_type_machine_name, $sponsor_type_label := $sponsoring_types }}
           {{ $sponsors_all := where $pages "Type" "sponsors" }}
           {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
           {{ $sponsors := $sponsors_all | intersect $type_filtered | shuffle }}

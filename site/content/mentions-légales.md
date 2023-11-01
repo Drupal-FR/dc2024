@@ -44,7 +44,7 @@ Vos données seront conservées jusqu'à 1 an après la date de l'événement.
 
 ### Contrat de sponsoring
 
-Si vous avez souscrit à un contrat de sponsoring, votre nom, prénom, email, numéro de téléphone seront partagés avec les administrateurs du camp.
+Si vous avez souscrit à un contrat de sponsoring, votre nom, prénom, email, numéro de téléphone et adresse de facturation seront partagés avec les administrateurs du camp.
 Vos données seront conservées jusqu'à 3 ans après la date de l'événement pour les données de facturation.
 
 ### Newsletter

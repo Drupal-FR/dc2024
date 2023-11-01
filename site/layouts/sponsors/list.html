@@ -6,15 +6,16 @@
   {{ .Content }}
   {{ $pages := .Site.Pages }}
   {{ $sponsoring_types := dict
-  "Menhir" "gold"
-  "Paquetage de marin" "silver"
-  "Paquet de biscuits" "bronze"
+  "01_gold" "Menhir"
+  "02_silver" "Paquetage de marin"
+  "03_bronze" "Paquet de biscuits"
   }}
   <div class="">
-    {{ range $sponsor_type_label, $sponsor_type_machine_name := $sponsoring_types }}
+    {{ range $sponsor_type_machine_name, $sponsor_type_label := $sponsoring_types }}
     <h3>{{ $sponsor_type_label }}</h3>
     {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
     {{ $sponsors_all := where $pages "Type" "sponsors" }}
+    {{ $sponsors_all := sort $sponsors_all "Type" }}
     {{ $sponsors := $type_filtered | intersect $sponsors_all | shuffle }}
     {{ if $sponsors }}
     <ul class="">

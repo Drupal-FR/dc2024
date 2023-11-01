@@ -4,9 +4,9 @@
   {{ $type := .Params.sponsor_type }}
   {{ with $image }}
     {{ $size := 60 }}
-    {{ if eq $type "gold" }}
+    {{ if eq $type "01_gold" }}
       {{ $size = 120 }}
-    {{ else if eq $type "silver"  }}
+    {{ else if eq $type "02_silver"  }}
       {{ $size = 80 }}
     {{ end }}
     {{ if gt $image.Height $image.Width }}

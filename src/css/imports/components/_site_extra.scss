@@ -56,11 +56,11 @@
       padding-inline-start: 2rem;
     }
   }
-  &--gold {
+  &--01_gold {
     align-items: center;
     justify-content: center;
   }
-  &--silver {
+  &--02_silver {
     flex-wrap: nowrap;
     gap: 1.5rem;
     scroll-snap-type: x mandatory;
@@ -97,11 +97,11 @@ a.sponsor-logo[href^="http"]:after {
   justify-content: center;
   margin: auto;
 }
-.site-extra__sponsors-type-items--gold .sponsor-logo__image-frame {
+.site-extra__sponsors-type-items--01_gold .sponsor-logo__image-frame {
   width: 120px;
   height: 120px;
 }
-.site-extra__sponsors-type-items--silver .sponsor-logo__image-frame {
+.site-extra__sponsors-type-items--02_silver .sponsor-logo__image-frame {
   width: 80px;
   height: 80px;
 }

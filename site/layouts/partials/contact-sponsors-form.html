@@ -1,5 +1,5 @@
 <!-- Contact -->
-<div class="form form--contact">
+<div class="form form--contact-sponsors">
   <form action="">
     <p>L'association Drupal France et Francophonie ne collecte pas la TVA.<br />
       Les champs munis d'un astérisque sont obligatoires.</p>
@@ -12,23 +12,44 @@
       <input type="email" id="email" name="email" required="required" class="">
     </div>
     <div class="form__field">
+      <label for="telephon_contact">Téléphone contact<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input type="tel" id="telephon_contact" name="telephon_contact" required="required" class="">
+    </div>
+    <div class="form__field">
       <label for="responsable_name">Nom de la personne responsable de la structure<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <input type="text" id="responsable_name" name="responsable_name" required="required" class="">
     </div>
     <div class="form__field">
       <label for="pack">Type de pack qui vous intéresse<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <select id="pack" required="required" name="pack">
-        <option value="gold">XL - Menhir</option>
-        <option value="silver">M - Marin</option>
-        <option value="bronze">S - Biscuit</option>
+        <option value="01_gold">XL - Menhir</option>
+        <option value="02_silver">M - Marin</option>
+        <option value="03_bronze">S - Biscuit</option>
       </select>
+    </div>
+    <div class="form__field">
+      <label for="address_info">Adresse postale (facturation)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input id="address_info" name="address_info" placeholder="150 rue de la paix" type="text" required="required" />
+    </div>
+    <div class="form__field">
+      <label for="address_cp">Code postal (facturation)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input id="address_cp" name="address_cp" placeholder="35000" size="6" type="text" required="required" />
+    </div>
+    <div class="form__field">
+      <label for="address_city_country">Ville, Pays (facturation)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input id="address_city_country" name="address_city_country" placeholder="Rennes, France" type="text" required="required" />
     </div>
     <div class="form__field  form__field--block">
       <label for="message">Votre message</label>
       <textarea id="message" name="message" placeholder="Contenu de votre demande" rows="8" cols="80" class=""></textarea>
     </div>
-    <div class="form__rgpd">
-      Le contenu de ce message sera transmis aux administrateurs du site sur <a href="https://www.netlify.com/gdpr-ccpa/" title="Modalités RGPD de Netlify (EN)">la plateforme Netlify</a>.
+    <div class="form__field form__field-rgpd">
+      <div class="rgpd_context">Consentement éclairé</div>
+      <label for="rgpd_consent" class="rgpd-label">
+        <input id="rgpd_consent" name="rgpd_consent" type="checkbox" required="required"/>
+        Je consens à ce que mes informations de contact soient stockées selon
+        <a href="/mentions-légales#données-personnelles" title="Lire la politique de confidentialité du site">la politique de confidentialité du site</a>. <span class="required-info"><span class="sr-only"> Obligatoire</span></span>
+      </label>
     </div>
     <div class="form__button">
       <button type="submit" class="">Envoyer</button>
