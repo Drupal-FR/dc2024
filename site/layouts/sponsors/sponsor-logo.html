@@ -1,7 +1,7 @@
 <a href="{{ .RelPermalink }}" class="sponsor-logo" title="Visiter le site du sponsor {{ .Title }}">
   <div class="sponsor-logo__image-frame">
     {{ $image := .Resources.Get .Params.sponsor_logo }}
-    {{ partial "sponsor-logo-image" (dict "logo" $image "type" .Params.sponsor_type) }}
+    {{ partial "sponsor-logo-image" (dict "logo" $image "type" .Params.sponsor_type "display_context" (.Scratch.Get "display_context")  ) }}
   </div>
   {{ .Title }} <span class="sr-only">Sponsor {{ .Params.sponsor_type }}</span>
 </a>

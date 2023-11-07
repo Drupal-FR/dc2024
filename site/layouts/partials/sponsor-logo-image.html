@@ -1,13 +1,16 @@
+{{$reference_sizes := ""}}
+
+{{ if eq .display_context "maximize" }}
+  {{ $reference_sizes = (dict "base" 120 "01_gold" 200 "02_silver" 150 "03_bronze" 120) }}
+{{ else }}
+  {{ $reference_sizes = dict "base" 60 "01_gold" 120 "02_silver" 80 "03_bronze" 60 }}
+{{ end }}
+
 {{ $image := .logo }}
 {{ $dim := "" }}
 {{ $type := .type }}
 {{ with $image }}
-  {{ $size := 60 }}
-  {{ if eq $type "01_gold" }}
-    {{ $size = 120 }}
-  {{ else if eq $type "02_silver"  }}
-    {{ $size = 80 }}
-  {{ end }}
+  {{ $size := (index $reference_sizes $type) }}
   {{ if gt $image.Height $image.Width }}
     {{ $dim = printf "%s%d" "x" $size }}
   {{ else }}
