@@ -12,7 +12,7 @@
   }}
   <div class="sponsors-collection-full">
     {{ range $sponsor_type_machine_name, $sponsor_type_label := $sponsoring_types }}
-    <h3>{{ $sponsor_type_label }}</h3>
+    <h3 class="sponsors-collection-full__label">{{ $sponsor_type_label }}</h3>
     {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
     {{ $sponsors_all := where $pages "Type" "sponsors" }}
     {{ $sponsors_all := sort $sponsors_all "Type" }}
