@@ -92,24 +92,30 @@ a.sponsor-logo[href^="http"]:after {
 }
 
 .sponsor-logo__image-frame {
-  width: 60px;
-  height: 60px;
+  aspect-ratio: 1/1;
   display: flex;
+  align-content: center;
   justify-content: center;
   margin: auto;
+  margin-block-end: 0.3rem;
 }
 
 .sponsor-level-collection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
   list-style: none;
   margin: 0;
   margin-block-end: 3rem;
   padding: 0;
+  @include media('>=tablet') {
+    column-gap: 4rem;
+    row-gap: 2rem;
+  }
   @include media('>=desktop') {
-    gap: 5rem;
+    column-gap: 5rem;
   }
   &:last-child {
     margin-block-end: 0rem;
