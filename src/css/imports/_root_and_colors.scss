@@ -83,7 +83,7 @@ $grass-wetter: #1e620f;
   }
   @include media('>=desktop') {
     width: 960px;
-    padding: 2rem 0rem;
+    padding: 1.5rem 0rem;
   }
   @include media('>=wide') {
     width: 1140px;

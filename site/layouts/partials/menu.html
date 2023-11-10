@@ -6,12 +6,16 @@
   <a href="/" class="menu__logo" title="Page d'accueil">
     <img src="/img/logo_hermine.svg" alt="Une hermine baptisée Yuna, symbole de la Bretagne et mascotte du Drupalcamp." />
   </a>
-  <p class="menu__site-name">
-    <a href="/"><img src="/img/name-vecto.svg" alt="Drupalcamp Rennes 2024" /></a>
-  </p>
-  <p class="menu__tickets-push">
-    <a href="/billetterie" title="Accéder à la billetterie et infos des tarifs">Billetterie</a>
-  </p>
+  <div class="menu__site-promoted">
+    <p class="menu__site-name">
+      <a href="/"><img src="/img/dcrennes_title_text.svg" alt="Drupalcamp Roazhon" /><br />
+        <img src="/img/dcrennes_subtitle_text.svg" alt="Rennes, 28-30 mars 2024" />
+      </a>
+    </p>
+    <p class="menu__tickets-push">
+      <a href="/billetterie" title="Accéder à la billetterie et infos des tarifs">Billetterie</a>
+    </p>
+  </div>
   <ul class="menu__items" id="nav-main">
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </ul>
