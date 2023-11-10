@@ -3,8 +3,9 @@
   display: grid;
   grid-template-areas: "promoted"
     "menu";
-  margin-block-end: 3rem;
+  margin-block-end: 2rem;
   @include media('>=desktop') {
+    margin-block-end: 3rem;
     grid-template-areas: "logo promoted"
     "logo menu";
     grid-template-columns: 150px 1fr;
@@ -34,9 +35,9 @@
   font-size: 1.5rem;
   letter-spacing: -2.5px;
   margin: 0;
-  max-width: 300px;
   display: flex;
   gap: 0.7rem;
+  line-height: 1.5;
   @include media('>=desktop') {
     max-width: 500px;
     display: block;
@@ -69,15 +70,28 @@
       display: none;
     }
   }
+  img {
+    @include media('<desktop') {
+      width: 100%;
+    }
+  }
+  .site-title {
+    max-width: 500px;
+  }
+  .site-subtitle {
+    max-width: 300px;
+  }
 }
 
 .menu__site-promoted {
   grid-area: promoted;
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  flex-direction: column;
   @include media('>=desktop') {
+    gap: 2rem;
     padding-block-start: 1.5rem;
+    flex-direction: row;
   }
 }
 .menu__tickets-push a {
