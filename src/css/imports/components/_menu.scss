@@ -4,6 +4,11 @@
   grid-template-areas: "promoted"
     "menu";
   margin-block-end: 2rem;
+  @include media('>=tablet') {
+    grid-template-areas: "logo promoted"
+    "menu menu";
+    grid-template-columns: 100px 1fr;
+  }
   @include media('>=desktop') {
     margin-block-end: 3rem;
     grid-template-areas: "logo promoted"
@@ -20,8 +25,11 @@
 
 .menu__logo {
   display: none;
-  @include media('>=desktop') {
+  @include media('>=tablet') {
     grid-area: logo;
+    display: inline-block;
+  }
+  @include media('>=desktop') {
     display: inline-block;
   }
 
@@ -88,6 +96,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  @include media('>=tablet') {
+    align-items: center;
+  }
   @include media('>=desktop') {
     gap: 2rem;
     padding-block-start: 1.5rem;
