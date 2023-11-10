@@ -2,7 +2,7 @@
 menu:
   main:
     parent: 'Sessions'
-    weight: 20
+    weight: 02
 title: 'Appel à sessions'
 subtitle: 'Venez présenter vos découvertes et fiertés au reste de la communauté'
 image: /img/cover/session.jpg
@@ -40,4 +40,4 @@ Nous vous proposons un accompagnement des personnes néophytes par des habituée
 
 ## Exemples
 
-Nous faisons notre possible pour assurer une captation à minima sonore des conférences pour que vous puissez repartager le fruit de vos connaissances. Les conférences sont diffusées sur [la chaîne YouTube de l'association](https://www.youtube.com/channel/UCIa6rzX4xvIu6eas8MZMCAw/videos). 
+Nous faisons notre possible pour assurer une captation à minima sonore des conférences pour que vous puissez repartager le fruit de vos connaissances. Les conférences sont diffusées sur [la chaîne YouTube de l'association](https://www.youtube.com/channel/UCIa6rzX4xvIu6eas8MZMCAw/videos).
