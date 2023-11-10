@@ -4,6 +4,14 @@
   padding-inline-start: 0.5rem;
 }
 
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form .form__field fieldset > label {
+  flex: initial;
+}
 .form__field {
   display: flex;
   gap: 0.2rem;
@@ -14,7 +22,7 @@
     flex-direction: row;
   }
   label,
-  .rgpd_context {
+  .form__label {
     @include media('>=desktop') {
       flex: 0 0 10rem;
     }
@@ -26,9 +34,10 @@
   }
 }
 
+.form--appel-sessions .form__field,
 .form--contact-sponsors .form__field {
   label,
-  .rgpd_context {
+  .form__label {
     @include media('>=desktop') {
       flex: 0 0 20rem;
     }
