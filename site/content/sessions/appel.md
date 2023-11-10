@@ -8,7 +8,17 @@ subtitle: 'Venez présenter vos découvertes et fiertés au reste de la communau
 image: /img/cover/session.jpg
 credits: 'Nicolas MEYER'
 ---
-Si vous souhaitez présenter une session lors de ce drupalcamp, voici quelques informations à retenir :
+Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques informations à retenir :
+
+## Format/Déroulement
+
+* 3 formats de sessions sont possibles :
+  * 20 minutes : idéal pour la présentation d'une découverte ou une première session.
+  * 40 minutes : vous pouvez couvrir plus de détails et aller en profondeur dans le déroulement de votre réflexion.
+  * 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera réservée à des ateliers / formations.
+* Une personne de l'organisation vous présentera en introduction de votre session.
+* Hormis pour les formations, gardez du temps pour des questions lors des 5 à 10 dernières minutes. Il sera possible de prolonger la conversation dans les couloirs ou derrière la scène principale.
+* Le public change de salle entre deux conférences, merci de démarrer et terminer à l'heure par respect pour les autres personnes qui interviendront.
 
 ## Appel à sessions
 
@@ -20,15 +30,10 @@ Si vous souhaitez présenter une session lors de ce drupalcamp, voici quelques i
 * Le pass 3 jours pour le Drupalcamp vous est offert si votre session est retenue.
 * Être sponsor ne donne pas droit à une conférence.
 
-## Format/Déroulement
+## Calendrier
 
-* 3 formats de sessions sont possibles :
-  * 20 minutes : idéal pour la présentation d'une découverte ou une première session.
-  * 40 minutes : vous pouvez couvrir plus de détails et aller en profondeur dans le déroulement de votre réflexion.
-  * 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera réservée à des ateliers / formations.
-* Une personne de l'organisation vous présentera en introduction de votre session.
-* Hormis pour les formations, gardez du temps pour des questions lors des 5 à 10 dernières minutes. Il sera possible de prolonger la conversation dans les couloirs ou derrière la scène principale.
-* Le public change de salle entre deux conférences, merci de démarrer et terminer à l'heure par respect pour les autres personnes qui interviendront.
+* L'appel à session est ouvert jusqu'au **17 janvier** inclus.
+* La constitution du programme sera annoncée la première semaine de février.
 
 ## Recommandations
 
