@@ -1,10 +1,11 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: fullsite
 
 #media_folder: "site/static/img" # Folder where user uploaded files should go
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
+publish_mode: editorial_workflow
 
 collections: # A list of collections the CMS should be able to edit
 #  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -19,6 +20,7 @@ collections: # A list of collections the CMS should be able to edit
 #      - {label: "Body", name: "body", widget: "markdown"}
   - name: "actualites" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Actualités" # Used in the UI, ie.: "New Post"
+    label_singular: 'Actualité'
     folder: "site/content/actualites" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -27,8 +29,39 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Date de rédaction", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
-#  - name: "pages"
-#    label: "Pages"
+  - name: sponsors
+    label: Sponsors
+    label_singular: 'Sponsor'
+    folder: "site/content/sponsors"
+    create: true
+    # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Logo
+        name: sponsor_logo
+        widget: image
+        media_folder: logo
+      - label: Sponsor site
+        name: sponsor_site
+        widget: string
+      - label: Sponsor type
+        name: sponsor_type
+        widget: "select"
+        options:
+          - { label: "Gold", value: "01_gold" }
+          - { label: "Silver", value: "02_silver" }
+          - { label: "Bronze", value: "03_bronze" }
+      - label: Body
+        name: body
+        widget: markdown
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'URL du sponsor', index_file: 'index' } }
 #    files:
 #      - file: "site/content/_index.md"
 #        label: "Home Page"
