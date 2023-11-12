@@ -40,6 +40,7 @@ collections: # A list of collections the CMS should be able to edit
       depth: 100 # max depth to show in the collection tree
       summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
     fields:
+      - { label: "Publié", name: "draft", widget: "boolean", default: true }
       - label: Nom du sponsor
         name: title
         widget: string
@@ -60,7 +61,6 @@ collections: # A list of collections the CMS should be able to edit
       - label: Texte de présentation
         name: body
         widget: markdown
-      - { label: "Publié", name: "draft", widget: "boolean", default: true }
       - {label: "Template", name: "type", widget: "hidden", default: "sponsors"}
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
@@ -72,56 +72,56 @@ collections: # A list of collections the CMS should be able to edit
         name: "access"
         file: "site/content/infos/accès.md"
         fields:
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Charte"
         name: "charte"
         file: "site/content/infos/charte.md"
         fields:
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Hébergement"
         name: "hosting"
         file: "site/content/infos/hébergement.md"
         fields:
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Billetterie"
         name: "tickets"
         file: "site/content/billetterie.md"
         fields:
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Mentions légales"
         name: "legal"
         file: "site/content/mentions-légales.md"
         fields:
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Soumission"
         name: "form-confirm"
         file: "site/content/soumission.md"
         fields:
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Test unpublish"
         name: "demounpublish"
         file: "site/content/demo-unpublish.md"
         fields:
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
 
