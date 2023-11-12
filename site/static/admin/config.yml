@@ -108,4 +108,11 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Test unpublish"
+        name: "demounpublish"
+        file: "site/content/demo-unpublish.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
 
