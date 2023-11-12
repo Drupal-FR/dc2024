@@ -87,4 +87,25 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Billetterie"
+        name: "tickets"
+        file: "site/content/billetterie.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Mentions légales"
+        name: "legal"
+        file: "site/content/mentions-légales.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Soumission"
+        name: "form-confirm"
+        file: "site/content/soumission.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
 
