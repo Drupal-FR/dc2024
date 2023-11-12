@@ -25,10 +25,10 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Accroche liste", name: "teaser", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Date de rédaction", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image", media_folder: "news", required: false}
+      - {label: "Accroche liste", name: "teaser", widget: "text"}
+      - {label: "Corps de l'actu", name: "body", widget: "markdown"}
   - name: sponsors
     label: Sponsors
     label_singular: 'Sponsor'
