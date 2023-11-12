@@ -3,7 +3,7 @@ $blue-pastel: #e5eef1;
 $blue-pastel-sky-gray:  #cfe8f5;
 $blue-pastel-sky-grayer:  #b3cdd4;
 
-$blue-aqua: #70dcff;
+$blue-aqua: #42c2ec;
 $blue-night: #2a7fca;
 $blue-ocean:  #267C9F;
 $blue-ocean-deep: #186e8f;
@@ -28,7 +28,6 @@ $grass-wetter: #1e620f;
   --site-background-color: #{$white-light};
   --text-color: #{$black};
   --link-color: #{$blue-ocean};
-  --logo-background: #{$blue-aqua};
 
   --nav-submenu-background: white;
   --nav-mobile-active-background: #{$blue-pastel-sky};
@@ -70,6 +69,11 @@ $grass-wetter: #1e620f;
   --cta-hover-text: white;
 
   --form-required: #{$pink-dark};
+
+  --footer-background: #{$blue-marine-deep};
+  --footer-text: #{$blue-aqua};
+  --footer-link: white;
+  --footer-link-hover: #{$blue-aqua};
 }
 
 /* Structural */
@@ -99,6 +103,7 @@ $grass-wetter: #1e620f;
   text-align: center;
   font-size: 0.7rem;
   opacity: 0.7;
+  padding-block-start: 1rem;
 }
 .sr-only {
   border: 0 !important;
