@@ -1,9 +1,10 @@
 ---
-title: 'Billetterie'
+title: Billetterie
 type: sessions
-subtitle: "Rejoignez la communauté Drupal France du 28 au 30 mars 2024"
+subtitle: Rejoignez la communauté Drupal France du 28 au 30 mars 2024
 image: /img/cover/angie.jpg
-credits: 'Nicolas MEYER'
+credits: Nicolas MEYER
+draft: true
 ---
 
 ## Format de l'événement
