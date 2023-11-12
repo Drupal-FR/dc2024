@@ -26,9 +26,10 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Date de rédaction", name: "date", widget: "datetime"}
-      - {label: "Image", name: "image", widget: "image", media_folder: "news", required: false}
-      - {label: "Accroche liste", name: "teaser", widget: "text"}
+      - {label: "Image (ratio 11:3)", name: "image", widget: "image", media_folder: "news", required: false}
+      - {label: "Accroche liste (3 lignes max)", name: "teaser", widget: "text"}
       - {label: "Corps de l'actu", name: "body", widget: "markdown"}
+      - {label: "Publié", name: "draft", widget: "boolean", default: true}
   - name: sponsors
     label: Sponsors
     label_singular: 'Sponsor'
@@ -59,6 +60,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Texte de présentation
         name: body
         widget: markdown
+      - { label: "Publié", name: "draft", widget: "boolean", default: true }
       - {label: "Template", name: "type", widget: "hidden", default: "sponsors"}
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
@@ -73,6 +75,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Charte"
         name: "charte"
         file: "site/content/infos/charte.md"
@@ -80,6 +83,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Hébergement"
         name: "hosting"
         file: "site/content/infos/hébergement.md"
@@ -87,6 +91,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Billetterie"
         name: "tickets"
         file: "site/content/billetterie.md"
@@ -94,6 +99,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Mentions légales"
         name: "legal"
         file: "site/content/mentions-légales.md"
@@ -101,6 +107,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Soumission"
         name: "form-confirm"
         file: "site/content/soumission.md"
@@ -108,6 +115,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - label: "Test unpublish"
         name: "demounpublish"
         file: "site/content/demo-unpublish.md"
@@ -115,4 +123,5 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
 
