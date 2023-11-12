@@ -1,7 +1,7 @@
 ---
 title: Une bien bonne nouvelle que vous serez ravis de lire !
 date: 2023-08-15T15:49:17.786Z
-description: Découvrez les infos essentielles de cette super actu
+teaser: Découvrez les infos essentielles de cette super actu
 image: img/may-18-lake-deck-nocal-1920x1080.jpg
 ---
 
