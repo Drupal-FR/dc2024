@@ -86,20 +86,22 @@
   background-color: var(--newsletter-push-background);
   font-weight: bold;
   color: var(--newsletter-push-text);
-  padding: 1rem;
+  padding: 1rem 1rem 1.6rem;
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block-end: 2rem;
+  margin: 0 auto 2rem;
   flex-direction: column;
   gap: 1rem;
-  @include media('>=desktop') {
-    flex-direction: row;
+  @include media('>=tablet') {
+    width: 28rem;
   }
 }
 .site-extra__newsletter-text {
   margin: 0;
+  font-size: 1.6rem;
+  text-align: center;
 }
 .site-extra__newsletter-link {
   background-color: var(--newsletter-push-link-background);

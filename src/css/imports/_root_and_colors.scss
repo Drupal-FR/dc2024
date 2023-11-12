@@ -8,6 +8,8 @@ $blue-night: #2a7fca;
 $blue-ocean:  #267C9F;
 $blue-ocean-deep: #186e8f;
 $blue-ocean-deeper: #0c4c67;
+$blue-marine-deep: #023b5f;
+$blue-marine-deeper: #03304c;
 
 $black: #1D2D35;
 
@@ -40,11 +42,11 @@ $grass-wetter: #1e620f;
   --accent-alternative: #{$grass};
   --accent-alternative-hover: #{$grass-wetter};
 
-  --newsletter-push-background: #{$grass};
+  --newsletter-push-background: #{$blue-marine-deep};
   --newsletter-push-text: white;
   --newsletter-push-link-background: white;
-  --newsletter-push-link-text: #{$grass};
-  --newsletter-push-link-hover-background: #{$grass-wetter};
+  --newsletter-push-link-text: #{$blue-marine-deep};
+  --newsletter-push-link-hover-background: #{$blue-marine-deeper};
   --newsletter-push-link-hover-text: white;
 
   --news-card-border: #{$gray-light};
