@@ -7,16 +7,6 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-#  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-#    label: "Post" # Used in the UI, ie.: "New Post"
-#    folder: "site/content/post" # The path to the folder where the documents are stored
-#    create: true # Allow users to create new documents in this collection
-#    fields: # The fields each document in this collection have
-#      - {label: "Title", name: "title", widget: "string"}
-#      - {label: "Publish Date", name: "date", widget: "datetime"}
-#      - {label: "Intro Blurb", name: "description", widget: "text"}
-#      - {label: "Image", name: "image", widget: "image", required: false}
-#      - {label: "Body", name: "body", widget: "markdown"}
   - name: "actualites" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Actualités" # Used in the UI, ie.: "New Post"
     label_singular: 'Actualité'
@@ -24,11 +14,11 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Publié", name: "draft", widget: "boolean", default: true}
       - {label: "Date de rédaction", name: "date", widget: "datetime"}
       - {label: "Image (ratio 11:3)", name: "image", widget: "image", media_folder: "news", required: false}
       - {label: "Accroche liste (3 lignes max)", name: "teaser", widget: "text"}
       - {label: "Corps de l'actu", name: "body", widget: "markdown"}
-      - {label: "Publié", name: "draft", widget: "boolean", default: true}
   - name: sponsors
     label: Sponsors
     label_singular: 'Sponsor'
@@ -39,10 +29,10 @@ collections: # A list of collections the CMS should be able to edit
       depth: 100 # max depth to show in the collection tree
       summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
     fields:
-      - { label: "Publié", name: "draft", widget: "boolean", default: true }
       - label: Nom du sponsor
         name: title
         widget: string
+      - { label: "Publié", name: "draft", widget: "boolean", default: true }
       - label: Logo
         name: sponsor_logo
         widget: image
@@ -71,56 +61,56 @@ collections: # A list of collections the CMS should be able to edit
         name: "access"
         file: "site/content/infos/accès.md"
         fields:
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Charte"
         name: "charte"
         file: "site/content/infos/charte.md"
         fields:
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Hébergement"
         name: "hosting"
         file: "site/content/infos/hébergement.md"
         fields:
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Billetterie"
         name: "tickets"
         file: "site/content/billetterie.md"
         fields:
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Mentions légales"
         name: "legal"
         file: "site/content/mentions-légales.md"
         fields:
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Soumission"
         name: "form-confirm"
         file: "site/content/soumission.md"
         fields:
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Test unpublish"
         name: "demounpublish"
         file: "site/content/demo-unpublish.md"
         fields:
-          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Titre, name: title, widget: string}
+          - {label: "Publié", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
 
