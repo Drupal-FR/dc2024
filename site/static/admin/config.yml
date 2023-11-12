@@ -71,48 +71,48 @@ collections: # A list of collections the CMS should be able to edit
         file: "site/content/infos/accès.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Charte"
         name: "charte"
         file: "site/content/infos/charte.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Hébergement"
         name: "hosting"
         file: "site/content/infos/hébergement.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Billetterie"
         name: "tickets"
         file: "site/content/billetterie.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Mentions légales"
         name: "legal"
         file: "site/content/mentions-légales.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Soumission"
         name: "form-confirm"
         file: "site/content/soumission.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Test unpublish"
         name: "demounpublish"
         file: "site/content/demo-unpublish.md"
         fields:
           - {label: Titre, name: title, widget: string}
-          - {label: Sous-titre, name: subtitle, widget: string}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
 
