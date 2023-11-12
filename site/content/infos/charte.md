@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    parent: 'Infos pratiques'
+    parent: 'À noter'
     weight: 40
 title: "Charte de bonne conduite"
 image: '/img/cover/colombage.jpg'

@@ -2,7 +2,7 @@
 menu:
   main:
     weight: 30
-title: 'Infos pratiques'
+title: 'À noter'
 headless: true
 ---
 

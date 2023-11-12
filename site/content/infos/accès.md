@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    parent: 'Infos pratiques'
+    parent: 'À noter'
     weight: 10
 title: 'Accès'
 subtitle: 'Repérez-vous dans la ville'
@@ -12,6 +12,7 @@ description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
 layout: 'acces'
+draft: true
 ---
 
 ## Comment s’y rendre ?

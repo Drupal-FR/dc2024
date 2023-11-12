@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    parent: 'Infos pratiques'
+    parent: 'À noter'
     weight: 20
 title: 'Hébergement'
 subtitle: 'Où dormir dans la ville'
@@ -12,6 +12,7 @@ description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
 layout: 'hebergement'
+draft: true
 ---
 
 ## Page hébergement à écrire !
