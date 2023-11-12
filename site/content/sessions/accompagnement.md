@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    parent: 'Sessions'
+    parent: 'Programme'
     weight: 30
 title: 'Accompagnement'
 subtitle: "Et si vous aussi vous participiez à la communauté ?"
