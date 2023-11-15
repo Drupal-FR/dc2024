@@ -42,8 +42,26 @@
         <ul class="site-extra__column-content">
           <li class="site-extra__column-item"><a href="/billetterie">Billetterie</a></li>
           <li class="site-extra__column-item"><a href="/sponsors">Sponsors</a></li>
-          <li class="site-extra__column-item"><a href="/infos/accès">Accès</a></li>
+          {{ $appel_page := .Site.GetPage "sessions" "appel" }}
+          {{ with $appel_page }}
+            {{ if eq .Params.draft false }}
+              <li class="site-extra__column-item"><a href="/sessions/appel">Appel à sessions</a></li>
+            {{ end }}
+          {{ end }}
+
+          {{ $access_page := .Site.GetPage "infos" "accès" }}
+          {{ with $access_page }}
+            {{ if eq .Params.draft false }}
+              <li class="site-extra__column-item"><a href="/infos/accès">Accès</a></li>
+            {{ end }}
+          {{ end }}
+
+          {{ $hosting_page := .Site.GetPage "infos" "hébergement" }}
+          {{ with $hosting_page }}
+            {{ if eq .Params.draft false }}
           <li class="site-extra__column-item"><a href="/infos/hébergement">Hébergement</a></li>
+            {{ end }}
+          {{ end }}
           <li class="site-extra__column-item"><a href="/mentions-légales">Mentions légales & confidentialité</a></li>
         </ul>
       </div>
