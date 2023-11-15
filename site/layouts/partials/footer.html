@@ -5,12 +5,14 @@
       <a href="/newsletter" class="site-extra__newsletter-link">S'inscrire à la newsletter</a>
     </div>
 
-    {{ $pages := .Site.Pages }}
     {{ $sponsoring_types := dict
     "01_gold" "Menhir"
     "02_silver" "Paquetage de marin"
     }}
-    {{ $sponsors_all := where $pages "Type" "sponsors" }}
+    {{ $sponsors_all := where .Site.RegularPages "Type" "sponsors" }}
+    {{ $sponsors_all := $sponsors_all | intersect (where .Site.RegularPages "Params.sponsor_type" "in" (slice "01_gold" "02_silver")) }}
+    {{ $sponsors_all := $sponsors_all | intersect (where .Site.RegularPages "Params.draft" "eq" false) }}
+
     {{ with $sponsors_all }}
       <div class="site-extra__sponsors collection-readmore--titled">
         <header class="collection-readmore__header">
@@ -19,7 +21,7 @@
         </header>
         <div class="site-extra__sponsors-collection collection-readmore__items">
           {{ range $sponsor_type_machine_name, $sponsor_type_label := $sponsoring_types }}
-            {{ $type_filtered := where $pages "Params.sponsor_type" $sponsor_type_machine_name }}
+            {{ $type_filtered := where $sponsors_all "Params.sponsor_type" $sponsor_type_machine_name }}
             {{ $sponsors := $sponsors_all | intersect $type_filtered | shuffle }}
             {{ if $sponsors }}
             <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--{{$sponsor_type_machine_name}}">
