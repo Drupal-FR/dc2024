@@ -25,12 +25,8 @@ Si vous avez une adhésion à l'association en cours de validité ou que vous di
 Si tel est le cas, merci de [contacter l'équipe](/contact) pour que nous vous transmettions votre code de réduction.
 
 {{< cta
-title="Accéder à la billetterie"
-link_url="https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024"
-link_label="Accéder au site de la billetterie"
-link_title="Acheter mon billet pour la conférence." >}}
-Un Drupalcamp est l'occasion de faire des rencontres et d'apprendre en un temps record !
-Rejoignez-nous pour en profiter vous aussi.
+title="Ouverture prochaine de la billetterie" >}}
+Rendez-vous en fin d'année pour acheter votre ticket.
 {{< /cta >}}
 
 ## Places sponsors
