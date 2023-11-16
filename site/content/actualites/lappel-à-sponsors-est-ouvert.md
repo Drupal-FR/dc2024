@@ -1,6 +1,6 @@
 ---
 title: L'appel à sponsors est ouvert
-draft: true
+draft: false
 date: 2023-11-16T14:10:37.571Z
 teaser: Vous êtes un des piliers de l'événement, découvrez comment vous pouvez
   nous aider pour cette nouvelle édition.
