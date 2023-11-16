@@ -18,7 +18,7 @@ Pour découvrir les détails des options contenues dans chaque niveau de pack, d
 
 Vous pourrez y télécharger un PDF complémentaire détaillant les modalités attenantes à la réservation d'un pack.
 
-Cette année, nous portons un regard critique sur notre empreinte carbone en tant qu'organisateurs. Nous comptons sur vous pour vous associer à cette démarche car vous tes un des leviers qui nous permettra de limiter notre empreinte en évitant les documentations et objets publicitaires dispensables. Nous avons la conviction
+Cette année, nous portons un regard critique sur notre empreinte carbone en tant qu'organisateurs. Nous comptons sur vous pour vous associer à cette démarche car vous êtes un des leviers qui nous permettra de limiter notre empreinte en évitant les documentations et objets publicitaires dispensables. Nous avons la conviction
  que nous pouvons concevoir un événement réussi et qui plaira aux participants malgré l'absence de ces éléments.
 
 Si vous avez des questions sur le fonctionnement ou sur l'une des options, n'hésitez pas à [nous contacter](/contact/), nous vous répondrons avec plaisir.
