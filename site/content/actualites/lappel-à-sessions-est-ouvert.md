@@ -1,5 +1,5 @@
 ---
-title: L'appel à sessions est ouvert !
+title: L'appel à sponsors est ouvert !
 draft: false
 date: 2023-11-12T18:55:21.902Z
 teaser: Le moment est venu d'activer vos méninges et de trouver les expériences
