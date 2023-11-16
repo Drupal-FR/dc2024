@@ -1,6 +1,6 @@
 ---
 title: Partenaire 1
-draft: true
+draft: false
 sponsor_logo: logo/logo_partenaire_1.jpg
 sponsor_site: https://example.com
 sponsor_type: 01_gold
