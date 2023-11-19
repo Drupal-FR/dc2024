@@ -44,9 +44,11 @@ collections: # A list of collections the CMS should be able to edit
         name: sponsor_type
         widget: "select"
         options:
-          - { label: "Gold", value: "01_gold" }
-          - { label: "Silver", value: "02_silver" }
-          - { label: "Bronze", value: "03_bronze" }
+          - { label: "Complète", value: "01_gold" }
+          - { label: "Galette saucisse", value: "02_silver" }
+          - { label: "Beurre sucre", value: "03_bronze" }
+          - { label: "Autre", value: "04_autre" }
+          - { label: "Libre", value: "05_libre" }
       - label: Texte de présentation
         name: body
         widget: markdown

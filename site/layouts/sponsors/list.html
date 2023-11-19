@@ -5,9 +5,9 @@
 <main class="main-content">
   {{ .Content }}
   {{ $sponsoring_types := dict
-  "01_gold" "Menhir"
-  "02_silver" "Paquetage de marin"
-  "03_bronze" "Paquet de biscuits"
+  "01_gold" "Formule Complète"
+  "02_silver" "Formule Galette saucisse"
+  "03_bronze" "Formule Beurre sucre"
   }}
   {{ $sponsors_all := where .Site.RegularPages "Type" "sponsors" }}
   {{ $sponsors_all := $sponsors_all | intersect (where .Site.RegularPages "Params.draft" "eq" false) }}

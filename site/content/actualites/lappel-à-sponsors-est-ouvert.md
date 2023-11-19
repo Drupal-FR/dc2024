@@ -7,20 +7,20 @@ teaser: Vous êtes un des piliers de l'événement, découvrez comment vous pouv
 ---
 Avec le cadre, les sessions et les participants, nos sponsors sont un des piliers de la réussite d'un Drupalcamp !
 
-L'édition 2024 n'échappera pas à la règle, 4 niveaux de sponsor sont disponibles :
+L'édition 2024 n'échappera pas à la règle, 4 formules de sponsor sont disponibles :
 
-* Menhir
-* Paquetage de marin
-* Paquet de biscuits
+* La Complète
+* Galette saucisse
+* Beurre sucre
 * Sponsor libre
 
-Pour découvrir les détails des options contenues dans chaque niveau de pack, direction [la grille](/sponsors/grille/).
+Pour découvrir les détails des options contenues dans chaque formule, direction [la grille](/sponsors/grille/).
 
-Vous pourrez y télécharger un PDF complémentaire détaillant les modalités attenantes à la réservation d'un pack.
+Vous pourrez y télécharger un PDF complémentaire détaillant les modalités attenantes à la réservation d'une formule.
 
 {{< cta
 title=""
-link_url="/sessions/appel/"
+link_url="/sponsors/grille/"
 link_label="Devenir sponsor"
 link_title="" >}}
 Je soutiens le Drupalcamp Rennes 2024.
@@ -29,4 +29,4 @@ Je soutiens le Drupalcamp Rennes 2024.
 Cette année, nous portons un regard critique sur notre empreinte carbone en tant qu'organisateurs. Nous comptons sur vous pour vous associer à cette démarche car vous êtes un des leviers qui nous permettra de limiter notre empreinte en évitant les documentations et objets publicitaires dispensables. Nous avons la conviction
  que nous pouvons concevoir un événement réussi et qui plaira aux participants malgré l'absence de ces éléments.
 
-Si vous avez des questions sur le fonctionnement ou sur l'une des options, n'hésitez pas à [nous contacter](/contact/), nous vous répondrons avec plaisir.
+Si vous avez des questions sur le fonctionnement ou sur l'une des formules, n'hésitez pas à [nous contacter](/contact/), nous vous répondrons avec plaisir.
