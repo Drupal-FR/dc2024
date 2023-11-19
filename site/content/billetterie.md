@@ -6,6 +6,12 @@ image: /img/cover/angie.jpg
 credits: Nicolas MEYER
 draft: false
 ---
+
+{{< cta
+title="Ouverture prochaine de la billetterie" >}}
+Rendez-vous en fin d'année pour acheter votre ticket.
+{{< /cta >}}
+
 ## Format de l'événement
 
 Le Drupalcamp c'est :
@@ -22,13 +28,8 @@ Si prévoyez de rester un jour de plus à la dernière minute, sachez que de nom
 
 ## Tarifs préférentiels
 
-Si vous etes à jour de votre cotisation à l'[association Drupal France et francophonie](https://www.drupal.fr/) ou si disposez d'une carte de réduction (étudiants, demandeurs d'emploi, familles nombreuses...) vous pouvez bénéficiez d'une réduction de 15 € sur demande et présentation de votre justificatif.
+Si vous êtes à jour de votre cotisation à l'[association Drupal France et francophonie](https://www.drupal.fr/) ou que vous disposez d'une carte de réduction (étudiants, demandeurs d'emploi, familles nombreuses...) vous pouvez bénéficier d'une réduction de 15 € sur demande et présentation de votre justificatif.
 Si tel est le cas, il vous suffit de [contacter l'équipe](/contact) pour que nous vous transmettions votre code de réduction.
-
-{{< cta
-title="Ouverture prochaine de la billetterie" >}}
-Rendez-vous en fin d'année pour acheter votre ticket.
-{{< /cta >}}
 
 ## Places sponsors
 
