@@ -21,7 +21,6 @@
     gap: 1rem;
     flex-direction: row;
   }
-  label,
   .form__label {
     @include media('>=desktop') {
       flex: 0 0 13rem;
@@ -41,7 +40,6 @@
 
 .form--appel-sessions .form__field,
 .form--contact-sponsors .form__field {
-  label,
   .form__label {
     @include media('>=desktop') {
       flex: 0 0 20rem;

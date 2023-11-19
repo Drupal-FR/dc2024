@@ -3,19 +3,19 @@
   <form action="/soumission" name="appel-sessions" data-netlify="true">
     <p>Les champs munis d'un astérisque sont obligatoires.</p>
     <div class="form__field">
-      <label for="username">Votre identité (Nom, prénom ou pseudo)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="username" class="form__label">Votre identité (Nom, prénom ou pseudo)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <input type="text" id="username" name="username" required="required" class="">
     </div>
     <div class="form__field">
-      <label for="email">E-mail de contact pour nos échanges<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="email" class="form__label">E-mail de contact pour nos échanges<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <input type="email" id="email" name="email" required="required" class="">
     </div>
     <div class="form__field">
-      <label for="title">Titre de votre session<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="title" class="form__label">Titre de votre session<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <input type="text" id="title" name="title" required="required" class="">
     </div>
     <div class="form__field">
-      <label for="duration">Durée de votre session<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="duration" class="form__label">Durée de votre session<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <select id="duration" required="required" name="duration">
         <option value="20_min">20 minutes</option>
         <option value="40_min">40 minutes</option>
@@ -23,7 +23,7 @@
       </select>
     </div>
     <div class="form__field">
-      <label for="expertise_level">Niveau d'expérience attendue de l'audience<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="expertise_level" class="form__label">Niveau d'expérience attendue de l'audience<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <select id="expertise_level" required="required" name="expertise_level">
         <option value="decouverte">Découverte</option>
         <option value="maitrise">Maîtrise</option>
@@ -44,27 +44,27 @@
       </fieldset>
     </div>
     <div class="form__field  form__field--block">
-      <label for="teaser">Accroche qui résume votre proposition (moins de 200 signes)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="teaser" class="form__label">Accroche qui résume votre proposition (moins de 200 signes)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <textarea id="teaser" name="teaser" placeholder="" rows="5" cols="80" class="" required="required"></textarea>
     </div>
     <div class="form__field  form__field--block">
-      <label for="prerequisites">Pré-requis (concepts ou connaissances particulières à connaître)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="prerequisites" class="form__label">Pré-requis (concepts ou connaissances particulières à connaître)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <textarea id="prerequisites" name="prerequisites" placeholder="" rows="8" cols="80" class="" required="required"></textarea>
     </div>
     <div class="form__field  form__field--block">
-      <label for="plan">Plan de la session (grandes lignes de votre présentation)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="plan" class="form__label">Plan de la session (grandes lignes de votre présentation)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <textarea id="plan" name="plan" placeholder="" rows="10" cols="80" class="" required="required"></textarea>
     </div>
     <div class="form__field  form__field--block">
-      <label for="outcomes">Ce que vous aurez appris après avoir assisté à cette session<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <label for="outcomes" class="form__label">Ce que vous aurez appris après avoir assisté à cette session<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <textarea id="outcomes" name="outcomes" placeholder="" rows="5" cols="80" class="" required="required"></textarea>
     </div>
     <div class="form__field  form__field--block">
-      <label for="notes_orga">Notes particulières pour l'équipe d'organisation ?</label>
+      <label for="notes_orga" class="form__label">Notes particulières pour l'équipe d'organisation ?</label>
       <textarea id="notes_orga" name="notes_orga" placeholder="Indisponibilités notoires..." rows="3" cols="80" class=""></textarea>
     </div>
     <div class="form__field  form__field--block">
-      <label for="advisory_requested">J'aimerais que quelqu'un me conseille dans la préparation de ma session (préciser les attentes)</label>
+      <label for="advisory_requested" class="form__label">J'aimerais que quelqu'un me conseille dans la préparation de ma session (préciser les attentes)</label>
       <textarea id="advisory_requested" name="advisory_requested" placeholder="Besoin de répétition, d'évaluer la pertinence de ma proposition, d'avoir un avis critique sur mon plan, recherche de binôme" rows="3" cols="80" class=""></textarea>
     </div>
     <div class="form__field form__field-rgpd">
