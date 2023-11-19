@@ -12,8 +12,14 @@ credits: <a href="https://visualhunt.co/a7/0e23971e">jisse62</a> on <a
 layout: acces
 draft: false
 ---
+## La Maison des Associations de Rennes
+
+[6 cours des Alliés, 35000 Rennes](https://www.openstreetmap.org/way/135604796)
+
 ## Comment s’y rendre ?
+
+La Maison des Associations est accessible rapidement depuis la gare SNCF (5minutes à pied). 
 
 MÉTRO Charles de Gaulle
 
-A 5 minutes à pied de la Gare SNCF
+[Les accès sur le site de la MDA.](https://mda-rennes.org/infos-pratiques.html)
