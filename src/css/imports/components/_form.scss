@@ -24,7 +24,12 @@
   label,
   .form__label {
     @include media('>=desktop') {
-      flex: 0 0 10rem;
+      flex: 0 0 13rem;
+    }
+  }
+  .checkbox-label {
+    @include media('>=desktop') {
+      flex: 1 1 auto;
     }
   }
   input {
@@ -42,11 +47,6 @@
       flex: 0 0 20rem;
     }
   }
-  .rgpd-label {
-    @include media('>=desktop') {
-      flex: 1 1 auto;
-    }
-  }
 }
 
 
@@ -59,18 +59,18 @@
   }
 }
 .form__button {
-  //text-align: right;
   @include media('>=desktop') {
     text-align: right;
   }
   button {
-    border: solid 1px var(--accent-color-border);
+    border: none;
     background-color: var(--accent-color);
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 0.5rem;
+    padding: 0.6rem 1rem;
     transition: all 150ms;
+    border-radius: 0.3rem;
     &:hover {
       cursor: pointer;
     }

@@ -16,8 +16,13 @@
       <label for="message">Votre message<span class="required-info"></span></label>
       <textarea id="message" required="required" name="message" placeholder="Contenu de votre demande" rows="8" cols="80" class=""></textarea>
     </div>
-    <div class="form__rgpd">
-      Le contenu de ce message sera transmis aux administrateurs du site sur <a href="https://www.netlify.com/gdpr-ccpa/" title="Modalités RGPD de Netlify (EN)">la plateforme Netlify</a>.
+    <div class="form__field form__field-rgpd">
+      <div class="form__label">Données personnelles</div>
+      <label for="rgpd_consent" class="checkbox-label">
+        <input id="rgpd_consent" name="rgpd_consent" type="checkbox" required="required"/>
+        Je consens à ce que mes informations de contact soient stockées selon
+        <a href="/mentions-légales#données-personnelles" title="Lire la politique de confidentialité du site">la politique de confidentialité du site</a>.<span class="required-info"><span class="sr-only"> Obligatoire</span></span>
+      </label>
     </div>
     <div class="form__button">
       <button type="submit" class="">Envoyer</button>
