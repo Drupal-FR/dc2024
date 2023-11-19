@@ -7,6 +7,7 @@ title: 'Accompagnement'
 subtitle: "Et si vous aussi vous participiez à la communauté ?"
 image: /img/cover/cooperation.jpg
 credits: 'Nicolas MEYER'
+draft: true
 ---
 ## Besoin d'aide ?
 

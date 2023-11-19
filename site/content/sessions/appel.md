@@ -7,6 +7,7 @@ title: 'Appel à sessions'
 subtitle: 'Venez présenter vos découvertes et fiertés au reste de la communauté'
 image: /img/cover/session.jpg
 credits: 'Nicolas MEYER'
+draft: true
 ---
 Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques informations à retenir :
 

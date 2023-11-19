@@ -9,6 +9,7 @@ image: /img/cover/angie.jpg
 credits: 'Nicolas MEYER'
 intro:
   heading: Nos sessions
+draft: true
 ---
 
 Le Drupalcamp de Rennes pour son édition 2024 sera articulé autour de deux jours de conférences et une journée de contribution.
