@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    parent: À noter
+    parent: Infos pratiques
     weight: 10
 title: Accès
 subtitle: Repérez-vous dans la ville

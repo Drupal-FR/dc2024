@@ -2,13 +2,9 @@
 menu:
   main:
     parent: Communauté
-    weight: 40
+    weight: 10
 title: Charte de bonne conduite
-image: /img/cover/colombage.jpg
-credits: <a href="https://visualhunt.co/a7/0e23971e">jisse62</a> on <a
-  href="https://visualhunt.com/re10/73fb5f13">Visualhunt</a> - <a
-  href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC 2.0 BY-NC-SA</a>
-date: 2017-01-04T15:04:10.000Z
+layout: noheader
 draft: false
 ---
 Depuis le début de la préparation de l'évènement, nous avons en tete ces lignes directrice visant à limiter notre impact mais aussi garantir un cadre serein pour toutes et tous.

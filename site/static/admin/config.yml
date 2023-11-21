@@ -67,17 +67,33 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-      - label: "Charte"
-        name: "charte"
-        file: "site/content/infos/charte.md"
+      - label: "Hébergement"
+        name: "hosting"
+        file: "site/content/infos/hébergement.md"
         fields:
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-      - label: "Hébergement"
-        name: "hosting"
-        file: "site/content/infos/hébergement.md"
+      - label: "Charte"
+        name: "charte"
+        file: "site/content/communaute/charte.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Asso DFR"
+        name: "adff"
+        file: "site/content/communaute/adff.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Présentation Drupal"
+        name: "drupal-a-propos"
+        file: "site/content/communaute/drupal.md"
         fields:
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
@@ -109,15 +125,15 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Appel à sessions"
         name: "appel-sessions"
-        file: "site/content/sessions/appel.md"
+        file: "site/content/programme/appel.md"
         fields:
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Accompagnement"
-        name: "sessions-accompagnement"
-        file: "site/content/sessions/accompagnement.md"
+        name: "programme-accompagnement"
+        file: "site/content/programme/accompagnement.md"
         fields:
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}

@@ -10,7 +10,7 @@ credits: <a href="https://visualhunt.co/a7/8232d421">dkilim</a> on <a
 image: /img/cover/thabor.jpg
 menu:
   main:
-    parent: À noter
+    parent: Infos pratiques
     weight: 20
 ---
 
