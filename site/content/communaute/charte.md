@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    parent: À noter
+    parent: Communauté
     weight: 40
 title: Charte de bonne conduite
 image: /img/cover/colombage.jpg
