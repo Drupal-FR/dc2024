@@ -8,6 +8,7 @@ subtitle: "Ils parlent de nous"
 image: /img/cover/news.jpg
 credits: '<a href="https://unsplash.com/fr/@iamromankraft">Roman Kraft</a> on <a href="https://unsplash.com/fr/photos/uomo-seduto-su-una-panchina-a-leggere-il-giornale-_Zua2hyvTBk">Unsplash</a>'
 layout: revue
+draft: true
 ---
 
 Voilà les infos.
