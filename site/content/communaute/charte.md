@@ -4,7 +4,7 @@ menu:
     parent: Communauté
     weight: 10
 title: Charte de bonne conduite
-summary: ""
+summary: "Pour que l'événement se déroule bien nous vous demandons de respecter la charte de bonne conduite de l'événement."
 layout: noheader
 draft: false
 ---
