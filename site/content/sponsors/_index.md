@@ -9,4 +9,4 @@ credits: '<a href="https://www.flickr.com/photos/amazeelabs/">Amazee labs</a> CC
 ---
 
 Merci à chacun de nos sponsors.\
-C'est grâce à chacune de ces structures que le Drupalcamp peut se dérouler dans de bonnes conditions et pour un tarif abordable. Prenez le temps de les remercier.
+C'est grace à chacune de ces structures que le Drupalcamp peut se dérouler dans de bonnes conditions et pour un tarif abordable. Prenez le temps de les remercier.

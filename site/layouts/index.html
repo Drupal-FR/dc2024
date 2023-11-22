@@ -1,9 +1,11 @@
 {{ define "main" }}
 
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
 <main class="main-content">
-  <h1>S'abonner à la newsletter du Drupalcamp Rennes 2024</h1>
-  {{ .Content }}
-  {{ partial "newsletter-wrapper" . }}
+  {{ partial "short-text" .Params.blurb}}
+  {{ partial "cta" (dict "title" "Réservez votre billet" "description" "Participez aux conférences et à la journée de contribution avec le reste de la communauté. Un Drupalcamp est l'occasion de faire des rencontres et d'apprendre en un temps record !" "link_url" "/billetterie" "link_label" "Accéder à la billetterie" "link_title" "Acheter mon billet pour la conférence.") }}
+  {{ partial "news-push" . }}
+  {{ partial "illustrated-cards" .Params.about_extra }}
 </main>
 
 {{ end }}

@@ -2,30 +2,12 @@
 <html lang="{{ $.Site.Language.Lang }}">
   {{ partial "head" . }}
   <body>
-    <div class="content-container page-newsletter-subscribe">
-      {{ block "header" . }}
-        <header class="site-logo">
-          <a href="/" title="Page d'accueil"><img src="/img/logo_header.svg" alt="Drupalcamp Roazhon, Rennes. Du 28 au 30 mars 2024" /></a>
-        </header>
-      {{end}}
+    <div class="content-container">
+      {{ block "header" . }}{{ partial "menu.html" (dict "menuID" "main" "page" .) }}{{end}}
 
-      <div class="page-newsletter-subscribe__content">
-        <div class="page-newsletter-subscribe__mascot"><span class="sr-only">Drupalcamp Rennes du 28 au 30 mars 2024</span> </div>
-        {{ block "main" . }}
-        {{ end }}
+      {{ block "main" . }}{{ end }}
 
-        {{ block "footer" . }}
-        <footer class="site-footer">
-          <p>
-            Drupalcamp Rennes 2024 - 28-30 mars 2024 par <a href="https://drupal.fr" title="Site de l'association Drupal France et francophonie.">Drupal FR</a>.<br />
-            Pour toute question, vous pouvez nous envoyer un email à <a href="mailto:drupalcamp@drupal.fr">drupalcamp@drupal.fr</a>.
-          </p>
-          <p class="images-credits">
-            Notre mascotte Yuna a été designée par Adrien & Aliénor. Merci à eux.
-          </p>
-        </footer>
-      </div>
-      {{end}}
+      {{ block "footer" . }}{{ partial "footer" . }}{{end}}
       {{ $site_js := resources.Get "js/camp.js" }}
       {{ with $site_js }}
       <script src="{{ $site_js.RelPermalink }}"></script>
