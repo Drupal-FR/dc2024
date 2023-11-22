@@ -106,7 +106,7 @@
   }
 }
 .menu__tickets-push a {
-  background-color: #633F44;
+  background-color: var(--tickets-push-link);
   color: white;
   padding: 0.5rem;
   text-transform: uppercase;

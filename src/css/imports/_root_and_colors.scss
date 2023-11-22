@@ -16,6 +16,7 @@ $black: #1D2D35;
 $white-light: #f5fbfd;
 
 $gray-light: #e9ecef;
+$gray-dark: #3b3e3d;
 
 $pink: #bd3c6d;
 $pink-dark: #ac1950;
@@ -33,6 +34,8 @@ $grass-wetter: #1e620f;
   --nav-mobile-active-background: #{$blue-pastel-sky};
   --nav-mobile-active-hover: #{$blue-pastel-sky-gray};
   --nav-mobile-active-text: #{$blue-night};
+
+  --tickets-push-link: #{$gray-dark};
 
   --accent-color: #{$blue-ocean};
   --accent-color-border: #{$blue-ocean-deep};
