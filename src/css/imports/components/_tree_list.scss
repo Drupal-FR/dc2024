@@ -1,0 +1,9 @@
+/* Tree list */
+.tree-list__items {
+  display: grid;
+  grid-gap: 2rem;
+  @include media('>=desktop') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* END - Tree list */

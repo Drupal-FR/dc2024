@@ -1,15 +1,11 @@
 <div class="news-push">
   <div class="collection-readmore collection-readmore--titled">
     <header class="collection-readmore__header">
-      <h2 class="collection-readmore__title">Dernières actualités</h2>
+      <h2 class="collection-readmore__title">Dernière actualité</h2>
       <a href="/actualites" class="collection-readmore__readmore-link">Toutes les actualités</a>
     </header>
-    <div class="collection-readmore__items">
-      {{ range first 2 (where site.RegularPages "Type" "actualites") }}
-      <div class="collection-readmore__item">
-        {{ .Render "news-card" }}
-      </div>
-      {{ end }}
-    </div>
+    {{ range first 1 (where site.RegularPages "Type" "actualites") }}
+      {{ .Render "news-card" }}
+    {{ end }}
   </div>
 </div>

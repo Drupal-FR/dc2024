@@ -1,0 +1,8 @@
+<a href="{{ .RelPermalink }}" class="news-card">
+	<h2 class="news-card__title">{{ .Title }}</h2>
+	<p class="news-card__description">{{ .Params.teaser }}</p>
+	<div class="news-card__meta">
+    <div class="news-card__date">{{ .Date.Format "2 Jan 2006" }}</div>
+    <div class="news-card__readmore">Lire la suite <span class="sr-only">de l'actualité {{ .Title }}</span> →</div>
+  </div>
+</a>

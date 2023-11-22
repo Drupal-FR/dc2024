@@ -1,110 +1,145 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: fullsite
 
 #media_folder: "site/static/img" # Folder where user uploaded files should go
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-#  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-#    label: "Post" # Used in the UI, ie.: "New Post"
-#    folder: "site/content/post" # The path to the folder where the documents are stored
-#    create: true # Allow users to create new documents in this collection
-#    fields: # The fields each document in this collection have
-#      - {label: "Title", name: "title", widget: "string"}
-#      - {label: "Publish Date", name: "date", widget: "datetime"}
-#      - {label: "Intro Blurb", name: "description", widget: "text"}
-#      - {label: "Image", name: "image", widget: "image", required: false}
-#      - {label: "Body", name: "body", widget: "markdown"}
   - name: "actualites" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Actualités" # Used in the UI, ie.: "New Post"
+    label_singular: 'Actualité'
     folder: "site/content/actualites" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "pages"
-    label: "Pages"
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+      - {label: "Date de rédaction", name: "date", widget: "datetime"}
+      - {label: "Image (ratio 11:3)", name: "image", widget: "image", media_folder: "news", required: false}
+      - {label: "Accroche page de liste (3 lignes max)", name: "teaser", widget: "text"}
+      - {label: "Corps de l'actu", name: "body", widget: "markdown"}
+  - name: sponsors
+    label: Sponsors
+    label_singular: 'Sponsor'
+    folder: "site/content/sponsors"
+    create: true
+    # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - label: Nom du sponsor
+        name: title
+        widget: string
+      - { label: "Garder en brouillon", name: "draft", widget: "boolean", default: true }
+      - label: Logo
+        name: sponsor_logo
+        widget: image
+        media_folder: logo
+      - label: Site du sponsor
+        name: sponsor_site
+        widget: string
+      - label: Niveau de sponsoring
+        name: sponsor_type
+        widget: "select"
+        options:
+          - { label: "Complète", value: "01_gold" }
+          - { label: "Galette saucisse", value: "02_silver" }
+          - { label: "Beurre sucre", value: "03_bronze" }
+          - { label: "Autre", value: "04_autre" }
+          - { label: "Libre", value: "05_libre" }
+      - label: Texte de présentation
+        name: body
+        widget: markdown
+      - {label: "Template", name: "type", widget: "hidden", default: "sponsors"}
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'Sous-URL interne site camp (Sera ajouté à /sponsor/)', index_file: 'index' } }
+  - label: "Pages statiques"
+    name: "pages"
     files:
-      - file: "site/content/_index.md"
-        label: "Home Page"
-        name: "home"
+      - label: "Accès"
+        name: "access"
+        file: "site/content/infos/accès.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: "Blurb", name: blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Intro", name: intro, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Sessions", name: sessions, widget: list, fields: [
-              {label: "Image", name: "image", widget: "image"},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-      - file: "site/content/contact/_index.md"
-        label: "Contact Page"
-        name: "contact"
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Hébergement"
+        name: "hosting"
+        file: "site/content/infos/hébergement.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Logo, name: logo, widget: image}
-          - {label: Body, name: body, widget: markdown}
-          - label: Contact Entries
-            name: contact_entries
-            widget: list
-            fields:
-              - label: Heading
-                name: heading
-                widget: string
-              - label: Text
-                name: text
-                widget: text
-      - file: "site/content/programme/_index.md"
-        label: "Programme Page"
-        name: "programme"
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Charte"
+        name: "charte"
+        file: "site/content/communaute/charte.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "site/content/values/_index.md"
-        label: "Values Page"
-        name: "values"
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Asso DFR"
+        name: "adff"
+        file: "site/content/communaute/adff.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - label: Values
-            name: values
-            widget: list
-            fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}
-  - name: "site_settings"
-    label: "Site Settings"
-    files:
-      - file: "site/config.toml"
-        label: Hugo Config
-        name: config
-        editor:
-          preview: false
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Présentation Drupal"
+        name: "drupal-a-propos"
+        file: "site/content/communaute/drupal.md"
         fields:
-          - {label: Site Title for Browser Tab, name: title, widget: string}
-          - label: Params
-            name: params
-            widget: object
-            fields:
-              - label: Open Graph Image
-                name: images
-                widget: list
-                field: { label: Image, name: image, widget: image }
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Billetterie"
+        name: "tickets"
+        file: "site/content/billetterie.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Mentions légales"
+        name: "legal"
+        file: "site/content/mentions-légales.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Soumission"
+        name: "form-confirm"
+        file: "site/content/soumission.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Appel à sessions"
+        name: "appel-sessions"
+        file: "site/content/programme/appel.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Accompagnement"
+        name: "programme-accompagnement"
+        file: "site/content/programme/accompagnement.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+

@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<main class="main-content">
+  <h1>{{ .Title }} </h1>
+  {{ .Content | safeHTML }}
+  <div class="tree-list">
+    <div class="tree-list__items">
+      {{ range .Pages.ByWeight.Reverse }}
+      <div class="tree-list__child-item">
+        {{ .Render "tree-card"}}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</main>
+
+{{end}}
