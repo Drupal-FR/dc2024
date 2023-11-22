@@ -4,8 +4,9 @@
   padding: 1rem 1.4rem;
   color: var(--cta-text);
   border-radius: 0.5rem;
-  margin: 2rem auto;
+  margin: 3rem auto 5rem;
   width: fit-content;
+  max-width: 70%;
 }
 .cta__description {
   flex: 1 0 min-content;
