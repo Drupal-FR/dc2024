@@ -6,6 +6,7 @@ menu:
 title: Accès
 subtitle: Repérez-vous dans la ville
 image: /img/cover/colombage.jpg
+summary: "Comment venir à l'événement"
 credits: <a href="https://visualhunt.co/a7/0e23971e">jisse62</a> on <a
   href="https://visualhunt.com/re10/73fb5f13">Visualhunt</a> - <a
   href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC 2.0 BY-NC-SA</a>

@@ -3,7 +3,7 @@ menu:
   main:
     weight: 40
 title: "Communauté"
-layout: community
+layout: tree
 ---
 
 Un Drupalcamp, c'est une bonne excuse pour rassembler la communauté française et francophone. 

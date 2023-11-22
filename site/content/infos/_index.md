@@ -3,6 +3,7 @@ menu:
   main:
     weight: 50
 title: 'Infos pratiques'
-headless: true
+layout: tree
 ---
 
+Retrouvez quelques informations pratiques sur le Drupalcamp Rennes 2024.

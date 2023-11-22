@@ -1,6 +1,6 @@
-.community-card {
-  background-color: var(--community-card-background);
-  border: solid 1px var(--community-card-border);
+.tree-card {
+  background-color: var(--tree-card-background);
+  border: solid 1px var(--tree-card-border);
   border-radius: 12px;
   font-size: 1rem;
   color: var(--text-color);
@@ -12,13 +12,13 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    .community-card__title {
+    .tree-card__title {
       text-decoration: underline;
       color: var(--accent-color)
     }
   }
 }
-.community-card__title {
+.tree-card__title {
   margin-block-start: 0;
   font-size: 1.3rem;
   line-height: 1.2;
@@ -26,11 +26,11 @@
     font-size: 1.4rem;
   }
 }
-.community-card__meta {
+.tree-card__meta {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
 }
-.community-card__readmore {
+.tree-card__readmore {
   font-weight: bold;
 }
