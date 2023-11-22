@@ -17,7 +17,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
       - {label: "Date de rédaction", name: "date", widget: "datetime"}
       - {label: "Image (ratio 11:3)", name: "image", widget: "image", media_folder: "news", required: false}
-      - {label: "Accroche liste (3 lignes max)", name: "teaser", widget: "text"}
+      - {label: "Accroche page de liste (3 lignes max)", name: "teaser", widget: "text"}
       - {label: "Corps de l'actu", name: "body", widget: "markdown"}
   - name: sponsors
     label: Sponsors
@@ -55,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Template", name: "type", widget: "hidden", default: "sponsors"}
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
-    meta: { path: { widget: string, label: 'Chemin interne site camp', index_file: 'index' } }
+    meta: { path: { widget: string, label: 'Sous-URL interne site camp (Sera ajouté à /sponsor/)', index_file: 'index' } }
   - label: "Pages statiques"
     name: "pages"
     files:
@@ -82,6 +82,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Asso DFR"
         name: "adff"
@@ -90,6 +91,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Présentation Drupal"
         name: "drupal-a-propos"
@@ -98,6 +100,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
           - {label: "Texte de la page", name: "body", widget: "markdown" }
       - label: "Billetterie"
         name: "tickets"

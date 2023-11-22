@@ -4,6 +4,7 @@ menu:
     parent: Communauté
     weight: 10
 title: Charte de bonne conduite
+summary: ""
 layout: noheader
 draft: false
 ---

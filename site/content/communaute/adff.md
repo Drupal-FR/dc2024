@@ -4,6 +4,7 @@ menu:
     parent: Communauté
     weight: 20
 title: "Drupal France et francophonie"
+summary: "" 
 layout: noheader
 draft: true
 ---

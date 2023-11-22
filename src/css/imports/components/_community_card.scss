@@ -1,0 +1,36 @@
+.community-card {
+  background-color: var(--community-card-background);
+  border: solid 1px var(--community-card-border);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: var(--text-color);
+  display: block;
+  padding: 0.8rem 1rem;
+  @include media('>=desktop') {
+    padding: 1rem 1.5rem;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    .community-card__title {
+      text-decoration: underline;
+      color: var(--accent-color)
+    }
+  }
+}
+.community-card__title {
+  margin-block-start: 0;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  @include media('>=desktop') {
+    font-size: 1.4rem;
+  }
+}
+.community-card__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+.community-card__readmore {
+  font-weight: bold;
+}
