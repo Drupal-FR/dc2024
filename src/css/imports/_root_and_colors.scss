@@ -86,12 +86,11 @@ $grass-wetter: #1e620f;
 .content-container {
   margin: auto;
   padding: 1rem 2rem;
-  text-align: center;
   @include media('>=phablet') {
     width: 430px;
   }
   @include media('>=tablet') {
-    width: 700px;
+    width: 680px;
     padding: 2rem 2rem;
   }
   @include media('>=desktop') {
@@ -99,43 +98,8 @@ $grass-wetter: #1e620f;
     padding: 1.5rem 0rem;
   }
   @include media('>=wide') {
-    column-gap: 6rem;
-    grid-template-columns: 300px 1fr;
+    width: 1140px;
   }
-  > .main-content {
-    grid-area: form;
-    margin-block-start: 0;
-  }
-  .images-credits {
-    font-size: 1rem;
-  }
-}
-.site-footer {
-  grid-area: footer;
-}
-.newsletter-wrapper {
-  @include media('>=tablet') {
-    width: 500px;
-    margin: auto;
-  }
-  @include media('>=desktop') {
-    width: 600px;
-  }
-  @include media('>=wide') {
-    width: 800px;
-  }
-}
-.page-newsletter-subscribe__mascot {
-  grid-area: mascot;
-  background: transparent url("/img/logo_hermine_text.svg") no-repeat;
-  background-size: contain;
-  background-position: center center;
-  @include media('>=tablet') {
-    background-position: left 20%;
-  }
-}
-.newsletter-subscribe__form {
-  grid-area: form;
 }
 .main-content {
   margin-block-start: 2rem;
