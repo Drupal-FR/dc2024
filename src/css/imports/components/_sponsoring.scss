@@ -1,6 +1,10 @@
 /* Sponsoring */
 .sponsoring {
   border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
   @include media('>=desktop') {
     width: 100%;
     margin: auto;
@@ -19,7 +23,7 @@
   }
   th {
     color: var(--table-head-text);
-    padding: 0.2rem 0.5rem;
+    padding: 0.4rem 0.8rem;
     line-height: 1.2;
     &:first-child {
       padding-inline-start: 0;
@@ -33,7 +37,7 @@
     &:first-child {
       text-align: left;
       padding: 0.35rem;
-      width: 30rem;
+      min-width: 15rem;
       font-size: 1rem;
       font-weight: bold;
     }
