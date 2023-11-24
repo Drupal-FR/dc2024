@@ -8,7 +8,7 @@ summary: Créée en 2009 à l'occasion de la DrupalCon Paris, l'association Drup
   France et francophonie a pour objectif de fédérer l'ensemble de la profession
   et d'accélérer la diffusion de Drupal dans les pays francophones.
 layout: noheader
-draft: true
+draft: false
 ---
 ## Bientôt 15 ans !
 
