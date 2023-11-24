@@ -105,6 +105,15 @@
     flex-direction: row;
   }
 }
+.menu__tickets-push {
+  display: none;
+  @include media('>=desktop') {
+    display: block;
+  }
+}
+.menu__tickets-push.js-close {
+  display: block;
+}
 .menu__tickets-push a {
   background-color: var(--tickets-push-link);
   color: white;
