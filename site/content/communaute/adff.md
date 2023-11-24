@@ -3,6 +3,7 @@ menu:
   main:
     parent: Communauté
     weight: 20
+    name: "L'association"
 title: "Notre association : Drupal France et francophonie"
 summary: Créée en 2009 à l'occasion de la DrupalCon Paris, l'association Drupal
   France et francophonie a pour objectif de fédérer l'ensemble de la profession
