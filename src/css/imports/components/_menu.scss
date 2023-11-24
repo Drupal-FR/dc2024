@@ -117,6 +117,17 @@
   letter-spacing: -0.5px;
   text-decoration: none;
   white-space: nowrap;
+  &:before {
+    content: '';
+    width: 20px;
+    height: 22px;
+    display: inline-block;
+    margin-inline-end: 0.5rem;
+    mask-image: url("/icons/ticket.svg");
+    mask-repeat: no-repeat;
+    background-color: currentColor;
+    vertical-align: middle;
+  }
 }
 .menu__items {
   display: none;
