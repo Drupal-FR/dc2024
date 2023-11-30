@@ -7,7 +7,7 @@ title: 'Appel à sessions'
 subtitle: 'Venez présenter vos découvertes et fiertés au reste de la communauté'
 image: /img/cover/session.jpg
 credits: 'Nicolas MEYER'
-draft: true
+draft: false
 ---
 Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques informations à retenir :
 
@@ -61,7 +61,7 @@ Nous proposons un accompagnement des personnes néophytes par des habituées de 
 
 {{< cta
 title="Proposer une session avant le 17 janvier 2024"
-link_url="/sessions/soumettre-session/"
+link_url="/programme/soumettre-session/"
 link_label="Proposer une session"
 link_title="" >}}
 L'inspiration vous vient ? Vous voyez une expérience dont vous devez absolument nous parler ?

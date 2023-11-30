@@ -7,7 +7,7 @@ title: 'Accompagnement'
 subtitle: "Et si vous aussi vous participiez à la communauté ?"
 image: /img/cover/cooperation.jpg
 credits: 'Nicolas MEYER'
-draft: true
+draft: false
 ---
 ## Besoin d'aide ?
 
@@ -25,7 +25,7 @@ Vous êtes une personne rompue à l'exercice et voulez aider une personne néoph
 
 {{< cta
 title="Proposer une session avant le 17 janvier 2024"
-link_url="/sessions/soumettre-session/"
+link_url="/programme/soumettre-session/"
 link_label="Proposer une session"
 link_title="" >}}
 L'inspiration vous vient ? Vous voyez une expérience dont vous devez absolument nous parler ?
