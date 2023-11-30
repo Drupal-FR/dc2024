@@ -1,6 +1,6 @@
 <!-- Contact -->
 <div class="form form--contact-sponsors">
-  <form action="/soumission" name="sponsors-requests" data-netlify="true">
+  <form action="/soumission" name="sponsors-requests" enctype="multipart/form-data" data-netlify="true">
     <p>L'association Drupal France et Francophonie ne collecte pas la TVA.<br />
       Les champs munis d'un astérisque sont obligatoires.</p>
     <div class="form__field">
@@ -10,6 +10,10 @@
     <div class="form__field">
       <label for="email" class="form__label">E-mail de contact<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
       <input type="email" id="email" name="email" required="required" class="">
+    </div>
+    <div class="form__field">
+      <label for="logo" class="form__label">Votre logo au format vectoriel <br/>(EPS, AI ou SVG)<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
+      <input type="file" id="logo" name="logo" required="required" class="">
     </div>
     <div class="form__field">
       <label for="telephon_contact" class="form__label">Téléphone contact<span class="required-info"><span class="sr-only"> Obligatoire</span></span></label>
