@@ -28,7 +28,7 @@
 }
 .site-extra__column {
   @include media('>=tablet') {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
   }
 }
 .site-extra__column-item {
@@ -45,7 +45,7 @@
 .site-extra__column-content--social {
   display: flex;
   padding: 0;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .site-extra__column-content-link {
   list-style: none;
