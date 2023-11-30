@@ -1,12 +1,12 @@
 ---
 menu:
   main:
-    parent: 'Programme'
-    weight: 02
-title: 'Appel à sessions'
-subtitle: 'Venez présenter vos découvertes et fiertés au reste de la communauté'
+    parent: Programme
+    weight: 2
+title: Appel à sessions
+subtitle: Venez présenter vos découvertes et fiertés au reste de la communauté
 image: /img/cover/session.jpg
-credits: 'Nicolas MEYER'
+credits: Nicolas MEYER
 draft: false
 ---
 Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques informations à retenir :
@@ -14,6 +14,7 @@ Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques i
 ## Format/Déroulement
 
 * 3 formats de sessions sont possibles :
+
   * 20 minutes : idéal pour la présentation d'une découverte ou une première session.
   * 40 minutes : vous pouvez couvrir plus de détails et aller en profondeur dans le déroulement de votre réflexion.
   * 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera réservée à des ateliers / formations.
@@ -23,15 +24,14 @@ Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques i
 
 ## Appel à sessions
 
-* Vous pouvez soumettre une présentation jusqu'au **17 janvier** inclus !
+* Vous pouvez soumettre votre présentation jusqu'au **17 janvier** inclus !
 * Le choix des sessions se fera par un vote collégial par l'équipe organisatrice.
 * À la suite de ce choix, vous serez informés du rejet ou de l'acceptation de votre session.
 * Une fois toutes les sessions planifiées, nous vous partagerons le programme détaillé de l'événement.
-* Si votre proposition est de bonne facture mais ne peut être retenue faute de place dans le programme, nous vous demanderons si vous accepteriez de la préparer comme session de remplacement. Si votre session ne peut être donnée lors du Drupalcamp vous pourrez toujours la présenter dans un meetup local.
+* Si votre proposition est de bonne facture mais ne peut être retenue faute de place dans le programme, nous vous demanderons si vous accepteriez de la préparer comme session de remplacement. Si votre session ne peut être donnée lors du Drupalcamp vous pourrez toujours la présenter dans un meetup.
 * Les frais de voyage et de logement ne sont pas défrayés.
 * Le pass 3 jours pour le Drupalcamp vous est offert si votre session est retenue.
 * Être sponsor ne donne pas droit à une conférence.
-
 
 ## Calendrier
 
@@ -50,10 +50,10 @@ Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques i
 * Prévoyez votre propre adaptateur HDMI (surtout si vous avez un Mac ;-)).
 * Votre support vous sera demandé pour être diffusé sur notre site post-conférence au format PDF.
 * Vous êtes libre d'utiliser le format de support que vous désirez : vidéo, présentations, PDF, images, etc.
-* Vous devez respecter les licenses d'utilisation des médias projetés.
+* Vous devez respecter les licences d'utilisation des médias projetés.
 * Nous vous fournirons un gabarit de présentation incluant un cadre avec l'identité de l'événement et des sponsors. Merci de les inclure dans votre présentation.
-* Votre proposition ne doit pas être rédigée par une intelligence artificielle générative. Merci d'écrire vos propres contenus.
-* Merci de ne pas dupliquer une présentation déjà existante. Si vous souhaitez donner une présentation d'une autre personne que vous auriez aimé. Vous devez lui demander l'autorisation et nous la faire suivre.
+* Votre proposition ne doit pas être intégralement rédigée par une intelligence artificielle générative, nous privilégions les contenus originaux.
+* Si vous souhaitez présenter un support réalisé par une autre personne ou reprendre la session d'une autre personne, veuillez le mentionner et bien vous assurer de disposer de l'autorisation pour le faire.
 
 ## Besoin d'aide pour vous lancer ? Envie d'aider des novices ?
 
@@ -68,4 +68,3 @@ L'inspiration vous vient ? Vous voyez une expérience dont vous devez absolument
 Vous avez fait une découverte qui vous semble intéressante à partager ?
 Alors n'attendez plus, partagez la nous.
 {{< /cta >}}
-
