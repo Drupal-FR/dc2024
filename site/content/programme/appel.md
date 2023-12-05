@@ -28,7 +28,7 @@ Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques i
 * Le choix des sessions se fera par un vote collégial par l'équipe organisatrice.
 * À la suite de ce choix, vous serez informés du rejet ou de l'acceptation de votre session.
 * Une fois toutes les sessions planifiées, nous vous partagerons le programme détaillé de l'événement.
-* Si votre proposition est de bonne facture mais ne peut être retenue faute de place dans le programme, nous vous demanderons si vous accepteriez de la préparer comme session de remplacement. Si votre session ne peut être donnée lors du Drupalcamp vous pourrez toujours la présenter dans un meetup.
+* Si votre proposition est de bonne facture mais ne peut être retenue faute de place dans le programme, nous vous demanderons si vous accepterez de la préparer comme session de remplacement. Si votre session ne peut être donnée lors du Drupalcamp vous pourrez toujours la présenter dans un meetup.
 * Les frais de voyage et de logement ne sont pas défrayés.
 * Le pass 3 jours pour le Drupalcamp vous est offert si votre session est retenue.
 * Être sponsor ne donne pas droit à une conférence.
