@@ -18,7 +18,7 @@ Tous les sujets sont les bienvenus, pour vous laisser le temps de vous exprimer,
 
 * 20 minutes : idéal pour lancer une réflexion, faire une démonstration, partager une découverte.
 * 40 minutes : un format confortable pour développer une idée, relater une expérience, témoigner des enseignements d'un projet.
-* 2x40 minutes : la durée pour vraiment rentrer dans le détails si vous souhaitez aborder un thème très complexe ou pour animer une mini-formation.
+* 2x40 minutes : la durée pour vraiment rentrer dans le détail si vous souhaitez aborder un thème très complexe ou pour animer une mini-formation.
 
 ## À propos de quoi ?
 
@@ -32,3 +32,12 @@ Parfait ! Nous renouvelons notre dispositif d'accompagnement pour cette édition
 Si vous vous sentez volontaire pour accompagner une personne, merci de nous envoyer en message.
 
 Toutes les modalités liées à [l'appel à session](/programme/appel/) sont disponibles sur la page dédiée. Si vous avez des questions, vous pouvez également nous contacter.
+
+
+{{< cta
+title="Nous sommes impatients de vous lire"
+link_url="/programme/appel/"
+link_label="Proposer une session"
+link_title="" >}}
+Vous avez jusqu'au 17 janvier 2024 pour soumettre votre session. Découvrez toutes les informations pratiques sur notre page récapitulative.
+{{< /cta >}}

@@ -13,14 +13,17 @@ Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques i
 
 ## Format/Déroulement
 
-* 3 formats de sessions sont possibles :
+3 formats de sessions sont possibles :
 
   * 20 minutes : idéal pour la présentation d'une découverte ou une première session.
   * 40 minutes : vous pouvez couvrir plus de détails et aller en profondeur dans le déroulement de votre réflexion.
-  * 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera réservée à des ateliers / formations.
-* Une personne de l'organisation vous présentera en introduction de votre session.
-* Hormis pour les formations, gardez du temps pour des questions lors des 5 à 10 dernières minutes. Il sera possible de prolonger la conversation dans les couloirs ou derrière la scène principale.
-* Le public change de salle entre deux conférences, merci de démarrer et terminer à l'heure par respect pour les autres personnes qui interviendront.
+  * 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera privilégiée pour des ateliers / formations.
+
+## À propos de quoi ?
+
+Pour ce Drupalcamp, nous sommes à la recherche de sessions techniques mais pas que, les propositions sur des sujets connexes tels que la méthodologie, les outils, la vie d'équipe, l'introspection sur nos métiers seront aussi valorisés.
+
+N'hésitez pas non plus à proposer des sessions pour des personnes qui découvriraient Drupal comme des personnes plus avancées dans leurs pratiques. Avec plus de 20 ans d'existence, Drupal a amené dans son sillage de nombreuses personnes avec un parcours parfois singulier. Nous avons envie d'entendre vos idées avec votre regard.
 
 ## Appel à sessions
 
@@ -43,6 +46,13 @@ Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques i
 * Le temps d'une session peut passer très vite, évitez les (trop) longues digressions qui ne serviraient pas votre propos.
 * Prévoyez une démonstration enregistrée en vidéo au cas où une démonstration en direct échouerait.
 * Présentez-vous à l'équipe organisatrice au début de la demi-journée de votre session.
+
+
+## Le jour J
+
+* Une personne de l'organisation vous présentera en introduction de votre session.
+* Hormis pour les formations, gardez du temps pour des questions lors des 5 à 10 dernières minutes. Il sera possible de prolonger la conversation dans les couloirs ou derrière la scène principale.
+* Le public change de salle entre deux conférences, merci de démarrer et terminer à l'heure par respect pour les autres personnes qui interviendront.
 
 ## Contraintes techniques
 
