@@ -1,7 +1,7 @@
 ---
 title: Axess
-draft: true
-sponsor_logo: logo/logo_partenaire_1.jpg
+draft: false
+sponsor_logo: logo/logo-axess-2021-1.png
 sponsor_site: https://www.axess.fr/
 sponsor_type: 01_gold
 type: sponsors
