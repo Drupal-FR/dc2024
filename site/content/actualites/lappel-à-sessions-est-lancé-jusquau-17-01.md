@@ -1,6 +1,6 @@
 ---
 title: L'appel à sessions est lancé jusqu'au 17/01
-draft: true
+draft: false
 date: 2023-12-05T20:21:41.462Z
 teaser: C'est le moment de nous soumettre votre proposition de session ! Vous
   avez jusqu'au mercredi 17/01 inclus pour nous partager votre expérience ou
