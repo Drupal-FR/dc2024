@@ -9,15 +9,15 @@ image: /img/cover/session.jpg
 credits: Nicolas MEYER
 draft: false
 ---
-Si vous souhaitez présenter une session lors de ce Drupalcamp, voici quelques informations à retenir :
+Si vous souhaitez présenter un sujet lors de ce Drupalcamp, voici quelques informations à retenir :
 
 ## Format/Déroulement
 
 3 formats de sessions sont possibles :
 
-  * 20 minutes : idéal pour la présentation d'une découverte ou une première session.
-  * 40 minutes : vous pouvez couvrir plus de détails et aller en profondeur dans le déroulement de votre réflexion.
-  * 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera privilégiée pour des ateliers / formations.
+* 20 minutes : idéal pour la présentation d'une découverte ou une première session.
+* 40 minutes : vous pouvez couvrir plus de détails et aller en profondeur dans le déroulement de votre réflexion.
+* 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera privilégiée pour des ateliers / formations.
 
 ## À propos de quoi ?
 
@@ -46,7 +46,6 @@ N'hésitez pas non plus à proposer des sessions pour des personnes qui découvr
 * Le temps d'une session peut passer très vite, évitez les (trop) longues digressions qui ne serviraient pas votre propos.
 * Prévoyez une démonstration enregistrée en vidéo au cas où une démonstration en direct échouerait.
 * Présentez-vous à l'équipe organisatrice au début de la demi-journée de votre session.
-
 
 ## Le jour J
 
