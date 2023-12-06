@@ -30,7 +30,7 @@ N'hésitez pas non plus à proposer des conférences pour des personnes qui déc
 ## C'est votre première fois ?
 
 Parfait ! Nous renouvelons notre dispositif d'accompagnement pour cette édition. Si vous aimeriez tenter l'expérience mais que vous vous posez des questions ou avez des doutes, nous prenons le temps de vous accompagner. Pour en savoir plus, rendez-vous sur [la page dédiée à l'accompagnement](/programme/accompagnement).\
-Si vous vous sentez volontaire pour accompagner une personne, merci de nous envoyer en message.
+Si vous vous sentez volontaire pour accompagner une personne, merci de nous envoyer un message.
 
 Toutes les modalités liées à [l'appel à conférences](/programme/appel/) sont disponibles sur la page dédiée. Si vous avez des questions, vous pouvez également nous contacter.
 
