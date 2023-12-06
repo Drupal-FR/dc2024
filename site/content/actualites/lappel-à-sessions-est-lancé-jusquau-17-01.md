@@ -1,5 +1,5 @@
 ---
-title: L'appel à sessions est lancé jusqu'au 17/01
+title: Proposez votre conférence - jusqu'au 17 janvier 2024
 draft: true
 date: 2023-12-05T20:21:41.462Z
 teaser: C'est le moment de nous soumettre vos propositions de sujets et
