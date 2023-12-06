@@ -1,5 +1,5 @@
 ---
-title: Proposez votre conférence - jusqu'au 17 janvier 2024
+title: Proposez votre conférence jusqu'au 17 janvier 2024
 draft: false
 date: 2023-12-05T20:21:41.462Z
 teaser: C'est le moment de nous soumettre vos propositions de sujets et
@@ -9,7 +9,7 @@ teaser: C'est le moment de nous soumettre vos propositions de sujets et
 ---
 Le coup d'envoi est donné pour l'appel à conférences !
 
-L'évènement Drupal la plus attendu de l'année se déroulera sur deux jours de conférences et une journée de contribution en mars prochain. Pour constituer LE programme le plus intéressant, nous avons besoin de [vos propositions de conférences](/programme/appel/).
+L'évènement Drupal le plus attendu de l'année se déroulera sur deux jours de conférences et une journée de contribution en mars prochain. Pour constituer LE programme le plus intéressant, nous avons besoin de [vos propositions de conférences](/programme/appel/).
 
 Notez d'ores et déjà que la date d'échéance des soumissions est fixée au **mercredi 17 janvier 2024 inclus.**
 
