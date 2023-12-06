@@ -13,6 +13,7 @@ $blue-marine-deeper: #03304c;
 
 $black: #1D2D35;
 
+$white: #FFFFFF;
 $white-light: #f5fbfd;
 
 $gray-light: #e9ecef;
@@ -20,6 +21,9 @@ $gray-dark: #3b3e3d;
 
 $pink: #bd3c6d;
 $pink-dark: #ac1950;
+
+$parma: #e4d8fd;
+$parma-dark: #432480;
 
 $grass: #28a108;
 $grass-wet: #208206;
@@ -61,6 +65,10 @@ $grass-wetter: #1e620f;
   --package-advantage-in: #{$grass};
   --sponsors-list-background: white;
   --sponsors-list-border: #{$gray-light};
+  --sponsors-card-background: #{$parma};
+  --sponsors-card-link: #{$parma-dark};
+  --sponsors-card-type-background: #{$parma-dark};
+  --sponsors-card-type-text: #{$white};
 
   --table-border: #{$blue-pastel-sky-grayer};
   --table-alternate-background: #{$blue-pastel};
