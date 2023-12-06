@@ -2,7 +2,7 @@
   <div class="collection-readmore collection-readmore--titled">
     <header class="collection-readmore__header">
       <h2 class="collection-readmore__title">Dernière actualité</h2>
-      <a href="/actualites" class="collection-readmore__readmore-link">Toutes les actualités</a>
+      <a href="/actualites" class="collection-readmore__readmore-link">Voir toutes les actualités</a>
     </header>
     {{ range first 1 (where site.RegularPages "Type" "actualites") }}
       {{ .Render "news-card" }}
