@@ -159,14 +159,12 @@ a.sponsor-logo[href^="http"]:after {
 .sponsor-logo__image {
   display: block;
   margin: auto;
-  opacity: 0.65;
-  filter: grayscale(100);
-  transition: all 150ms;
+  opacity: 0.9;
+  transition: all 100ms;
   &:hover,
   &:focus-visible,
   &:focus-within {
     opacity: 1;
-    filter: grayscale(0);
   }
 }
 .sponsor-logo-dedicated_page .sponsor-logo__image {
