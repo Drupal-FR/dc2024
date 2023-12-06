@@ -1,15 +1,25 @@
 {{ define "main" }}
+{{ $sponsoring_types := dict
+"01_gold" "Formule Complète"
+"02_silver" "Formule Galette saucisse"
+"03_bronze" "Formule Beurre sucre"
+}}
 
 <main class="main-content">
-  <h2>{{ .Title }}</h2>
-  <div class="sponsor-logo sponsor-logo-dedicated_page">
-    {{ $image := .Resources.Get .Params.sponsor_logo }}
-    {{ partial "sponsor-logo-image" (dict "logo" $image "type" .Params.sponsor_type) }}
+  <h1>{{.Title}}</h1>
+  <div class="sponsor-single">
+    <div class="sponsor-single__content">{{ .Content | safeHTML }}</div>
+    <div class="sponsor-single__card">
+      <div class="sponsor-single__logo sponsor-logo sponsor-logo-dedicated_page">
+        {{ $image := .Resources.Get .Params.sponsor_logo }}
+        {{ partial "sponsor-logo-image" (dict "logo" $image "type" .Params.sponsor_type "name" .Title "display_context" "maximize" ) }}
+      </div>
+      <p class="sponsor-single__desc">
+        <span class="sponsor-single__type">Sponsor {{ index $sponsoring_types .Params.sponsor_type }}</span><br />
+        <a href="{{ .Params.sponsor_site }}" title="Accéder au site de {{ .Title }}" class="sponsor-single__link">{{.Params.sponsor_site}}</a>
+      </p>
+    </div>
   </div>
-  {{ .Content | safeHTML }}
-  <p>
-    <a href="{{ .Params.sponsor_site }}" title="Accéder au site de {{ .Title }}">{{.Params.sponsor_site}}</a>
-  </p>
 </main>
 
 {{ end }}
