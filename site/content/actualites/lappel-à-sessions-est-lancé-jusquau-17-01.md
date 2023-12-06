@@ -2,23 +2,24 @@
 title: L'appel à sessions est lancé jusqu'au 17/01
 draft: true
 date: 2023-12-05T20:21:41.462Z
-teaser: C'est le moment de nous soumettre votre proposition de session ! Vous
-  avez jusqu'au mercredi 17/01 inclus pour nous partager votre expérience ou
-  votre dada du moment. Découvrez le détail des modalités.
+teaser: C'est le moment de nous soumettre vos propositions de sujets et
+  conférences. Le formulaire est ouvert jusqu'au 17 janvier 2024 inclus. Vous
+  pourrez ainsi nous partager vos expériences ou votre passion du moment. On
+  vous raconte tout.
 ---
-Le coup d'envoi est donné pour l'appel à sessions !
+Le coup d'envoi est donné pour l'appel à conférences !
 
-Votre conférence la plus attendue de l'année se déroulera sur deux jours de conférences et une journée de contribution. Pour constituer le programme le plus intéressant, nous avons besoin de [vos propositions de session](/programme/appel/).
+L'évènement Drupal la plus attendu de l'année se déroulera sur deux jours de conférences et une journée de contribution en mars prochain. Pour constituer LE programme le plus intéressant, nous avons besoin de [vos propositions de session](/programme/appel/).
 
 Notez d'ores et déjà que la date d'échéance des soumissions est fixée au **mercredi 17 janvier 2024 inclus.**
 
 ## Quel format ?
 
-Tous les sujets sont les bienvenus, pour vous laisser le temps de vous exprimer, nous vous laissons le choix parmi 3 durées différentes pour chaque session :
+Tous les sujets sont les bienvenus, pour vous laisser le temps de vous exprimer, nous vous laissons le choix parmi 3 formats de conférences :
 
-* 20 minutes : idéal pour lancer une réflexion, faire une démonstration, partager une découverte.
-* 40 minutes : un format confortable pour développer une idée, relater une expérience, témoigner des enseignements d'un projet.
-* 2x40 minutes : la durée pour vraiment rentrer dans le détail si vous souhaitez aborder un thème très complexe ou pour animer une mini-formation.
+* **20 minutes** : idéal pour lancer une réflexion, faire une démonstration, partager une découverte.
+* **40 minutes** : un format confortable pour développer une idée, relater une expérience, témoigner des enseignements d'un projet, et disposer d'un moment de questions/réponses.
+* **2x40 minutes** : adapté aux mini-formations ou de quoi rentrer dans le détail si vous souhaitez aborder un thème très complexe.
 
 ## À propos de quoi ?
 
@@ -32,7 +33,6 @@ Parfait ! Nous renouvelons notre dispositif d'accompagnement pour cette édition
 Si vous vous sentez volontaire pour accompagner une personne, merci de nous envoyer en message.
 
 Toutes les modalités liées à [l'appel à session](/programme/appel/) sont disponibles sur la page dédiée. Si vous avez des questions, vous pouvez également nous contacter.
-
 
 {{< cta
 title="Nous sommes impatients de vous lire"
