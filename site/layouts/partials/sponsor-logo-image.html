@@ -1,5 +1,5 @@
 {{$reference_sizes := ""}}
-
+{{$sponsor_name := .name}}
 {{ if eq .display_context "maximize" }}
   {{ $reference_sizes = (dict "base" 120 "01_gold" 250 "02_silver" 150 "03_bronze" 120) }}
 {{ else }}
@@ -17,6 +17,6 @@
     {{ $dim = printf "%d%s" $size "x" }}
   {{ end }}
   {{ $image = $image.Resize $dim }}
-  <img class="sponsor-logo__image" alt="" loading="lazy"
+  <img class="sponsor-logo__image" alt="{{$sponsor_name}}" loading="lazy"
        src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />
 {{ end }}
