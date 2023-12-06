@@ -3,7 +3,7 @@ menu:
   main:
     parent: Programme
     weight: 2
-title: Appel à sessions
+title: Appel à conférences
 subtitle: Venez présenter vos découvertes et fiertés au reste de la communauté
 image: /img/cover/session.jpg
 credits: Nicolas MEYER
@@ -13,43 +13,43 @@ Si vous souhaitez présenter un sujet lors de ce Drupalcamp, voici quelques info
 
 ## Format/Déroulement
 
-3 formats de sessions sont possibles :
+3 formats de conférences sont possibles :
 
-* 20 minutes : idéal pour la présentation d'une découverte ou une première session.
+* 20 minutes : idéal pour la présentation d'une découverte ou une première conférence.
 * 40 minutes : vous pouvez couvrir plus de détails et aller en profondeur dans le déroulement de votre réflexion.
 * 2x40 minutes : pour mettre les mains pleinement dans les sujets, il faut parfois du temps. Cette durée sera privilégiée pour des ateliers / formations.
 
 ## À propos de quoi ?
 
-Pour ce Drupalcamp, nous sommes à la recherche de sessions techniques mais pas que, les propositions sur des sujets connexes tels que la méthodologie, les outils, la vie d'équipe, l'introspection sur nos métiers seront aussi valorisés.
+Pour ce Drupalcamp, nous sommes à la recherche de conférences techniques mais pas que, les propositions sur des sujets connexes tels que la méthodologie, les outils, la vie d'équipe, l'introspection sur nos métiers seront aussi valorisés.
 
-N'hésitez pas non plus à proposer des sessions pour des personnes qui découvriraient Drupal comme des personnes plus avancées dans leurs pratiques. Avec plus de 20 ans d'existence, Drupal a amené dans son sillage de nombreuses personnes avec un parcours parfois singulier. Nous avons envie d'entendre vos idées avec votre regard.
+N'hésitez pas non plus à proposer des conférences pour des personnes qui découvriraient Drupal comme des personnes plus avancées dans leurs pratiques. Avec plus de 20 ans d'existence, Drupal a amené dans son sillage de nombreuses personnes avec un parcours parfois singulier. Nous avons envie d'entendre vos idées avec votre regard.
 
-## Appel à sessions
+## Appel à conférences
 
 * Vous pouvez soumettre votre présentation jusqu'au **17 janvier** inclus !
-* Le choix des sessions se fera par un vote collégial par l'équipe organisatrice.
-* À la suite de ce choix, vous serez informés du rejet ou de l'acceptation de votre session.
-* Une fois toutes les sessions planifiées, nous vous partagerons le programme détaillé de l'événement.
-* Si votre proposition est de bonne facture mais ne peut être retenue faute de place dans le programme, nous vous demanderons si vous accepterez de la préparer comme session de remplacement. Si votre session ne peut être donnée lors du Drupalcamp vous pourrez toujours la présenter dans un meetup.
+* Le choix des conférences se fera par un vote collégial par l'équipe organisatrice.
+* À la suite de ce choix, vous serez informés du rejet ou de l'acceptation de votre conférence.
+* Une fois toutes les conférences planifiées, nous vous partagerons le programme détaillé de l'événement.
+* Si votre proposition est de bonne facture mais ne peut être retenue faute de place dans le programme, nous vous demanderons si vous accepterez de la préparer comme conférence de remplacement. Si votre conférence ne peut être donnée lors du Drupalcamp vous pourrez toujours la présenter dans un meetup.
 * Les frais de voyage et de logement ne sont pas défrayés.
-* Le pass 3 jours pour le Drupalcamp vous est offert si votre session est retenue.
+* Le pass 3 jours pour le Drupalcamp vous est offert si votre conférence est retenue.
 * Être sponsor ne donne pas droit à une conférence.
 
 ## Calendrier
 
-* L'appel à session est ouvert jusqu'au **17 janvier** inclus.
+* L'appel à conférences est ouvert jusqu'au **17 janvier** inclus.
 * La constitution du programme sera annoncée la première semaine de février.
 
 ## Recommandations
 
-* Le temps d'une session peut passer très vite, évitez les (trop) longues digressions qui ne serviraient pas votre propos.
+* Le temps d'une conférence peut passer très vite, évitez les (trop) longues digressions qui ne serviraient pas votre propos.
 * Prévoyez une démonstration enregistrée en vidéo au cas où une démonstration en direct échouerait.
-* Présentez-vous à l'équipe organisatrice au début de la demi-journée de votre session.
+* Présentez-vous à l'équipe organisatrice au début de la demi-journée de votre conférence.
 
 ## Le jour J
 
-* Une personne de l'organisation vous présentera en introduction de votre session.
+* Une personne de l'organisation vous présentera en introduction de votre conférence.
 * Hormis pour les formations, gardez du temps pour des questions lors des 5 à 10 dernières minutes. Il sera possible de prolonger la conversation dans les couloirs ou derrière la scène principale.
 * Le public change de salle entre deux conférences, merci de démarrer et terminer à l'heure par respect pour les autres personnes qui interviendront.
 
@@ -62,16 +62,16 @@ N'hésitez pas non plus à proposer des sessions pour des personnes qui découvr
 * Vous devez respecter les licences d'utilisation des médias projetés.
 * Nous vous fournirons un gabarit de présentation incluant un cadre avec l'identité de l'événement et des sponsors. Merci de les inclure dans votre présentation.
 * Votre proposition ne doit pas être intégralement rédigée par une intelligence artificielle générative, nous privilégions les contenus originaux.
-* Si vous souhaitez présenter un support réalisé par une autre personne ou reprendre la session d'une autre personne, veuillez le mentionner et bien vous assurer de disposer de l'autorisation pour le faire.
+* Si vous souhaitez présenter un support réalisé par une autre personne ou reprendre la conférence d'une autre personne, veuillez le mentionner et bien vous assurer de disposer de l'autorisation pour le faire.
 
 ## Besoin d'aide pour vous lancer ? Envie d'aider des novices ?
 
-Nous proposons un accompagnement des personnes néophytes par des habituées de l'exercice, plus d'informations, rendez-vous sur la [page dédiée](/sessions/accompagnement).
+Nous proposons un accompagnement des personnes néophytes par des habituées de l'exercice, plus d'informations, rendez-vous sur la [page dédiée](/programme/accompagnement).
 
 {{< cta
-title="Proposer une session avant le 17 janvier 2024"
-link_url="/programme/soumettre-session/"
-link_label="Proposer une session"
+title="Proposer une conférence avant le 17 janvier 2024"
+link_url="/programme/soumettre-conference/"
+link_label="Proposer une conférence"
 link_title="" >}}
 L'inspiration vous vient ? Vous voyez une expérience dont vous devez absolument nous parler ?
 Vous avez fait une découverte qui vous semble intéressante à partager ?

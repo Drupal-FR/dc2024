@@ -13,6 +13,6 @@ summary: "Une question ? Allez y, nous ferons notre possible pour vous aider au 
 ---
 * Devenir bénévole vous tente ?
 * Votre société souhaite sponsoriser l'événement ?
-* Vous comptez soumettre une session ?
+* Vous comptez soumettre une conférence ?
 
 Vous avez une (vraie) question ? Contactez-nous et nous ferons notre maximum pour y répondre.

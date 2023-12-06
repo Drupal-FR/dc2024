@@ -9,7 +9,7 @@ teaser: C'est le moment de nous soumettre vos propositions de sujets et
 ---
 Le coup d'envoi est donné pour l'appel à conférences !
 
-L'évènement Drupal la plus attendu de l'année se déroulera sur deux jours de conférences et une journée de contribution en mars prochain. Pour constituer LE programme le plus intéressant, nous avons besoin de [vos propositions de session](/programme/appel/).
+L'évènement Drupal la plus attendu de l'année se déroulera sur deux jours de conférences et une journée de contribution en mars prochain. Pour constituer LE programme le plus intéressant, nous avons besoin de [vos propositions de conférences](/programme/appel/).
 
 Notez d'ores et déjà que la date d'échéance des soumissions est fixée au **mercredi 17 janvier 2024 inclus.**
 
@@ -23,21 +23,21 @@ Tous les sujets sont les bienvenus, pour vous laisser le temps de vous exprimer,
 
 ## À propos de quoi ?
 
-Pour ce Drupalcamp, nous sommes à la recherche de sessions techniques mais pas que, les propositions sur des sujets connexes tels que la méthodologie, les outils, la vie d'équipe, l'introspection sur nos métiers seront aussi valorisés.
+Pour ce Drupalcamp, nous sommes à la recherche de conférences techniques mais pas que, les propositions sur des sujets connexes tels que la méthodologie, les outils, la vie d'équipe, l'introspection sur nos métiers seront aussi valorisés.
 
-N'hésitez pas non plus à proposer des sessions pour des personnes qui découvriraient Drupal comme des personnes plus avancées dans leurs pratiques. Avec plus de 20 ans d'existence, Drupal a amené dans son sillage de nombreuses personnes avec un parcours parfois singulier. Nous avons envie d'entendre vos idées avec votre regard.
+N'hésitez pas non plus à proposer des conférences pour des personnes qui découvriraient Drupal comme des personnes plus avancées dans leurs pratiques. Avec plus de 20 ans d'existence, Drupal a amené dans son sillage de nombreuses personnes avec un parcours parfois singulier. Nous avons envie d'entendre vos idées avec votre regard.
 
 ## C'est votre première fois ?
 
 Parfait ! Nous renouvelons notre dispositif d'accompagnement pour cette édition. Si vous aimeriez tenter l'expérience mais que vous vous posez des questions ou avez des doutes, nous prenons le temps de vous accompagner. Pour en savoir plus, rendez-vous sur [la page dédiée à l'accompagnement](/programme/accompagnement).\
 Si vous vous sentez volontaire pour accompagner une personne, merci de nous envoyer en message.
 
-Toutes les modalités liées à [l'appel à session](/programme/appel/) sont disponibles sur la page dédiée. Si vous avez des questions, vous pouvez également nous contacter.
+Toutes les modalités liées à [l'appel à conférences](/programme/appel/) sont disponibles sur la page dédiée. Si vous avez des questions, vous pouvez également nous contacter.
 
 {{< cta
 title="Nous sommes impatients de vous lire"
 link_url="/programme/appel/"
-link_label="Proposer une session"
+link_label="Proposer une conférence"
 link_title="" >}}
-Vous avez jusqu'au 17 janvier 2024 pour soumettre votre session. Découvrez toutes les informations pratiques sur notre page récapitulative.
+Vous avez jusqu'au 17 janvier 2024 pour soumettre votre conférence. Découvrez toutes les informations pratiques sur notre page récapitulative.
 {{< /cta >}}

@@ -8,18 +8,18 @@ subtitle: "Rejoignez la communauté Drupal France du 28 au 30 mars 2024"
 image: /img/cover/angie.jpg
 credits: 'Nicolas MEYER'
 intro:
-  heading: Nos sessions
+  heading: Nos conférences
 draft: false
 ---
 
 Le Drupalcamp de Rennes pour son édition 2024 sera articulé autour de deux jours de conférences et une journée de contribution.
 
 {{< cta
-title="Proposer une session avant le 17 janvier 2024"
+title="Proposer une conférence avant le 17 janvier 2024"
 link_url="/programme/appel/"
-link_label="Lire l'appel à sessions"
+link_label="Lire l'appel à conférences"
 link_title="" >}}
-Nous sommes dans la phase d'appel à sessions. Nous sommes à l'écoute de vos idées pour proposer une mini-conférence, un débat, un atelier ou une contribution. Plus d'infos dans notre appel à sessions.
+Nous sommes dans la phase d'appel à conférences. Nous sommes à l'écoute de vos idées pour proposer une mini-conférence, un débat, un atelier ou une contribution. Plus d'infos dans notre appel à conférences.
 {{< /cta >}}
 
 

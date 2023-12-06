@@ -42,10 +42,10 @@
         <ul class="site-extra__column-content">
           <li class="site-extra__column-item"><a href="/billetterie">Billetterie</a></li>
           <li class="site-extra__column-item"><a href="/sponsors">Sponsors</a></li>
-          {{ $appel_page := .Site.GetPage "sessions" "appel" }}
+          {{ $appel_page := .Site.GetPage "programme" "appel" }}
           {{ with $appel_page }}
             {{ if eq .Params.draft false }}
-              <li class="site-extra__column-item"><a href="/sessions/appel">Appel à sessions</a></li>
+              <li class="site-extra__column-item"><a href="/programme/appel">Appel à conférences</a></li>
             {{ end }}
           {{ end }}
 

@@ -26,9 +26,9 @@ Conformément au RGPD, vous disposez d'un droit d'information, de rectification 
 
 En soumettant le formulaire de contact, votre email et votre nom seront partagés avec les administrateurs du site. Vos données seront supprimées dans les 6 mois qui suivent l'événement.
 
-### Sessions
+### Conférences
 
-En soumettant une proposition de session, votre nom, prénom, email sont partagés avec les administrateurs du site et bénévoles en charge du programme. Votre nom et prénom seront visible sur la page programme jusqu'à dépublication du contenu.
+En soumettant une proposition de conférence, votre nom, prénom, email sont partagés avec les administrateurs du site et bénévoles en charge du programme. Votre nom et prénom seront visible sur la page programme jusqu'à dépublication du contenu.
 Votre email sera conservé jusqu'à 1 an après la date de l'événement.
 
 ### Billetterie

@@ -126,8 +126,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: Sous-titre, name: subtitle, widget: string, required: false}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
-      - label: "Appel à sessions"
-        name: "appel-sessions"
+      - label: "Appel à conférences"
+        name: "appel-conferences"
         file: "site/content/programme/appel.md"
         fields:
           - {label: Titre, name: title, widget: string}
