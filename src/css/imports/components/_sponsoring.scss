@@ -177,16 +177,28 @@ a.sponsor-logo__site {
 }
 
 .sponsor-single {
-  display: grid;
-  grid-template-columns: 1fr 22rem;
-  grid-column-gap: 7rem;
+  @include media('>=desktop') {
+    display: grid;
+    grid-template-columns: 1fr 22rem;
+    grid-column-gap: 5rem;
+  }
+  @include media('>=wide') {
+    display: grid;
+    grid-template-columns: 1fr 25rem;
+    grid-column-gap: 7rem;
+  }
 }
 .sponsor-single__card {
   background-color: var(--sponsors-card-background);
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-align: center;
   height: fit-content;
+  max-width: 20rem;
+  margin: auto;
+  @include media('>=desktop') {
+    max-width: 25rem;
+  }
 }
 .sponsor-single__logo {
   margin-block-end: 1rem;
@@ -197,6 +209,7 @@ a.sponsor-logo__site {
 .sponsor-single__link {
   font-size: 0.9rem;
   color: var(--sponsors-card-link);
+  font-weight: bold;
 }
 .sponsor-single__type {
   color: var(--sponsors-card-type-text);
