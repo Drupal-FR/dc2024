@@ -37,6 +37,7 @@ a[href^="http"]:after {
   height: 1rem;
   display: inline-block;
   margin-left: 0.2rem;
+  -webkit-mask-image: url("/icons/external.svg");
   mask-image: url("/icons/external.svg");
   background-color: currentColor;
 }

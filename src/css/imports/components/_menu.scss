@@ -62,6 +62,7 @@
       width: 30px;
       height: 32px;
       display: block;
+      -webkit-mask-image: url("/icons/menu.svg");
       mask-image: url("/icons/menu.svg");
       mask-repeat: no-repeat;
       background-color: currentColor;
@@ -69,6 +70,7 @@
       mask-position-y: 2px;
     }
     &.js-close:before {
+      -webkit-mask-image: url("/icons/close.svg");
       mask-image: url("/icons/close.svg");
       mask-size: 32px 39px;
       mask-position-y: -1px;
@@ -132,6 +134,7 @@
     height: 22px;
     display: inline-block;
     margin-inline-end: 0.5rem;
+    -webkit-mask-image: url("/icons/ticket.svg");
     mask-image: url("/icons/ticket.svg");
     mask-repeat: no-repeat;
     background-color: currentColor;
@@ -193,7 +196,9 @@
       content: '✚';
       opacity: 0.7;
       font-size: 0.75em;
-      margin-inline-start: -1rem;
+      position: absolute;
+      inset-block-start: 11px;
+      inset-inline-end: -3px;
     }
     &:hover .menu__items--submenu,
     &:focus .menu__items--submenu,
