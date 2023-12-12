@@ -16,6 +16,8 @@ menu:
 ---
 ## Ils parlent de nous
 
+[The Drop Times](https://www.thedroptimes.com/36109/drupalcamp-rennes-2024-unite-french-speaking-drupal-community)
+
 ![Capture du site The Drop Times](img/droptime.png "Annonce du Drupalcamp sur The Drop Times")
 
 ## Les supports de communication du Drupalcamp Rennes
