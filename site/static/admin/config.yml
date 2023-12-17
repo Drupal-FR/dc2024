@@ -62,6 +62,9 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/presse"
     create: true
     # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
     fields:
       - label: Nom de la source
         name: title
@@ -70,11 +73,12 @@ collections: # A list of collections the CMS should be able to edit
       - label: Capture de la coupure
         name: item_image
         widget: image
+        media_folder: ""
       - label: Texte alternatif pour l'image
         name: item_alt
         widget: string
       - label: Lien vers la coupure
-        name: item_url
+        name: item_link
         widget: string
       - label: Texte complémentaire
         name: body
