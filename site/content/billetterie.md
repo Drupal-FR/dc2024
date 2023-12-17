@@ -20,15 +20,10 @@ Le Drupalcamp c'est :
 * 1 jour de contribution le samedi 30 mars.
 
 Pour que vous profitiez de la meilleure expérience possible, vous pouvez construire votre ticket sur mesure en achetant votre billet pour les 2 jours de conférence ou pour l'ensemble des 3 jours.\
-Il est aussi possible de réserver votre ticket pour la journée de contribution uniquement si vous voulez venir découvrir Drupal et la communauté. 
+Il est aussi possible de réserver votre ticket pour la journée de contribution uniquement si vous voulez venir découvrir Drupal et la communauté.
 
 **Note à propos des repas :** Pensez bien à cocher l'option repas du samedi si vous comptez participer à la journée de contribution. Nous ne commanderons des repas que pour les personnes ayant réservé afin d'éviter le gaspillage alimentaire.\
 Si vous prévoyez de rester un jour de plus à la dernière minute, sachez que de nombreuses options de restauration sont à votre disposition autour du lieu de conférence.
-
-## Tombola caritative
-
-Pour augmenter l'impact des Drupalcamps, nous lançons cette année une tombola caritative. 100% des recettes seront reversées à xxx qui œuvre pour...
-Qui dit tombola dit... lot ! Un souvenir du plus bel effet sera à gagner pour la personne qui remportera la tombola. 
 
 ## Tarifs préférentiels
 
