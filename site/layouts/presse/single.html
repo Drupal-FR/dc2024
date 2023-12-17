@@ -1,0 +1,36 @@
+{{ define "main" }}
+<main class="main-content">
+  {{ $postDate := .Date.Format "2 Jan 2006" }}
+  {{ $source_name := .Title }}
+  {{ $source_link := .Params.item_link }}
+  <div class="coupure">
+    {{ if .Params.image }}
+    {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "credits" .Params.credits) }}
+    {{ else }}
+      <h1 class="coupure__title">{{.Title}}</h1>
+    {{ end }}
+
+    <div class="coupure__layout">
+      <div class="coupure__about">
+        {{ $image_alt := .Params.item_alt }}
+        {{ $image := .Resources.GetMatch .Params.item_image }}
+        {{ with $image }}
+        <div class="coupure__image">
+          <a href="{{ $image.RelPermalink }}" title="Voir l'image de la coupure de presse en plein format">
+            {{ partial "coupure-image" (dict "image" $image "alt" $image_alt "format" "maximize") }}
+          </a>
+        </div>
+        <p class="coupure__link">
+          <a href="{{ $source_link }}">Lire la coupure sur le site {{ $source_name }}</a>
+        </p>
+        {{ end }}
+      </div>
+      {{ with .Content }}
+      <div class="coupure__content">
+        {{ . }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</main>
+{{ end }}

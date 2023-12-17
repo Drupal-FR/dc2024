@@ -1,0 +1,24 @@
+.coupure__layout {
+  @include media('>=desktop') {
+    display: flex;
+    gap: 4rem;
+  }
+}
+
+.coupure__about {
+  text-align: center;
+  width: fit-content;
+  padding: 2rem 2rem 1rem;
+  background-color: var(--coupure-about-background);
+  color: white;
+}
+.coupure__image img {
+  @include media('<phablet') {
+    max-width: 200px;
+    height: auto;
+  }
+}
+
+.coupure__link a {
+  color: white;
+}

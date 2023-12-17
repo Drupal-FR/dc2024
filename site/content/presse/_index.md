@@ -1,7 +1,7 @@
 ---
 menu:
   main:
-    parent: 'Communauté'
+    parent: 'Actualités'
     weight: 40
     name: "Presse"
 title: "Revue de presse"

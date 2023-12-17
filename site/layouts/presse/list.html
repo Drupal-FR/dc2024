@@ -3,7 +3,15 @@
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
 
 <main class="main-content">
-  {{ .Content}}
+  {{ .Content }}
+
+  <div class="coupures">
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <div class="coupures__item">
+      {{ .Render "coupure-list-item"}}
+    </div>
+    {{ end }}
+  </div>
 </main>
 
 {{end}}

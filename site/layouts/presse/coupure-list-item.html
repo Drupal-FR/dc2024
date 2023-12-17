@@ -1,0 +1,10 @@
+<a href="{{ .RelPermalink }}" class="coupure_list_item">
+  {{ $image_alt := .Params.item_alt }}
+  {{ $image := .Resources.Get .Params.item_image }}
+  {{ with $image }}
+  <div class="coupure_list_item__image">
+    {{ partial "coupure-image" (dict "image" $image "alt" $image_alt "format" "thumbnail") }}
+  </div>
+  {{ end }}
+  <p class="coupure_list_item__title">{{ .Title }}</p>
+</a>
