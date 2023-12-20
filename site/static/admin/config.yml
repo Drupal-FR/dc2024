@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: fullsite
 
 #media_folder: "site/static/img" # Folder where user uploaded files should go
 media_folder: "site/static/img" # Folder where user uploaded files should go
@@ -56,6 +56,34 @@ collections: # A list of collections the CMS should be able to edit
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
     meta: { path: { widget: string, label: 'Sous-URL interne site camp (Sera ajouté à /sponsor/)', index_file: 'index' } }
+  - name: coupures
+    label: "Coupure presse"
+    label_singular: 'Coupure'
+    folder: "site/content/presse"
+    create: true
+    # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - label: Nom de la source
+        name: title
+        widget: string
+      - { label: "Garder en brouillon", name: "draft", widget: "boolean", default: true }
+      - label: Capture de la coupure
+        name: item_image
+        widget: image
+        media_folder: ""
+      - label: Texte alternatif pour l'image
+        name: item_alt
+        widget: string
+      - label: Lien vers la coupure
+        name: item_link
+        widget: string
+      - label: Texte complémentaire
+        name: body
+        widget: markdown
+        required: false
   - label: "Pages statiques"
     name: "pages"
     files:
@@ -137,6 +165,14 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Accompagnement"
         name: "programme-accompagnement"
         file: "site/content/programme/accompagnement.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Revue presse"
+        name: "revue-presse"
+        file: "site/content/actualites/presse.md"
         fields:
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}

@@ -1,0 +1,14 @@
+{{ $image := .image }}
+{{ $alt := .image_alt }}
+{{ $format := .format }}
+{{ if eq $format "maximize" }}
+  {{ $format = "400x400 q85 Box" }}
+{{ else }}
+  {{ $format = "240x240 q85 Box" }}
+{{ end }}
+{{ with $image }}
+  {{ with .Fit $format }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="{{ $alt }}">
+  {{ end }}
+{{ end }}
+
