@@ -8,4 +8,4 @@ type: sponsors
 ---
  L'open source et l'innovation pour créer vos applications
 
-Société de services en ingénierie logicielle, Makina Corpus conçoit, développe et intègre des applications web et mobiles innovantes, en s’appuyant exclusivement sur des logiciels libres.
+Société de services en ingénierie logicielle, Makina Corpus conçoit, développe et intègre des applications web et mobiles innovantes, en s’appuyant exclusivement sur des logiciels libres..
