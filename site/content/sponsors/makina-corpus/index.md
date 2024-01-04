@@ -5,17 +5,19 @@ sponsor_logo: logo/mc_logo_vertical_quadri.jpg
 sponsor_site: https://makina-corpus.com/
 sponsor_type: 02_silver
 body_extra: >-
-  ## Et Makina Corpus recrute !
+  Et Makina Corpus recrute !
+
+  --------------------------
 
 
-  * Développeur-Développeuse sénior(e) Drupal - CDI | Toulouse : [https://makina-](<https://makina-  corpus.com/symfony/developpeur-developpeuse-seniore-drupal>)[corpus.com/symfony/developpeur-developpeuse-seniore-drupal](<https://makina-  corpus.com/symfony/developpeur-developpeuse-seniore-drupal>)
+  *   Développeur-Développeuse sénior(e) Drupal - CDI | Toulouse : [https://makina-corpus.com/symfony/developpeur-developpeuse-seniore-drupal](https://makina-corpus.com/symfony/developpeur-developpeuse-seniore-drupal)
 
-  * Développeur-Développeuse junior(e) Drupal - CDI | Toulouse : [https://makina-](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)[corpus.com/symfony/developpeur-developpeuse-juniore-drupal](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)
+  *   Développeur-Développeuse junior(e) Drupal - CDI | Toulouse : [https://makina-corpus.com/symfony/developpeur-developpeuse-juniore-drupal](https://makina-corpus.com/symfony/developpeur-developpeuse-juniore-drupal)
 
-  * [](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)\[Stage 3 à 6 mois - Développement logiciel] - Développement d’une suite d’outils pour un Intranet : <https://makina-corpus.com/drupal/stage-3-6-mois-developpement-logiciel-developpement-dune-suite-doutils-pour-un-intranet>
+  *   \[Stage 3 à 6 mois - Développement logiciel\] - Développement d’une suite d’outils pour un Intranet : [https://makina-corpus.com/drupal/stage-3-6-mois-developpement-logiciel-developpement-dune-suite-doutils-pour-un-intranet](https://makina-corpus.com/drupal/stage-3-6-mois-developpement-logiciel-developpement-dune-suite-doutils-pour-un-intranet)
 
 
-  Retrouver toutes nos offres sur Welcome to the Jungle : <https://www.welcometothejungle.com/fr/companies/makina-corpus>
+  Retrouver toutes nos offres sur Welcome to the Jungle : [https://www.welcometothejungle.com/fr/companies/makina-corpus](https://www.welcometothejungle.com/fr/companies/makina-corpus)
 
 
   Contactez-nous : drupal@makina-corpus.com - +33 (0)9 70 33 21 50
