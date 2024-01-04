@@ -21,7 +21,7 @@
     </div>
   </div>
   {{ with .Params.body_extra }}
-  <div class="sponsor-single__etra">{{ . | safeHTML }}</div>
+  <div class="sponsor-single__etra">{{ . | markdownify }}</div>
   {{ end }}
 </main>
 
