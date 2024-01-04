@@ -87,6 +87,14 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Pages statiques"
     name: "pages"
     files:
+      - label: "Sponsors"
+        name: "sponsors"
+        file: "site/content/sponsors/_index.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Sponsors individuels", name: "sponsors_individuals", widget: "markdown" }
       - label: "Accès"
         name: "access"
         file: "site/content/infos/accès.md"
