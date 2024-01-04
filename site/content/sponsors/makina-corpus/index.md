@@ -4,6 +4,21 @@ draft: false
 sponsor_logo: logo/mc_logo_vertical_quadri.jpg
 sponsor_site: https://makina-corpus.com/
 sponsor_type: 02_silver
+body_extra: >-
+  ## Et Makina Corpus recrute !
+
+
+  * Développeur-Développeuse sénior(e) Drupal - CDI | Toulouse : [https://makina-](<https://makina-  corpus.com/symfony/developpeur-developpeuse-seniore-drupal>)[corpus.com/symfony/developpeur-developpeuse-seniore-drupal](<https://makina-  corpus.com/symfony/developpeur-developpeuse-seniore-drupal>)
+
+  * Développeur-Développeuse junior(e) Drupal - CDI | Toulouse : [https://makina-](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)[corpus.com/symfony/developpeur-developpeuse-juniore-drupal](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)
+
+  * [](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)\[Stage 3 à 6 mois - Développement logiciel] - Développement d’une suite d’outils pour un Intranet : <https://makina-corpus.com/drupal/stage-3-6-mois-developpement-logiciel-developpement-dune-suite-doutils-pour-un-intranet>
+
+
+  Retrouver toutes nos offres sur Welcome to the Jungle : <https://www.welcometothejungle.com/fr/companies/makina-corpus>
+
+
+  Contactez-nous : drupal@makina-corpus.com - +33 (0)9 70 33 21 50
 type: sponsors
 ---
 Parce que tant d’années d’expérience feront toujours la différence !
@@ -15,15 +30,3 @@ Makina Corpus propose son expertise Drupal en conseil, architecture et développ
 Nos experts Drupal vous accompagnent également pour optimiser votre migration de Drupal 7 vers la version actuelle. Grâce à notre boîte à outils Makina Corpus, nos ingénieurs prennent en charge la migration de votre site en deux étapes pour faciliter et réduire les coûts de votre migration.
 
 Enfin, Makina Corpus Formation, organisme de formation certifié Qualiopi, propose des formations à Drupal.
-
-## Et Makina Corpus recrute !
-
-* Développeur-Développeuse sénior(e) Drupal - CDI | Toulouse : [https://makina-](<https://makina-  corpus.com/symfony/developpeur-developpeuse-seniore-drupal>)[corpus.com/symfony/developpeur-developpeuse-seniore-drupal](<https://makina-  corpus.com/symfony/developpeur-developpeuse-seniore-drupal>)
-* Développeur-Développeuse junior(e) Drupal - CDI | Toulouse : [https://makina-](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)[corpus.com/symfony/developpeur-developpeuse-juniore-drupal](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)
-* [](<https://makina- corpus.com/symfony/developpeur-developpeuse-juniore-drupal>)\[Stage 3 à 6 mois - Développement logiciel] - Développement d’une suite d’outils pour un Intranet : <https://makina-corpus.com/drupal/stage-3-6-mois-developpement-logiciel-developpement-dune-suite-doutils-pour-un-intranet>
-
-
-
-Retrouver toutes nos offres sur Welcome to the Jungle : <https://www.welcometothejungle.com/fr/companies/makina-corpus>
-
-Contactez-nous : drupal@makina-corpus.com - +33 (0)9 70 33 21 50
