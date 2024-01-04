@@ -1,7 +1,7 @@
 ---
 title: Makina Corpus
 draft: false
-sponsor_logo: logo/mc_logo_vertical_quadri.png
+sponsor_logo: logo/mc_logo_vertical_quadri.jpg
 sponsor_site: https://makina-corpus.com/
 sponsor_type: 02_silver
 type: sponsors
