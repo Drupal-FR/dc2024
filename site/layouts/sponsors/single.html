@@ -20,6 +20,9 @@
       </p>
     </div>
   </div>
+  {{ with .Params.body_extra }}
+  <div class="sponsor-single__etra">{{ . | safeHTML }}</div>
+  {{ end }}
 </main>
 
 {{ end }}

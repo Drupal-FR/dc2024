@@ -52,6 +52,9 @@ collections: # A list of collections the CMS should be able to edit
       - label: Texte de présentation
         name: body
         widget: markdown
+      - label: Complément (offres d'emploi, vidéo...)
+        name: body_extra
+        widget: markdown
       - {label: "Template", name: "type", widget: "hidden", default: "sponsors"}
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
