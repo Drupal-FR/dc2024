@@ -2,11 +2,13 @@
 menu:
   main:
     weight: 10
-title: 'Sponsors'
-subtitle: 'Découvrez comment soutenir Drupal en France et francophonie'
+title: Sponsors
+subtitle: Découvrez comment soutenir Drupal en France et francophonie
 image: /img/cover/ddd.jpg
-credits: '<a href="https://www.flickr.com/photos/amazeelabs/">Amazee labs</a> CC BY-NC-SA 2.0'
-sponsors_individuals: "Matthias Walti" 
+credits: <a href="https://www.flickr.com/photos/amazeelabs/">Amazee labs</a> CC
+  BY-NC-SA 2.0
+draft: true
+sponsors_individuals: Thomas Serres, Matthias Walti.
 ---
 
 Merci à chacun de nos sponsors.\
