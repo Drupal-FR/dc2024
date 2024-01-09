@@ -4,6 +4,25 @@ draft: false
 sponsor_logo: logo/ecedi_togael_cmjn_ecedi_baseline_cmjn.png
 sponsor_site: https://www.ecedi.fr/
 sponsor_type: 02_silver
+body_extra: >-
+  ### Rejoignez-nous ! 
+
+
+  Tu aimes les challenges et travailler au sein d’une équipe soudée ? Tu accordes de l’importance aux valeurs sociales et environnementales ? Alors rejoins-nous, ecedi est fait pour toi !
+
+
+  Retrouvez toutes nos offres sur Welcome to the Jungle : <https://www.welcometothejungle.com/fr/companies/ecedi>
+
+
+  Nous recrutons actuellement  : 
+
+
+  * des développeurs/euses back-end : <https://www.welcometothejungle.com/fr/companies/ecedi/jobs/developpeur-se-back-end>
+
+  * des lead-développeurs/euses : <https://www.welcometothejungle.com/fr/companies/ecedi/jobs/lead-dev> 
+
+
+  Pour nous contacter : contact@ecedi.fr
 type: sponsors
 ---
 Nous sommes une agence de Communication digitale responsable, spécialisée depuis plus de 20 ans dans le développement de solutions sous Drupal.
