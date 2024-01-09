@@ -10,11 +10,7 @@ type: sponsors
 ---
 Kevin Gautreau, développeur & formateur php freelance, vivant a proximité de Clermont-Ferrand en Auvergne.
 
-
-
 Je suis spécialisé sur le CMS Drupal que je pratique depuis plus de 10ans, mais je travaille aussi avec d'autres CMS / Framework quand le contexte le nécessite.
-
-
 
 Je travaille essentiellement avec des agences web de toute la France (Paris, Lyon, Annecy, Grenoble...) mais aussi de Suisse.
 
