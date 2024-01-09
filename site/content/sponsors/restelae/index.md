@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/restelae.png
 sponsor_site: https://www.res-telae.cat/fr
 sponsor_type: 03_bronze
+body_extra: ''
 type: sponsors
 ---
 Nous créons votre site internet à l'aide de la technologie Drupal. Qu'il s'agisse de commerce électronique (ou e-commerce), d'un site institutionnel, d'un extranet, ou encore d'une application web, vous avez la main sur le contenu. 

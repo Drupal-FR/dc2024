@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/logo-axess-2021-1.png
 sponsor_site: https://www.axess.fr/
 sponsor_type: 01_gold
+body_extra: ''
 type: sponsors
 ---
 Depuis 20 ans, Axess est un acteur incontournable au sein de l'écosystème et de la communauté Drupal.
