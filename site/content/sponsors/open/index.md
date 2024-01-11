@@ -13,4 +13,6 @@ Chez Open, nous sommes convaincus que notre entreprise et les solutions de point
 
 Notre centre de production à Rennes et Lannion, fort de ses 60 collaborateurs spécialistes Drupal, est fier d’apporter son soutien à la communauté Drupal.
 
+
+
 * Pour nous découvrir : www.open.global
