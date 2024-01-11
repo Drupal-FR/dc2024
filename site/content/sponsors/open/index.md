@@ -1,5 +1,5 @@
 ---
-title: open
+title: Open
 draft: false
 sponsor_logo: logo/logo-open.jpg
 sponsor_site: https://www.open.global/
