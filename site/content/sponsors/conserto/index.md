@@ -1,5 +1,5 @@
 ---
-title: Concerto
+title: Conserto
 draft: false
 sponsor_logo: logo/logo-conserto-rond.png
 sponsor_site: https://conserto.pro/
