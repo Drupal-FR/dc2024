@@ -7,4 +7,4 @@ sponsor_type: 02_silver
 body_extra: ""
 type: sponsors
 ---
-Expertise Drupal & E-Commerce à Nantes
+Expertise Drupal & E-Commerce à Nantes.
