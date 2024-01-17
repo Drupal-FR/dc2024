@@ -2,7 +2,7 @@
 title: Il ne reste que 7 jours pour proposer un sujet de conférence
 draft: false
 date: 2024-01-10T11:11:30.987Z
-teaser: "Date de soumission maximale : jeudi 17 janvier, après il sera trop tard."
+teaser: "Date de soumission maximale : mercredi 17 janvier, après il sera trop tard."
 ---
 Le temps file bien plus vite que l'on ne le pense et nous sommes à - 7 jours de fin de soumission des sujets pour notre évènement.
 
