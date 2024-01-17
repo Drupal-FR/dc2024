@@ -86,6 +86,9 @@ collections: # A list of collections the CMS should be able to edit
         name: body
         widget: markdown
         required: false
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'Sous-URL interne site camp (Sera ajouté à /presse/)', index_file: 'index' } }
   - label: "Pages statiques"
     name: "pages"
     files:
@@ -175,14 +178,6 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Accompagnement"
         name: "programme-accompagnement"
         file: "site/content/programme/accompagnement.md"
-        fields:
-          - {label: Titre, name: title, widget: string}
-          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
-          - {label: Sous-titre, name: subtitle, widget: string, required: false}
-          - {label: "Texte de la page", name: "body", widget: "markdown" }
-      - label: "Revue presse"
-        name: "revue-presse"
-        file: "site/content/actualites/presse.md"
         fields:
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
