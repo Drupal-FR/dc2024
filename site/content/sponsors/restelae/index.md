@@ -13,8 +13,4 @@ On ne le répètera jamais assez, un des grands atouts de Drupal, c'est sa commu
 
 Localize, parlons-en ! Depuis avril 2022, nous travaillons sur la nouvelle version en Drupal 10. Nous espérons pouvoir vous présenter notre travail à Rennes. Vous pourrez aussi venir y contribuer, il y a du travail pour tout le monde.
 
-Je remercie les organisateurs de cet évènement. J'ai hâte de vous retrouver à Rennes !
-
-* \[1] <https://www.drupal.org/fr/docs/user_guide/fr/index.html>
-* \[2] <https://localize.drupal.org>
-* \[3] <https://www.drupal.org/project/l10n_server/issues/3363374>
+Je remercie les organisateurs de cet évènement. J'ai hâte de vous retrouver à Rennes ![](https://www.drupal.org/project/l10n_server/issues/3363374)
