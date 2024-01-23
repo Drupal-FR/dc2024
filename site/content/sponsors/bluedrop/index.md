@@ -1,7 +1,7 @@
 ---
 title: bluedrop.fr
 draft: false
-sponsor_logo: logo/logo-principal-bluedrop.fr-exploitation-sur-fond-clair.png
+sponsor_logo: logo/logo-bluedrop-vertical.png
 sponsor_site: bluedrop.fr
 sponsor_type: 02_silver
 body_extra: >-
