@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/logo-open.jpg
 sponsor_site: https://www.open.global/
 sponsor_type: 01_gold
+video: ""
 body_extra: ""
 type: sponsors
 ---

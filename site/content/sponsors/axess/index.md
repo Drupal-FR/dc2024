@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/logo-axess-2021-1.png
 sponsor_site: https://www.axess.fr/
 sponsor_type: 01_gold
+video: ""
 body_extra: >-
   ## Pourquoi faire confiance à Axess pour vos projets Drupal ?
 

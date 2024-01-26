@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/almaviacx-logo_bleu.png
 sponsor_site: https://almaviacx.com/
 sponsor_type: 02_silver
+video: ""
 type: sponsors
 ---
 ## L’Humain au cœur de l’Expérience

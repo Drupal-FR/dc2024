@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/logo-bluedrop-vertical-2-.png
 sponsor_site: bluedrop.fr
 sponsor_type: 02_silver
+video: ""
 body_extra: >-
   ## Nos projets
 

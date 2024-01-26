@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/logo.png
 sponsor_site: https://kgaut.net
 sponsor_type: 03_bronze
+video: ""
 body_extra: ""
 type: sponsors
 ---

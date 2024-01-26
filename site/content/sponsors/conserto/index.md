@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/logo-conserto-rond.png
 sponsor_site: https://conserto.pro/
 sponsor_type: 02_silver
+video: ""
 body_extra: >-
   
 

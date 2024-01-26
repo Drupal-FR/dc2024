@@ -237,3 +237,17 @@ a.sponsor-logo__site {
 .sponsor-single__desc {
   margin: 0;
 }
+.sponsor-single__video {
+  text-align: center;
+  iframe {
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 400px;
+    @include media('>=desktop') {
+      width: 600px;
+    }
+    @include media('>=wide') {
+      width: 900px;
+    }
+  }
+}

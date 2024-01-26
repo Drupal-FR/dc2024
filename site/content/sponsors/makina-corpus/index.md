@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/mc_logo_vertical_quadri.jpg
 sponsor_site: https://makina-corpus.com/
 sponsor_type: 02_silver
+video: ""
 body_extra: >-
   ## Et Makina Corpus recrute !
 

@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/restelae.png
 sponsor_site: https://www.res-telae.cat/fr
 sponsor_type: 03_bronze
+video: ""
 body_extra: ""
 type: sponsors
 ---

@@ -4,6 +4,7 @@ draft: false
 sponsor_logo: logo/talan_couleur.png
 sponsor_site: https://talan.com/
 sponsor_type: 01_gold
+video: ""
 body_extra: >-
   ## Pourquoi Drupal ?
 

@@ -99,6 +99,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Code Video YouTube (ne mettre que l'ID XXX de la vidéo /watch?v=XXX)", name: "video", widget: string, required: false }
           - {label: "Sponsors individuels", name: "sponsors_individuals", widget: "markdown" }
       - label: "Accès"
         name: "access"
