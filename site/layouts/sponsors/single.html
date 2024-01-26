@@ -20,6 +20,16 @@
       </p>
     </div>
   </div>
+  {{ with .Params.body_extra }}
+  <div class="sponsor-single__etra">{{ . | markdownify }}</div>
+  {{ end }}
+  {{ with .Params.video }}
+  <div class="sponsor-single__video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{.}}"
+            title="YouTube video player" frameborder="0"
+            allowfullscreen></iframe>
+  </div>
+  {{ end }}
 </main>
 
 {{ end }}

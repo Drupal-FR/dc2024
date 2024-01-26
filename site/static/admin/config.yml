@@ -47,11 +47,14 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Complète", value: "01_gold" }
           - { label: "Galette saucisse", value: "02_silver" }
           - { label: "Beurre sucre", value: "03_bronze" }
-          - { label: "Autre", value: "04_autre" }
-          - { label: "Libre", value: "05_libre" }
       - label: Texte de présentation
         name: body
         widget: markdown
+      - label: Complément (offres d'emploi...)
+        name: body_extra
+        widget: markdown
+        required: false
+      - { label: "Code Video YouTube (ne mettre que l'ID XXX de la vidéo /watch?v=XXX)", name: "video", widget: string, required: false }
       - {label: "Template", name: "type", widget: "hidden", default: "sponsors"}
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
@@ -84,9 +87,20 @@ collections: # A list of collections the CMS should be able to edit
         name: body
         widget: markdown
         required: false
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'Sous-URL interne site camp (Sera ajouté à /presse/)', index_file: 'index' } }
   - label: "Pages statiques"
     name: "pages"
     files:
+      - label: "Sponsors"
+        name: "sponsors"
+        file: "site/content/sponsors/_index.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Sponsors individuels", name: "sponsors_individuals", widget: "markdown" }
       - label: "Accès"
         name: "access"
         file: "site/content/infos/accès.md"
@@ -165,14 +179,6 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Accompagnement"
         name: "programme-accompagnement"
         file: "site/content/programme/accompagnement.md"
-        fields:
-          - {label: Titre, name: title, widget: string}
-          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
-          - {label: Sous-titre, name: subtitle, widget: string, required: false}
-          - {label: "Texte de la page", name: "body", widget: "markdown" }
-      - label: "Revue presse"
-        name: "revue-presse"
-        file: "site/content/actualites/presse.md"
         fields:
           - {label: Titre, name: title, widget: string}
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}

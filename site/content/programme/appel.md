@@ -9,6 +9,10 @@ image: /img/cover/session.jpg
 credits: Nicolas MEYER
 draft: false
 ---
+**La période de soumission des sujets de conférence est terminée. Rendez-vous dans quelques jours pour découvrir la grille de conférence que nous vous aurons concocté.**
+
+
+
 Si vous souhaitez présenter un sujet lors de ce Drupalcamp, voici quelques informations à retenir :
 
 ## Format/Déroulement
@@ -67,13 +71,3 @@ N'hésitez pas non plus à proposer des conférences pour des personnes qui déc
 ## Besoin d'aide pour vous lancer ? Envie d'aider des novices ?
 
 Nous proposons un accompagnement des personnes néophytes par des habituées de l'exercice, plus d'informations, rendez-vous sur la [page dédiée](/programme/accompagnement).
-
-{{< cta
-title="Proposer une conférence avant le 17 janvier 2024"
-link_url="/programme/soumettre-conference/"
-link_label="Proposer une conférence"
-link_title="" >}}
-L'inspiration vous vient ? Vous voyez une expérience dont vous devez absolument nous parler ?
-Vous avez fait une découverte qui vous semble intéressante à partager ?
-Alors n'attendez plus, partagez la nous.
-{{< /cta >}}
