@@ -27,6 +27,8 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+      - {label: "Identifiant de la session (format #00)", name: "session_id", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
       - label: Durée
         name: duration
         widget: "select"

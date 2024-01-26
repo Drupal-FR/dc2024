@@ -1,9 +1,11 @@
 ---
 title: Installer Drupal pour le développement local avec DDEV en 5 étapes
-  faciles et rapides ! 10 min chrono !!!
+  faciles et rapides ! 10 min chrono !
 draft: true
 duration: 40 min
 audience: Découverte
+session_id: '#05'
+slug: '05-install-drupal-local-ddev'
 themes: devops, dev back
 speakers: David Suissa / DYdave
 companies: Code Enigma
