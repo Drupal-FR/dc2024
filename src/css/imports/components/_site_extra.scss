@@ -66,12 +66,12 @@
 }
 .collection-readmore__items.site-extra__sponsors-collection {
   @include media('>=desktop') {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 .site-extra__sponsors-type-items {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
   flex-wrap: wrap;
   @include media('>=desktop') {
     &:nth-child(2) {

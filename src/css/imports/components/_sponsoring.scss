@@ -142,6 +142,9 @@ a.sponsor-logo[href^="http"]:after {
     justify-content: flex-start;
   }
 }
+.site-extra__sponsors-type-items--01_gold {
+  row-gap: 0;
+}
 .site-extra__sponsors-type-items--special p {
   margin: 0;
 }
@@ -204,7 +207,9 @@ a.sponsor-logo__site {
   text-align: center;
   height: fit-content;
   max-width: 20rem;
-  margin: auto;
+  @include media('<=desktop') {
+    margin: auto;
+  }
   @include media('>=desktop') {
     max-width: 25rem;
   }
