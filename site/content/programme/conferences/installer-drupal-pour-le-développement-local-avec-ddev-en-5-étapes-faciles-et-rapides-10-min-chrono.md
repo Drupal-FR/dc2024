@@ -1,7 +1,8 @@
 ---
 title: Installer Drupal pour le développement local avec DDEV en 5 étapes
   faciles et rapides ! 10 min chrono !
-draft: true
+draft: false
+type: conference
 duration: 40 min
 audience: Découverte
 session_id: '#05'

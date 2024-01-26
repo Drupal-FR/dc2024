@@ -50,6 +50,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Pré-requis", name: "prerequisites", widget: "markdown"}
       - {label: "Plan", name: "plan", widget: "markdown"}
       - {label: "Vous aurez appris", name: "takeway", widget: "markdown"}
+      - { label: "Template", name: "type", widget: "hidden", default: "conference" }
   - name: sponsors
     label: Sponsors
     label_singular: 'Sponsor'
