@@ -1,26 +1,34 @@
 ---
-title: Industrialiser Drupal dans une grande entreprise
-draft: false
-session_id: "#10"
-slug: 10-industrialiser-grande-entreprise
+title: Soyons fou ! Et si Drupal faisait moins de chose au runtime ?
+draft: true
+session_id: "#18"
+slug: 18-drupal-runtime
 duration: 40 min
-audience: Intermédiaire
-themes: industrialisation, collaboration
-speakers: Simon Vart
-companies: Conserto
-teaser: Raconté par deux membres de son équipe, découvrez comment un groupe
-  important choisit Drupal pour plusieurs sites à fort trafic (>1M visites/mois)
-  et va résoudre d'épineuses questions autour de son industrialisation.
-prerequisites: |-
-  Avoir participé à la conception ou la réalisation d’un site Drupal. 
+audience: Expertise
+themes: dev back, performances
+speakers: beram
+companies: ekino
+teaser: Et si nous pouvions avoir comme une phase de compilation en amont plutôt
+  que pendant l'exécution d'une requête HTTP ? Et sans nécessité d'une
+  application installée. Quels seraient les impacts ?
+prerequisites: >-
+  Il peut être intéressant d'avoir quelques connaissances du fonctionnement
+  interne de Drupal et de comprendre des notions comme l'inversion de contrôle
+  (IoC) et le patron d'injection de dépendance.
 
-  Comprendre les termes : Git, “Pipeline” CI, agilité.
-plan: |-
-  * Présentation individuelle 
-  * Présentation des projets concernés  (problématique, approche, résultats)
-takeway: Vous aurez vu quelques exemples de solutions structurantes, parfois
-  inattendues, cristallisées autour du pipeline de livraison – et peut-être
-  pourrez-vous y puiser de l’inspiration pour aborder vos propres problématiques
-  !
-type: conference
+
+  De plus, il est préférable d'être familier avec des termes comme Kernel ou compiler pass.
+plan: >-
+  On va commencer par rêver en voyant ensemble ce qui pourrait simplifier notre
+  vie en tant que développeur, simplifier le développement d'outils comme
+  phpstan-drupal.
+
+
+  Puis on commencera à réfléchir à ce qu'il faudrait faire pour atteindre ce rêve. Que faudrait-il faire pour mettre à disposions de la communauté cela ? Quel serait ce chantier ?
+takeway: >-
+  Ça ne sera pas vraiment de l'apprentissage de quelque chose en particulier.
+  Plutôt un voyage à la poursuite d'un rêve pour améliorer son quotidien.
+
+
+  Après certainement qu'il y aura des choses apprises par rapport au fonctionnement interne de Drupal, ou encore sur la difficulté de certaines fonctionnalités dans phpstan-drupal.
 ---
