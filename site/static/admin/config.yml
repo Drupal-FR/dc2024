@@ -19,6 +19,35 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image (ratio 11:3)", name: "image", widget: "image", media_folder: "news", required: false}
       - {label: "Accroche page de liste (3 lignes max)", name: "teaser", widget: "text"}
       - {label: "Corps de l'actu", name: "body", widget: "markdown"}
+  - name: "conferences" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Conférences" # Used in the UI, ie.: "New Post"
+    label_singular: 'Conférence'
+    folder: "site/content/programme/conferences" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+      - label: Durée
+        name: duration
+        widget: "select"
+        options:
+          - { label: "20 minutes", value: "20 min" }
+          - { label: "40 minutes",  value: "40 min" }
+          - { label: "80 minutes",  value: "80 min" }
+      - label: Public visé
+        name: audience
+        widget: "select"
+        options:
+          - { label: "Découverte", value: "Découverte" }
+          - { label: "Intermédiaire", value: "Intermédiaire" }
+          - { label: "Expertise", value: "Expertise" }
+      - {label: "Thèmes", name: "themes", widget: "string"}
+      - {label: "Présentée par", name: "speakers", widget: "string"}
+      - {label: "Société(s)", name: "companies", widget: "string"}
+      - {label: "Accroche", name: "teaser", widget: "string"}
+      - {label: "Pré-requis", name: "prerequisites", widget: "markdown"}
+      - {label: "Plan", name: "plan", widget: "markdown"}
+      - {label: "Vous aurez appris", name: "takeway", widget: "markdown"}
   - name: sponsors
     label: Sponsors
     label_singular: 'Sponsor'
