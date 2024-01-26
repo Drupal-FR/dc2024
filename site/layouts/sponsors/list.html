@@ -23,8 +23,8 @@
       <h3 class="sponsors-collection-full__label">{{ $sponsor_type_label }}</h3>
       <ul class="sponsors-collection-full__level_wrapper sponsor-level-collection site-extra__sponsors-type-items--{{$sponsor_type_machine_name}}">
         {{ range $sponsors }}
-        {{ .Scratch.Set "display_context" "maximize" }}
-        <li class="sponsor-level-collection__entry">{{ .Render "sponsor-logo" }}</li>
+        {{ $image := .Resources.Get .Params.sponsor_logo }}
+        <li class="sponsor-level-collection__entry">{{ partial "sponsor-logo" (dict "sponsor" .Params "sponsor_link" .RelPermalink "logo_image" $image "logo_size" "maximize") }}</li>
         {{ end }}
       </ul>
       {{ end }}

@@ -1,0 +1,5 @@
+<a href="{{ .sponsor_link }}" class="sponsor-logo" title="Visiter le site du sponsor {{ .sponsor.Title }}">
+  <div class="sponsor-logo__image-frame">
+    {{ partial "sponsor-logo-image" (dict "logo" .logo_image "type" .sponsor.sponsor_type "name" .sponsor.Title "display_context" .logo_size  ) }}
+  </div>
+</a>
