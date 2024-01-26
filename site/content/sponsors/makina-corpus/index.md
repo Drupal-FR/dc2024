@@ -19,6 +19,9 @@ body_extra: >-
 
 
   Contactez-nous : drupal@makina-corpus.com - +33 (0)9 70 33 21 50
+
+
+  ## Rencontrez Samuel Directeur de projets Makina Corpus sur le DrupalCamp Rennes 2024
 video: 3hso9gj_2tY
 type: sponsors
 ---
