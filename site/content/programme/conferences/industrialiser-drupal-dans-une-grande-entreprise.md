@@ -1,7 +1,8 @@
 ---
 title: Soyons fou ! Et si Drupal faisait moins de chose au runtime ?
-draft: true
+draft: false
 session_id: "#18"
+type: conference
 slug: 18-drupal-runtime
 duration: 40 min
 audience: Expertise

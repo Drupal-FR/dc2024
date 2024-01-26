@@ -1,0 +1,44 @@
+.conference-full__title {
+  letter-spacing: -3px;
+  font-size: 3rem;
+}
+.session-level {
+  border: solid 1px green;
+  color: green;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+}
+.session-level--intermediaire {
+  border-color: #b9850a;
+  color: #b9850a;
+}
+.session-level--expertise {
+  border-color: #b72338;
+  color: #b72338;
+}
+
+.conference-full__teaser {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  border-left:solid 5px var(--link-color);
+  padding-left: 0.5rem;
+}
+.conference-full__badge {
+  background-color: #b2ced9;
+  color: #1d2d35;
+  border-radius: 0 4px 4px 0;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.9rem;
+  display: inline-block;
+  border: solid 1px #267c9f;
+  border-left-width: 5px;
+}
+
+.conference-full__meta {
+  display: flex;
+  gap: 2rem;
+}

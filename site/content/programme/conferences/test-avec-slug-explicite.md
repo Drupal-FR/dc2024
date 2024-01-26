@@ -1,6 +1,7 @@
 ---
 title: Test avec slug explicite
-draft: true
+draft: false
+type: conference
 session_id: "#123"
 slug: test-slug
 duration: 40 min

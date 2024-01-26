@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true, required: false}
       - {label: "Date de rédaction", name: "date", widget: "datetime"}
       - {label: "Image (ratio 11:3)", name: "image", widget: "image", media_folder: "news", required: false}
       - {label: "Accroche page de liste (3 lignes max)", name: "teaser", widget: "text"}
@@ -26,7 +26,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Titre", name: "title", widget: "string"}
-      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true, required: false}
       - {label: "Identifiant de la session (format #00)", name: "session_id", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
       - label: Durée
