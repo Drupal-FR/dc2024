@@ -19,8 +19,10 @@ menu:
 
 ## Comment s’y rendre ?
 
-La Maison des Associations est accessible rapidement depuis la gare SNCF (5minutes à pied). 
+La Maison des Associations est accessible rapidement depuis la gare SNCF (5 minutes à pied). 
 
 MÉTRO Charles de Gaulle
 
 [Les accès sur le site de la MDA.](https://mda-rennes.org/infos-pratiques.html)
+
+Vous voulez venir en covoiturage ? Rendez-vous sur [la page dédiée du camp](/infos/venir-dormir).
