@@ -44,7 +44,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Thèmes", name: "themes", widget: "string"}
       - {label: "Présentée par", name: "speakers", widget: "string"}
       - {label: "Société(s)", name: "companies", widget: "string"}
-      - {label: "Accroche", name: "teaser", widget: "string"}
+      - {label: "Accroche", name: "teaser", widget: "markdown"}
       - {label: "Pré-requis", name: "prerequisites", widget: "markdown"}
       - {label: "Plan", name: "plan", widget: "markdown"}
       - {label: "Vous aurez appris", name: "takeway", widget: "markdown"}
