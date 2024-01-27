@@ -5,7 +5,7 @@ session_id: "#44"
 slug: 44-phpstan-legacy
 duration: 40 min
 audience: Intermédiaire
-themes: Développement
+themes: Développement, maintenance
 speakers: Frédéric Bouchery
 companies: CCM Benchmark
 teaser: PHPStan permet de détecter les bugs avant même que votre code soit

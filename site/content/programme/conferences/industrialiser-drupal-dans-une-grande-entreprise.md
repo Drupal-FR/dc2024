@@ -1,35 +1,39 @@
 ---
-title: Soyons fou ! Et si Drupal faisait moins de chose au runtime ?
+title: Industrialiser Drupal dans une grande entreprise
 draft: false
-session_id: "#18"
-type: conference
-slug: 18-drupal-runtime
+session_id: "#10"
+slug: 10-industrialisation-grande-entreprise
 duration: 40 min
-audience: Expertise
-themes: dev back, performances
-speakers: beram
-companies: ekino
-teaser: Et si nous pouvions avoir comme une phase de compilation en amont plutôt
-  que pendant l'exécution d'une requête HTTP ? Et sans nécessité d'une
-  application installée. Quels seraient les impacts ?
-prerequisites: >-
-  Il peut être intéressant d'avoir quelques connaissances du fonctionnement
-  interne de Drupal et de comprendre des notions comme l'inversion de contrôle
-  (IoC) et le patron d'injection de dépendance.
+audience: Intermédiaire
+themes: Industrialisation
+speakers: Simon Vart
+companies: Conserto
+teaser: Raconté par deux membres de son équipe, découvrez comment un groupe
+  important a choisi Drupal pour plusieurs sites à fort trafic (>1M
+  visites/mois) et va résoudre d'épineuses questions autour de son
+  industrialisation.
+prerequisites: |-
+  Avoir participé à la conception ou la réalisation d’un site Drupal.
 
-
-  De plus, il est préférable d'être familier avec des termes comme Kernel ou compiler pass.
-plan: >-
-  On va commencer par rêver en voyant ensemble ce qui pourrait simplifier notre
-  vie en tant que développeur, simplifier le développement d'outils comme
-  phpstan-drupal.
-
-
-  Puis on commencera à réfléchir à ce qu'il faudrait faire pour atteindre ce rêve. Que faudrait-il faire pour mettre à disposions de la communauté cela ? Quel serait ce chantier ?
+  Comprendre les notions de Git, “Pipeline” CI, agilité.
+plan: Après une présentation des intervenants, nous vous présenterons les
+  projets concernés ainsi que les problématiques abordées (déploiement, tests,
+  recette, livraison, contribution éditoriale, mises à jour et monitoring).
 takeway: >-
-  Ça ne sera pas vraiment de l'apprentissage de quelque chose en particulier.
-  Plutôt un voyage à la poursuite d'un rêve pour améliorer son quotidien.
+  Vous aurez vu quelques exemples de solutions structurantes, parfois
+  inattendues, cristallisées autour du pipeline de livraison – et peut-être
+  pourrez-vous y puiser de l’inspiration pour aborder vos propres problématiques
+  !
 
 
-  Après certainement qu'il y aura des choses apprises par rapport au fonctionnement interne de Drupal, ou encore sur la difficulté de certaines fonctionnalités dans phpstan-drupal.
+  * L'embarquement simplifié et les règles claires pour les développeurs,
+
+  * Un board agile lisible pour les parties prenantes,
+
+  * Un site robuste au fonctionnement prédictible,
+
+  * Un TTM inférieur à une heure pour les bugs critiques,
+
+  * Une équipe heureuse !
+type: conference
 ---

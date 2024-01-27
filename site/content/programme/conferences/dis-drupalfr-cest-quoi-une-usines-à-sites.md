@@ -5,7 +5,7 @@ session_id: "#63"
 slug: 63-usine-sites
 duration: 40 min
 audience: Intermédiaire
-themes: Usine à sites
+themes: Usine à sites, outils
 speakers: Une personne de l'association
 companies: Association Drupal France et francophonie
 teaser: À compléter

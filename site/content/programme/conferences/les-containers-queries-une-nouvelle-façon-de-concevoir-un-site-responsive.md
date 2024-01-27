@@ -5,7 +5,7 @@ session_id: "#25"
 slug: 25-container-queries
 duration: 20 min
 audience: Découverte
-themes: front
+themes: Intégration
 speakers: Thibaut Courant
 companies: Open
 teaser: CSS 3 soufflera ses 25 bougies en 2024 et pourtant il continue

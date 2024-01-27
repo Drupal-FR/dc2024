@@ -5,7 +5,7 @@ session_id: "#14"
 slug: 14-code-legacy
 duration: 40 min
 audience: Intermédiaire
-themes: dev back
+themes: Maintenance
 speakers: Clara Cassinat
 companies: Conserto
 teaser: >-

@@ -6,7 +6,7 @@ session_id: "#28"
 slug: 28-cohesion-equipe
 duration: 20 min
 audience: Découverte
-themes: vie d'équipe
+themes: Vie d'équipe
 speakers: Céline Dupont
 companies: Axess
 teaser: >-

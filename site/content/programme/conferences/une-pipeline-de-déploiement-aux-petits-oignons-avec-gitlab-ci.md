@@ -5,7 +5,7 @@ session_id: "#56"
 slug: 56-pipeline-deploiement
 duration: 40 min
 audience: Intermédiaire
-themes: CI/CD, Devops
+themes: CI/CD, industrialisation
 speakers: Kevin Gautreau (kgaut)
 companies: Kgaut
 teaser: Comment mettre en place une stratégie de déploiement automatisé pour

@@ -5,7 +5,7 @@ session_id: "#34"
 slug: 34-opentelemetry
 duration: 20 min
 audience: Intermédiaire
-themes: Devops
+themes: Observabilité, outils
 speakers: Tarek Djebali (tarekdj)
 companies: OVH
 teaser: >-

@@ -5,7 +5,7 @@ session_id: "#35"
 slug: 35-parametrage-backoffice
 duration: 40 min
 audience: Découverte
-themes: Accessibilité, backoffice
+themes: Accessibilité, interface
 speakers: Chloé Corfmat (chloecorfmat)
 companies: Klee
 teaser: L’accessibilité numérique est un combat collectif. Pour rendre un site

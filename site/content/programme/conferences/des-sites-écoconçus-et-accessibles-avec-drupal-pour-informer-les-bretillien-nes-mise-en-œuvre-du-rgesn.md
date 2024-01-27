@@ -6,7 +6,7 @@ session_id: "#32"
 slug: 32-site-eco-accessible
 duration: 40 min
 audience: Découverte
-themes: accessibilité, écoconception
+themes: Accessibilité, écoconception
 speakers: Marité LEVOYER
 companies: Conseil départemental Ille-et-Vilaine
 teaser: >-

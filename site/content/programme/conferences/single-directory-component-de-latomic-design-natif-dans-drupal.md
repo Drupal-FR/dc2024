@@ -5,7 +5,7 @@ session_id: "#19"
 slug: 19-sdc
 duration: 40 min
 audience: Intermédiaire
-themes: front
+themes: Intégration, méthodologie
 speakers: Harelle Quentin
 companies: Open
 teaser: Développeur front, libérez-vous de la dépendance back avec Single

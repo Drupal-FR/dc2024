@@ -1,12 +1,12 @@
 ---
-title: "REX: De rôtisseur à développeur Drupal, le parcours typique d'une
+title: "De rôtisseur à développeur Drupal, le parcours typique d'une
   reconversion."
 draft: false
 session_id: "#21"
 slug: 21-rex-rotisseur
 duration: 20 min
 audience: Découverte
-themes: REX
+themes: Retour d'expérience
 speakers: Quentin Gaudino
 companies: Open
 teaser: Comment une reconversion en développeur peut fonctionner ? Quel sont les

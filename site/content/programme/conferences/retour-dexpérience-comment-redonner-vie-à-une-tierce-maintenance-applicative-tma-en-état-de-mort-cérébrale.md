@@ -1,12 +1,12 @@
 ---
-title: "Retour d'expérience : Comment redonner vie à une tierce maintenance
+title: "Comment redonner vie à une tierce maintenance
   applicative (TMA) en état de mort cérébrale ?"
 draft: true
 session_id: "#27"
 slug: 27-tma-fun
 duration: 20 min
 audience: Découverte
-themes: REX
+themes: Retour d'expérience, maintenance
 speakers: Colin Nathalie
 companies: Open
 teaser: >-

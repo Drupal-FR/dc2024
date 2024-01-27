@@ -6,7 +6,7 @@ session_id: "#12"
 slug: 12-design-system
 duration: 40 min
 audience: Découverte
-themes: front
+themes: Intégration
 speakers: Waren
 companies: Indépendant
 teaser: "Découvrez comment l'Atomic Design, associé aux variables CSS,

@@ -7,7 +7,7 @@ duration: 40 min
 audience: Découverte
 session_id: '#05'
 slug: '05-install-drupal-local-ddev'
-themes: devops, dev back
+themes: Contribution, outils
 speakers: David Suissa / DYdave
 companies: Code Enigma
 teaser: DDEV est un outil open source qui facilite la mise en place

@@ -5,7 +5,7 @@ session_id: "#46"
 slug: 46-xdebug
 duration: 40 min
 audience: Découverte
-themes: Développement
+themes: Développement, outils
 speakers: Chinaski
 companies: ekino
 teaser: Drupal comme Xdebug peuvent être hardus de prime abord. L'objectif ici

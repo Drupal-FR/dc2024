@@ -6,7 +6,7 @@ session_id: "#57"
 slug: 57-10-modules-admin
 duration: 20 min
 audience: Intermédiaire
-themes: Backoffice
+themes: Administration, interface
 speakers: Mickael Deffontaine / Laborouge
 companies: Imagospirit
 teaser: >-
