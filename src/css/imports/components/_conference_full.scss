@@ -1,9 +1,19 @@
 .conference-full__header {
   margin-bottom: 3rem;
+  background-color: #d9f5ff;
+  border: 8px solid var(--accent-color-border);
+  border-radius: 15px;
+  padding: 0rem;
+  box-shadow: var(--accent-color-border) 6px 5px 0px;
 }
 .conference-full__title {
   letter-spacing: -3px;
   font-size: 3rem;
+}
+.conference-full__title
+{
+  margin-top: 0;
+  padding: 2rem 2rem 0;
 }
 .session-level {
   border: solid 1px green;
@@ -27,21 +37,36 @@
   margin-bottom: 3rem;
   letter-spacing: -1px;
   line-height: 1.5;
-  border-left:solid 5px var(--link-color);
-  padding-left: 0.5rem;
+  border-left:solid 5px var(--accent-color-border);
+  padding-left: 0.8rem;
 }
-.conference-full__badge {
-  background-color: #b2ced9;
-  color: #1d2d35;
-  border-radius: 0 4px 4px 0;
-  padding: 0.15rem 0.5rem;
-  font-size: 0.9rem;
-  display: inline-block;
-  border: solid 1px #267c9f;
-  border-left-width: 5px;
+.conference-full__meta-item {
+  //background-color: #b2ced9;
+  //color: #1d2d35;
+  //border-radius: 0 4px 4px 0;
+  //padding: 0.15rem 0.5rem;
+  //font-size: 0.9rem;
+  //display: inline-block;
+  //border: solid 1px #267c9f;
+  //border-left-width: 5px;
+  list-style: none;
+  padding: 1rem 4rem;
+  border-right: solid var(--accent-color-border);
+  &:last-child {
+    border-right: none;
+  }
 }
 
 .conference-full__meta {
   display: flex;
-  gap: 2rem;
+  border-top: solid var(--accent-color-border);
+  padding: 0;
+  justify-content: center;
+  gap: 0;
+  margin: 0;
+}
+.icon--session {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }

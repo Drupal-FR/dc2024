@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $audience := replace .Params.audience "é" "e" }}
+
+<main class="main-content">
+  <header class="conference-full__header">
+    <h1 class="conference-full__title"><span class="session-level session-level--{{ $audience | urlize }}">{{ .Params.audience }}</span> {{ .Title }}</h1>
+
+    <ul class="conference-full__meta">
+      <li class="conference-full__speakers conference-full__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-speaker" "alt" "") }}{{ .Params.speakers }} - {{ .Params.companies }}</li>
+      <li class="conference-full__duration conference-full__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-timer" "alt" "") }}{{ .Params.duration }} </li>
+      <li class="conference-full__themes conference-full__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-tags" "alt" "") }}{{ .Params.themes }} </li>
+    </ul>
+  </header>
+  <p class="conference-full__teaser">{{ .Params.teaser }} </p>
+  <div class="conference-full">
+    <div class="conference-full__description">
+      <div class="conference-full__prerequisites"><h3>Pré-requis :</h3>
+        {{ .Params.prerequisites | markdownify }} </div>
+      <div class="conference-full__plan"><h3>La session parlera de :</h3>
+        {{ .Params.plan | markdownify }} </div>
+      <div class="conference-full__takeway"><h3>Vous aurez appris :</h3>
+        {{ .Params.takeway | markdownify }} </div>
+    </div>
+    {{ .Content | safeHTML }}
+  </div>
+</main>
+{{ end }}
+
