@@ -1,5 +1,5 @@
 .conference-full__header {
-  margin-bottom: 3rem;
+  margin-block-end: 3rem;
   background-color: #d9f5ff;
   border: 8px solid var(--accent-color-border);
   border-radius: 15px;
@@ -9,10 +9,7 @@
 .conference-full__title {
   letter-spacing: -3px;
   font-size: 3rem;
-}
-.conference-full__title
-{
-  margin-top: 0;
+  margin-block-start: 0;
   padding: 2rem 2rem 0;
 }
 .session-level {
@@ -20,7 +17,7 @@
   color: green;
   border-radius: 5px;
   padding: 0 0.5rem;
-  margin-right: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 .session-level--intermediaire {
   border-color: #b9850a;
@@ -31,42 +28,37 @@
   color: #b72338;
 }
 
-.conference-full__teaser {
-  font-style: italic;
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  letter-spacing: -1px;
-  line-height: 1.5;
-  border-left:solid 5px var(--accent-color-border);
-  padding-left: 0.8rem;
-}
-.conference-full__meta-item {
-  //background-color: #b2ced9;
-  //color: #1d2d35;
-  //border-radius: 0 4px 4px 0;
-  //padding: 0.15rem 0.5rem;
-  //font-size: 0.9rem;
-  //display: inline-block;
-  //border: solid 1px #267c9f;
-  //border-left-width: 5px;
-  list-style: none;
-  padding: 1rem 4rem;
-  border-right: solid var(--accent-color-border);
-  &:last-child {
-    border-right: none;
-  }
-}
-
 .conference-full__meta {
   display: flex;
-  border-top: solid var(--accent-color-border);
+  border-block-start: solid var(--accent-color-border);
   padding: 0;
   justify-content: center;
   gap: 0;
   margin: 0;
 }
+.conference-full__meta-item {
+  list-style: none;
+  padding: 1rem 4rem;
+  border-inline-end: solid var(--accent-color-border);
+  &:last-child {
+    border-inline-end: none;
+  }
+}
 .icon--session {
   width: 20px;
   height: 20px;
   vertical-align: middle;
+}
+
+.conference-full__teaser {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-block-end: 3rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  border-inline-start:solid 5px var(--accent-color-border);
+  padding-inline-start: 0.8rem;
+}
+.conference-full__teaser p {
+  margin: 0.5rem 0;
 }
