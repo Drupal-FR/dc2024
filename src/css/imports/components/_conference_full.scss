@@ -8,9 +8,12 @@
 }
 .conference-full__title {
   letter-spacing: -3px;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-block-start: 0;
   padding: 2rem 2rem 0;
+  @include media('>=tablet') {
+    font-size: 3rem;
+  }
 }
 .session-level {
   border: solid 1px green;
@@ -27,27 +30,54 @@
   border-color: #b72338;
   color: #b72338;
 }
-
 .conference-full__meta {
   display: flex;
   border-block-start: solid var(--accent-color-border);
   padding: 0;
   justify-content: center;
+  align-items: stretch;
   gap: 0;
   margin: 0;
+  flex-direction: column;
+  @include media('>=tablet'){
+    flex-direction: row;
+  }
 }
 .conference-full__meta-item {
   list-style: none;
-  padding: 1rem 4rem;
-  border-inline-end: solid var(--accent-color-border);
-  &:last-child {
-    border-inline-end: none;
+  padding: 1rem 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  @include media('<tablet') {
+    border-block-end: solid var(--accent-color-border);
+    justify-content: start;
+    &:last-child {
+      border-block-end: none;
+    }
+  }
+  @include media('>=tablet') {
+    padding: 1rem 4rem;
+    border-inline-end: solid var(--accent-color-border);
+    max-width: 20rem;
+    &:last-child {
+      border-inline-end: none;
+    }
+  }
+}
+.conference-full__duration.conference-full__meta-item {
+  flex: 0 0 fit-content;
+  justify-content: start;
+  @include media('>=desktop') {
+    justify-content: center;
+    flex: 0 0 6rem;
   }
 }
 .icon--session {
   width: 20px;
   height: 20px;
-  vertical-align: middle;
+  flex: 0 0 auto;
 }
 
 .conference-full__teaser {
