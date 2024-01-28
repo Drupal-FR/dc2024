@@ -11,7 +11,7 @@
       <li class="conference-full__themes conference-full__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-tags" "alt" "") }}{{ .Params.themes }} </li>
     </ul>
   </header>
-  <p class="conference-full__teaser">{{ .Params.teaser }} </p>
+  <div class="conference-full__teaser">{{ .Params.teaser | markdownify }} </div>
   <div class="conference-full">
     <div class="conference-full__description">
       <div class="conference-full__prerequisites"><h3>Pré-requis :</h3>
