@@ -71,7 +71,7 @@
 }
 .site-extra__sponsors-type-items {
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
   flex-wrap: wrap;
   @include media('>=desktop') {
     &:nth-child(2) {
