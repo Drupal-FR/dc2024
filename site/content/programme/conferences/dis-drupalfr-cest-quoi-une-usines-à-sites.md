@@ -6,7 +6,7 @@ slug: 63-usine-sites
 duration: 40 min
 audience: Intermédiaire
 themes: Usine à sites, outils
-speakers: Une personne de l'association
+speakers: Simon Georges
 companies: Association Drupal France et francophonie
 teaser: À compléter
 prerequisites: Aucun.
