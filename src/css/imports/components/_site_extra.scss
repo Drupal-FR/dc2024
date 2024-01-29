@@ -79,6 +79,9 @@
       padding-inline-start: 2rem;
     }
   }
+  @include media('>=wide') {
+    gap: 2rem;
+  }
   &--01_gold {
     align-items: center;
     justify-content: center;
