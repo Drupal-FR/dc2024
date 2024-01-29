@@ -1,7 +1,7 @@
 ---
 title: 10 modules non essentiels mais indispensables pour l'administration de
   vos sites
-draft: true
+draft: false
 session_id: "#57"
 slug: 57-10-modules-admin
 duration: 20 min
