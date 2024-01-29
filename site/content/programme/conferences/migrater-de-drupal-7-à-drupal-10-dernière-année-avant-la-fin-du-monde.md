@@ -11,7 +11,8 @@ companies: Makina Corpus
 teaser: 2024 est la dernière année avant la fin de Drupal 7. Découvrez dans
   cette conférence la procédure que nous avons suivi avec succès sur de nombreux
   sites, comment résoudre vos problèmes, les points d'attention...
-prerequisites: Avoir des notions du fonctionnement des migrations Drupal peut aider, mais
+prerequisites: Avoir des notions du fonctionnement des migrations Drupal peut
+  aider, mais les débutants devraient comprendre aussi.
 plan: >-
   * Un peu d'histoire sur Migrate,
 
