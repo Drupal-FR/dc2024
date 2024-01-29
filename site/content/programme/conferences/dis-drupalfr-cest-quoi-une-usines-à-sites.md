@@ -1,6 +1,6 @@
 ---
 title: Dis DrupalFr, c'est quoi une usines à sites ?
-draft: true
+draft: false
 session_id: "#63"
 slug: 63-usine-sites
 duration: 40 min
