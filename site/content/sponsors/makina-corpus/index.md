@@ -3,6 +3,7 @@ title: Makina Corpus
 draft: false
 sponsor_logo: logo/mc_logo_vertical_quadri.jpg
 sponsor_site: https://makina-corpus.com/
+sponsor_type: 02_silver
 body_extra: >-
   ## Et Makina Corpus recrute !
 
@@ -20,12 +21,9 @@ body_extra: >-
   Contactez-nous : drupal@makina-corpus.com - +33 (0)9 70 33 21 50
 
 
-
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/3hso9gj_2tY?si=TRzXk_RtK-U1MmA9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  ## Rencontrez Samuel Directeur de projets Makina Corpus sur le DrupalCamp Rennes 2024
+video: 3hso9gj_2tY
 type: sponsors
-video: ""
-sponsor_type: 02_silver
 ---
 Parce que tant d’années d’expérience feront toujours la différence !
 
