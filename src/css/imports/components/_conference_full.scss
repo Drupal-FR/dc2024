@@ -1,10 +1,10 @@
 .conference-full__header {
   margin-block-end: 3rem;
-  background-color: #d9f5ff;
-  border: 8px solid var(--accent-color-border);
+  background-color: #e8f9ff;
+  border: 6px solid var(--level-color);
   border-radius: 15px;
   padding: 0rem;
-  box-shadow: var(--accent-color-border) 6px 5px 0px;
+  box-shadow: var(--level-color) 4px 3px 0px;
 }
 .conference-full__title {
   letter-spacing: -3px;
@@ -15,24 +15,28 @@
     font-size: 3rem;
   }
 }
+.conference-full {
+  --level-color: var(--session-level-basic);
+}
+.session-level--decouverte {
+  --level-color: var(--session-level-basic);
+}
+.session-level--intermediaire {
+  --level-color: var(--session-level-medium);
+}
+.session-level--expertise {
+  --level-color: var(--session-level-hard);
+}
 .session-level {
-  border: solid 1px green;
-  color: green;
+  border: solid 1px var(--level-color);
+  color: var(--level-color);
   border-radius: 5px;
   padding: 0 0.5rem;
   margin-inline-end: 0.5rem;
 }
-.session-level--intermediaire {
-  border-color: #b9850a;
-  color: #b9850a;
-}
-.session-level--expertise {
-  border-color: #b72338;
-  color: #b72338;
-}
 .conference-full__meta {
   display: flex;
-  border-block-start: solid var(--accent-color-border);
+  border-block-start: solid var(--level-color);
   padding: 0;
   justify-content: center;
   align-items: stretch;
@@ -51,7 +55,7 @@
   align-items: center;
   gap: 0.5rem;
   @include media('<tablet') {
-    border-block-end: solid var(--accent-color-border);
+    border-block-end: solid var(--level-color);
     justify-content: start;
     &:last-child {
       border-block-end: none;
@@ -59,7 +63,7 @@
   }
   @include media('>=tablet') {
     padding: 1rem 4rem;
-    border-inline-end: solid var(--accent-color-border);
+    border-inline-end: solid var(--level-color);
     max-width: 20rem;
     &:last-child {
       border-inline-end: none;
@@ -86,7 +90,7 @@
   margin-block-end: 3rem;
   letter-spacing: -1px;
   line-height: 1.5;
-  border-inline-start:solid 5px var(--accent-color-border);
+  border-inline-start:solid 5px var(--level-color);
   padding-inline-start: 0.8rem;
 }
 .conference-full__teaser p {

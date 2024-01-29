@@ -4,7 +4,7 @@ $blue-pastel-sky-gray:  #cfe8f5;
 $blue-pastel-sky-grayer:  #b3cdd4;
 
 $blue-aqua: #42c2ec;
-$blue-night: #2a7fca;
+$blue-night: #2072b6;
 $blue-ocean:  #267C9F;
 $blue-ocean-deep: #186e8f;
 $blue-ocean-deeper: #0c4c67;
@@ -19,15 +19,17 @@ $white-light: #f5fbfd;
 $gray-light: #e9ecef;
 $gray-dark: #3b3e3d;
 
+$brick: #b9850a;
+
 $pink: #bd3c6d;
 $pink-dark: #ac1950;
 
 $parma: #e4d8fd;
 $parma-dark: #432480;
 
-$grass: #28a108;
-$grass-wet: #208206;
-$grass-wetter: #1e620f;
+$grass: #0E855D;
+$grass-wet: #05704c;
+$grass-wetter: #04593d;
 
 :root {
   --site-background-color: #{$white-light};
@@ -81,6 +83,10 @@ $grass-wetter: #1e620f;
   --cta-text: white;
   --cta-hover-background: #{$pink-dark};
   --cta-hover-text: white;
+
+  --session-level-basic: #{$grass};
+  --session-level-medium: #{$blue-night};
+  --session-level-hard: #{$pink-dark};
 
   --coupure-about-background: #{$blue-ocean};
   --coupure-list-background: #{$blue-ocean};
