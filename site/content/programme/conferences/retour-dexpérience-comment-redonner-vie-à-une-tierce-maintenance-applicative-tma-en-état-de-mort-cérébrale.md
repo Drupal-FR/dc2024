@@ -1,7 +1,7 @@
 ---
-title: "Comment redonner vie à une tierce maintenance
-  applicative (TMA) en état de mort cérébrale ?"
-draft: true
+title: Comment redonner vie à une tierce maintenance applicative (TMA) en état
+  de mort cérébrale ?
+draft: false
 session_id: "#27"
 slug: 27-tma-fun
 duration: 20 min
