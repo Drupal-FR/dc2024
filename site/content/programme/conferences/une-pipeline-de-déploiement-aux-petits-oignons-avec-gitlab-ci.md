@@ -20,7 +20,7 @@ plan: >-
 
   * Comment factoriser ses jobs pour une réutilisation facile sur plusieurs projets
 takeway: Comment utiliser la CI de Gitlab pour déployer son site Drupal et
-  comment réutiliser des mêmes jobs au sein de différents projet pour éviter les
-  copier / coller.
+  comment réutiliser des mêmes jobs au sein de différents projets pour éviter
+  les copier / collers.
 type: conference
 ---
