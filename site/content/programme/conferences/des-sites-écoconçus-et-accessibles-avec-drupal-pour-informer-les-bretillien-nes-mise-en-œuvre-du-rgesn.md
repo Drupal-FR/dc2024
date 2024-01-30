@@ -7,8 +7,9 @@ slug: 32-site-eco-accessible
 duration: 40 min
 audience: Découverte
 themes: Accessibilité, écoconception
-speakers: Marité LEVOYER
-companies: Conseil départemental Ille-et-Vilaine
+speakers: Marité LEVOYER & Anne-Laure Hamonou accompagnées de Benjamin Petit &
+  Laetitia Gaspari
+companies: Département Ille-et-Vilaine & Orange Business
 teaser: >-
   En continuité de sa démarche Numérique Responsable, le Département de
   l’Ille-et-Vilaine avec l’accompagnement d’Orange Business a profité de la
