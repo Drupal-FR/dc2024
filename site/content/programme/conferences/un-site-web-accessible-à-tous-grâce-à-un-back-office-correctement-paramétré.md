@@ -7,7 +7,7 @@ duration: 40 min
 audience: Découverte
 themes: Accessibilité, interface
 speakers: Chloé Corfmat (chloecorfmat)
-companies: Klee
+companies: Chloé Corfmat
 teaser: L’accessibilité numérique est un combat collectif. Pour rendre un site
   web accessible à tous, le contributeur qui écrit du contenu doit transmettre
   les informations qui aideront les développeurs à écrire le code HTML rendu à
