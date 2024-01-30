@@ -8,9 +8,12 @@ audience: Intermédiaire
 themes: Interface, médias
 speakers: damien (DrDam) ROBERT
 companies: Smile
-teaser: L'utilisation des Media images dans un ensemble de traitement d'image
-  réduit l'utilité de CROP dans la personnalisation des vignettes. Voyons
-  comment rendre à CROP toute sa puissance avec les Média.
+teaser: Le module CROP est connu pour sa capacité à permettre aux contributeurs
+  d'affiner la génération de vignettes pour leurs images, or si l'on ajoute la
+  bibliothèque Média, cette capacité est fortement réduite. Dans cette
+  présentation, nous allons voir d'où vient ce problème et que, même s'il est
+  loin d'être trivial, il ouvre la porte à des évolutions pour Drupal, les
+  Médias mais également pour le module CROP en lui-même.
 prerequisites: >-
   Nécessaire : L'utilisation/configuration des styles d'images, du module CROP
   et des Média.
@@ -26,7 +29,9 @@ plan: >-
 
   4. Présentation de la suite "Media contextual crop" offrant une réponse au problème,
 
-  5. Questions et discussions.
+  5. Quelques bonus (migration D7, CKEditor),
+
+  6. Questions et discussions.
 takeway: >-
   * Les pièges connus et évitables lorsque l'on implémente conjointement des
   CROP et des Media images.
