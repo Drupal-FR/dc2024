@@ -7,7 +7,7 @@ duration: 20 min
 audience: Intermédiaire
 themes: Observabilité, outils
 speakers: Tarek Djebali (tarekdj)
-companies: OVH
+companies: Symdrik
 teaser: >-
   Avec l'émergence du cloud computing, des architectures de microservices et des
   exigences commerciales toujours plus complexes, le besoin d’observabilité n’a
