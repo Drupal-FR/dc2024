@@ -7,7 +7,7 @@ duration: 20 min
 audience: Découverte
 themes: Retour d'expérience
 speakers: Vanessa Fayard
-companies: Probesys
+companies: Un esprit libre
 teaser: "Il y a 5 ans : reconversion pro, du bâtiment au développement web, je
   découvre Drupal. Après des années à faire “du dev pour faire du dev”, j’ai
   pris du recul sur mon travail et sur le CMS. J’ai ouvert la porte magique de
