@@ -6,7 +6,7 @@ slug: 10-industrialisation-grande-entreprise
 duration: 40 min
 audience: Intermédiaire
 themes: Industrialisation
-speakers: Simon Vart
+speakers: Simon Vart & Guillaume Rouxelin
 companies: Conserto
 teaser: Raconté par deux membres de son équipe, découvrez comment un groupe
   important a choisi Drupal pour plusieurs sites à fort trafic (>1M
