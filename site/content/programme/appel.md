@@ -11,8 +11,6 @@ draft: false
 ---
 **La période de soumission des sujets de conférence est terminée. Rendez-vous dans quelques jours pour découvrir la grille de conférence que nous vous aurons concocté.**
 
-
-
 Si vous souhaitez présenter un sujet lors de ce Drupalcamp, voici quelques informations à retenir :
 
 ## Format/Déroulement
@@ -56,6 +54,7 @@ N'hésitez pas non plus à proposer des conférences pour des personnes qui déc
 * Une personne de l'organisation vous présentera en introduction de votre conférence.
 * Hormis pour les formations, gardez du temps pour des questions lors des 5 à 10 dernières minutes. Il sera possible de prolonger la conversation dans les couloirs ou derrière la scène principale.
 * Le public change de salle entre deux conférences, merci de démarrer et terminer à l'heure par respect pour les autres personnes qui interviendront.
+* Les conférences devraient être enregistrées en version audio et la salle principale serait probablement captée en vidéo.
 
 ## Contraintes techniques
 
