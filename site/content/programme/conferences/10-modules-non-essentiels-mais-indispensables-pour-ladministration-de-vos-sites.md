@@ -7,7 +7,7 @@ slug: 57-10-modules-admin
 duration: 20 min
 audience: Intermédiaire
 themes: Administration, interface
-speakers: Mickael Deffontaine / Laborouge
+speakers: Mickael Deffontaine (Laborouge)
 companies: Imagospirit
 teaser: >-
   Tout au long de mes projets Drupal, j'ai dû approfondir ma connaissance de
