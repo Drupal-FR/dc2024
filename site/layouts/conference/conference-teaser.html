@@ -1,0 +1,9 @@
+{{ $audience := replace .Params.audience "é" "e" }}
+<div class="conference-teaser session-level--{{ $audience | urlize }}">
+  <p class="conference-teaser__title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+  <ul class="conference-teaser__meta">
+    <li class="conference-teaser__speakers conference-teaser__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-speaker" "alt" "") }}{{ .Params.speakers }}</li>
+    <li class="conference-teaser__duration conference-teaser__meta-item"><span class="duration-icon">{{ partial "icon-sessions" (dict "picto" "icons-timer" "alt" "") }}{{ .Params.duration }}</span> <span class="session-level">{{ .Params.audience }}</span></li>
+    <li class="conference-teaser__themes conference-teaser__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-tags" "alt" "") }}{{ .Params.themes }} </li>
+  </ul>
+</div>

@@ -3,7 +3,227 @@
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle "credits" .Params.credits) }}
 
 <main class="main-content">
-  {{ .Content }}
+  <div class="schedule-details">
+
+    {{ .Content }}
+
+    <table>
+      <caption id="programme-jeudi">Programme des conférences pour le jeudi 28 mars</caption>
+      <thead>
+      <tr>
+        <th>Horaires</th>
+        <th>Auditorium</th>
+        <th>S012 (rez-de-chaussée)</th>
+        <th>S205 (étage)</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="row-split">
+        <td class="row-title">8h30 - 9h15</td>
+        <td colspan="3" class="highlight">Café d'accueil</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">9h15 - 9h45</td>
+        <td class="highlight">Accueil et présentation de l'événement</td>
+        <td class="empty-room" colspan="2">Pas de conférence</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">9h45 - 10h30</td>
+        <td class="highlight">Conférence plénière (annonce à venir)</td>
+        <td class="empty-room" colspan="2">Pas de conférence</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">10h30 - 11h00</td>
+        <td class="highlight" colspan="3">Pause café</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">11h00 - 11h45</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#10" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#12" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td class="contrib-room" rowspan="2">
+          <div class="contrib-room-wrapper">
+            <div class="conference-teaser session-level--contrib">
+              <p class="conference-teaser__title"><a href="/programme/conferences/formation-initiation/">Formation initiation Drupal découverte</a></p>
+              <ul class="conference-teaser__meta">
+                <li class="conference-teaser__speakers conference-teaser__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-speaker" "alt" "") }}
+                  Association Drupal France et francophonie</li>
+                <li class="conference-teaser__themes conference-teaser__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-caution" "alt" "") }}
+                  15 places maximum </li>
+              </ul>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">11h45 - 12h30</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#33" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#18" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">12h30 - 14h00</td>
+        <td class="highlight" colspan="3">Déjeuner</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">14h00 - 14h45</td>
+        <td>Table ronde usines à sites</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#05" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td class="contrib-room" rowspan="2">
+          <div class="contrib-room-wrapper">
+            <div class="conference-teaser session-level--contrib">
+              <p class="conference-teaser__title"><a href="/programme/conferences/formation-initiation/">Formation initiation Drupal découverte (suite)</a></p>
+              <ul class="conference-teaser__meta">
+                <li class="conference-teaser__speakers conference-teaser__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-speaker" "alt" "") }}
+                  Association Drupal France et francophonie</li>
+                <li class="conference-teaser__themes conference-teaser__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-caution" "alt" "") }}
+                  15 places maximum </li>
+              </ul>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">14h45 - 15h30</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#32" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#44" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">15h30 - 16h00</td>
+        <td class="highlight" colspan="3">Pause café</td>
+      </tr>
+      <tr>
+        <td class="row-title" rowspan="2">16h00 - 16h45</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#25" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#47" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td class="contrib-room" rowspan="5">
+          <div class="contrib-room-wrapper">
+            <div class="conference-teaser session-level--contrib">
+              <p class="conference-teaser__title"><strong>Espace pour la contribution</strong></p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr class="row-split">
+        <td>{{ range where .Site.Pages ".Params.session_id" "#57" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#61" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">16h45 - 17h30</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#56" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#50" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr>
+        <td class="row-title" rowspan="2">17h30 - 18h15</td>
+        <td rowspan="2">{{ range where .Site.Pages ".Params.session_id" "#46" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#21" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td>{{ range where .Site.Pages ".Params.session_id" "#40" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">18h15 - 19h00</td>
+        <td class="highlight" colspan="3">Verre de l'amitié</td>
+      </tr>
+    </table>
+
+    <table>
+      <caption id="programme-vendredi">Programme des conférences pour le vendredi 29 mars</caption>
+      <thead>
+      <tr>
+        <th>Horaires</th>
+        <th>Auditorium</th>
+        <th>S012 (rez-de-chaussée)</th>
+        <th>S205 (étage)</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="row-split">
+        <td class="row-title">9h00 - 9h30</td>
+        <td class="highlight" colspan="3">Café d'accueil</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">9h30 - 9h45</td>
+        <td class="highlight">Session d'accueil</td>
+        <td class="empty-room" colspan="2">Pas de conférence</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">9h45 - 10h30</td>
+        <td class="highlight">Conférence plénière (annonce à venir)</td>
+        <td class="empty-room" colspan="2">Pas de conférence</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">10h30 - 11h00</td>
+        <td class="highlight" colspan="3">Pause café</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title" rowspan="2">11h00 - 11h45</td>
+        <td rowspan="2">Table ronde sur la contribution</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#34" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td class="contrib-room" rowspan="3">
+          <div class="contrib-room-wrapper">
+            <div class="conference-teaser session-level--contrib">
+              <p class="conference-teaser__title"><a href="/programme/conferences/atelier-contrib/">Atelier se lancer dans la contrib (tout niveau)</a></p>
+              <ul class="conference-teaser__meta">
+                <li class="conference-teaser__speakers conference-teaser__meta-item">{{ partial "icon-sessions" (dict "picto" "icons-speaker" "alt" "") }}
+                  Association Drupal France et francophonie</li>
+              </ul>
+            </div>
+          </div></td>
+      </tr>
+      <tr class="row-split">
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">11h45 - 12h30</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#58" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#37" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">12h30 - 14h00</td>
+        <td class="highlight" colspan="3">Déjeuner</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">14h00 - 14h45</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#32" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#44" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td class="contrib-room" rowspan="6">
+          <div class="contrib-room-wrapper">
+            <div class="conference-teaser session-level--contrib">
+              <p class="conference-teaser__title"><strong>Espace pour la contribution</strong></p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="row-title" rowspan="2">14h45 - 15h30</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#14" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#27" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td>{{ range where .Site.Pages ".Params.session_id" "#28" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">15h30 - 16h00</td>
+        <td class="highlight" colspan="2">Pause café</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">16h00 - 16h45</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#64" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#60" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title">16h45 - 17h30</td>
+        <td class="highlight">Association Drupal France et francophonie, questions & réponses</td>
+        <td class="empty-room">Pas de conférence</td>
+      </tr>
+      <tr class="row-split">
+        <td class="row-title" rowspan="2">17h30 - 18h15</td>
+        <td class="highlight">Plénière de cloture</td>
+        <td class="empty-room" colspan="2">Pas de conférence</td>
+      </tr>
+    </table>
+    <h3 id="programme-samedi">Programme du samedi</h3>
+    <p>Nous disposerons d'une grande salle ouverte de 9h30 à 17h00 pour la contribution. Des sandwiches vous seront proposés pour le déjeuner.</p>
+  </div>
+
 </main>
 
 {{end}}

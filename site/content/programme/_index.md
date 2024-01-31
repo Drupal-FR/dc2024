@@ -16,8 +16,7 @@ Le Drupalcamp de Rennes pour son édition 2024 sera articulé autour de deux jou
 
 ## Programme des journées
 
-* Jeudi 28 mars 2024 : Conférences et formations
-* Vendredi 29 mars 2024 : Conférences et formations
-* Samedi 30 mars 2024 : Contributions à Drupal
+* [Jeudi 28 mars 2024 : Conférences et formations](/programme/#programme-jeudi)
+* [Vendredi 29 mars 2024 : Conférences et formations](/programme/#programme-vendredi)
+* [Samedi 30 mars 2024 : Contributions à Drupal](/programme/#programme-samedi)
 
-Le programme détaillé sera publié dans le courant du mois de février.
