@@ -15,9 +15,12 @@ teaser: >-
   Participez à cette demi-journée de formation.
 prerequisites: >-
   Votre ordinateur personnel. 
+
+
+  Attention, nous limiterons cette formation aux 15 premières personnes présentes avec une priorité pour les étudiants.
   
 
-  Attention, pour des raisons de commodité, nous limiterons cette formation aux 15 premières personnes présentes. Pas d'inscription préalable, la règle des deux pieds prévaudra (les places sont pourvues au fil des arrivées jusqu'à ce que la salle soit complète). 
+  Pas d’inscription préalable, la règle des deux pieds prévaudra (les places sont pourvues au fil des arrivées jusqu’à ce que la salle soit complète).
 plan: Découverte de l'interface et des concepts clés.
 takeway: >-
   Vous aurez exploré l'interface de Drupal et comprendrez comment administrer les principales sections d'un site (pages, vocabulaires, utilisateurs, blocs...).
