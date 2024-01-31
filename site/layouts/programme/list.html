@@ -182,8 +182,8 @@
       </tr>
       <tr class="row-split">
         <td class="row-title">14h00 - 14h45</td>
-        <td>{{ range where .Site.Pages ".Params.session_id" "#32" }}{{ .Render "conference-teaser" }}{{ end }}</td>
-        <td>{{ range where .Site.Pages ".Params.session_id" "#44" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#35" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#19" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td class="contrib-room" rowspan="6">
           <div class="contrib-room-wrapper">
             <div class="conference-teaser session-level--contrib">
@@ -194,7 +194,7 @@
       </tr>
       <tr>
         <td class="row-title" rowspan="2">14h45 - 15h30</td>
-        <td>{{ range where .Site.Pages ".Params.session_id" "#14" }}{{ .Render "conference-teaser" }}{{ end }}</td>
+        <td rowspan="2">{{ range where .Site.Pages ".Params.session_id" "#14" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td>{{ range where .Site.Pages ".Params.session_id" "#27" }}{{ .Render "conference-teaser" }}{{ end }}</td>
       </tr>
       <tr class="row-split">
