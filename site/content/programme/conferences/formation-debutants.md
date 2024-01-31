@@ -14,7 +14,7 @@ teaser: >-
 
   Participez à cette demi-journée de formation.
 prerequisites: >-
-  Aucun. 
+  Votre ordinateur personnel. 
   
 
   Attention, pour des raisons de commodité, nous limiterons cette formation aux 15 premières personnes présentes. Pas d'inscription préalable, la règle des deux pieds prévaudra (les places sont pourvues au fil des arrivées jusqu'à ce que la salle soit complète). 
