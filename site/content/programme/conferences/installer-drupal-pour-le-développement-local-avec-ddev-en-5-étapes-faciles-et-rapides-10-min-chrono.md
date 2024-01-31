@@ -7,7 +7,7 @@ slug: 05-install-drupal-local-ddev
 duration: 40 min
 audience: Découverte
 themes: Contribution, outils
-speakers: David Suissa / DYdave
+speakers: David Suissa (DYdave)
 companies: Eviden
 teaser: DDEV est un outil open source qui facilite la mise en place
   d'environnement de développement PHP en local, en quelques minutes et

@@ -6,7 +6,7 @@ slug: 61-portage-localize
 duration: 20 min
 audience: Découverte
 themes: Contribution
-speakers: Felip Manyer i Ballester / FMB, Thomas Bailly / TeeBeeCoder
+speakers: Felip Manyer i Ballester (FMB), Thomas Bailly (TeeBeeCoder)
 companies: Res Telae, FFW
 teaser: Le portage de la plate-forme de traduction de la communauté Drupal
   (localize.drupal.org) vers Drupal 10, initié en avril 2022, est l'occasion de
