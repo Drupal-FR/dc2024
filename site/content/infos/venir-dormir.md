@@ -19,3 +19,5 @@ menu:
 Si vous comptez venir en voiture et souhaitez proposer / chercher un covoiturage avec une autre personne de la communauté, n'hésitez pas à échanger ici !
 
 Si vous cherchez à partager un logement pour économiser quelques euros, vous pouvez également vous signaler ici.
+
+Veuillez noter que cette organisation n'est pas gérée par l'équipe du camp et n'est qu'un relai d'informations.
