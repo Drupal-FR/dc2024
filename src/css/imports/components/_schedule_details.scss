@@ -1,0 +1,139 @@
+.schedule-details table {
+  border-collapse: collapse;
+  margin-bottom: 5rem;
+  overflow-x: auto;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  caption {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-block-end: 2rem;
+    letter-spacing: -1px
+  }
+  thead {
+    border-block-end: solid 2px var(--table-border);
+    padding-block-end: 2rem;
+  }
+  tbody > tr:first-child > td {
+    padding-top: 1rem;
+  }
+  th,
+  td {
+    padding: 1.5rem 0.5rem;
+    a {
+      color: var(--table-head-text);
+      font-weight: bold;
+    }
+  }
+  th {
+    color: var(--table-head-text);
+    padding: 0.4rem 0.8rem;
+    line-height: 1.2;
+    &:first-child {
+      text-align: center;
+    }
+  }
+  tr.row-split {
+    border-block-end: solid 1px var(--table-border);
+  }
+  tr:not(.row-split) td {
+     padding-bottom: 0;
+  }
+  tr td {
+    font-size: 1rem;
+  }
+  .group-title {
+    background-color: #1b91af;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .row-title {
+    text-align: left;
+    min-width: 8rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .empty-room {
+    background-color: #e8eef0;
+    text-indent: -100rem;
+  }
+  .contrib-room {
+    position: relative;
+    min-width: 15rem;
+  }
+  .contrib-room-wrapper {
+    height: 90%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+    display: flex;
+  }
+  .highlight {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+.conference-teaser {
+  --level-color: var(--session-level-basic);
+  border: solid 1px #ccdde3;
+  border-left: solid 4px var(--level-color);
+  min-height: 6rem;
+  min-width: 13rem;
+  background-color: #e8eef0;
+  padding: 0.5rem;
+  border-radius: 0 0.3rem 0.3rem 0;
+  .session-level {
+    padding-inline: 0.3rem;
+    margin-inline-end: 0rem;
+  }
+}
+.conference-teaser.session-level--decouverte {
+  --level-color: var(--session-level-basic);
+}
+.conference-teaser.session-level--intermediaire {
+  --level-color: var(--session-level-medium);
+}
+.conference-teaser.session-level--expertise {
+  --level-color: var(--session-level-hard);
+}
+.conference-teaser.session-level--contrib {
+  --level-color: #7B19ACFF;
+  justify-self: stretch;
+}
+.conference-teaser__duration.conference-teaser__meta-item {
+  @include media('<=tablet') {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.conference-teaser__title {
+  color: var(--table-head-text);
+  font-size: 0.95rem;
+  line-height: 1.3;
+  margin-block: 0 0.6rem;
+}
+.conference-teaser__meta {
+  font-size: 0.8rem;
+  display: flex;
+  padding: 0;
+  gap: 0.2rem;
+  margin: 0;
+  flex-direction: column;
+}
+.duration-icon {
+  display: flex;
+  gap: 0.25rem;
+}
+.conference-teaser__meta-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: left;
+}
