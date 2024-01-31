@@ -6,7 +6,7 @@ slug: 60-crop-media
 duration: 40 min
 audience: Intermédiaire
 themes: Interface, médias
-speakers: damien (DrDam) ROBERT
+speakers: Damien Robert (DrDam)
 companies: Smile
 teaser: Le module CROP est connu pour sa capacité à permettre aux contributeurs
   d'affiner la génération de vignettes pour leurs images, or si l'on ajoute la
