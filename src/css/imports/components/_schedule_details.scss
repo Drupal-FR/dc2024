@@ -9,7 +9,10 @@
     font-weight: bold;
     font-size: 1.3rem;
     margin-block-end: 2rem;
-    letter-spacing: -1px
+    letter-spacing: -1px;
+    @include media('<=desktop') {
+      text-align: left;
+    }
   }
   thead {
     border-block-end: solid 2px var(--table-border);
@@ -74,8 +77,9 @@
     display: flex;
   }
   .highlight {
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 1rem;
+    text-align: left;
+    padding-inline: 1rem;
   }
 }
 
@@ -84,10 +88,12 @@
   border: solid 1px #ccdde3;
   border-left: solid 4px var(--level-color);
   min-height: 6rem;
-  min-width: 13rem;
   background-color: #e8eef0;
   padding: 0.5rem;
   border-radius: 0 0.3rem 0.3rem 0;
+  @include media('<desktop') {
+    min-width: 13rem;
+  }
   .session-level {
     padding-inline: 0.3rem;
     margin-inline-end: 0rem;
@@ -136,4 +142,29 @@
   align-items: center;
   gap: 0.25rem;
   text-align: left;
+}
+.highlighted-item {
+  border: solid 1px #7b19ac;
+  border-left: solid 4px #7b19ac;
+  width: 80%;
+  margin: auto;
+  padding: 0.6rem;
+  border-radius: 4px;
+  background-color: #f0e8ee;
+  color: #7b19ac;
+  font-weight: bold;
+  text-align: left;
+  min-width: 17rem;
+  max-width: 25rem;
+  line-height: 1.2;
+}
+.highlighted-item_label {
+  margin-block-start: 0;
+  margin-block-end: 0.5rem;
+}
+.highlighted-item_details {
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-block-start: 0;
+  margin-block-end: 0rem;
 }
