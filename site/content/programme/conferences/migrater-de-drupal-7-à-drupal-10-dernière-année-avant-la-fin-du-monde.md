@@ -1,5 +1,5 @@
 ---
-title: Migrater de Drupal 7 à Drupal 10 ("dernière année avant la fin du monde")
+title: Migrer de Drupal 7 à Drupal 10 ("dernière année avant la fin du monde")
 draft: false
 session_id: "#64"
 slug: 64-migration-drupal7-10
