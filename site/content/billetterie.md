@@ -6,7 +6,6 @@ image: /img/cover/angie.jpg
 credits: Nicolas MEYER
 draft: false
 ---
-
 {{< cta
 title="Accéder à la billetterie"
 link_url="https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024-v4"
@@ -32,6 +31,13 @@ Si prévoyez de venir jeudi et vendredi et au dernier moment de rester un jour d
 
 Si vous êtes à jour de votre cotisation à l'[association Drupal France et francophonie](https://www.drupal.fr/) ou que vous disposez d'une carte de réduction (étudiants, demandeurs d'emploi, familles nombreuses...) vous pouvez bénéficier d'une réduction de 15 € sur demande et présentation de votre justificatif.
 Si tel est le cas, il vous suffit de [contacter l'équipe](/contact) pour que nous vous transmettions votre code de réduction.
+
+### Comment ça marche ?
+
+1. Assurez-vous d'être à jour de votre cotisation adhérent à l'association
+2. Le cas échéant, renouvelez votre adhésion
+3. [Contactez-nous](/contact) et demandez-nous un coupon
+4. Utilisez le sur [la page de billetterie](https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024-v4) pour bénéficier d'une réduction de 15€
 
 ## Places sponsors
 
