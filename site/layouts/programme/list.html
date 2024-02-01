@@ -20,21 +20,43 @@
       <tbody>
       <tr class="row-split">
         <td class="row-title">8h30 - 9h15</td>
-        <td colspan="3" class="highlight">Café d'accueil</td>
+        <td colspan="3" class="highlight">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Café d'accueil</p>
+            <p class="highlighted-item_details">
+              Récupération de votre badge, première dose de caféine pour lancer votre journée.
+            </p>
+          </div>
+        </td>
       </tr>
       <tr class="row-split">
         <td class="row-title">9h15 - 9h45</td>
-        <td class="highlight">Accueil et présentation de l'événement</td>
+        <td class="highlight">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Accueil et présentation de l'événement</p>
+            <p class="highlighted-item_details">Présentation des journées, des salles et des temps forts.</p>
+          </div>
+        </td>
         <td class="empty-room" colspan="2">Pas de conférence</td>
       </tr>
       <tr class="row-split">
         <td class="row-title">9h45 - 10h30</td>
-        <td class="highlight">Conférence plénière (annonce à venir)</td>
+        <td class="highlight">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Conférence plénière</p>
+            <p class="highlighted-item_details">Annonce à venir (mais ça sera vachement bien).</p>
+          </div>
+        </td>
         <td class="empty-room" colspan="2">Pas de conférence</td>
       </tr>
       <tr class="row-split">
         <td class="row-title">10h30 - 11h00</td>
-        <td class="highlight" colspan="3">Pause café</td>
+        <td class="highlight" colspan="3">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Pause café</p>
+            <p class="highlighted-item_details">C'est le moment de faire connaissance avec vos voisins.</p>
+          </div>
+        </td>
       </tr>
       <tr class="row-split">
         <td class="row-title">11h00 - 11h45</td>
@@ -61,11 +83,16 @@
       </tr>
       <tr class="row-split">
         <td class="row-title">12h30 - 14h00</td>
-        <td class="highlight" colspan="3">Déjeuner</td>
+        <td class="highlight" colspan="3">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Déjeuner</p>
+            <p class="highlighted-item_details">Vous voyez les coupons qui vous ont été donnés à votre arrivée ? C'est le moment de vous en servir.</p>
+          </div>
+        </td>
       </tr>
       <tr class="row-split">
         <td class="row-title">14h00 - 14h45</td>
-        <td>Table ronde usines à sites</td>
+        <td>Table ronde usines à sites<br />Détails à venir</td>
         <td>{{ range where .Site.Pages ".Params.session_id" "#05" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td class="contrib-room" rowspan="2">
           <div class="contrib-room-wrapper">
@@ -88,7 +115,12 @@
       </tr>
       <tr class="row-split">
         <td class="row-title">15h30 - 16h00</td>
-        <td class="highlight" colspan="3">Pause café</td>
+        <td class="highlight" colspan="3">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Pause café</p>
+            <p class="highlighted-item_details">Demandez à 3 personnes comment elles ont découvert Drupal, vous devriez avoir 3 histoires originales.</p>
+          </div>
+        </td>
       </tr>
       <tr>
         <td class="row-title" rowspan="2">16h00 - 16h45</td>
@@ -121,7 +153,12 @@
       </tr>
       <tr class="row-split">
         <td class="row-title">18h15 - 19h00</td>
-        <td class="highlight" colspan="3">Verre de l'amitié</td>
+        <td class="highlight" colspan="3">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Verre de l'amitié</p>
+            <p class="highlighted-item_details">Cette première journée a dû activer vos méninges, partageons autour d'un verre et d'un grignotage ce que vous avez retenu.</p>
+          </div>
+        </td>
       </tr>
     </table>
 
@@ -138,25 +175,47 @@
       <tbody>
       <tr class="row-split">
         <td class="row-title">9h00 - 9h30</td>
-        <td class="highlight" colspan="3">Café d'accueil</td>
+        <td colspan="3" class="highlight">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Café d'accueil</p>
+            <p class="highlighted-item_details">
+              Dis donc, vous en avez des petits yeux ? La soirée s'est terminée tard ? Allez, prenez une boisson chaude, ça va vous réveiller.
+            </p>
+          </div>
+        </td>
       </tr>
       <tr class="row-split">
         <td class="row-title">9h30 - 9h45</td>
-        <td class="highlight">Session d'accueil</td>
+        <td class="highlight">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Session d'accueil</p>
+            <p class="highlighted-item_details">C'est reparti pour un tour, on vous partage les infos du jour à connaître.</p>
+          </div>
+        </td>
         <td class="empty-room" colspan="2">Pas de conférence</td>
       </tr>
       <tr class="row-split">
         <td class="row-title">9h45 - 10h30</td>
-        <td class="highlight">Conférence plénière (annonce à venir)</td>
+        <td class="highlight">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Conférence plénière</p>
+            <p class="highlighted-item_details">Annonce à venir (mais ça sera vachement bien aussi).</p>
+          </div>
+        </td>
         <td class="empty-room" colspan="2">Pas de conférence</td>
       </tr>
       <tr class="row-split">
         <td class="row-title">10h30 - 11h00</td>
-        <td class="highlight" colspan="3">Pause café</td>
+        <td class="highlight" colspan="3">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Pause café</p>
+            <p class="highlighted-item_details">Pas mal cette plénière, on prend le temps d'en discuter.</p>
+          </div>
+        </td>
       </tr>
       <tr class="row-split">
         <td class="row-title" rowspan="2">11h00 - 11h45</td>
-        <td rowspan="2">Table ronde sur la contribution</td>
+        <td rowspan="2">Table ronde sur la contribution<br />Détails à venir.</td>
         <td>{{ range where .Site.Pages ".Params.session_id" "#34" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td class="contrib-room" rowspan="3">
           <div class="contrib-room-wrapper">
@@ -178,7 +237,12 @@
       </tr>
       <tr class="row-split">
         <td class="row-title">12h30 - 14h00</td>
-        <td class="highlight" colspan="3">Déjeuner</td>
+        <td class="highlight" colspan="3">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Déjeuner</p>
+            <p class="highlighted-item_details">C'était tellement bon hier ! J'espère que ça sera aussi bien ce midi. C'est bon, j'ai mon coupon.</p>
+          </div>
+        </td>
       </tr>
       <tr class="row-split">
         <td class="row-title">14h00 - 14h45</td>
@@ -202,7 +266,12 @@
       </tr>
       <tr class="row-split">
         <td class="row-title">15h30 - 16h00</td>
-        <td class="highlight" colspan="2">Pause café</td>
+        <td class="highlight" colspan="2">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Pause café</p>
+            <p class="highlighted-item_details">Les paupières commencent à être lourdes, un petit de sucre pour terminer en forme.</p>
+          </div>
+        </td>
       </tr>
       <tr class="row-split">
         <td class="row-title">16h00 - 16h45</td>
@@ -216,7 +285,12 @@
       </tr>
       <tr class="row-split">
         <td class="row-title" rowspan="2">17h30 - 18h15</td>
-        <td class="highlight">Plénière de cloture</td>
+        <td class="highlight">
+          <div class="highlighted-item">
+            <p class="highlighted-item_label">Plénière de clôture</p>
+            <p class="highlighted-item_details">C'est déjà terminé ? On se dit au revoir correctement et on vous parle de samedi.</p>
+          </div>
+        </td>
         <td class="empty-room" colspan="2">Pas de conférence</td>
       </tr>
     </table>
