@@ -32,7 +32,7 @@ Si prévoyez de venir jeudi et vendredi et au dernier moment de rester un jour d
 Si vous êtes à jour de votre cotisation à l'[association Drupal France et francophonie](https://www.drupal.fr/) ou que vous disposez d'une carte de réduction (étudiants, demandeurs d'emploi, familles nombreuses...) vous pouvez bénéficier d'une réduction de 15 € sur demande et présentation de votre justificatif.
 Si tel est le cas, il vous suffit de [contacter l'équipe](/contact) pour que nous vous transmettions votre code de réduction.
 
-### Comment ça marche ?
+### Réduction adhérent : comment ça marche ?
 
 1. Assurez-vous d'être à jour de votre cotisation adhérent à l'association
 2. Le cas échéant, renouvelez votre adhésion
