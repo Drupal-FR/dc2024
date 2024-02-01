@@ -35,7 +35,7 @@ Si tel est le cas, il vous suffit de [contacter l'équipe](/contact) pour que no
 ### Réduction adhérent : comment ça marche ?
 
 1. Assurez-vous d'être à jour de votre cotisation adhérent à l'association
-2. Le cas échéant, renouvelez votre adhésion
+2. Le cas échéant, [renouvelez votre adhésion](https://www.drupal.fr/adhesion)
 3. [Contactez-nous](/contact) et demandez-nous un coupon
 4. Utilisez le sur [la page de billetterie](https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024-v4) pour bénéficier d'une réduction de 15€
 
