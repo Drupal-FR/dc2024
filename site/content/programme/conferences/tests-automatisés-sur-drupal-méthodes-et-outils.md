@@ -7,7 +7,7 @@ duration: 40 min
 audience: Découverte
 themes: Tests automatisés
 speakers: Nuwantha
-companies: Klee
+companies: Niji
 teaser: Le but de cette session est de présenter l'utilisation des systèmes de
   tests automatisés pour les tests unitaires et fonctionnels. Nous démontrerons
   à quel point la pratique est importante mais relativement facile à mettre en
