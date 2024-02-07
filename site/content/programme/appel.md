@@ -35,9 +35,9 @@ N'hésitez pas non plus à proposer des conférences pour des personnes qui déc
 
 ## Appel à conférences
 
-* Vous pouvez soumettre votre présentation jusqu'au **17 janvier** inclus !
-* Le choix des conférences se fera par un vote collégial par l'équipe organisatrice.
-* À la suite de ce choix, vous serez informés du rejet ou de l'acceptation de votre conférence.
+* L'appel était ouvert jusqu'au **17 janvier** inclus !
+* Le choix des conférences a été fait par un vote collégial par l'équipe organisatrice.
+* À la suite de ce choix, le rejet ou de l'acceptation de votre conférence vous a été signifié.
 * Une fois toutes les conférences planifiées, nous vous partagerons le programme détaillé de l'événement.
 * Si votre proposition est de bonne facture mais ne peut être retenue faute de place dans le programme, nous vous demanderons si vous accepterez de la préparer comme conférence de remplacement. Si votre conférence ne peut être donnée lors du Drupalcamp vous pourrez toujours la présenter dans un meetup.
 * Les frais de voyage et de logement ne sont pas défrayés.
@@ -46,8 +46,8 @@ N'hésitez pas non plus à proposer des conférences pour des personnes qui déc
 
 ## Calendrier
 
-* L'appel à conférences est ouvert jusqu'au **17 janvier** inclus.
-* La constitution du programme sera annoncée la première semaine de février.
+* L'appel à conférences est clos depuis le **18 janvier**.
+* [Le programme](/programme) est en ligne.
 
 ## Recommandations
 
@@ -75,4 +75,4 @@ N'hésitez pas non plus à proposer des conférences pour des personnes qui déc
 
 ## Besoin d'aide pour vous lancer ? Envie d'aider des novices ?
 
-Nous proposons un accompagnement des personnes néophytes par des habituées de l'exercice, plus d'informations, rendez-vous sur la [page dédiée](/programme/accompagnement).
+Nous proposons un accompagnement des personnes néophytes par des habituées de l'exercice. Pour plus d'informations, rendez-vous sur la [page dédiée](/programme/accompagnement).
