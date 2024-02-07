@@ -9,7 +9,13 @@ image: /img/cover/session.jpg
 credits: Nicolas MEYER
 draft: false
 ---
-**La période de soumission des sujets de conférence est terminée. Rendez-vous dans quelques jours pour découvrir la grille de conférence que nous vous aurons concocté.**
+{{< cta
+title="L'appel à conférences est terminé"
+link_url="/programme"
+link_label="Voir le programme"
+link_title="" >}}
+Merci pour vos soumissions, le programme est maintenant en ligne.
+{{< /cta >}}
 
 Si vous souhaitez présenter un sujet lors de ce Drupalcamp, voici quelques informations à retenir :
 
