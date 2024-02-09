@@ -1,7 +1,7 @@
 ---
 title: Acquia
 draft: false
-sponsor_logo: logo/logo.svg
+sponsor_logo: logo/logo_acquia.png
 sponsor_site: https://acquia.com/fr
 sponsor_type: 02_silver
 body_extra: >-
