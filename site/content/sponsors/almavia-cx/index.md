@@ -4,6 +4,23 @@ draft: false
 sponsor_logo: logo/almaviacx-logo_bleu.png
 sponsor_site: https://almaviacx.com/
 sponsor_type: 02_silver
+body_extra: >-
+  ## AlmaviaCX recrute pour renforcer son équipe d’experts Drupal  :
+
+
+  * **Consultants  Solutions**  : <https://almaviacx.com/carrieres/rejoignez-nous/consultant-e-solutions-cms-dxp>
+
+  * **Tech lead**   :  <https://almaviacx.com/carrieres/rejoignez-nous/tech-lead-drupal-h-f>
+
+  * **Développeurs seniors** : <https://almaviacx.com/carrieres/rejoignez-nous/developpeur-senior-drupal-f-h>
+
+
+
+   
+
+
+
+  Rejoignez nous !
 video: ""
 type: sponsors
 ---
