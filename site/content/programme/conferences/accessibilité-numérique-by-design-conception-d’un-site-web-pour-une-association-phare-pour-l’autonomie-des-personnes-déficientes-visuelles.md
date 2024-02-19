@@ -7,8 +7,9 @@ slug: 33-accessibilite-par-design
 duration: 40 min
 audience: Découverte
 themes: Accessibilité, méthodologie
-speakers: Aliénor Fernandez
-companies: Axess
+speakers: "Aliénor Fernandez & Francis Lemaitre accompagnés de Émilie Mansour &
+  Anthony Naudin "
+companies: Axess et numerik-ea
 teaser: "Réorganiser une méthodologie de conception web pour l'axer sur
   l’accessibilité ? On l'a fait pour une association de soutien aux déficients
   visuels : on vous partage notre expérience et nos outils !"
