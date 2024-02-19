@@ -7,7 +7,7 @@ slug: observateur-responsable
 duration: 40 min
 audience: Découverte
 themes: Introspection
-speakers: Marcy CHAROLLOIS
+speakers: Marcy Charollois
 companies: Indépendante
 teaser: >-
   Reconnaissance faciale défaillante, assimilation des noirs aux gorilles sur
