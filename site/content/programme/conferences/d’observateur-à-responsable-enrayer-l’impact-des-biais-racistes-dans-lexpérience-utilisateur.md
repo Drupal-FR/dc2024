@@ -24,7 +24,7 @@ teaser: >-
 
 
   Alors, comment garantir des expériences neutres ou universelles dans un monde où l'UX se veut optimale et inclusive pour tous ?
-prerequisites: Aucun
+prerequisites: ""
 plan: ""
 takeway: ""
 type: conference

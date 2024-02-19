@@ -15,12 +15,18 @@
     <div class="conference-full__teaser">{{ .Params.teaser | markdownify }} </div>
     <div class="conference-full__details">
       <div class="conference-full__description">
+        {{ with .Params.prerequisites }}
         <div class="conference-full__prerequisites"><h3>Pré-requis :</h3>
-          {{ .Params.prerequisites | markdownify }} </div>
+          {{ . | markdownify }} </div>
+        {{ end }}
+        {{ with .Params.plan }}
         <div class="conference-full__plan"><h3>La session parlera de :</h3>
-          {{ .Params.plan | markdownify }} </div>
+          {{ . | markdownify }} </div>
+        {{ end }}
+        {{ with .Params.takeway }}
         <div class="conference-full__takeway"><h3>Vous aurez appris :</h3>
-          {{ .Params.takeway | markdownify }} </div>
+          {{ . | markdownify }} </div>
+        {{ end }}
       </div>
       {{ .Content | safeHTML }}
     </div>
