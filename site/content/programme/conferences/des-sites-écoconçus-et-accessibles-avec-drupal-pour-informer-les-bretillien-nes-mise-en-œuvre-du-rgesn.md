@@ -7,7 +7,7 @@ slug: 32-site-eco-accessible
 duration: 40 min
 audience: Découverte
 themes: Accessibilité, écoconception
-speakers: Marité LEVOYER & Anne-Laure Hamonou accompagnées de Benjamin Petit &
+speakers: Marité Levoyer & Anne-Laure Hamonou accompagnées de Benjamin Petit &
   Laetitia Gaspari
 companies: Département Ille-et-Vilaine & Orange Business
 teaser: >-
