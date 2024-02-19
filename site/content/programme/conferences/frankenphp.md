@@ -9,6 +9,6 @@ themes: Analyse
 speakers: Kévin Dunglas
 companies: Les Tilleuls
 teaser: À venir.
-prerequisites: .
+prerequisites: ""
 type: conference
 ---
