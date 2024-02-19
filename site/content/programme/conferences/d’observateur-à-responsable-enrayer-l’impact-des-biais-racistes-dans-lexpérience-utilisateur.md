@@ -1,7 +1,7 @@
 ---
 title: "D’observateur à responsable : enrayer l’impact des biais racistes dans
   l'expérience utilisateur"
-draft: true
+draft: false
 session_id: "#100"
 slug: observateur-responsable
 duration: 40 min
