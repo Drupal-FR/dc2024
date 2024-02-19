@@ -6,7 +6,7 @@ slug: 58-tests-automatises-outils
 duration: 40 min
 audience: Découverte
 themes: Tests automatisés
-speakers: Nuwantha & Remi TREUSSART
+speakers: Nuwantha & Remi Treussart
 companies: Niji
 teaser: Le but de cette session est de présenter l'utilisation des systèmes de
   tests automatisés pour les tests unitaires et fonctionnels. Nous démontrerons
