@@ -3,10 +3,10 @@ menu:
   main:
     parent: Communauté
     weight: 30
-title: "Bénévoles"
-summary: "Merci à nos bénévoles pour l'organisation du Drupalcamp Rennes 2024."
+title: Bénévoles
+summary: Merci à nos bénévoles pour l'organisation du Drupalcamp Rennes 2024.
 layout: noheader
-draft: true
+draft: false
 ---
 
 Merci à nos bénévoles sans qui le Drupalcamp n'aurait pas pu avoir lieu :
