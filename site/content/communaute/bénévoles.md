@@ -18,6 +18,8 @@ Merci à nos bénévoles sans qui le Drupalcamp n'aurait pas pu avoir lieu :
 
 Mais aussi à :
 
+- Adrien C.
+- Aliénor F.
 - Simon G.
 - Yoann L.
 - Christophe V.
