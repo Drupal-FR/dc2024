@@ -97,26 +97,34 @@ $grass-wetter: #04593d;
   --footer-text: #{$blue-aqua};
   --footer-link: white;
   --footer-link-hover: #{$blue-aqua};
+
+  --container-width: 240px;
+  @include media('>=phablet') {
+    --container-width: 430px;
+  }
+  @include media('>=tablet') {
+    --container-width: 680px;
+  }
+  @include media('>=desktop') {
+    --container-width: 960px;
+  }
+  @include media('>=wide') {
+    --container-width: 1140px;
+  }
 }
 
 /* Structural */
 .content-container {
   margin: auto;
   padding: 1rem 2rem;
-  @include media('>=phablet') {
-    width: 430px;
-  }
   @include media('>=tablet') {
-    width: 680px;
     padding: 2rem 2rem;
   }
   @include media('>=desktop') {
-    width: 960px;
     padding: 1.5rem 0rem;
   }
-  @include media('>=wide') {
-    width: 1140px;
-  }
+  // Adjust width dynamically.
+  width: var(--container-width);
 }
 .main-content {
   margin-block-start: 2rem;
