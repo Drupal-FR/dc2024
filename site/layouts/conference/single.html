@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $audience := replace .Params.audience "é" "e" }}
+{{ $audience = replace $audience "è" "e" }}
 
 <main class="main-content">
   <div class="conference-full session-level--{{ $audience | urlize }}">

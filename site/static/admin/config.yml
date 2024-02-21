@@ -43,6 +43,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Découverte", value: "Découverte" }
           - { label: "Intermédiaire", value: "Intermédiaire" }
           - { label: "Expertise", value: "Expertise" }
+          - { label: "Plénière", value: "Plénière" }
       - {label: "Thèmes", name: "themes", widget: "string"}
       - {label: "Présentée par", name: "speakers", widget: "string"}
       - {label: "Société(s)", name: "companies", widget: "string"}

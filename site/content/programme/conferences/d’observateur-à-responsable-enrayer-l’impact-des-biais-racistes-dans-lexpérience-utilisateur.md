@@ -5,7 +5,7 @@ draft: false
 session_id: "#100"
 slug: observateur-responsable
 duration: 40 min
-audience: Découverte
+audience: Plénière
 themes: Introspection
 speakers: Marcy Charollois
 companies: Indépendante

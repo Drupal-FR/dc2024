@@ -27,6 +27,12 @@
 .session-level--expertise {
   --level-color: var(--session-level-hard);
 }
+.session-level--contrib {
+  --level-color: #7B19ACFF;
+}
+.session-level--pleniere {
+  --level-color: #ac6519;
+}
 .session-level {
   border: solid 1px var(--level-color);
   color: var(--level-color);
