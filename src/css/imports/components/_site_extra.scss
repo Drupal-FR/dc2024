@@ -80,14 +80,15 @@ $content-color: var(--footer-background);
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  @include media('>=tablet') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   @include media('>=desktop') {
     &:nth-child(2) {
       border-inline-start: solid 1px $gray-light;
       padding-inline-start: 2rem;
     }
-  }
-  @include media('>=wide') {
-    gap: 2rem;
   }
   &--01_gold {
     align-items: center;
