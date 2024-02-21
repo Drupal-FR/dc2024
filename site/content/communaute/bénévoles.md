@@ -9,3 +9,15 @@ layout: noheader
 draft: true
 ---
 
+Merci à nos bénévoles sans qui le Drupalcamp n'aurait pas pu avoir lieu :
+
+- Anne-Sophie P.
+- Julien D.
+- Marine G.
+- Nicolas L.
+
+Mais aussi à :
+
+- Simon G.
+- Yoann L.
+- Christophe V.
