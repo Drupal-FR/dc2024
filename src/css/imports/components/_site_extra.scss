@@ -27,6 +27,11 @@ $content-color: var(--footer-background);
   }
   a {
     color: var(--footer-link);
+    @include media('<tablet') {
+      padding: 0.8rem 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
     &:hover {
       color: var(--footer-link-hover);
     }
@@ -53,6 +58,9 @@ $content-color: var(--footer-background);
   display: flex;
   padding: 0;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 0;
 }
 .site-extra__column-content-link {
   list-style: none;
@@ -152,7 +160,11 @@ $content-color: var(--footer-background);
   }
 }
 .icon.icon--social {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   fill: white;
+  @include media('>=tablet') {
+    width: 30px;
+    height: 30px;
+  }
 }
