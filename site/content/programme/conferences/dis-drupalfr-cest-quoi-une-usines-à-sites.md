@@ -22,14 +22,11 @@ teaser: >-
   Intervenants invités : Sylvain Moreau (Axess), un intervenant technique chez Smile, flocondetoile, David Piederriere de l'université de Rennes
 prerequisites: ""
 plan: >-
-  Les thématiques qui seront abordées : 
-
-
-  * Qu'est-ce qui pour vous qualifie un projet d'"Usine à sites" (le nombre de sites, l'outillage associée, ...) ?
+  * Qu'est-ce qui, pour vous, qualifie un projet d'«Usine à sites» (le nombre de sites, l'outillage associé...) ?
 
   * Quels sont les besoins récurrents de ce type de projet ?
 
-  * Quelles sont les solutions techniques fournies out-of-the-box (ou presque) par Drupal ? Quelles sont les différentes typologies d'usines à site ?
+  * Quelles sont les solutions techniques fournies sur étagère (ou presque) par Drupal ? Quelles sont les différentes typologies d'usines à site ?
 
   * Quelles sont les limites actuelles / les principaux problèmes de ces projets ?
 takeway: Comment choisir entre les différentes solutions techniques existantes.

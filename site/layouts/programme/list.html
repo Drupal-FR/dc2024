@@ -95,7 +95,7 @@
       </tr>
       <tr class="row-split">
         <td class="row-title">14h00 - 14h45</td>
-        <td>Table ronde usines à sites<br />Détails à venir</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#63" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td>{{ range where .Site.Pages ".Params.session_id" "#05" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td class="contrib-room" rowspan="2">
           <div class="contrib-room-wrapper">
@@ -223,7 +223,7 @@
       </tr>
       <tr class="row-split">
         <td class="row-title" rowspan="2">11h00 - 11h45</td>
-        <td rowspan="2">Table ronde sur la contribution<br />Détails à venir.</td>
+        <td>{{ range where .Site.Pages ".Params.session_id" "#54" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td>{{ range where .Site.Pages ".Params.session_id" "#34" }}{{ .Render "conference-teaser" }}{{ end }}</td>
         <td class="contrib-room" rowspan="3">
           <div class="contrib-room-wrapper">
