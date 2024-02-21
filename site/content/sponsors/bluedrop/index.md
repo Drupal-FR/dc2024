@@ -2,9 +2,8 @@
 title: bluedrop.fr
 draft: false
 sponsor_logo: logo/logo-bluedrop-vertical-2-.png
-sponsor_site: bluedrop.fr
+sponsor_site: https://www.bluedrop.fr/
 sponsor_type: 02_silver
-video: ""
 body_extra: >-
   ## Nos projets
 
@@ -17,6 +16,7 @@ body_extra: >-
   * [Découvrez tous nos projets !](https://www.bluedrop.fr/projets-drupal/etudes-de-cas)
 
   * [Suivez-nous sur LinkedIn !](https://www.linkedin.com/company/bluedrop/mycompany/verification/?viewAsMember=true)
+video: ""
 type: sponsors
 ---
 Depuis 25 ans, nous créons des projets web open source. 
