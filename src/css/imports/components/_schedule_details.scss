@@ -112,6 +112,9 @@
   --level-color: #7B19ACFF;
   justify-self: stretch;
 }
+.conference-teaser.session-level--pleniere {
+  --level-color: #ac6519;
+}
 .conference-teaser__duration.conference-teaser__meta-item {
   @include media('<=tablet') {
     flex-direction: column;
@@ -144,7 +147,7 @@
   text-align: left;
 }
 .highlighted-item {
-  border: solid 1px #7b19ac;
+  border: solid 1px #cdc5d0;
   border-left: solid 4px #7b19ac;
   width: 80%;
   margin: auto;
@@ -161,6 +164,7 @@
 .highlighted-item_label {
   margin-block-start: 0;
   margin-block-end: 0.5rem;
+  font-size: 0.8rem;
 }
 .highlighted-item_details {
   font-size: 0.8rem;
