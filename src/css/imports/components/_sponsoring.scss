@@ -243,8 +243,12 @@ a.sponsor-logo__site {
 .sponsor-single__desc {
   margin: 0;
 }
+.sponsor-single__extra {
+ margin-block-end: 2rem;
+}
 .sponsor-single__video {
   text-align: center;
+  margin-block-start: 1rem;
   iframe {
     aspect-ratio: 16/9;
     height: auto;
