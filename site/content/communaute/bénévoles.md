@@ -17,25 +17,23 @@ Merci à nos bénévoles sans qui le Drupalcamp n'aurait pas pu avoir lieu.
 * Marine G. / [Mupsi](https://www.drupal.org/u/mupsi)
 * Nicolas L. / [nicoloye](https://www.drupal.org/u/nicoloye)
 
-### Nos bénévoles (avant / pendant / après) : 
+### Nos bénévoles (avant / pendant / après) :
 
 * Simon G. / [Simon Georges](https://www.drupal.org/u/simon-georges)
 * Yoann L. / [yoann.acquia](https://www.drupal.org/u/yoannacquia)
 * Christophe V. / [hellosct1](https://www.drupal.org/u/hellosct1)
 
-### L'équipe de l'identité visuelle
+### Les créateurs de Yuna et de l'identité visuelle
 
 * Adrien C.
 * Aliénor F.
 * Floris M. / [florismoriceau](https://www.drupal.org/u/florismoriceau)
 
+### L'équipe d'accompagnement des conférenciers :
 
-
-### L'équipe d'accompagnement des conférenciers : 
-
-* Olivier B.
-* Simon
-* Olivier P.
-* Guillaume B.
+* Olivier B. / [O'Briat](https://www.drupal.org/u/obriat)
+* Simon D. / [Simondlv](https://www.drupal.org/u/simondlv)
+* Olivier P. / [opi](https://www.drupal.org/u/opi)
+* Guillaume B. / [Bès](https://www.drupal.org/u/b%C3%A8s)
 * Sylvain B.
-* Pierre C.
+* Pierre C. / [Pierre Chauvel](https://www.drupal.org/u/pierre-chauvel)
