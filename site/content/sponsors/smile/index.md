@@ -4,8 +4,12 @@ draft: false
 sponsor_logo: logo/smile-eu-logo-vector.png
 sponsor_site: https://www.smile.eu/fr
 sponsor_type: 01_gold
-body_extra: "Nous recrutons : [rendez-vous sur le site de Smile pour plus de
-  détails](https://jobs.smile.eu/#jobs)."
+body_extra: >-
+  Nous recrutons : [rendez-vous sur le site de Smile pour plus de
+  détails](https://jobs.smile.eu/#jobs).
+
+
+  ### Smile en vidéo
 video: WQqYMAS7qAA
 type: sponsors
 ---
