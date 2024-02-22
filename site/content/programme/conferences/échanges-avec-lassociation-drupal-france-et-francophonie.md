@@ -1,6 +1,6 @@
 ---
 title: Échanges avec l'association Drupal France et francophonie
-draft: true
+draft: false
 session_id: "#na"
 slug: "0000"
 duration: 40 min
