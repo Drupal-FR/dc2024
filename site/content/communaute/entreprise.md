@@ -59,4 +59,13 @@ En résumé, si vraiment, vraiment, vous doutez encore. Il n'y a pas de Drupalca
 * des tonnes de souvenirs et de bonne humeur à partager avec ses collègues en rentrant,
 * des découvertes et de la rigolade...
 
+## Les tous derniers arguments
+
+* Rennes est accessible en 1h30 de Paris, et il est possible de vous déplacer pour une seule journée
+* Vous rencontrerez en vrai des mainteneurs de Drupal et de module, ils sont super sympa et peuvent vous signer un autographe (ou faire un selfie pour certains)
+* Il y aura de quoi manger le midi
+* Nous organisons même une tombola caritative pour aider une belle association
+
+
+
 On a hâte de vous retrouver pour ces 3 jours à Rennes.
