@@ -38,6 +38,6 @@ Merci à nos bénévoles sans qui le Drupalcamp n'aurait pas pu avoir lieu.
 * Sylvain B.
 * Pierre C. / [Pierre Chauvel](https://www.drupal.org/u/pierre-chauvel)
 
-
-
 Les crédits sont également visibles sur [la page de l'évènement sur drupal.org](https://www.drupal.org/community/events/drupalcamp-rennes-2024-2024-03-28).
+
+Vous voulez nous aider ? [Contactez-nous](/contact) !
