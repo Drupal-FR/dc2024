@@ -25,6 +25,15 @@ Comment demander à mon entreprise de venir au Drupalcamp ? Voici quelques argum
 * de revenir le cœur chargé de bonnes intentions et de nombreuses idées en tête pour améliorer les méthodes de travail au sein de l'équipe,
 * la chance de découvrir un module ou une fonctionnalité qui me permettra de réaliser de nouveaux projets pour mon agence.
 
+  {{< cta
+  title="Accéder à la billetterie"
+  link_url="https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024-v4"
+  link_label="Acheter ma place"
+  link_title="Acheter mon billet pour la conférence." >}}
+  Un Drupalcamp est l'occasion de faire des rencontres et d'apprendre en un temps record !
+  Rejoignez-nous pour en profiter vous aussi.
+  {{< /cta >}}
+
 ## Je suis chef/ffe de projet et je cherche des arguments pour venir moi aussi au Drupalcamp
 
 Parce que oui, un Drupalcamp c'est aussi un évènement pour les chefs de projet, il n'y a pas que des discussions techniques. Je pourrai : 
@@ -49,7 +58,8 @@ Il reste encore un monde où des incertains n'auraient pas encore pris leur déc
 
 * venir au Drupalcamp, c'est venir avec les collègues et profiter des soirées ! (vous ne saviez pas qu'un apéro était prévu le jeudi soir ? et bien maintenant c'est fait),
 * découvrir la ville de Rennes, fort sympathique qui regorge de recoins et bons resto (manger reste un indispensable),
-* participer à la communauté open source Drupal francophone, venez comme vous êtes :).
+* participer à la communauté open source Drupal francophone, venez comme vous êtes :)
+* venir se former, découvrir Drupal, ses usages et ses fonctionnalités pour mon projet personnel ou professionnel, que j'en sois un utilisateur au quotidien, un responsable numérique ou un décideur à la recherche de LA bonne solution technique.
 
 En résumé, si vraiment, vraiment, vous doutez encore. Il n'y a pas de Drupalcamp tous les ans et c'est le seul évènement de l'année autour de Drupal, 100% en français et en présentiel. Pour l'instant, aucun autre Drupalcamp n'est programmé à date. Profitons de cette année pour découvrir l'ambiance unique de cet évènement communautaire.
 
@@ -66,6 +76,13 @@ En résumé, si vraiment, vraiment, vous doutez encore. Il n'y a pas de Drupalca
 * Il y aura de quoi manger le midi
 * Nous organisons même une tombola caritative pour aider une belle association
 
-
-
 On a hâte de vous retrouver pour ces 3 jours à Rennes.
+
+{{< cta
+title="Accéder à la billetterie"
+link_url="https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024-v4"
+link_label="Acheter ma place"
+link_title="Acheter mon billet pour la conférence." >}}
+Un Drupalcamp est l'occasion de faire des rencontres et d'apprendre en un temps record !
+Rejoignez-nous pour en profiter vous aussi.
+{{< /cta >}}
