@@ -1,7 +1,7 @@
 ---
 title: 'Smells like "team spirit" : Maintenir une cohésion avec une équipe
   déployée dans toute la France'
-draft: false
+draft: true
 session_id: "#28"
 slug: 28-cohesion-equipe
 duration: 20 min
