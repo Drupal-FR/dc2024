@@ -18,8 +18,8 @@ teaser: >-
 prerequisites: Aucun, la conférence est ouverte à toutes les personnes qui
   s'intéressent de près ou de loin à la vie de l'association.
 plan: |-
-  * Bilan des activités de l’association sur ces 2 dernières années
-  * Animation des meetups locaux
-  * Recherche de gens motivés pour s'impliquer
+  * Bilan des activités de l’association sur ces 2 dernières années,
+  * Animation des meetups locaux,
+  * Recherche de gens motivés pour s'impliquer.
 type: conference
 ---
