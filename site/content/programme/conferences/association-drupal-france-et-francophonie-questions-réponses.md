@@ -2,7 +2,7 @@
 title: Association Drupal France et francophonie, questions & réponses
 draft: false
 session_id: "#103"
-slug: adff
+slug: 103-adff
 duration: 40 min
 audience: Découverte
 themes: Vie associative
