@@ -4,7 +4,7 @@ draft: false
 session_id: "#103"
 slug: 103-adff
 duration: 40 min
-audience: Découverte
+audience: Plénière
 themes: Vie associative
 speakers: Le bureau
 companies: Association Drupal France et francophonie
