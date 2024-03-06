@@ -17,19 +17,17 @@ Merci à nos bénévoles sans qui le Drupalcamp n'aurait pas pu avoir lieu.
 * Marine G. / [Mupsi](https://www.drupal.org/u/mupsi)
 * Nicolas L. / [nicoloye](https://www.drupal.org/u/nicoloye)
 
-### Nos bénévoles (avant / pendant / après) :
+### Nos bénévoles (avant / pendant / après)
 
 * Simon G. / [Simon Georges](https://www.drupal.org/u/simon-georges)
 * Yoann L. / [yoann.acquia](https://www.drupal.org/u/yoannacquia)
-* Christophe V. / [hellosct1](https://www.drupal.org/u/hellosct1)
 
 ### Les créateurs de Yuna et de l'identité visuelle
 
 * Adrien C.
 * Aliénor F.
-* Floris M. / [florismoriceau](https://www.drupal.org/u/florismoriceau)
 
-### L'équipe d'accompagnement des conférenciers :
+### L'équipe d'accompagnement des conférenciers
 
 * Olivier B. / [O'Briat](https://www.drupal.org/u/obriat)
 * Simon D. / [Simondlv](https://www.drupal.org/u/simondlv)
@@ -37,6 +35,12 @@ Merci à nos bénévoles sans qui le Drupalcamp n'aurait pas pu avoir lieu.
 * Guillaume B. / [Bès](https://www.drupal.org/u/b%C3%A8s)
 * Sylvain B.
 * Pierre C. / [Pierre Chauvel](https://www.drupal.org/u/pierre-chauvel)
+
+### Et merci également aux autres membres de la force vive
+
+* Vincent M. / [vmaucorps](https://www.drupal.org/u/vmaucorps)
+* Christophe V. / [hellosct1](https://www.drupal.org/u/hellosct1)
+* Floris M. / [florismoriceau](https://www.drupal.org/u/florismoriceau)
 
 Les crédits sont également visibles sur [la page de l'évènement sur drupal.org](https://www.drupal.org/community/events/drupalcamp-rennes-2024-2024-03-28).
 
