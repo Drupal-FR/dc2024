@@ -2,10 +2,10 @@
 title: Fermeture de la billetterie dans 10 jours !
 draft: false
 date: 2024-03-11T16:53:42.360Z
-teaser: Pensez à réserver votre pass avant le vendredi 22 mars, ensuite il sera
+teaser: Pensez à réserver votre pass avant le mercredi 20 mars, ensuite il sera
   trop tard !
 ---
-Pour des raisons de commandes de repas, nous devrons fermer l'accès à la billetterie au plus tard le jeudi soir 21 mars prochain. 
+Pour des raisons de commandes de repas, nous devrons fermer l'accès à la billetterie au plus tard le mercredi soir 20 mars prochain. 
 
 Il vous reste une dizaine de jours pour prendre votre ticket.
 
