@@ -1,5 +1,5 @@
 ---
-title: Ebizproduction
+title: bluedrop.fr
 draft: false
 sponsor_logo: logo/logo-bluedrop-vertical-2-.png
 sponsor_site: https://www.bluedrop.fr/
