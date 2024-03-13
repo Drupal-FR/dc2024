@@ -12,8 +12,6 @@ body_extra: >-
 video: ""
 type: sponsors
 ---
-**Acquia** est la plateforme ouverte d'expérience digitale qui permet aux organisations de construire, d'héberger, d'analyser et de communiquer avec leurs clients à grande échelle via des sites web et des applications digitales tout en optimisant la gouvernance digitale web: accessibilité, SEO...En tant que leader open source de confiance, nous utilisons l'intelligence adaptative pour produire de meilleurs résultats commerciaux pour les responsables CX. 
-
-
+Acquia permet aux marques les plus ambitieuses de créer des expériences digitales exceptionnelles. Basée sur l'open source de Drupal, la Plateforme d'expérience digitale (DXP) Acquia permet aux développeurs ainsi qu'aux équipes d'exploitation informatique et de marketing de milliers d'organisations internationales de composer et de déployer rapidement des produits et services digitaux qui engagent les clients, améliorent les conversions et les aident à se démarquer. Pour en savoir plus, rendez-vous sur [acquia.com](https://www.acquia.com/).
 
 Pour plus d'informations, veuillez consulter : [acquia.com/fr](https://acquia.com/fr)
