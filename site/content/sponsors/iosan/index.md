@@ -1,7 +1,7 @@
 ---
 title: IOSAN
 draft: false
-sponsor_logo: logo/iosan-logo-couleurs-rvb.jpg
+sponsor_logo: logo/iosan-logo-couleurs-rvb.png
 sponsor_site: https://www.iosan.fr/
 sponsor_type: 02_silver
 body_extra: ""
