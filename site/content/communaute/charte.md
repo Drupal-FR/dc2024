@@ -2,7 +2,7 @@
 menu:
   main:
     parent: Communauté
-    weight: 10
+    weight: 40
 title: Charte de bonne conduite
 summary: "Pour que l'événement se déroule bien nous vous demandons de respecter la charte de bonne conduite de l'événement."
 layout: noheader

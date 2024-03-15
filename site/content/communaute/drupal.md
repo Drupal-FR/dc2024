@@ -2,7 +2,7 @@
 menu:
   main:
     parent: Communauté
-    weight: 30
+    weight: 10
 title: Drupal, qu'est ce que c'est ?
 summary: "[Drupal](https://www.drupal.org) est un système de gestion de contenu
   open source en PHP."
