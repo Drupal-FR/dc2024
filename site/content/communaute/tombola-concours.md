@@ -6,7 +6,7 @@ menu:
 title: "Tombola & Concours"
 summary: Aidez une association et repartez avec un souvenir.
 layout: noheader
-draft: true
+draft: false
 subtitle: ""
 ---
 
