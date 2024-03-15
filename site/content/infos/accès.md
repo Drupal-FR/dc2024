@@ -2,7 +2,7 @@
 draft: false
 summary: Comment venir à l'événement
 layout: acces
-title: Accès
+title: Accéder au Drupalcamp
 subtitle: Repérez-vous dans la ville
 credits: <a href="https://visualhunt.co/a7/0e23971e">jisse62</a> on <a
   href="https://visualhunt.com/re10/73fb5f13">Visualhunt</a> - <a
