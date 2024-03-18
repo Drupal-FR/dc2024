@@ -3,44 +3,45 @@ menu:
   main:
     parent: Communauté
     weight: 45
-title: "Tombola & Concours"
+title: Tombola & Concours
+draft: false
 summary: Aidez une association et repartez avec un souvenir.
 layout: noheader
-draft: false
 subtitle: ""
 ---
+## Aidez l'association de votre choix en participant à notre tombola
 
-## Tombola pour l'association de votre choix
+Pendant le Drupalcamp, nous lançons une tombola caritative. L'intégralité des gains sera reversée à l'association sélectionnée par la personne tirée au sort. Un moyen ludique d'aider une asso et de peut-être gagner un cadeau !
 
-Pour cette édition, nous vous proposons de participer à une tombola caritative dont l'intégralité des recettes sera reversée à l'association de la personne gagnante.
+Un don maximum de 1000€ est prévu pour l'association sélectionnée. Les tickets sont proposés au tarif de 10€. Achat via HelloAsso directement. Le don sera réalisé par l'association Drupal France et francophonie à l'issue du Drupalcamp.
 
-L'association abondera 10 € pour chaque ticket acheté avec le plafond de 1 000 €.
+### Quelle association choisir ?
 
-### Aidez une association
+Nous avons pré-sélectionné 3 associations. A vous de choisir celle qui pourrait remporter le don : 
 
-En effet, lors de l'achat de votre ticket, vous pourrez choisir l'association que vous voulez soutenir parmi l'une des trois suivantes :
-
-- [Radio Cause Commune](https://cause-commune.fm/) - Plateforme transmédia d’éducation populaire
-- [Ar chach diwal](https://www.facebook.com/profile.php?id=100065016510820&locale=fr_FR) - Lutte contre le harcèlement scolaire
-- [Girls Who Code](https://girlswhocode.com/) - Défense de la diversité, l'équité et l'inclusion dans la tech
+* [Radio Cause Commune](https://cause-commune.fm/) - Plateforme transmédia d’éducation populaire, France
+* [Ar chach diwal](https://www.facebook.com/profile.php?id=100065016510820&locale=fr_FR) - Lutte contre le harcèlement scolaire, basée à St Malo
+* [Girls Who Code](https://girlswhocode.com/) - Défense de la diversité, l'équité et l'inclusion dans la tech, International.
 
 ### Les lots à remporter
 
-Un ticket = une chance de remporter le lot de votre choix.
+Un ticket = une chance de remporter un lot. Les lots sont proposés dans l'ordre du tirage au sort. La restitution est prévue le vendredi 29 mars à 17h30. Tout participant non disponible ne pourra recevoir son lot, celui-ci sera proposé à la personne sélectionnée suivante.
 
-- Une enceinte connectée Google Home pour connaitre la date du jour, la météo, changer de chanson pendant que vous faites la cuisine ! (mais pas que),
-- La seule et unique Yuna : peluche hermine, mascotte du Drupalcamp,
-- Un puzzle créé spécialement pour l'événement,
-- Des douceurs pour votre palais (biscuits),
-- Un t-shirt du Drupalcamp Lannion,
-- Une peluche éléPHPant,
-- Un tote Bag Drupalcamp Paris.
+* Une enceinte connectée Google Home pour connaitre la date du jour, la météo, changer de chanson pendant que vous faites la cuisine ! (mais pas que),
+* Deux licences [JetBrain](https://www.jetbrains.com/fr-fr/)
+* La seule et unique Yuna : peluche hermine, mascotte du Drupalcamp,
+* Un puzzle créé spécialement pour l'événement,
+* Des douceurs pour votre palais (biscuits),
+* Un t-shirt d'un Drupalcamp passé,
+* Un puzzle 3D,
+* Une peluche éléPHPant,
+* Un tote Bag Drupalcamp Paris.
 
 ### Modalités du tirage au sort
 
 Le tirage au sort aura lieu vendredi 29 mars lors de la session de cloture.
 
-7 tickets seront tirés au sort. Chacun pourra venir choisir le lot qu'il préfère parmi ceux restants.  
+10 tickets seront tirés au sort. Chacun pourra venir choisir le lot qu'il préfère parmi ceux restants.  
 
 Le premier ticket gagnant fera gagner la totalité de la cagnotte abondée à l'association choisie.
 
@@ -64,9 +65,8 @@ Pensez à mentionner le compte @DrupalConEur et utiliser le mot dièse #DrupalCo
 
 ![Mercè est une salamandre multicolore avec du bleu, rouge, jaune, vert.](/communaute/img.png "Mercè")
 
-
 ### Sélection de la publication gagnante
 
-La publication avec le plus de _likes_ remportera sa place. 
+La publication avec le plus de *likes* remportera sa place. 
 
 Le tirage au sort aura lieu la semaine suivant le Drupalcamp et sera effectué par la Drupal Association.
