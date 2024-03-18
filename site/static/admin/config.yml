@@ -134,6 +134,15 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
           - {label: "Texte de la page", name: "body", widget: "markdown" }
           - {label: "Sponsors individuels", name: "sponsors_individuals", widget: "markdown" }
+      - label: "Tombola"
+        name: "tombola"
+        file: "site/content/communaute/tombola-concours.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - { label: "Phrase résumé page de descente", name: "summary", widget: string }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - { label: "Template", name: "layout", widget: "hidden", default: "noheader" }
       - label: "Accès"
         name: "access"
         file: "site/content/infos/accès.md"
