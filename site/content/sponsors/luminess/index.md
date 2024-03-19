@@ -5,7 +5,7 @@ sponsor_logo: logo/logo-noir-baseline.png
 sponsor_site: https://www.luminess.eu/
 sponsor_type: 02_silver
 body_extra: >-
-  ### Ingénieur(e) Développement Drupal chez Luminess
+  ## Offre d'emploi : Ingénieur(e) Développement Drupal chez Luminess
 
 
   Notre département Customer Delivery recherche un(e) Ingénieur(e) Développement spécialisé(e) en Drupal ! La mission : analyser et réaliser les développements informatiques des projets confiés au sein d’une équipe run en charge des TMA, évolutions, résolution de bugs, etc. pour un grand nombre de clients. C’est-à-dire :
@@ -36,7 +36,7 @@ body_extra: >-
   Rennes, Laval ou Mayenne / Jusqu’à 3 jours de TT par semaine / 
 
 
-  ### Qui vous êtes
+  #### Qui vous êtes
 
 
   Vous êtes titulaire d'une formation Bac+4/5 spécialisée dans le développement informatique (ou justifiant d'une expérience équivalente) ? Vous disposez au minimum d'une expérience de 2/3 ans dans un poste similaire ? Drupal et PHP / Symfony n'ont aucun secret pour vous ? Vous appréciez le travail en équipe et savez gérer plusieurs projets simultanément en adaptant vos priorités ? Continuez la lecture, ce poste est probablement fait pour vous !
@@ -48,7 +48,7 @@ body_extra: >-
   Marion Boutruche, Chargée de Développement RH / mboutruche@luminess.eu / 06.30.06.74.15 / Sur LinkedIn : Marion Boutruche
 
 
-  ### A propos de l'équipe
+  #### A propos de l'équipe
 
 
   En intégrant l'équipe Run du Customer Delivery, vous rejoignez 8 pilotes projet et 30 ingénieurs logiciels dont l'objectif est de s'assurer du fonctionnement des solutions clients en les faisant évoluer pour répondre aux nouveaux besoins dans des domaines très variés (propriété industrielle, banque, assurance, administration, juridique, santé, services...). Avec la proximité client au centre de ses engagements, l'équipe est reconnue pour sa qualité de service, son expertise et sa confiance. L'équipe couvre un spectre technologique très varié, dans une organisation agile. Entraide, écoute, esprit d'équipe à tous niveaux sont les mots d'ordre.
