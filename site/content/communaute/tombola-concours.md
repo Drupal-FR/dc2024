@@ -11,9 +11,9 @@ subtitle: ""
 ---
 ## Aidez l'association de votre choix en participant à notre tombola
 
-Pendant le Drupalcamp, nous lançons une tombola caritative. L'intégralité des gains sera reversée à l'association sélectionnée par la personne tirée au sort. Un moyen ludique d'aider une asso et de peut-être gagner un cadeau !
+Pendant le Drupalcamp, nous lançons une tombola caritative. L'intégralité des gains sera reversée à l'association sélectionnée par la première personne tirée au sort. Un moyen ludique d'aider une asso et de peut-être gagner un cadeau !
 
-Un don maximum de 1000€ est prévu pour l'association sélectionnée. Les tickets sont proposés au tarif de 10€. Achat via HelloAsso directement. Le don sera réalisé par l'association Drupal France et francophonie à l'issue du Drupalcamp.
+Les tickets sont proposés au tarif de 10€. Achat via HelloAsso directement. Le don sera réalisé par l'association Drupal France et francophonie à l'issue du Drupalcamp qui doublera le montant collecté dans la limite de 1 000 €.
 
 ### Quelle association choisir ?
 
@@ -24,8 +24,6 @@ Nous avons pré-sélectionné 3 associations. A vous de choisir celle qui pourra
 * [Girls Who Code](https://girlswhocode.com/) - Défense de la diversité, l'équité et l'inclusion dans la tech, International.
 
 ### Les lots à remporter
-
-Un ticket = une chance de remporter un lot. Les lots sont proposés dans l'ordre du tirage au sort. La restitution est prévue le vendredi 29 mars à 17h30. Tout participant non disponible ne pourra recevoir son lot, celui-ci sera proposé à la personne sélectionnée suivante.
 
 * Une enceinte connectée Google Home pour connaitre la date du jour, la météo, changer de chanson pendant que vous faites la cuisine ! (mais pas que),
 * Deux licences [JetBrain](https://www.jetbrains.com/fr-fr/)
@@ -39,11 +37,13 @@ Un ticket = une chance de remporter un lot. Les lots sont proposés dans l'ordre
 
 ### Modalités du tirage au sort
 
-Le tirage au sort aura lieu vendredi 29 mars lors de la session de cloture.
+Un ticket = une chance de remporter un lot. La restitution est prévue le vendredi 29 mars à 17h30 lors de la session de cloture.
+
+Tout participant non disponible ne pourra recevoir son lot, celui-ci sera proposé à la personne sélectionnée suivante.
 
 10 tickets seront tirés au sort. Chacun pourra venir choisir le lot qu'il préfère parmi ceux restants.  
 
-Le premier ticket gagnant fera gagner la totalité de la cagnotte abondée à l'association choisie.
+Le premier ticket tiré au sort fera gagner la totalité de la cagnotte abondée à l'association choisie.
 
 {{< cta
 title="Participer à la tombola"
