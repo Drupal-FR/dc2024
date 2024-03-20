@@ -148,4 +148,19 @@ $grass-wetter: #04593d;
   width: 1px !important;
   white-space: nowrap !important;
 }
+.map-sortir {
+  text-align: center;
+  margin-block-start: 1rem;
+  iframe {
+    aspect-ratio: 4/4;
+    height: auto;
+    width: 90%;
+    @include media('>=desktop') {
+      width: 600px;
+    }
+    @include media('>=wide') {
+      width: 900px;
+    }
+  }
+}
 /* END - Structural */

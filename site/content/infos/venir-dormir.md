@@ -1,7 +1,7 @@
 ---
 layout: hebergement
 date: 2017-01-04T15:04:10.000Z
-title: Venir & Dormir
+title: Venir, Sortir & Dormir
 summary: "Faisons les choses bien"
 subtitle: Faisons les choses bien
 credits: <a href="https://visualhunt.co/a7/8232d421">dkilim</a> on <a
@@ -14,7 +14,16 @@ menu:
     weight: 20
 ---
 
-## Le Drupalcamp Rennes c'est du 28 au 30 mars 2024.
+
+### Sortir
+
+Si vous voulez dîner ou boire un verre après votre journée, voici une compilation de bonnes adresses testées par des rennais.
+
+Attention, le dernier service se fait rarement après 22h pour les restaurants et les bars ferment en général à 0h30. Si vous voulez poursuivre la fête, tournez-vous vers des bars de nuit.
+
+{{< sortir >}}
+
+### Bons plans
 
 Si vous comptez venir en voiture et souhaitez proposer / chercher un covoiturage avec une autre personne de la communauté, n'hésitez pas à échanger ici !
 
