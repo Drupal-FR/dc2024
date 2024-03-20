@@ -155,11 +155,12 @@ $grass-wetter: #04593d;
   text-align: center;
   margin-block-start: 1rem;
   iframe {
-    aspect-ratio: 4/4;
+    aspect-ratio: 9/16;
     height: auto;
     width: 100%;
     @include media('>=desktop') {
       width: 600px;
+      aspect-ratio: 4/4;
     }
     @include media('>=wide') {
       width: 900px;
