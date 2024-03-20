@@ -99,6 +99,9 @@ $grass-wetter: #04593d;
   --footer-link-hover: #{$blue-aqua};
 
   --container-width: 240px;
+  @include media('>=narrow') {
+    --container-width: 330px;
+  }
   @include media('>=phablet') {
     --container-width: 430px;
   }
@@ -154,7 +157,7 @@ $grass-wetter: #04593d;
   iframe {
     aspect-ratio: 4/4;
     height: auto;
-    width: 90%;
+    width: 100%;
     @include media('>=desktop') {
       width: 600px;
     }
