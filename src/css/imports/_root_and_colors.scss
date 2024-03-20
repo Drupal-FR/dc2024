@@ -100,7 +100,7 @@ $grass-wetter: #04593d;
 
   --container-width: 240px;
   @include media('>=narrow') {
-    --container-width: 330px;
+    --container-width: 315px;
   }
   @include media('>=phablet') {
     --container-width: 430px;
