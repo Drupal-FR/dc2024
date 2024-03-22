@@ -9,7 +9,7 @@ credits: <a href="https://www.flickr.com/photos/amazeelabs/">Amazee labs</a> CC
   BY-NC-SA 2.0
 draft: false
 sponsors_individuals: Thomas Serres, Matthias Walti, Yoann Lesouef, Quentin
-  Harelle, Fabienne Rondeau.
+  Harelle, Fabienne Rondeau, Romain Trenet.
 ---
 
 Merci à chacun de nos sponsors.\
