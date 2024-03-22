@@ -37,12 +37,11 @@ Nous avons pré-sélectionné 3 associations. A vous de choisir celle qui pourra
 
 ### Modalités du tirage au sort
 
-Un ticket = une chance de remporter un lot. La restitution est prévue le vendredi 29 mars à 17h30 lors de la session de cloture.
-
-Tout participant non disponible ne pourra recevoir son lot, celui-ci sera proposé à la personne sélectionnée suivante.
+Un ticket = une chance de remporter un lot. 100 tickets sont mis en jeu. La restitution est prévue le vendredi 29 mars à 17h30 lors de la session de clôture.
 
 10 tickets seront tirés au sort. Chacun pourra venir choisir le lot qu'il préfère parmi ceux restants.  
 
+Tout participant non disponible ne pourra recevoir son lot, celui-ci sera proposé à la personne sélectionnée suivante.
 Le premier ticket tiré au sort fera gagner la totalité de la cagnotte abondée à l'association choisie.
 
 {{< cta
