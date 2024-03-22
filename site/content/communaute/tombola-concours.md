@@ -13,7 +13,17 @@ subtitle: ""
 
 Pendant le Drupalcamp, nous lançons une tombola caritative. L'intégralité des gains sera reversée à l'association sélectionnée par la première personne tirée au sort. Un moyen ludique d'aider une asso et de peut-être gagner un cadeau !
 
-Les tickets sont proposés au tarif de 10€. Achat via HelloAsso directement. Le don sera réalisé par l'association Drupal France et francophonie à l'issue du Drupalcamp qui doublera le montant collecté dans la limite de 1 000 €.
+Les tickets sont proposés au tarif de 10€ via HelloAsso directement.
+
+
+{{< cta
+title="Participer à la tombola"
+link_url="#"
+link_label="Acheter des tickets"
+link_title="Acheter des tickets pour la tombola." >}}
+Rendez-vous sur la billetterie HelloAsso pour acheter un ou plusieurs tickets et multiplier vos chances de gagner.
+{{< /cta >}}
+
 
 ### Quelle association choisir ?
 
@@ -43,6 +53,8 @@ Un ticket = une chance de remporter un lot. 100 tickets sont mis en jeu. La rest
 
 Tout participant non disponible ne pourra recevoir son lot, celui-ci sera proposé à la personne sélectionnée suivante.
 Le premier ticket tiré au sort fera gagner la totalité de la cagnotte abondée à l'association choisie.
+
+Le don sera réalisé par l'association Drupal France et francophonie à l'issue du Drupalcamp et doublera le montant collecté dans la limite de 1 000 € de contribution directe de l'association.
 
 {{< cta
 title="Participer à la tombola"
