@@ -20,16 +20,19 @@ body_extra: >-
   Nous sommes à la recherche des meilleurs experts de la communauté Drupal. Proposez-nous votre candidature spontanée directement sur notre [espace carrière](https://www.axess.fr/espace-carriere/offres-emplois/candidature-spontanee).
 
 
-  ### Poste de Lead développeur Drupal / Symfony 
+  ### Poste de Développeur back-end Drupal / Symfony 
 
 
-  * Lieu : Paris, Lyon ou Valence / Télétravail 
-
-  * Contrat : CDI 
+  #### Présentation du poste 
 
 
-  ####  Vos missions :
+  Nous sommes à la recherche des meilleurs experts de la communauté Drupal. Proposez-nous votre candidature spontanée directement sur notre espace carrière.  
 
+
+  #### Vos missions 
+
+
+  * Les technologies suivantes seront votre quotidien : Drupal, Linux, PHP, Mariadb, PostgreSQL, Docker, Apache, CSS/HTML, Symfony, Redmine, Jenkins / gitlab CI,  
 
   * Analyse, compréhension et développement des fonctionnalités demandées 
 
@@ -42,7 +45,7 @@ body_extra: >-
   * Contribution à la communauté Drupal / Symfony 
 
 
-  ####  Les particularités de la mission : 
+  #### Les particularités de la mission 
 
 
   * Vous préférez la qualité à la quantité. 
@@ -56,14 +59,87 @@ body_extra: >-
   * Vous souhaitez travailler au quotidien avec les meilleurs experts Drupal francophones et vous embarquer dans l'aventure Drupal 8+. 
 
 
-  ####  Votre profil 
+  #### L'environnement de travail 
+
+
+  * Poste basé à Paris, Lyon ou Valence / Ouvert au Télétravail 
+
+  * Contrat : CDI 
+
+
+  #### Votre profil 
 
 
   * Diplômé(e) ou autodidacte, vous avez nécessairement une expérience réussie de 2 ans minimum sur des projets de développement Drupal comme la réalisation d'applications web, de sites web ou de modules personnalisés. 
 
   * Une expérience dans des logiciels Open Source de manière globale est un plus.  
 
-  * Une participation à la communauté Drupal (Meetup Drupal, Drupalcon, Drupalcamp, contributions sur Drupal.org) est un plus.
+  * Une participation à la communauté Drupal (Meetup Drupal, Drupalcon, Drupalcamp, contributions sur Drupal.org) est un plus. 
+
+
+  ### Poste de chef de projet web Drupal / Symfony 
+
+
+  #### Présentation du poste 
+
+
+  Vous intervenez simultanément au sein de plusieurs projets afin d'en assurer la coordination, le respect de la charge, des plannings et la qualité des livrables. 
+
+
+  #### Vos missions 
+
+
+  * Vous analysez les besoins utilisateurs  
+
+  * Vous apportez votre expertise pour valider les livrables lors de la phase de conception des sites, en collaboration avec les agences de communication.    
+
+  * Vous coordonnez les prestataires.  
+
+  * Vous gérez l'équipe de développement et alimentez les demandes assignées aux équipes constituées de trois à six personnes par projet. 
+
+  * Vous êtes le(la) garant(e) du planning et du respect des deadlines. 
+
+
+  #### Les particularités de la mission 
+
+
+  * Vous assurez la cohérence et la pertinence des éléments graphiques et des différentes fonctionnalités, assisté par un architecte technique et/ou un lead développeur.  
+
+  * Vous supervisez et participez à la recette de chaque projet  
+
+  * Vous supervisez les phases de maintenance corrective et évolutive des projets  
+
+  * Gestion de projets multiples nécessitant autonomie et sens de l'organisation  
+
+
+  #### L'environnement de travail 
+
+
+  * Poste basé à Paris ou Lyon / Ouvert au télétravail 
+
+
+  #### Votre profil 
+
+
+  * Vous êtes titulaire d'un BAC+2 minimum dans le domaine de l'informatique et vous possédez une expérience de 3 ans minimum sur un poste similaire. 
+
+  * Une expérience dans des logiciels Open Source de manière globale est un plus.  
+
+  * Une participation à la communauté Drupal (Meetup Drupal, Drupalcon, Drupalcamp, contributions sur Drupal.org) est un plus. 
+
+
+  #### Vos compétences 
+
+
+  * Relation client  
+
+  * Gestion d’une équipe de développement 
+
+  * Connaissance du développement web et des technologies associées. 	 
+
+  * Anglais technique impératif 
+
+  * Connaissance des outils type Jira, Redmine
 video: QIgM8ck8YCo
 type: sponsors
 ---
