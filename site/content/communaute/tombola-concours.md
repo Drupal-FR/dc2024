@@ -4,7 +4,7 @@ menu:
     parent: Communauté
     weight: 45
 title: Tombola & Concours
-draft: false
+draft: true
 summary: Aidez une association et repartez avec un souvenir.
 layout: noheader
 subtitle: ""
@@ -19,7 +19,7 @@ Les tickets sont proposés au tarif de 10€ via HelloAsso directement.
 {{< cta
 title="Participer à la tombola"
 link_url="https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024-v4"
-link_label="Acheter des tickets"
+link_label="Acheter un ticket"
 link_title="Acheter des tickets pour la tombola." >}}
 Rendez-vous sur la billetterie HelloAsso pour acheter un ou plusieurs tickets et multiplier vos chances de gagner.
 {{< /cta >}}
@@ -59,7 +59,7 @@ Le don sera réalisé par l'association Drupal France et francophonie à l'issue
 {{< cta
 title="Participer à la tombola"
 link_url="https://www.helloasso.com/associations/association-drupal-france-et-francophonie/evenements/drupalcamp-rennes-2024-v4"
-link_label="Acheter des tickets"
+link_label="Acheter un ticket"
 link_title="Acheter des tickets pour la tombola." >}}
 J'ai envie de soutenir une association qui œuvre pour les citoyens ou de repartir avec Yuna en souvenir, je fonce !
 {{< /cta >}}
