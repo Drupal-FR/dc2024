@@ -1,8 +1,9 @@
 ---
+draft: true
+summary: Faisons les choses bien
 layout: hebergement
 date: 2017-01-04T15:04:10.000Z
 title: Venir, Sortir & Dormir
-summary: "Faisons les choses bien"
 subtitle: Faisons les choses bien
 credits: <a href="https://visualhunt.co/a7/8232d421">dkilim</a> on <a
   href="https://visualhunt.com/re10/73fb5f13">Visualhunt</a> - <a
@@ -20,6 +21,8 @@ menu:
 Si vous voulez dîner ou boire un verre après votre journée, voici une compilation de bonnes adresses testées par des rennais.
 
 Attention, le dernier service se fait rarement après 22h pour les restaurants et les bars ferment en général à 0h30. Si vous voulez poursuivre la fête, tournez-vous vers des bars de nuit.
+
+Les métros circulent jusqu'à 0h45 du dimanche au mercredi et 1h45 du jeudi au samedi !
 
 {{< sortir >}}
 
