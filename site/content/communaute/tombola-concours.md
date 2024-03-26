@@ -35,12 +35,11 @@ Nous avons pré-sélectionné 3 associations. A vous de choisir celle qui pourra
 
 ### Les lots à remporter
 
-* Une enceinte connectée Google Home pour connaitre la date du jour, la météo, changer de chanson pendant que vous faites la cuisine ! (mais pas que),
+* Une enceinte connectée Google Home pour connaître la date du jour, la météo, changer de chanson pendant que vous faites la cuisine ! (mais pas que),
 * Deux licences [JetBrain](https://www.jetbrains.com/fr-fr/)
 * La seule et unique Yuna : peluche hermine, mascotte du Drupalcamp,
 * Un puzzle créé spécialement pour l'événement,
 * Des douceurs pour votre palais (biscuits),
-* Un t-shirt d'un Drupalcamp passé,
 * Un puzzle 3D,
 * Une peluche éléPHPant,
 * Un tote Bag Drupalcamp Paris.
