@@ -42,7 +42,8 @@ Nous avons pré-sélectionné 3 associations. A vous de choisir celle qui pourra
 * Des douceurs pour votre palais (biscuits),
 * Un puzzle 3D,
 * Une peluche éléPHPant,
-* Un tote Bag Drupalcamp Paris.
+* Un tote Bag Drupalcamp Lannion.
+* Sept tote Bags Drupalcamp Paris.
 
 ### Modalités du tirage au sort
 
