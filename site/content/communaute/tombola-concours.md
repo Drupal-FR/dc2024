@@ -4,7 +4,7 @@ menu:
     parent: Communauté
     weight: 45
 title: Tombola & Concours
-draft: true
+draft: false
 summary: Aidez une association et repartez avec un souvenir.
 layout: noheader
 subtitle: ""
