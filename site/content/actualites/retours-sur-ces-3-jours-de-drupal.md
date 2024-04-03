@@ -1,7 +1,7 @@
 ---
 title: Retours sur ces 3 jours de Drupal à Rennes
 draft: false
-date: 2024-04-03T08:50
+date: 2024-04-03T07:20:00.000Z
 teaser: Le Drupalcamp a fermé ses portes samedi 30 mars en fin d'après-midi.
   Après quelques jours de repos vient le moment des souvenirs, c'est le moment
   idéal pour nous partager votre avis.
