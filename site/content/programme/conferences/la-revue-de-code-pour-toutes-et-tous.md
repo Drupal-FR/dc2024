@@ -21,5 +21,6 @@ plan: |-
   * Principe d’une bonne revue
   * En pratique
 takeway: L'utilité de la revue de code dans le processus de développement.
+slides_files: slides/presentation-revue-de-code-drupalcamp-rennes-2024.pptx
 type: conference
 ---
