@@ -51,6 +51,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Pré-requis", name: "prerequisites", widget: "markdown", required: false}
       - {label: "Plan", name: "plan", widget: "markdown", required: false}
       - {label: "Vous aurez appris", name: "takeway", widget: "markdown", required: false}
+      - label: Diapos fichier
+        required: false
+        name: slides_files
+        widget: file
+        media_folder: slides
+      - { label: "Code Video YouTube (ne mettre que l'ID XXX de la vidéo /watch?v=XXX)", name: "video", widget: string, required: false }
       - { label: "Template", name: "type", widget: "hidden", default: "conference" }
   - name: sponsors
     label: Sponsors

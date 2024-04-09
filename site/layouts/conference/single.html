@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $permalink := .Page.Permalink }}
 {{ $audience := replace .Params.audience "é" "e" }}
 {{ $audience = replace $audience "è" "e" }}
 
@@ -30,6 +31,19 @@
         {{ end }}
       </div>
       {{ .Content | safeHTML }}
+      {{ with .Params.slides_files }}
+      <div class="conference-full__slides"><h3>Support de la présentation :</h3>
+        <a href="/programme/conferences/{{ . }}">Télécharger le support utilisé pendant la conférence.</a>
+      </div>
+      {{ end }}
+      {{ with .Params.video }}
+      <h3>Captation de la conférence :</h3>
+      <div class="conference-full__video">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{.}}"
+                title="YouTube video player" frameborder="0"
+                allowfullscreen></iframe>
+      </div>
+      {{ end }}
     </div>
   </div>
 </main>

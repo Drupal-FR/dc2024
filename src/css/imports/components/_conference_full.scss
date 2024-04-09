@@ -102,3 +102,18 @@
 .conference-full__teaser p {
   margin: 0.5rem 0;
 }
+.conference-full__video {
+  text-align: center;
+  margin-block-start: 1rem;
+  iframe {
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 400px;
+    @include media('>=desktop') {
+      width: 600px;
+    }
+    @include media('>=wide') {
+      width: 900px;
+    }
+  }
+}
