@@ -34,5 +34,6 @@ takeway: >-
 
 
   Si vous êtes un contributeur, vous saurez publier du contenu accessible à tous et demander aux équipes en charge de votre site les fonctionnalités manquantes.
+slides_files: slides/support-de-slides-site-accessible.pdf
 type: conference
 ---
