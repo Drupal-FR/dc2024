@@ -22,7 +22,8 @@ teaser: >-
   Intervenants invités : Sylvain Moreau (Axess), un intervenant technique chez Smile, flocondetoile, David Piederriere de l'université de Rennes
 prerequisites: ""
 plan: >-
-  * Qu'est-ce qui, pour vous, qualifie un projet d'«Usine à sites» (le nombre de sites, l'outillage associé...) ?
+  * Qu'est-ce qui, pour vous, qualifie un projet d'«Usine à sites» (le nombre de
+  sites, l'outillage associé...) ?
 
   * Quels sont les besoins récurrents de ce type de projet ?
 
@@ -32,5 +33,6 @@ plan: >-
 takeway: Comment choisir entre les différentes solutions techniques existantes.
   Comment mieux conseiller les clients éventuels sur les problématiques liées
   aux usines à sites en Drupal.
+slides_files: slides/support-de-slides-table-ronde-drupalcamp-rennes-2024.pdf
 type: conference
 ---
