@@ -26,5 +26,6 @@ plan: >-
 takeway: L’utilisation et la prise en main de Xdebug dans PHPStorm (mais
   l’intégration se ressemble dans les autres IDE). On ne parlera pas de la
   configuration de l’outil, mais bien de son utilisation.
+slides_files: slides/drupalcamp_xdebug.pdf
 type: conference
 ---
