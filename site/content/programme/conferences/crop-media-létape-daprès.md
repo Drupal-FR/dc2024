@@ -39,5 +39,6 @@ takeway: >-
   * Qu'il existe des solutions pour pallier à ce problème.
 
   * Peut-être des pistes pour faire avancer ce problème.
+slides_files: slides/crop-media.pdf
 type: conference
 ---
