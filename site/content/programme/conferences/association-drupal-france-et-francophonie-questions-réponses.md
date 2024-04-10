@@ -21,5 +21,6 @@ plan: |-
   * Bilan des activités de l’association sur ces 2 dernières années,
   * Animation des meetups locaux,
   * Recherche de gens motivés pour s'impliquer.
+slides_files: slides/questions-_-réponses-.pdf
 type: conference
 ---
