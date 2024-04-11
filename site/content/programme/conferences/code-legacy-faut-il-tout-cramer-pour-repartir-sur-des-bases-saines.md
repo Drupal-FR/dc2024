@@ -36,5 +36,6 @@ takeway: |-
   * Une méthode pour simplifier la prise de décision,
   * Une liste de pièges à éviter,
   * Des arguments pour convaincre.
+slides_files: slides/support-clara-drupal-camp-rennes-2024-public.pdf
 type: conference
 ---
