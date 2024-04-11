@@ -22,5 +22,6 @@ plan: >-
 takeway: Comment utiliser la CI de Gitlab pour déployer son site Drupal et
   comment réutiliser des mêmes jobs au sein de différents projets pour éviter
   les copier / collers.
+slides_files: slides/drupal-ci-drupalcamp-rennes-2024-1.pdf
 type: conference
 ---
