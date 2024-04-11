@@ -27,5 +27,6 @@ plan: |-
 takeway: |-
   * Les bases de l'observabilité.
   * Intégrer Opentelemetry sur Drupal (auto-instrumentation)
+slides_files: slides/otel-drupal-drupalcamp-rennes-2024.pdf
 type: conference
 ---
