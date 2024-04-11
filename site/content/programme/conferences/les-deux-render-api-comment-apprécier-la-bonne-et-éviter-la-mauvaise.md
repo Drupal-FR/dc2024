@@ -18,5 +18,6 @@ plan: |-
   3. Le profil standard sans le ThemeManager,
   4. Quel futur pour la Render API ?
 takeway: Fonctionnement de la Render API, et son futur potentiel.
+slides_files: slides/drupal-rennes-2024-pierre-dureau-.pdf
 type: conference
 ---
