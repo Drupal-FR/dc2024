@@ -35,5 +35,6 @@ takeway: >-
   * Un TTM inférieur à une heure pour les bugs critiques,
 
   * Une équipe heureuse !
+slides_files: slides/presentation-drupalcamp-rennes-2024-1.pdf
 type: conference
 ---
