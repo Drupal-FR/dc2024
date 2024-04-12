@@ -42,5 +42,6 @@ takeway: >-
   * Comment installer un site Drupal et des modules contrib via Composer.
 
   * Comment contribuer des patchs et des *merge requests* (MR) sur Drupal GitLab CI.
+slides_files: slides/dc-rennes-2024-presentation-ddev.pdf
 type: conference
 ---
