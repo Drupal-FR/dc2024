@@ -21,5 +21,6 @@ plan: |-
   2. Transformer sa frustration en plan d'attaque.
   3. Lancement des chantiers et résurrection du projet.
 takeway: Méthodologie d'une refactorisation de TMA.
+slides_files: slides/redonner-vie-à-une-tma-drupalcamp-rennes-2024.pdf
 type: conference
 ---
