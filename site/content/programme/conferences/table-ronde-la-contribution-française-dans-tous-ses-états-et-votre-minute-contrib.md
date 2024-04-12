@@ -15,17 +15,16 @@ teaser: >-
 
 
   La parole sera donnée à Goz, flocondetoile, cedric_a et Nicolas S.
-plan: >-
-  Les façons et les formes de contribuer à Drupal et à l’Open
-  Source en général, la bascule d’un besoin client à la création d’un module
-  communautaire et surtout des retours d’expériences de contributeurs de la
-  communauté francophone.
-  
-
-  Un moment d’échange sera proposé pour vous permettre
-  de venir présenter un module, un thème, ou tout autre contribution réalisée
-  autour de Drupal.
 prerequisites: ""
+plan: >-
+  Les façons et les formes de contribuer à Drupal et à l’Open Source en général,
+  la bascule d’un besoin client à la création d’un module communautaire et
+  surtout des retours d’expériences de contributeurs de la communauté
+  francophone.
+
+
+  Un moment d’échange sera proposé pour vous permettre de venir présenter un module, un thème, ou tout autre contribution réalisée autour de Drupal.
 takeway: ""
+slides_files: slides/contrib.pdf
 type: conference
 ---
