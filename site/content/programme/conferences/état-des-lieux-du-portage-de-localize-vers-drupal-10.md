@@ -27,5 +27,6 @@ takeway: >-
   communautaire.
 
   * La nécessité de contribuer à la traduction de Drupal et des projets contribués, le plus efficacement possible.
+slides_files: slides/drupalcamp_rennes_2024_localize.pdf
 type: conference
 ---
