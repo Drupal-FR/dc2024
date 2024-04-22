@@ -32,5 +32,6 @@ takeway: Les participants auront acquis des connaissances approfondies sur
   l'intégration et l'exploitation des variables CSS dans Drupal avec une
   approche Design System, leur permettant de créer des thèmes plus performants,
   réactifs et faciles à maintenir.
+slides_files: slides/drupalcamp-waren.pdf
 type: conference
 ---
