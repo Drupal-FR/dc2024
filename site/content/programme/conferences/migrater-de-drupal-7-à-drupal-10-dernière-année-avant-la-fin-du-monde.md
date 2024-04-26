@@ -35,5 +35,6 @@ plan: >-
   * Quelques astuces.
 takeway: Comment migrer votre site Drupal 7 en Drupal 10 seuls.
 slides_files: slides/migrer_d7_d10_simon_georges.pdf
+video: RQr5hOFcLeY
 type: conference
 ---
