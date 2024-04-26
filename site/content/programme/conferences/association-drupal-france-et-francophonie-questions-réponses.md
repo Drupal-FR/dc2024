@@ -23,5 +23,6 @@ plan: |-
   * Recherche de gens motivés pour s'impliquer.
 takeway: ""
 slides_files: slides/questions-_-réponses-.pdf
+video: malI8n4BkIQ
 type: conference
 ---
