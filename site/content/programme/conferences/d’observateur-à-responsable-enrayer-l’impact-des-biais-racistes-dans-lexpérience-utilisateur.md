@@ -27,7 +27,7 @@ teaser: >-
 prerequisites: ""
 plan: ""
 takeway: ""
-video: ""
+video: _CpJ3gulfgQ
 transcription: >-
   \- Marcy Charollois : vous allez bien ? 
 
