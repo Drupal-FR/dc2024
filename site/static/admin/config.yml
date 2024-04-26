@@ -56,7 +56,12 @@ collections: # A list of collections the CMS should be able to edit
         name: slides_files
         widget: file
         media_folder: slides
+
       - { label: "Code Video YouTube (ne mettre que l'ID XXX de la vidéo /watch?v=XXX)", name: "video", widget: string, required: false }
+      - label: Transcription
+        name: transcription
+        widget: markdown
+        required: false
       - { label: "Template", name: "type", widget: "hidden", default: "conference" }
   - name: sponsors
     label: Sponsors
