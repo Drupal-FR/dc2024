@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ $permalink := .Page.Permalink }}
+{{ $transcription := .Params.transcription }}
 {{ $audience := replace .Params.audience "é" "e" }}
 {{ $audience = replace $audience "è" "e" }}
 
@@ -37,15 +38,20 @@
       </div>
       {{ end }}
       {{ with .Params.video }}
-      <h3>Captation de la conférence :</h3>
       <div class="conference-full__video">
+        <h3>Captation de la conférence</h3>
         <iframe src="https://www.youtube-nocookie.com/embed/{{.}}"
                 title="YouTube video player" frameborder="0"
                 allowfullscreen></iframe>
+        {{ with $transcription }}
+        <div class="conference-full__video_transcript">
+        <h3>Transcription</h3>
+         {{ . | markdownify }}
+        </div>
+        {{ end }}
       </div>
       {{ end }}
     </div>
   </div>
 </main>
 {{ end }}
-
