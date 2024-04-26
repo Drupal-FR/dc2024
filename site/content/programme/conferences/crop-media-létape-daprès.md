@@ -605,7 +605,7 @@ transcription: >-
   C'est juste qu'il a une colonne en plus dans lequel il va gérer, il va stocker des surcharges.
 
 
-  Ça veut dire que vous allez pouvoir modifier la valeur des champs de votre média et le champ va stocker ses surcharges dans un magnifique gisson.
+  Ça veut dire que vous allez pouvoir modifier la valeur des champs de votre média et le champ va stocker ses surcharges dans un magnifique JSON.
 
 
   Donc, on va stocker les values et que si vous chargez votre média depuis le champ, il écrase les valeurs des champs natifs du média par les surcharges.
@@ -683,7 +683,7 @@ transcription: >-
   La consigne de crop, c'est pas la valeur du champ.
 
 
-  Voilà, donc, quand même, c'est un patch pour rajouter un halteur et un petit hook halteur, ça va tuer personne.
+  Voilà, donc, quand même, c'est un patch pour rajouter un alter et un petit hook alter, ça va tuer personne.
 
 
   Voilà, mais donc, sur la partie de comment est-ce que je saisis la surcharge de mon crop, c'est faisable.
@@ -695,7 +695,7 @@ transcription: >-
   Bon, sur la partie de gauche, on a vu qu'on avait deux pistes à explorer et que, manifestement, on n'avait pas grand-chose d'autre.
 
 
-  Alors, les deux pistes au menu, donc, je rappelle, la première, c'est de rester avec l'image des livers natifs, mais essayer de le troller, de le faire travailler sur une image qui ne serait pas la vraie image.
+  Alors, les deux pistes au menu, donc, je rappelle, la première, c'est de rester avec l'image deliver natif, mais essayer de le troller, de le faire travailler sur une image qui ne serait pas la vraie image.
 
 
   Bon, et le deuxième cas, c'est un peu plus bourrin, c'est de dire qu'on va créer un nouveau contrôleur de génération de vignettes ad-hoc.
@@ -704,7 +704,7 @@ transcription: >-
   Ça veut dire dupliquer toute la stack de routing de contrôleurs de génération et compagnie.
 
 
-  Alors, moi, je ne sais pas pour vous, mais troller le corde rupal, j'adore faire ça.
+  Alors, moi, je ne sais pas pour vous, mais troller le code de Drupal, j'adore faire ça.
 
 
   On va essayer de commencer, on va tenter cette première approche, histoire de voir ce que ça donne.
@@ -764,7 +764,7 @@ transcription: >-
   Donc voilà, c'est juste d'éclater ça et avoir une gestion de patch et de dépendance un peu propre.
 
 
-  Donc, je publie ça en mars 2023 et pour des gens que j'aurais pu croiser à Drupal Connaly, je pense que je l'en avais parlé.
+  Donc, je publie ça en mars 2023 et pour des gens que j'aurais pu croiser à DrupalCon Lille, je pense que je l'en avais parlé.
 
 
   Alors, cette approche-là, on peut faire un bilan, l'implémentation est intéressante, le côté positif, c'est qu'on a vu, elle est relativement simple l'implémentation, c'est trois altérations.
@@ -779,7 +779,7 @@ transcription: >-
   Sauf que moi, je ne me base plus sur les fichiers images qui sont gérés par Drupal, je me base sur des copies que j'ai créées plus ou moins à la main à la volée.
 
 
-  Donc, côté nettoyage de Crop, de copies d'uniettes, ça devient obligé d'implémenter beaucoup de code, beaucoup très complexe et pas forcément évident.
+  Donc, côté nettoyage de Crop, de copies de vignettes, ça devient obligé d'implémenter beaucoup de code, beaucoup très complexe et pas forcément évident.
 
 
   Et clairement, ça peut poser des problèmes sur certains hébergements, principalement sur des questions d'Io sur les disques.
@@ -794,7 +794,7 @@ transcription: >-
   C'est que si on revient sur la gestion d'un M3, on ne voudrait pas le gérer ses fichiers.
 
 
-  Donc, vous avez votre dossier public avec votre arborescence de dossier et votre image en gigapixels.
+  Donc, vous avez votre dossier public avec votre arborescence de dossier et votre image en giga pixels.
 
 
   Quand vous faites une vignette, vous créez un dossier style, un dossier avec le nom du style et vous reproduisez l'arborescence avec votre petite vignette.
@@ -803,7 +803,7 @@ transcription: >-
   Bon, juste là, on a doublé le nombre de structures sur le disque.
 
 
-  Ce n'est pas forcément des structures, elles ne pèsent pas lourdes, mais sur certains hébergements avec du file système virtuel, vous cramez les ivo pour ça.
+  Ce n'est pas forcément des structures, elles ne pèsent pas lourdes, mais sur certains hébergements avec du file système virtuel, vous cramez les I/O pour ça.
 
 
   Sauf que nous, ce qu'on fait en fait, avant de faire cette étape de style là, on crée une copie contextualisée.
@@ -902,7 +902,7 @@ transcription: >-
   Derrière, il faut absolument que je vais absolument finir avec le chemin de l'image parce que je veux que, à la fin, ma vignette soit quand même considérée comme une image.
 
 
-  Je vais rajouter le style parce qu'il n'y a pas que l'écrobe dans la vie.
+  Je vais rajouter le style parce qu'il n'y a pas que les crops dans la vie.
 
 
   Potentiellement, il y a d'autres effets qu'on va appliquer à sa vignette.
@@ -979,7 +979,7 @@ transcription: >-
   Et après, on rentre dans la partie qui est sale.
 
 
-  Je m'en excuse pour y me jeter des cailloux etdes tomates.
+  Je m'en excuse pour y me jeter des cailloux et des tomates.
 
 
   Il me faut une clé de contexte.
@@ -988,7 +988,7 @@ transcription: >-
   J'ai une entité de crop.
 
 
-  On peut prendre l'id del'entité.
+  On peut prendre l'id de l'entité.
 
 
   Merci Olivier.
@@ -1018,7 +1018,7 @@ transcription: >-
   Ce n'est pas simplement plus technique.
 
 
-  Si quelqu'un est expert en passe-processor, pareil, j'ai besoin d'aide.
+  Si quelqu'un est expert en postprocessor, pareil, j'ai besoin d'aide.
 
 
   Pareil, le doublonnage du code parce que l'image deliver, c'est une classe qui n'est pas prévue pour être étendue.
@@ -1114,7 +1114,7 @@ transcription: >-
   C'est techniquement la fonctionnalité qui m'a pris le plus de temps sur l'ensemble du truc.
 
 
-  Donc pareil, s'il y a des gens qui sont familiers des plugins, des cahiers Tor 5, du JavaScript et des compagnies, je suis preneur.
+  Donc pareil, s'il y a des gens qui sont familiers des plugins, de CKEDITOR, du JavaScript et des compagnies, je suis preneur.
 
 
   Voilà, donc voilà, je vous remercie.
