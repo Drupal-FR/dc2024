@@ -25,5 +25,6 @@ takeway: Vous aurez appris à utiliser de nouveaux outils qui vous permettront d
   apprendrez tout de même que le CSS progresse toujours et serez au courant de
   ses dernières évolutions.
 slides_files: slides/container-queries-thibaut-courant-28-03-2024-v2.pdf
+video: qYJ6LtyQ9b0
 type: conference
 ---
