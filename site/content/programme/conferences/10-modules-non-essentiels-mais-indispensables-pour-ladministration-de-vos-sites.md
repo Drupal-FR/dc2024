@@ -27,5 +27,6 @@ takeway: >-
 
   Nous allons donc apprendre à affiner son back-office en fonction du besoin client.
 slides_files: slides/10-modules-non-essentiels-mais-indispensables-pour-l-administration-de-vos-sites.pdf
+video: DDlvzF7ooBU
 type: conference
 ---
