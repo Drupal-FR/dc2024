@@ -34,5 +34,6 @@ takeway: Comment choisir entre les différentes solutions techniques existantes.
   Comment mieux conseiller les clients éventuels sur les problématiques liées
   aux usines à sites en Drupal.
 slides_files: slides/support-de-slides-table-ronde-drupalcamp-rennes-2024.pdf
+video: wYvt0uBzaPc
 type: conference
 ---
