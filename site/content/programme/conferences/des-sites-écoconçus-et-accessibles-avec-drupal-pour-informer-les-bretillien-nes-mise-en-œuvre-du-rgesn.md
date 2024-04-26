@@ -48,5 +48,6 @@ takeway: >-
 
 
   Connaître les principales règles de mise en œuvre de l’écoconception et de l’accessibilité sous Drupal multisite.
+video: ccWpr2pAarA
 type: conference
 ---
