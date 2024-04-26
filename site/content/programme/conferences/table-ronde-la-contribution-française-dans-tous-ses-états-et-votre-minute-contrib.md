@@ -26,5 +26,6 @@ plan: >-
   Un moment d’échange sera proposé pour vous permettre de venir présenter un module, un thème, ou tout autre contribution réalisée autour de Drupal.
 takeway: ""
 slides_files: slides/contrib.pdf
+video: lmzBIbO7hhA
 type: conference
 ---
