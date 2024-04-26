@@ -19,5 +19,6 @@ teaser: >-
   Découvrons comment faire basculer vos apps dans le monde moderne !
 prerequisites: ""
 slides_files: slides/frankenphp-drupal-sliides-visibles.pdf
+video: DXWGHF95Rbs
 type: conference
 ---
