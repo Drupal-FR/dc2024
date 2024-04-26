@@ -30,5 +30,6 @@ plan: >-
   * Tests des modules et correctifs Drupal (Pour les contributeurs).
 takeway: Importance et facilité de mise en place des tests automatisés.
 slides_files: slides/testauto-drupalcamp-rennes-2024.pdf
+video: mQXQ_VE2w68
 type: conference
 ---
