@@ -31,6 +31,7 @@ plan: >-
 takeway: Peut-être que cette conférence pourra donner envie à ceux qui
   découvrent Drupal d’aller + loin et de faire (re) naître la passion.
 slides_files: slides/pres_drupalcamp_2024.pdf
+video: jnyw1o6VTHs
 transcription: >-
   \- L'association Drupal-France et Francophonie vous présente les conférences
   du Drupal-Camp-Rennes 2024.
