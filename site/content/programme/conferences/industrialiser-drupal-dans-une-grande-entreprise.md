@@ -36,5 +36,6 @@ takeway: >-
 
   * Une équipe heureuse !
 slides_files: slides/presentation-drupalcamp-rennes-2024-1.pdf
+video: mboX5E3ntmU
 type: conference
 ---
