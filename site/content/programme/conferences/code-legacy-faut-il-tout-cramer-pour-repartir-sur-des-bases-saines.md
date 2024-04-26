@@ -37,5 +37,6 @@ takeway: |-
   * Une liste de pièges à éviter,
   * Des arguments pour convaincre.
 slides_files: slides/support-clara-drupal-camp-rennes-2024-public.pdf
+video: WCheT6UKHn4
 type: conference
 ---
