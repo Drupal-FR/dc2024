@@ -341,7 +341,7 @@ transcription: >-
   C'est à dire qu'il y a certaines variations d'image qu'on ne pourra pas générer.
 
 
-  L'exemple, c'est si j'ai un type de crop 16-9e et que j'ai un style d'image 16-9e banner et 16-9e teaser.
+  L'exemple, c'est si j'ai un type de crop 16:9 et que j'ai un style d'image 16:9 banner et 16:9 teaser.
 
 
   Les deux styles d'image utilisent le même type de crop.
@@ -356,7 +356,7 @@ transcription: >-
   C'est par design quelque part.
 
 
-  C'est sur l'image d'origine ? Oui, c'est une image d'origine, mais potentiellement tu pourrais vouloir que ton point d'intérêt dans ton style 16-9e banner soit différent de ton 16-9e teaser.
+  C'est sur l'image d'origine ? Oui, c'est une image d'origine, mais potentiellement tu pourrais vouloir que ton point d'intérêt dans ton style 16:9 banner soit différent de ton 16:9 teaser.
 
 
   Mais tu ne peux pas, par design tu ne pourras pas.
