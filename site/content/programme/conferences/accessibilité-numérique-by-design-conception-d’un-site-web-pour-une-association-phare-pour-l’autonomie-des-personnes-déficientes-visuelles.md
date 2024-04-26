@@ -33,5 +33,6 @@ takeway: >-
 
   Partage de ressources utiles (sites de référence, composants techniques, exemples) pour vos futurs projets de site web accessibles.
 slides_files: slides/accessibilité-by-design-dcrennes24.pdf
+video: rEUTGOR0lJY
 type: conference
 ---
