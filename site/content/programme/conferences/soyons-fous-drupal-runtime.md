@@ -32,5 +32,6 @@ takeway: >-
 
   Après certainement qu'il y aura des choses apprises par rapport au fonctionnement interne de Drupal, ou encore sur la difficulté de certaines fonctionnalités dans phpstan-drupal.
 slides_files: slides/let-us-be-crazy-what-if-drupal-did-less-things-at-runtime-drupalcamp-rennes-2024-main.zip
+video: wRziVwPxVjE
 type: conference
 ---
