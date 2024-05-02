@@ -24,5 +24,6 @@ takeway: Vous pourrez développer l'esprit serein, avec un haut niveau d'analyse
   statique, même sur de vieux projets, et cela sans y passer des mois à corriger
   l'ancien code qui fonctionne déjà.
 slides_files: slides/drupalcamp-rennes-2024-phpstan.pdf
+video: TJTOpEBVXw4
 type: conference
 ---
