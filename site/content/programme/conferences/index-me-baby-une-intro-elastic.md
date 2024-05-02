@@ -39,5 +39,6 @@ takeway: L’auditeur aura appris, quelques concepts de base de la recherche qui
   lui permettront de mieux comprendre le fonctionnement d’un moteur de
   recherche.
 slides_files: slides/index-me-baby.pdf
+video: l5tnifUzIDE
 type: conference
 ---
