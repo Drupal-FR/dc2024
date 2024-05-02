@@ -43,5 +43,6 @@ takeway: >-
 
   * Comment contribuer des patchs et des *merge requests* (MR) sur Drupal GitLab CI.
 slides_files: slides/dc-rennes-2024-presentation-ddev.pdf
+video: gRDesNxLb7o
 type: conference
 ---
