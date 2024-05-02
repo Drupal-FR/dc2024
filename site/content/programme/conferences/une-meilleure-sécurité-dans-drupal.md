@@ -49,5 +49,6 @@ takeway: >-
 
   Vous n'en retirerez pas de recette magique à déployer à chaque projet mais vous aurez un aperçu de tous les aspects, souvent négligés, qui sont des bases de la cybersécurité moderne.
 slides_files: slides/drupal-security-101-drupalcamp.pdf
+video: lXRyz11q3sM
 type: conference
 ---
