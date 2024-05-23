@@ -402,6 +402,369 @@ Interface, médias </li>
       </div>
       
       
+      <div class="conference-full__video">
+        <h3>Captation de la conférence</h3>
+        <iframe src="https://www.youtube-nocookie.com/embed/Er9mOJAGRww"
+                title="YouTube video player" frameborder="0"
+                allowfullscreen></iframe>
+        
+        <div class="conference-full__video_transcript">
+        <h3>Transcription</h3>
+         <p>Bon bah, bonjour déjà, merci d&rsquo;être venu, je suis déçu qu&rsquo;il y ait autant de monde qui ne soient pas intéressés par des migrations de Drupal 7</p>
+<p>Je ne comprends pas, donc merci d&rsquo;être venu déjà, alors moi je vais vous parler de crop, de médias et un peu de tout le bordel qu&rsquo;on fait avec tout ça, et voilà, histoire de qu&rsquo;on pense à un bon moment, parce qu&rsquo;on va surtout aborder des choses un peu compliquées</p>
+<p>Donc histoire que vous ne soyez pas venu pour rien à défaut d&rsquo;avoir compris des choses, on va commencer par une petite histoire, histoire de situer.</p>
+<p>Donc je vous présente Alice, alors il n&rsquo;y a pas de photo évidemment, donc Alice elle veut devenir influenceuse voyage et elle a bien compris que pour ça il lui fallait deux choses, faire du buzz sur les réseaux sociaux et ainsi de fois sur lequel de mettre des articles, avec lequel elle pourra faire le buzz sur les réseaux sociaux.</p>
+<p>Donc pour ça elle contacte Bob, Bob c&rsquo;est quelqu&rsquo;un de sérieux, donc il fait un benchmark complet des différentes solutions du CMS du marché et voir quelles solutions il a plus adaptées, non, il est développeur de Drupal 7, il prend un Drupal 7, et vu qu&rsquo;Alice a juste un site web pour mettre des articles, il installe un Drupal 7 standard et il dit, tiens, il y a le type de contenu standard, teste des choses, dis-moi ce qui va, ce qui ne va pas, et on va construire en fonction de ça.</p>
+<p>Alice va commencer à construire quelques photos, quelques articles à partir d&rsquo;une même photo, ce n&rsquo;est pas une photo d&rsquo;Alice parce qu&rsquo;elle n&rsquo;a pas les moyens d&rsquo;aller au Japon.</p>
+<p>Elle l&rsquo;a acheté sur internet, elle l&rsquo;a récupérée sur internet, et donc elle prépare quelques articles avec cette photo.</p>
+<p>Le résultat, je pense que vous y attendez tous, c&rsquo;est la même photo partout, parce que là ça paraît censé, il n&rsquo;y a qu&rsquo;une seule photo, c&rsquo;est la même photo, et ça franchement ça la fout un peu mal parce que ça se voit qu&rsquo;il n&rsquo;y a qu&rsquo;une seule photo, parce qu&rsquo;en fait ce qu&rsquo;Alice voudrait, ce qu&rsquo;elle n&rsquo;a pas dit, mais ce qu&rsquo;elle voudrait, c&rsquo;est pouvoir choisir une zone d&rsquo;intérêt à l&rsquo;image, qu&rsquo;en fonction de l&rsquo;article sur lequel elle l&rsquo;écrit, que ce soit tout à fait la même zone de l&rsquo;image qui s&rsquo;affiche, et vu qu&rsquo;Alice est un peu fainéante, elle aimerait pouvoir éviter de ré-uploader l&rsquo;image à chaque article.</p>
+<p>Bon, ça Bob il sait faire, il repond dans son back-office, il va sortir un plugin de crop quelconque, il va remplacer le champ image par un média, avec la promesse évidente</p>
+<p>de dire, on utilise média, comme ça on réutilise les images, on a un plugin de crop pour choisir la zone d&rsquo;intérêt, et évidemment ça marche presque.</p>
+<p>Parce qu&rsquo;on a bien réutilisé l&rsquo;image, jusque là il n&rsquo;y a pas de problème, l&rsquo;image elle est bien centrée sur une zone d&rsquo;intérêt,</p>
+<p>il n&rsquo;y a pas de problème, mais manifestement c&rsquo;est la même en fait.</p>
+<p>Parce que la réalité elle est là en fait, c&rsquo;est que le média, on a bien choisi une zone d&rsquo;intérêt dans le média, mais c&rsquo;est la même zone d&rsquo;intérêt pour tous les usages du média.</p>
+<p>C&rsquo;est un peu con quand même, parce que c&rsquo;est quand même pas ça qu&rsquo;on s&rsquo;intéresse.</p>
+<p>Donc si on veut vraiment se poser la question, c&rsquo;est vraiment le sujet en fait de cette conférence, c&rsquo;est comment est-ce qu&rsquo;on</p>
+<p>surcharge ces crops dans un média.</p>
+<p>C&rsquo;est vraiment la question.</p>
+<p>Alors pour ça on va essayer de structurer un peu le problème, parce que c&rsquo;est un propos un peu compliqué, et les 40 minutes on va bien les remplir.</p>
+<p>C&rsquo;est qu&rsquo;on parle d&rsquo;un média.</p>
+<p>Donc si le problème c&rsquo;est comment est-ce qu&rsquo;on surcharge les crops, on va devoir commencer à se poser la question.</p>
+<p>On a les plugins de crop, on va pouvoir identifier des surcharges, il va falloir les stocker quelque part.</p>
+<p>C&rsquo;est quand même une question un peu plus générale que juste des crops, c&rsquo;est comment est-ce que je surcharge la donnée dans un média.</p>
+<p>C&rsquo;est déjà un peu plus subtil que juste le crop.</p>
+<p>Et après il va y voir la partie entre guillemets avale du problème, qui va être de dire bon j&rsquo;ai mon média, j&rsquo;ai mon fichier image, j&rsquo;ai mon média, bon a priori on sait comment on génère une vignette, on a un formateur image, le contrôleur image deliver qui va générer la vignette.</p>
+<p>La question c&rsquo;est quand même de dire crop là dedans il fonctionne comment en fait ? Manifestement j&rsquo;ai ni parlé de crop ni non.</p>
+<p>Visuellement je l&rsquo;ai ni dans l&rsquo;un ni dans l&rsquo;autre.</p>
+<p>Il y a quand même se poser la question de comment est-ce que crop participe à cette génération de vignette.</p>
+<p>Je vais malheureusement prendre un peu de temps à vous présenter, à répondre à ces deux questions, vous présenter toutes les problématiques qu&rsquo;il y a dans ces deux questions et je vais essayer de vous apporter des solutions.</p>
+<p>C&rsquo;est tout ça qui est important.</p>
+<p>Jusque là c&rsquo;est clair pour tout le monde sur ce qu&rsquo;on va faire ?</p>
+<p>Bon on va commencer par la partie vignettage, donc la partie avale.</p>
+<p>Donc on a une entité avec un champ image, un formateur sur le champ image, on va prendre l&rsquo;image formateur par défaut,</p>
+<p>c&rsquo;est plus simple, et après le contrôleur.</p>
+<p>Est-ce que déjà ça pour tout le monde c&rsquo;est évident ?</p>
+<p>Ou j&rsquo;ai déjà perdu des joues en route ? Non ? Bon ça a l&rsquo;air d&rsquo;être évident.</p>
+<p>Donc on a deux briques, on va s&rsquo;intéresser à ce qu&rsquo;on a dans les deux briques.</p>
+<p>Alors l&rsquo;image formateur c&rsquo;est relativement simple, on le configure avec un style d&rsquo;image, ça prend l&rsquo;URL d&rsquo;image et par un tour de magie excessivement technique d&rsquo;imprendu de programmation, ça préfixe le chemin d&rsquo;image par le style.</p>
+<p>C&rsquo;est la très haute volée d&rsquo;imprendu de programmation.</p>
+<p>Bon ça génère deux trois tokens mais les tokens on va pas s&rsquo;intéresser.</p>
+<p>Ce qu&rsquo;il faut bien comprendre là, et c&rsquo;est bien toute l&rsquo;importance de ce formateur là, c&rsquo;est que le chemin qu&rsquo;on obtient à la fin c&rsquo;est un chemin potentiellement physique sur la machine vers un fichier qui a priori sera une image.</p>
+<p>C&rsquo;est ce point là qui est important, c&rsquo;est que cette vignette là, physiquement ça doit correspondre à un fichier image.</p>
+<p>Et on voit tout de suite qu&rsquo;on va avoir un couple d&rsquo;informations qui est au centre de cette génération de vignettes qui se couple style d&rsquo;image, chemin de l&rsquo;image.</p>
+<p>Donc a priori ce qui définit une vignette c&rsquo;est bien une image source, l&rsquo;image d&rsquo;origine et le style sur lequel on l&rsquo;applique.</p>
+<p>Pareil, jusque là je pense que si vous avez tous un peu joué avec les vignettes ça ne va pas vous paraître spécialement inconnu.</p>
+<p>En théorie si cette vignette là elle existe, le serveur la fournit directement au client, si elle n&rsquo;existe pas on tombe dans les bras de ce magnifique contrôleur, le Image Deliver qui lui va nous générer cette vignette.</p>
+<p>Comment est-ce qu&rsquo;il nous la génère cette vignette ? Alors c&rsquo;est un contrôleur donc ça répond à une URL.</p>
+<p>Quand une fois j&rsquo;ai parmi les tokens, parce que les tokens ont quelque chose près, ils servent soit à la sécurité, soit aux autorisations, soit à la sécurité de savoir si on a le droit de le générer et potentiellement à gérer du cash CDN et compagnie.</p>
+<p>En fait les tokens n&rsquo;ont pas de valeur en termes de</p>
+<p>génération de vignettes.</p>
+<p>Mais en gros ce contrôleur là il fait quoi ? Donc premier truc, c&rsquo;est le premier truc qu&rsquo;il fait, il vérifie si une image d&rsquo;origine, il existe, elle existe.</p>
+<p>Parce que générer une vignette à partir d&rsquo;une image qui n&rsquo;existe pas, je me suis amusé à le faire, la librairie GD elle aime absolument pas générer une vignette à partir d&rsquo;un truc vide, clairement elle n&rsquo;aime pas.</p>
+<p>Bon donc si l&rsquo;image elle existe, on va charger le style d&rsquo;image avec la flèche qui déconne et on va charger l&rsquo;image.</p>
+<p>Alors un style d&rsquo;image, si normalement vous êtes tous un peu joué dans le back office, dans un style d&rsquo;image on va définir une collection d&rsquo;effets.</p>
+<p>Qu&rsquo;est ce qu&rsquo;on va pouvoir faire subir à cette pauvre image ? On va pouvoir la retailler, la désaturer, changer le format, etc.</p>
+<p>Mais en gros ce qu&rsquo;on va faire derrière, c&rsquo;est une fois qu&rsquo;on a chargé notre image, on va lui appliquer tous les styles les uns à la suite des autres.</p>
+<p>Quand tous les styles sont appliqués, on enregistre la vignette, on la renvoie au client.</p>
+<p>Donc ce couple qu&rsquo;on a identifié de style et d&rsquo;image, manifestement c&rsquo;est bien ça qui nous définit une vignette.</p>
+<p>On n&rsquo;en sortira pas, et on sent bien déjà là qu&rsquo;on va légèrement nous casser les pieds.</p>
+<p>Mais bon, c&rsquo;est quelque chose qui a l&rsquo;air d&rsquo;être bien stable, ça marche très bien.</p>
+<p>La question c&rsquo;est quid des crops, parce qu&rsquo;encore une fois là, je ne sais pas où les crops s&rsquo;insèrent, mais manifestement ils ne s&rsquo;insèrent pas.</p>
+<p>Donc la question c&rsquo;est de dire, les crops ça fonctionne comment ? Je ne sais pas si vous êtes déjà intéressé au fonctionnement du module crop, tel que c&rsquo;était déjà en Drupal 7 ou aujourd&rsquo;hui en Drupal 8+.</p>
+<p>En 8+, les crops c&rsquo;est une entité, une entité de contenu.</p>
+<p>Alors qui est accompagnée avec son entity type, donc le crop type.</p>
+<p>Et en gros si je résume très simplement la sorte donnée, on a une entité de crop, c&rsquo;est l&rsquo;url, c&rsquo;est l&rsquo;image, l&rsquo;url de l&rsquo;image par laquelle il s&rsquo;applique, le type de crop qu&rsquo;on va vouloir lui faire subir, et la consigne de crop.</p>
+<p>Et la consigne de crop, quel que soit le plugin, ça peut faire la même chose.</p>
+<p>Ces quatre valeurs, c&rsquo;est une position X et Y pour avoir un point, une largeur, une hauteur.</p>
+<p>Vous avez votre cas.</p>
+<p>Et on fait difficilement plus simple conceptuellement.</p>
+<p>Alors cette entité là, elle est enregistrée comment ? Comment est-ce qu&rsquo;on les enregistre ? On les enregistre à</p>
+<p>l&rsquo;enregistrement de notre entité sur lequel on aura posé un widget de crop sur le champ image.</p>
+<p>Alors je vais prendre 30 secondes, même pas un peu moins, juste à réinsister là-dessus.</p>
+<p>Notre champ image, sa valeur, la value du champ image, c&rsquo;est le fichier qu&rsquo;il contient.</p>
+<p>Les données contenues dans le widget de crop, c&rsquo;est la consigne de crop.</p>
+<p>J&rsquo;ai juste insisté sur la nuance entre la valeur du champ et la consigne de crop parce que la séparation entre les deux va faire une partie du sel du problème, vous allez voir plus tard.</p>
+<p>Mais à quelque chose près, quand on enregistre le contenu, le widget, l&rsquo;URL de l&rsquo;image, c&rsquo;est la value du champ.</p>
+<p>A priori, ça, on l&rsquo;a assez facilement.</p>
+<p>Le type de crop, c&rsquo;est la configuration du widget, c&rsquo;est facile.</p>
+<p>Et la consigne, encore une fois, c&rsquo;est la valeur du widget.</p>
+<p>C&rsquo;est la donnée dans le widget.</p>
+<p>L&rsquo;écriture, c&rsquo;est facile.</p>
+<p>À l&rsquo;utilisation du crop, on a un effet dans le style d&rsquo;image qui est l&rsquo;effet de crop dans lequel on va configurer le type de crop.</p>
+<p>Cet effet-là, il est appelé lors de la génération de la vignette.</p>
+<p>On avait dit qu&rsquo;il y avait deux paramètres, le style d&rsquo;image pour récupérer l&rsquo;effet et le deuxième paramètre qui est l&rsquo;URL d&rsquo;image d&rsquo;origine.</p>
+<p>J&rsquo;ai deux clés dans mon entité, j&rsquo;ai les deux valeurs sous la main, j&rsquo;ai plus qu&rsquo;à charger mon entité, c&rsquo;est quand même pas trop compliqué.</p>
+<p>Et derrière, une fois que je récupère le crop, j&rsquo;applique la consigne de crop à l&rsquo;image et, à quelque chose près, l&rsquo;effet du crop sur la vignette est fini.</p>
+<p>On a appliqué cette consigne de crop, on a appliqué ce retaillage.</p>
+<p>Ce qu&rsquo;on se rend bien compte là par rapport à la génération de vignette du classique, c&rsquo;est qu&rsquo;on a proxifié, je ne sais pas si ce mot existe en français, mais ce n&rsquo;est pas grave, on a fait un proxy du couple image style d&rsquo;image et on a remplacé ce couple par le couple image type de crop.</p>
+<p>La nuance est subtile, mais en fait, si on y réfléchit 30 secondes, ça impose tout de suite des limites techniques au fonctionnement du module crop.</p>
+<p>Les deux principales limites, la première, c&rsquo;est qu&rsquo;en fait ce couple là, il est plus restrictif que le couple style image.</p>
+<p>C&rsquo;est à dire qu&rsquo;il y a certaines variations d&rsquo;image qu&rsquo;on ne pourra pas générer.</p>
+<p>L&rsquo;exemple, c&rsquo;est si j&rsquo;ai un type de crop 16:9 et que j&rsquo;ai un style d&rsquo;image 16:9 banner et 16:9 teaser.</p>
+<p>Les deux styles d&rsquo;image utilisent le même type de crop.</p>
+<p>Je ne peux pas avoir deux consignes de crop, une consigne de crop pour chacun de mes styles.</p>
+<p>La consigne de crop se fait au niveau du type de crop, donc sur ces deux styles là, j&rsquo;aurai la même zone d&rsquo;intérêt.</p>
+<p>C&rsquo;est par design quelque part.</p>
+<p>C&rsquo;est sur l&rsquo;image d&rsquo;origine ? Oui, c&rsquo;est une image d&rsquo;origine, mais potentiellement tu pourrais vouloir que ton point d&rsquo;intérêt dans ton style 16:9 banner soit différent de ton 16:9 teaser.</p>
+<p>Mais tu ne peux pas, par design tu ne pourras pas.</p>
+<p>Il faut créer deux styles.</p>
+<p>C&rsquo;est déjà deux styles, il faudrait créer deux types de crop.</p>
+<p>On sent bien qu&rsquo;il y a un truc là qui gêne.</p>
+<p>Et le dernier point, c&rsquo;est que ces crops sont d&rsquo;abord avant tout pensés pour être utilisés sur des champs images.</p>
+<p>L&rsquo;approche du média, qui est pu être la faille de l&rsquo;entité, le média avant que ça soit intégré et compagnie, a été plus ou moins abandonnée par le module crop.</p>
+<p>Quand vous faites du crop sur un champ image, en aucun cas vous faites du crop sur une entité autre qu&rsquo;une image.</p>
+<p>Alors ces deux problématiques là, vous inquiétez pas, elles ont rien de nouveau.</p>
+<p>Elles ont été identifiées au 18 novembre 2015.</p>
+<p>Alors je ne sais pas s&rsquo;il y a des gens qui sont familiers de l&rsquo;archéologie, donc je vous remets deux trois dates.</p>
+<p>19 novembre 2015, c&rsquo;est Drupal 8.0 qui sort.</p>
+<p>21 novembre 2015, c&rsquo;est la bêta 1 du module média pour Drupal 8.</p>
+<p>Et le 15 novembre 2015, c&rsquo;est l&rsquo;alpha 1 de crop.</p>
+<p>Donc clairement, le sujet il était évident dès le début.</p>
+<p>Et en fait, le ticket qui est ouvert à ce sujet là, en fait, qui expose le problème, son approche c&rsquo;est de dire, c&rsquo;est comme ça par design, on ne le corrigera pas.</p>
+<p>Ce qu&rsquo;il faut, c&rsquo;est que ça soit documenté et que les utilisateurs soient au courant de cet effet.</p>
+<p>Voilà, c&rsquo;est comme ça.</p>
+<p>Ce n&rsquo;est pas autrement.</p>
+<p>C&rsquo;en est suivi quelques mois de discussion dans le ticket.</p>
+<p>Quelques années oui, mais le ticket est toujours ouvert.</p>
+<p>Mais en fait, le fond du problème s&rsquo;arrête au 14 avril 2016.</p>
+<p>Donc quelque chose près, je ne me gourre pas, mais dans quinze jours, ça fera huit ans.</p>
+<p>Parmi ceux des tickers qui avaient déjà ouvert le ticket, en fait, qui va faire un constat, alors je vais être sympa sur le problème.</p>
+<p>Je suis sympa, je vais vous le paraphraser et le traduire.</p>
+<p>En gros, que ce problème de ne pas pouvoir faire des variants, on pourra le dire, c&rsquo;est autant critique qu&rsquo;on veut.</p>
+<p>Le module crop ne fera pas.</p>
+<p>Parce que le module crop, il est implémenté pour respecter les cas de techniques de la génération d&rsquo;image.</p>
+<p>Et la génération d&rsquo;image, quelque chose près, elle ne peut pas permettre de distinguer plusieurs variants pour un même couple de vignettes, pour un même couple style image.</p>
+<p>Et le module crop considère qu&rsquo;il respecte ce couple là.</p>
+<p>On a vu que ce n&rsquo;est pas tout à fait le cas, mais priori, la logique, elle est là.</p>
+<p>Par contre, ce qui est sympa de la part de Miro, des tickers, c&rsquo;est qu&rsquo;il va plus loin dans son commentaire en disant, bon, admettons qu&rsquo;on veuille le faire.</p>
+<p>Admettons, je rappelle la date, c&rsquo;était il y a huit ans.</p>
+<p>Il y a deux choix, soit on donne un gros coup de pied dans le corps, dans sa génération de vignettes, pour ce qui sert d&rsquo;image d&rsquo;origine dans le couple style image.</p>
+<p>Ce qui sert d&rsquo;image d&rsquo;origine, ce ne sera pas la vraie image d&rsquo;origine, mais potentiellement quelque chose d&rsquo;autre qui ferait référence à l&rsquo;image d&rsquo;origine.</p>
+<p>On contextualiserait l&rsquo;image source.</p>
+<p>Admettons, soit on est un peu plus bourrin et on réimplément carrément une méthode de génération de vignettes pour gérer ce cas-là.</p>
+<p>On est mal barré.</p>
+<p>Je ne sais pas ce que vous en pensez, mais ça fait huit ans que le constat est le même et quelque chose de près n&rsquo;a pas beaucoup bougé.</p>
+<p>Bon, on va regarder l&rsquo;autre côté du schéma, histoire de se rassurer, enfin essayer de se rassurer.</p>
+<p>Comment est-ce qu&rsquo;on surcharge les champs dans un média ? Je vais vous dire que ce n&rsquo;est pas nouveau.</p>
+<p>Si vous avez déjà fait du média ou de l&rsquo;équivalent Drupal 6, Drupal 7, Drupal 8, vous connaissez ce cas-là.</p>
+<p>Bonjour, j&rsquo;ai un média avec une légende.</p>
+<p>Et de l&rsquo;autre côté, je fais mon article, mais je voudrais contextualiser ma légende.</p>
+<p>Je fais comment ? La solution simple, on la connaît tous.</p>
+<p>Dans mon type de contenu, je vais avoir mon champ de média, un champ de surcharge pour ma légende, le tout emballé dans un fil groupe, un paragraphe, ce que vous voulez, et charge au thème de se démerder avec ça.</p>
+<p>Levez la main qui sait qu&rsquo;il ne l&rsquo;a pas fait.</p>
+<p>On l&rsquo;a tous fait.</p>
+<p>Clairement, c&rsquo;est un problème classique sur les médias, mais c&rsquo;est un problème classique dans n&rsquo;importe quelle référence de contenu.</p>
+<p>Je pourrais sortir les dizaines de tickets qui sont passés sur Drupal sur ce sujet-là.</p>
+<p>J&rsquo;en ai choisi un.</p>
+<p>Déjà, c&rsquo;est parmi les derniers, mais surtout qu&rsquo;il adresse un vrai problème d&rsquo;accessibilité.</p>
+<p>Vous savez ce champ alt qu&rsquo;on a mis en obligatoire sur les images, parce qu&rsquo;une image doit avoir un texte alternatif.</p>
+<p>C&rsquo;est faux, on vous a menti.</p>
+<p>Une image doit avoir un texte alternatif que si elle est informative.</p>
+<p>Ça veut dire que si c&rsquo;est une enluminure, si c&rsquo;est un truc juste pour faire joli, le texte alternatif doit être vide.</p>
+<p>Si je peux me permettre une réflexion, c&rsquo;est vrai pour l&rsquo;accessibilité, mais c&rsquo;est faux pour le SEO.</p>
+<p>J&rsquo;entends bien, mais sauf que là on parle de&hellip;</p>
+<p>C&rsquo;est toute la contradiction.</p>
+<p>C&rsquo;est toute la contradiction, on est d&rsquo;accord.</p>
+<p>J&rsquo;ai mon média qui convient sur un texte alternatif parce qu&rsquo;on l&rsquo;a forcée à saisir sauf qu&rsquo;en accessibilité, j&rsquo;en veux pas.</p>
+<p>Je fais comment ?</p>
+<p>Donc le ticket a été créé en 2019.</p>
+<p>Il est en postponement depuis&hellip;</p>
+<p>Il y a quelque chose près, il est en postponement depuis 2022.</p>
+<p>Pour un truc excessivement précis et évident que tout le monde aime, un problème du high.</p>
+<p>Parce que des gens se sont dit, ça serait pas mal en fait, mais on n&rsquo;a pas dans les guidelines du high du bac, on n&rsquo;a pas une manière propre de définir les altérations qu&rsquo;on pourrait faire sur un média depuis un champ de référence, un média libre.</p>
+<p>À quelque chose près, il n&rsquo;y a pas que la surcharge de champ, il y a potentiellement le fait de pouvoir traduire un média depuis un champ de référence ou de pouvoir l&rsquo;éditer.</p>
+<p>Mais en gros, voilà, on en est là.</p>
+<p>Il y a des gens qui ont proposé ça comme high.</p>
+<p>Je pense que ça, à peu près, ça t&rsquo;y serait tout le monde.</p>
+<p>&rsquo;est-à-dire que dans mon média libre, j&rsquo;ai un petit bouton et après, je peux faire mes opérations.</p>
+<p>Chaque opération, une ou une modale, ça irait à tout le monde.</p>
+<p>On est en 2024, on est toujours en train de discuter si ça, c&rsquo;est une high qui irait à tout le monde.</p>
+<p>Bon, je ne sais pas si dans moi, vous sentez que ça me saoule un peu en fait.</p>
+<p>Alors, je vous assure, a priori, ça ne saoule pas que moi parce qu&rsquo;en 2021, des gens qui se sont dit fait chier, on va faire nous-mêmes.</p>
+<p>Donc, ce module-là, si vous ne le connaissez pas, vous prenez tous en photo et vous le testez ce soir.</p>
+<p>Média Libre et Média Modify, c&rsquo;est un petit module génial qui a plein de points positifs.</p>
+<p>Le principal, c&rsquo;est que la description, la description, elle décrive ce qu&rsquo;il fait.</p>
+<p>L&rsquo;installation, elle fonctionne du premier coup et le have fun, il est vrai.</p>
+<p>En gros, ce que propose ce module-là, en fait, un petit point technique vite fait, c&rsquo;est en gros, c&rsquo;est un nouveau type de champ, c&rsquo;est un entity reference modify item.</p>
+<p>C&rsquo;est un entity reference standard.</p>
+<p>C&rsquo;est juste qu&rsquo;il a une colonne en plus dans lequel il va gérer, il va stocker des surcharges.</p>
+<p>Ça veut dire que vous allez pouvoir modifier la valeur des champs de votre média et le champ va stocker ses surcharges dans un magnifique JSON.</p>
+<p>Donc, on va stocker les values et que si vous chargez votre média depuis le champ, il écrase les valeurs des champs natifs du média par les surcharges.</p>
+<p>C&rsquo;est con, il le fait tout seul.</p>
+<p>Alors, j&rsquo;ai prévu une vidéo pour ça parce qu&rsquo;à un moment donné, ce genre de module peut présenter.</p>
+<p>Donc là, j&rsquo;ai un type de contenu article, j&rsquo;ai juste mon média contextuel en plus, mais je pense qu&rsquo;en gros, c&rsquo;est une média librairie classique.</p>
+<p>Donc, ce que je vais faire, je vais mettre deux fois le même média dedans.</p>
+<p>À quelque chose près, ce qui va être évident, c&rsquo;est qu&rsquo;on va afficher mes deux photos pareilles avec deux fois la même légende.</p>
+<p>Jusque là, c&rsquo;est normal, c&rsquo;est la légende qu&rsquo;il y a dans mon média.</p>
+<p>Ce que propose le module, c&rsquo;est ce petit bouton qui ouvre une modal, override media item, dans lequel j&rsquo;ai pouvoir modifier ma légende.</p>
+<p>C&rsquo;est con.</p>
+<p>Le problème, c&rsquo;est que ça marche.</p>
+<p>Vous allez voir.</p>
+<p>Donc, je le modifie sur le premier média, sur le deuxième, je décide de ne pas modifier la légende, on va laisser ça comme ça, et je vais rajouter un troisième fois le même média pour lequel je vais aller modifier la légende.</p>
+<p>Donc, comme ça, on a le premier qui existait avant, le deuxième sur lequel je n&rsquo;ai rien modifié, et le troisième que j&rsquo;ai modifié la légende, dans mon enregistré.</p>
+<p>Et la magie, c&rsquo;est que mes trois légendes sont différentes.</p>
+<p>Merci.</p>
+<p>Le module n&rsquo;est pas de moi, donc pour ça je vous dis, si vous ne le connaissez pas, que vous vous cassez le cul avec les médias, testez-le, parce que clairement, il répond à la promesse.</p>
+<p>C&rsquo;est vraiment, et accessoirement, ils ont même une commande rush pour migrer des champs de médias, des champs de référence, des médias classiques vers leur champs à eux.</p>
+<p>Du coup, il ne serait pas possible d&rsquo;appliquer la même logique au balise alt, justement, pour répondre à la contradiction.</p>
+<p>Alors, justement, justement, c&rsquo;est que ce module-là, alors la question c&rsquo;est, est-ce qu&rsquo;on ne peut pas appliquer ça au balise alt ? Ce module-là le gère, en fait, la balise alt, directement.</p>
+<p>Non, mais pourquoi ce n&rsquo;est pas dans le corps, ce connerie merde ? Bon, donc, si on fait un petit constat, parce qu&rsquo;on va reprendre le problème de base, quand même, le problème de base, c&rsquo;était Alice, là, avec ses photos du Japon, où elle veut faire du crop et réutiliser ses médias.</p>
+<p>Bon, donc, si je reprends mon schéma, la bonne nouvelle, c&rsquo;est qu&rsquo;a priori, sur la partie de gauche, en amont, on a une brique.</p>
+<p>Elle fait le taf, enfin, presque.</p>
+<p>Si vous avez suivi, je pense que quelqu&rsquo;un a compris pourquoi je précise le presque.</p>
+<p>Presque.</p>
+<p>La consigne de crop, c&rsquo;est pas la valeur du champ.</p>
+<p>Voilà, donc, quand même, c&rsquo;est un patch pour rajouter un alter et un petit hook alter, ça va tuer personne.</p>
+<p>Voilà, mais donc, sur la partie de comment est-ce que je saisis la surcharge de mon crop, c&rsquo;est faisable.</p>
+<p>C&rsquo;est facile.</p>
+<p>Bon, sur la partie de gauche, on a vu qu&rsquo;on avait deux pistes à explorer et que, manifestement, on n&rsquo;avait pas grand-chose d&rsquo;autre.</p>
+<p>Alors, les deux pistes au menu, donc, je rappelle, la première, c&rsquo;est de rester avec l&rsquo;image deliver natif, mais essayer de le troller, de le faire travailler sur une image qui ne serait pas la vraie image.</p>
+<p>Bon, et le deuxième cas, c&rsquo;est un peu plus bourrin, c&rsquo;est de dire qu&rsquo;on va créer un nouveau contrôleur de génération de vignettes ad-hoc.</p>
+<p>Ça veut dire dupliquer toute la stack de routing de contrôleurs de génération et compagnie.</p>
+<p>Alors, moi, je ne sais pas pour vous, mais troller le code de Drupal, j&rsquo;adore faire ça.</p>
+<p>On va essayer de commencer, on va tenter cette première approche, histoire de voir ce que ça donne.</p>
+<p>Alors, donc, la théorie, elle va être, donc, on a à gauche le Media Modify avec son altération et la théorie, ça va être de dire, bon, je vais, alors vite fait, est-ce que j&rsquo;altère l&rsquo;image formateur standard ou est-ce que je fais un formateur custom ? Le débat est ouvert, pour moi, c&rsquo;est un non débat parce que, en fait, dans les deux cas, il faudra que mon formateur puisse gérer des images du crop contextualisé ou du crop non contextualisé ou de la génération standard.</p>
+<p>Donc, dans les deux cas, il faut que mon formateur fasse les deux, que je l&rsquo;altère ou que j&rsquo;en crée un nouveau.</p>
+<p>C&rsquo;est forcément le débat.</p>
+<p>Mais bon, a priori, l&rsquo;idée, on va partir de son altération.</p>
+<p>Dans l&rsquo;intégration, on va créer une copie contextualisée de notre image source et remplacer l&rsquo;URI d&rsquo;origine par cette copie.</p>
+<p>Bon, ça, c&rsquo;est facile.</p>
+<p>On a un magnifique petit hook pour ça, le pré-process image formateur.</p>
+<p>Il y a juste un point qu&rsquo;il n&rsquo;a pas falloir qu&rsquo;on oublie et qu&rsquo;il va être subtil, c&rsquo;est de dire qu&rsquo;à la sauvegarde de l&rsquo;entité, il va falloir que je crée un crop qui cible cette copie-là.</p>
+<p>Ce qu&rsquo;on a vu tout à l&rsquo;heure, c&rsquo;est que l&rsquo;entité de crop, elle garde, elle stocke l&rsquo;image sur laquelle le crop va devoir s&rsquo;appliquer.</p>
+<p>Donc, je vais avoir un petit jeu de danse à faire pour que la sauvegarde de l&rsquo;entité me crée un crop sur cette future cible, cible que je créerai plus tard.</p>
+<p>Juste au cas où entre temps, on a évité des cas, j&rsquo;ai des fichiers, mais sûr que mon fichier de source existe.</p>
+<p>Bon, c&rsquo;est une gymnastique un peu pourrie, mais bon, il y a trois altérations qui devraient y arriver.</p>
+<p>Donc, c&rsquo;est en ça où en 2022, je sors le module Medial Multicropping qui a pour objectif, pareil c&rsquo;est clair, j&rsquo;apporte un POC fonctionnel sur cette capacité.</p>
+<p>Le but c&rsquo;est de dire, vu que j&rsquo;ai l&rsquo;impression que personne s&rsquo;adresse au sujet, j&rsquo;ai mis à adresser et au pire, si ça intéresse personne, mon module ferait de mal à personne.</p>
+<p>Donc, c&rsquo;est pour ça qu&rsquo;en mars 2023, j&rsquo;enterre le module parce qu&rsquo;il y a des gens qui partent en prod avec.</p>
+<p>Functional POC, je ne sais pas, vous n&rsquo;êtes pas sérieux les gens, c&rsquo;est écrit en toutes lettres, à ne pas utiliser, j&rsquo;aurais pu le mettre en expérimental, je ne l&rsquo;ai pas fait, j&rsquo;aurais peut-être dû.</p>
+<p>Donc, je l&rsquo;enterre en 2023 parce que des gens partent en prod avec et à la place, je publie la Media Contextual Crop Collection sur la branche 1.0, c&rsquo;est le même code, c&rsquo;est juste qu&rsquo;au lieu d&rsquo;avoir tout dedans en vrac, j&rsquo;éclate le code, ne serait-ce que pour éclater les dépendances, que si vous utilisez Image Widget Crop sur votre site, tout le code qui permet de gérer Focal Point, vous n&rsquo;en avez pas besoin.</p>
+<p>Donc voilà, c&rsquo;est juste d&rsquo;éclater ça et avoir une gestion de patch et de dépendance un peu propre.</p>
+<p>Donc, je publie ça en mars 2023 et pour des gens que j&rsquo;aurais pu croiser à DrupalCon Lille, je pense que je l&rsquo;en avais parlé.</p>
+<p>Alors, cette approche-là, on peut faire un bilan, l&rsquo;implémentation est intéressante, le côté positif, c&rsquo;est qu&rsquo;on a vu, elle est relativement simple l&rsquo;implémentation, c&rsquo;est trois altérations.</p>
+<p>Bon, il faut se brancher à Crop, il faut se brancher à plein de choses, mais c&rsquo;est relativement peu de code en fait.</p>
+<p>Par contre, le côté négatif, et ça je l&rsquo;ai vu avec les gens qui sont partis en prod avec, c&rsquo;est qu&rsquo;en fait, le module Crop, il embarque énormément de routines de nettoyage de ces entités, principalement basées sur le fait qu&rsquo;on supprime des fichiers images.</p>
+<p>Sauf que moi, je ne me base plus sur les fichiers images qui sont gérés par Drupal, je me base sur des copies que j&rsquo;ai créées plus ou moins à la main à la volée.</p>
+<p>Donc, côté nettoyage de Crop, de copies de vignettes, ça devient obligé d&rsquo;implémenter beaucoup de code, beaucoup très complexe et pas forcément évident.</p>
+<p>Et clairement, ça peut poser des problèmes sur certains hébergements, principalement sur des questions d&rsquo;Io sur les disques.</p>
+<p>Et ce point là, je l&rsquo;ai identifié avec les deux trois personnes qui sont partis en prod avec, bande de salopio, et en fait, on est arrivé à la conclusion que je ne pourrais pas le corriger.</p>
+<p>Alors, pourquoi j&rsquo;ai ce problème d&rsquo;Io ? Ça, je peux l&rsquo;expliquer pourquoi je l&rsquo;ai en fait.</p>
+<p>C&rsquo;est que si on revient sur la gestion d&rsquo;un M3, on ne voudrait pas le gérer ses fichiers.</p>
+<p>Donc, vous avez votre dossier public avec votre arborescence de dossier et votre image en giga pixels.</p>
+<p>Quand vous faites une vignette, vous créez un dossier style, un dossier avec le nom du style et vous reproduisez l&rsquo;arborescence avec votre petite vignette.</p>
+<p>Bon, juste là, on a doublé le nombre de structures sur le disque.</p>
+<p>Ce n&rsquo;est pas forcément des structures, elles ne pèsent pas lourdes, mais sur certains hébergements avec du file système virtuel, vous cramez les I/O pour ça.</p>
+<p>Sauf que nous, ce qu&rsquo;on fait en fait, avant de faire cette étape de style là, on crée une copie contextualisée.</p>
+<p>C&rsquo;est-à-dire que je crée un dossier avec le contexte, je reproduis l&rsquo;arborescence et je duplique l&rsquo;image source.</p>
+<p>Je reprends le cadalys qui avait son image en mégapixels et ses trois contextes.</p>
+<p>J&rsquo;ai multiplié par 4 la consommation de disque, la cadeau.</p>
+<p>Et après derrière, ce truc là, ça repasse dans le style.</p>
+<p>Donc non seulement j&rsquo;ai multiplié par 4 la consommation de disque, mais j&rsquo;ai presque multiplié par 3 le nombre de structures.</p>
+<p>Il y a des hébergements où le file système là, il pète des plombs, surtout quand vous passez un hook image flush qui va faire sauter tout le dossier de style.</p>
+<p>Donc ça marche bien, mais en fait, on a des problèmes côté uDisk, donc on a abandonné.</p>
+<p>Bon, c&rsquo;est pas grave, il y a une deuxième approche un peu plus bourrine.</p>
+<p>Conceptuellement, elle est plus bourrine, mais elle est presque plus simple.</p>
+<p>En fait, c&rsquo;est juste la dernière brique là à écrire.</p>
+<p>Mon altération est toujours là, j&rsquo;ai toujours mon image formateur.</p>
+<p>Il a toujours falloir que je fasse une altération là pour changer l&rsquo;url, mais à quelque chose près, j&rsquo;ai juste un contrôleur à recréer de zéro.</p>
+<p>Bon, il va y avoir une petite subtilité, il va falloir que je crée un crop.</p>
+<p>On verra comment est-ce que je contextualise les crops derrière, mais à quelque chose près.</p>
+<p>Ce qui fait peur, c&rsquo;est ça, mais mécaniquement, on ne va pas plus loin.</p>
+<p>Et ça, en fait, je l&rsquo;ai implémenté dans la branche 2.x de la collection de modules que j&rsquo;ai publié relativement peu de temps après la Drupalcon.</p>
+<p>Parce qu&rsquo;en fait, c&rsquo;est juste le replacement de la brique du moteur du système.</p>
+<p>Donc, vu que je ne m&rsquo;étais pas trop planté sur mes services, mes plugins et compagnie, ça s&rsquo;est fait relativement tout seul.</p>
+<p>En termes d&rsquo;implémentation, l&rsquo;idée, c&rsquo;est qu&rsquo;on fait un routing, un contrôleur.</p>
+<p>Donc, il faut se créer une url.</p>
+<p>Alors là, c&rsquo;est la manière dont on s&rsquo;est implémenté.</p>
+<p>Si on a le temps après ou si vous êtes là demain, ne critiquez, il n&rsquo;y a pas de problème.</p>
+<p>Encore une fois, c&rsquo;est une preuve que ça peut fonctionner.</p>
+<p>C&rsquo;est loin d&rsquo;être une solution parfaite.</p>
+<p>Donc, si vous voulez m&rsquo;aider à l&rsquo;améliorer, vous êtes tous les bienvenus.</p>
+<p>Comme je disais, moi, ça fait 4 ans que je traverse le désert avec ce concept-là.</p>
+<p>Donc, toute l&rsquo;idée est bienvenue.</p>
+<p>Ça marche, je vous assure.</p>
+<p>Mais bon, donc, il me faut une url.</p>
+<p>Bon, allez, je mets un prefix, comme ça je sais que c&rsquo;est mes urls à moi.</p>
+<p>Derrière, il faut absolument que je vais absolument finir avec le chemin de l&rsquo;image parce que je veux que, à la fin, ma vignette soit quand même considérée comme une image.</p>
+<p>Je vais rajouter le style parce qu&rsquo;il n&rsquo;y a pas que les crops dans la vie.</p>
+<p>Potentiellement, il y a d&rsquo;autres effets qu&rsquo;on va appliquer à sa vignette.</p>
+<p>Et au milieu, il va falloir que j&rsquo;injecte un contexte à la con.</p>
+<p>Quoi ? Je ne sais pas.</p>
+<p>Il va falloir que j&rsquo;injecte un truc.</p>
+<p>Une fois que j&rsquo;ai mon url, il me faut mon contrôleur.</p>
+<p>Bon, là, je suis fainéant.</p>
+<p>Il y a un truc qui marche dans le code qui est le image-deliver.</p>
+<p>Je vais reprendre tout le stack de routing.</p>
+<p>Donc, la déclaration des routes, le passe-processeur, la génération des routes, le contrôleur.</p>
+<p>Rien de tout ça est prévu pour être étendu.</p>
+<p>Donc, à quelque chose près, je vais dupliquer les fichiers.</p>
+<p>Pas beau, mais bon, on fait ce qu&rsquo;on peut.</p>
+<p>Mais après, il va quand même nous rester quelques questions.</p>
+<p>C&rsquo;est ce contexte-là.</p>
+<p>C&rsquo;est quoi ?</p>
+<p>Cette clé de contexte, c&rsquo;est quoi ? Derrière, comment je récupère le contexte au niveau du crop et comment je l&rsquo;injecte dans mon effet de crop ? On est bien mignons, mais on n&rsquo;a pas répondu au problème.</p>
+<p>Bon, là, j&rsquo;ai fait le choix de m&rsquo;intégrer un maximum au module crop.</p>
+<p>Ça, c&rsquo;est un choix.</p>
+<p>C&rsquo;est pareil, c&rsquo;est des choix qui sont sans doute discutables dans la solution.</p>
+<p>Donc, on va commencer.</p>
+<p>J&rsquo;ai commencé par faire un patch sur l&rsquo;entité de crop pour ajouter une colonne de contexte.</p>
+<p>Ça veut dire que mon crop n&rsquo;est plus limité à juste un couple image type de crop, mais je rajoute une clé de contexte.</p>
+<p>Ça veut dire que je suis capable de gérer un crop par défaut, qui n&rsquo;a pas de contexte, de toutes ses variations pour une même image et un crop type.</p>
+<p>Et après, on rentre dans la partie qui est sale.</p>
+<p>Je m&rsquo;en excuse pour y me jeter des cailloux et des tomates.</p>
+<p>Il me faut une clé de contexte.</p>
+<p>J&rsquo;ai une entité de crop.</p>
+<p>On peut prendre l&rsquo;id de l&rsquo;entité.</p>
+<p>Merci Olivier.</p>
+<p>Ma clé de contexte, j&rsquo;ai directement pris l&rsquo;id de l&rsquo;entité et après,tu te prépares pour le deuxième bout.</p>
+<p>Derrière, il y a la méthode getCrop sur le plugin d&rsquo;effet,où je vais dire si j&rsquo;ai l&rsquo;id dans la request, utilise-la.</p>
+<p>Merci.</p>
+<p>Et donc, si vous ne savez pas quoi faire demain, vous pouvez toujours m&rsquo;aider à améliorer ça.</p>
+<p>Bon, si je fais un bilan blague à part de cette solution-là, le côté positif, c&rsquo;est que je suis mieux intégré à crop API, donc je profite de tous les systèmes de nettoyage que la crop API me produit sur ces entités, sur ces vignettes et compagnies.</p>
+<p>Je peux facilement me réintégrer au flush les images et donc j&rsquo;ai une solution beaucoup plus propre en termes de données dans la base, mais aussi en termes de vignettes et de fichiers sur le disque.</p>
+<p>Côté négatif, on vient de tous les voir.</p>
+<p>Ce n&rsquo;est pas simplement plus technique.</p>
+<p>Si quelqu&rsquo;un est expert en postprocessor, pareil, j&rsquo;ai besoin d&rsquo;aide.</p>
+<p>Pareil, le doublonnage du code parce que l&rsquo;image deliver, c&rsquo;est une classe qui n&rsquo;est pas prévue pour être étendue.</p>
+<p>La méthode deliver fait 400 lignes et il y a tout dedans.</p>
+<p>Donc, je recopie mes 400 lignes.</p>
+<p>Et en fait, l&rsquo;injection de crop directement dans le pull paramènes request, c&rsquo;est une approche complètement naïve, mais mon but, c&rsquo;est de prouver que c&rsquo;est faisable.</p>
+<p>Donc encore une fois, si vous ne savez pas quoi faire demain, s&rsquo;il vous plaît, venez.</p>
+<p>Je vais quand même vous montrer que ça marche.</p>
+<p>Je reprends mon contenu avec mes photos.</p>
+<p>Je vais toujours retrouver mon édition, c&rsquo;est juste que là j&rsquo;ai mon focal point.</p>
+<p>Donc la photo pour le Mount Fuji, je pointe vers le Mount Fuji.</p>
+<p>La deuxième qui doit être centrée au milieu, je vais laisser le focal point au milieu.</p>
+<p>Et la troisième où je m&rsquo;intéresse, au tori, je vais descendre focal point.</p>
+<p>Je sauvegarde.</p>
+<p>Et j&rsquo;ai mes trois photos qui sont toutes les trois photos différentes.</p>
+<p>Merci.</p>
+<p>Sincèrement, ça a fait un paquet d&rsquo;années que ce sujet-là me casse la tête.</p>
+<p>Quelque chose de près, c&rsquo;est que je ne sais pas si vous êtes dans la salle, mais à vue de nez, vous êtes entre 5 et 10 fois plus que le nombre de personnes avec qui j&rsquo;en ai parlé.</p>
+<p>Voilà.</p>
+<p>Mais bon, allez, on va finir sur une bonne chose.</p>
+<p>C&rsquo;est qu&rsquo;une fois qu&rsquo;on sait faire ça, on peut faire plein de choses.</p>
+<p>Très fun.</p>
+<p>Bon là, on a attaqué l&rsquo;image formateur.</p>
+<p>C&rsquo;est fun.</p>
+<p>Mais bon, si on sait altérer l&rsquo;URL pour une image, on peut faire pour plusieurs.</p>
+<p>Vous prenez le responsive style images et pour chacune de vos modes responsives pour le même média, vous faites des variations.</p>
+<p>Bon, on sait en faire pour une, on sait faire pour plus de choses.</p>
+<p>Et après, le petit dernier, parce que c&rsquo;est personnel, c&rsquo;est que si vous savez faire de l&rsquo;altération pour une image, vous pouvez vous débarrasser de la balise IMG et directement cracher l&rsquo;URL de la vignette.</p>
+<p>Ça, c&rsquo;est presque facile en fait.</p>
+<p>Pour les gens qui utilisent l&rsquo;image URL formateur, je ne sais personne qui utilise ce formateur, mais voilà, il y a une version contextuelle pour ça.</p>
+<p>Et enfin, là vraiment, pour finir sur une bonne note, est-ce qu&rsquo;on n&rsquo;a pas un autre point d&rsquo;entrée pour utiliser les médias ? Est-ce que quelqu&rsquo;un a une idée ? Comment est-ce qu&rsquo;on pourra utiliser les médias en dehors d&rsquo;un champ de référence ?</p>
+<p>Voilà, c&rsquo;est la cinquième roue du carrosse, médias contextuels, pas comme bêtes.</p>
+<p>C&rsquo;est techniquement la fonctionnalité qui m&rsquo;a pris le plus de temps sur l&rsquo;ensemble du truc.</p>
+<p>Donc pareil, s&rsquo;il y a des gens qui sont familiers des plugins, de CKEDITOR, du JavaScript et des compagnies, je suis preneur.</p>
+<p>Voilà, donc voilà, je vous remercie.</p>
+<p>Merci d&rsquo;avoir regardé cette vidéo.</p>
+
+        </div>
+        
+      </div>
+      
     </div>
   </div>
 </main>
@@ -433,7 +796,7 @@ Interface, médias </li>
             <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--01_gold">
               
               
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/open/" class="sponsor-logo" title="Visiter le site du sponsor Open">
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/axess/" class="sponsor-logo" title="Visiter le site du sponsor Axess">
   <div class="sponsor-logo__image-frame">
     
 
@@ -450,8 +813,8 @@ Interface, médias </li>
     
   
   
-  <img class="sponsor-logo__image" alt="Open" loading="lazy"
-       src="/sponsors/open/logo/open_logotype_signature_horiz_exe_positif_rvb_hu521fb7ccabcb1ccb0147bb00633de262_43796_180x0_resize_box_3.png" width="180" height="54" />
+  <img class="sponsor-logo__image" alt="Axess" loading="lazy"
+       src="/sponsors/axess/logo/logo-axess-2021-1_hu6c9454bf8ac227c8cfe468493aa3f663_24370_180x0_resize_box_3.png" width="180" height="48" />
 
 
   </div>
@@ -485,32 +848,6 @@ Interface, médias </li>
 </li>
               
               
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/axess/" class="sponsor-logo" title="Visiter le site du sponsor Axess">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Axess" loading="lazy"
-       src="/sponsors/axess/logo/logo-axess-2021-1_hu6c9454bf8ac227c8cfe468493aa3f663_24370_180x0_resize_box_3.png" width="180" height="48" />
-
-
-  </div>
-</a>
-</li>
-              
-              
               <li class="site-extra__sponsors-type-item"><a href="/sponsors/smile/" class="sponsor-logo" title="Visiter le site du sponsor Smile">
   <div class="sponsor-logo__image-frame">
     
@@ -536,6 +873,32 @@ Interface, médias </li>
 </a>
 </li>
               
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/open/" class="sponsor-logo" title="Visiter le site du sponsor Open">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Open" loading="lazy"
+       src="/sponsors/open/logo/open_logotype_signature_horiz_exe_positif_rvb_hu521fb7ccabcb1ccb0147bb00633de262_43796_180x0_resize_box_3.png" width="180" height="54" />
+
+
+  </div>
+</a>
+</li>
+              
             </ul>
           
           
@@ -543,6 +906,110 @@ Interface, médias </li>
             
             
             <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--02_silver">
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/conserto/" class="sponsor-logo" title="Visiter le site du sponsor Conserto">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Conserto" loading="lazy"
+       src="/sponsors/conserto/logo/logo-conserto-rond_hu7de0c03beb244ce40f7d5d3ee47b955b_112569_0x70_resize_box_3.png" width="61" height="70" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/koriolis/" class="sponsor-logo" title="Visiter le site du sponsor Koriolis">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Koriolis" loading="lazy"
+       src="/sponsors/koriolis/logo/logo-koriolis-2023_hu5e4d2e40443d53cd46797d758ab6dd0b_133466_70x0_resize_box_3.png" width="70" height="41" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/almavia-cx/" class="sponsor-logo" title="Visiter le site du sponsor ALMAVIA CX">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="ALMAVIA CX" loading="lazy"
+       src="/sponsors/almavia-cx/logo/almaviacx-logo_bleu_hu4800cdecaeba5fa97035d2f6b176b59d_106099_70x0_resize_box_3.png" width="70" height="37" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/bluedrop/" class="sponsor-logo" title="Visiter le site du sponsor bluedrop.fr">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="bluedrop.fr" loading="lazy"
+       src="/sponsors/bluedrop/logo/logo-bluedrop-vertical-2-_hu7746c17d82190d8c4ef9c4e28df8b4fe_12162_70x0_resize_box_3.png" width="70" height="53" />
+
+
+  </div>
+</a>
+</li>
               
               
               <li class="site-extra__sponsors-type-item"><a href="/sponsors/ecedi/" class="sponsor-logo" title="Visiter le site du sponsor ecedi">
@@ -564,32 +1031,6 @@ Interface, médias </li>
   
   <img class="sponsor-logo__image" alt="ecedi" loading="lazy"
        src="/sponsors/ecedi/logo/ecedi_togael_cmjn_ecedi_baseline_cmjn_hu8cd43662bbf93b8515b19df83816c66d_11565_70x0_resize_box_3.png" width="70" height="24" />
-
-
-  </div>
-</a>
-</li>
-              
-              
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/acquia/" class="sponsor-logo" title="Visiter le site du sponsor Acquia">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Acquia" loading="lazy"
-       src="/sponsors/acquia/logo/logo_acquia_hu5cb157a66a67e62551113142e4581b84_7758_70x0_resize_box_3.png" width="70" height="15" />
 
 
   </div>
@@ -649,58 +1090,6 @@ Interface, médias </li>
 </li>
               
               
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/koriolis/" class="sponsor-logo" title="Visiter le site du sponsor Koriolis">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Koriolis" loading="lazy"
-       src="/sponsors/koriolis/logo/logo-koriolis-2023_hu5e4d2e40443d53cd46797d758ab6dd0b_133466_70x0_resize_box_3.png" width="70" height="41" />
-
-
-  </div>
-</a>
-</li>
-              
-              
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/conserto/" class="sponsor-logo" title="Visiter le site du sponsor Conserto">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Conserto" loading="lazy"
-       src="/sponsors/conserto/logo/logo-conserto-rond_hu7de0c03beb244ce40f7d5d3ee47b955b_112569_0x70_resize_box_3.png" width="61" height="70" />
-
-
-  </div>
-</a>
-</li>
-              
-              
               <li class="site-extra__sponsors-type-item"><a href="/sponsors/luminess/" class="sponsor-logo" title="Visiter le site du sponsor Luminess">
   <div class="sponsor-logo__image-frame">
     
@@ -753,7 +1142,7 @@ Interface, médias </li>
 </li>
               
               
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/bluedrop/" class="sponsor-logo" title="Visiter le site du sponsor bluedrop.fr">
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/acquia/" class="sponsor-logo" title="Visiter le site du sponsor Acquia">
   <div class="sponsor-logo__image-frame">
     
 
@@ -770,34 +1159,8 @@ Interface, médias </li>
     
   
   
-  <img class="sponsor-logo__image" alt="bluedrop.fr" loading="lazy"
-       src="/sponsors/bluedrop/logo/logo-bluedrop-vertical-2-_hu7746c17d82190d8c4ef9c4e28df8b4fe_12162_70x0_resize_box_3.png" width="70" height="53" />
-
-
-  </div>
-</a>
-</li>
-              
-              
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/almavia-cx/" class="sponsor-logo" title="Visiter le site du sponsor ALMAVIA CX">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="ALMAVIA CX" loading="lazy"
-       src="/sponsors/almavia-cx/logo/almaviacx-logo_bleu_hu4800cdecaeba5fa97035d2f6b176b59d_106099_70x0_resize_box_3.png" width="70" height="37" />
+  <img class="sponsor-logo__image" alt="Acquia" loading="lazy"
+       src="/sponsors/acquia/logo/logo_acquia_hu5cb157a66a67e62551113142e4581b84_7758_70x0_resize_box_3.png" width="70" height="15" />
 
 
   </div>

@@ -389,6 +389,152 @@ Développement, outils </li>
       </div>
       
       
+      <div class="conference-full__video">
+        <h3>Captation de la conférence</h3>
+        <iframe src="https://www.youtube-nocookie.com/embed/k0wcRfxfUW0"
+                title="YouTube video player" frameborder="0"
+                allowfullscreen></iframe>
+        
+        <div class="conference-full__video_transcript">
+        <h3>Transcription</h3>
+         <p>- Bonjour à tous. Merci beaucoup de finir cette journée avec moi et pour parler de Xdebug. Je vais essayer de ne pas trop vous assommer. Si vous êtes là aujourd’hui, c’est parce que vous avez eu affaire à Xdebug.</p>
+<p>Le but est de montrer comment faire pour s’en servir, et tous les bienfaits que ça peut apporter à notre projet.</p>
+<p>Je commence par me présenter. Je suis un ancien libraire. Dans l’autre salle, il y a une conférence sur un rôtisseur devenu développeur Drupal.</p>
+<p>Les requins sont gentils, c’est des bêtes un peu incomprises. Il ne faut pas avoir peur des requins, comme il ne faut pas avoir peur de nous.</p>
+<p>J’ai quasiment toujours fait du Drupal. Je me suis reconverti dans le développement en 2019. Un peu de Symfony, et de Laravel.</p>
+<p>Je suis défenseur de deux dogmes :  la programmation défensive, c’est le fait de s’assurer de tester tous les typages, il y a plein de choses derrière ça. Et la programmation pragmatique, c’est se dire d’être pragmatique avant tout. Il faut savoir parfois se mesurer. Si j’utilisais plus souvent ces deux types de programmation,    je n’aurais pas besoin de Xdebug. Le but est de ne pas avoir besoin de Xdebug.</p>
+<p>Xdebug, c’est une extension de PHP.    Derick Rethans, sur son blog, rend en détail si vous voulez voir comment ça se passe, il peut rentrer dans le détail. Il est accessible sur X, Twitter. Vous pouvez le solliciter.</p>
+<p>C’est le débugger PHP le plus connu. Il y a d’autres alternatives. Mais on n’est pas sur le même outil. Xdebug est le seul à proposer une interface Front End dans les IDE les plus courants.</p>
+<p>C’est activement maintenu.</p>
+<p>Souvent, quand on parle de Xdebug, quand je dis qu’on peut tout régler rapidement avec, on me dit :  je n’ai pas réussi à le configurer. Il suffit de faire une recherche Google.</p>
+<p>Il y en a qui disent :  je n’ai jamais compris comment l’utiliser.</p>
+<p>Si vous êtes sur du docker, du WSL, sur un serveur remote entre autres, c’est possible, mais la configuration ne sera pas la même. Ça peut être compliqué rien qu’à voir le nombre d’articles qui pullulent sur le sujet.</p>
+<p>Ce n’est pas de cela dont on va parler aujourd’hui.</p>
+<p>Aujourd’hui, on va se concentrer sur l’utilisation. On va montrer le résultat, le chemin parcouru.</p>
+<p>Grosso modo, il y a 4 gros avantages. La première fonctionnalité, c’est les breakpoints. Une fois qu’on a fait ça, on peut observer l’exécution de son code, les différentes variables à disposition.</p>
+<p>On peut aussi remonter avec une stacktrace. On ne peut pas retourner en arrière, mais avoir accès au stacktrace.</p>
+<p>On verra ça tout à l’heure.</p>
+<p>On a également la partie moins connue, car il y a plus d’alternatives, on peut faire du profiling, et voir la méthode qui a utilisé le plus de Ram par exemple.</p>
+<p>Depuis tout à l’heure, je parle de Xdebug comme la solution miracle. Est-ce le cas ?  Non. Il faut être pragmatique.</p>
+<p>Ce n’est pas toujours le cas, un Dump and I peut être la solution.</p>
+<p>On a un gain de temps énorme lors de la prise en main d’un nouveau framework.</p>
+<p>Je peux observer ce qui se passe dans le framework. La recette http est reçue, on voit comment se passe le rooting, l’injection des dépendances. Ça me permet une visite guidée dans mon IDE, de l’exécution du framework.</p>
+<p>On peut caler des breakpoints et remonter, voir comment c’est exécuté, et voir si on arrive sur un pré-process. Je regarde ce que j’ai à disposition. J’ai quelque chose d’assez dynamique. Plus on va connaître son framework, plus le code s’autodocumente, moins Xdebug devient utile. Quand on arrive sur des codes legacy, très complexes, avec un gros héritage, on peut se retrouver avec des méthodes de plusieurs lignes.</p>
+<p>Parfois, on ne comprend pas pourquoi le rendu est ainsi, Xdebug peut aider à comprendre ça.</p>
+<p>Les dump and I peuvent suffire, mais ce sera plus long.</p>
+<p>Comment fonctionne Xdebug? On peut le faire par ligne de commande, pour les puristes.</p>
+<p>On a plusieurs commandes.</p>
+<p>On va voir l’utilisation basique de Xdebug, et ensuite les utilisations plus avancées. Je vais essayer de montrer tout l’intérêt qu’on peut avoir avec cet outil, dans l’apprentissage de la compréhension globale de notre projet.</p>
+<p>Le mode présentation est un peu compliqué, on ne va pas forcément avoir les modes débug.</p>
+<p>Ici, on a un besoin, on va faire un script, j’ai une variable qui est un arrêt, qui prend en compte 4 valeurs, 4 strings, des prénoms d’éléphant.</p>
+<p>On a une fonction ici, pas très lisible, qui fait appel à Array map et    Array Filter. Ce dernier va prendre une dernière closure. A la fin, on aura les noms d’éléphant en majuscules, et on ne gardera que ceux qui ont la lettre M.</p>
+<p>Ici, on a le tableau qui apparaît. On a à disposition l’état des variables telles qu’elles sont présentes à l’instant T. Ici, on n’a rien du tout, si ce n’est les variables super globales. Ce n’est pas un réflexe qu’on a, mais on se dit :  je vais observer ce que j’ai, et peut-être mieux comprendre mon script.</p>
+<p>Les boutons mis à disposition, on les a ici. Le bouton stop, qui stoppe le script. Le bouton resume etc.</p>
+<p>Là, je suis sur la définition de ma variable éléphant.</p>
+<p>Si je fais un Step Over, je vais aller à l’étape suivante directement.</p>
+<p>Ça nous intéresse d’entrer dans cette fonction.</p>
+<p>Plusieurs choses se mettent… On peut voir qu’on va pouvoir évoluer. Name, ici, vaut Babar. J’ai ici l’évaluation des variables.</p>
+<p>L’objectif est de montrer que le Vardump* n’est pas aussi aisé.</p>
+<p>Sur les 800 valeurs du tableau…</p>
+<p>Ici, pour un debug manuel, je reprends l’Array, je le modifie, je garde Elmer.</p>
+<p>On vient de modifier la structure de notre code. Ce n’est pas ce qu’on veut. On veut résoudre l’exécution de ce code sans avoir modifié le code. Xdebug propose des breakpoints conditionnels.</p>
+<p>C’est si mon name vaut Elmer.</p>
+<p>On voit que le script s’est arrêté.</p>
+<p>Ici, j’ai le STR qui va faire un return.</p>
+<p>Je n’aurais pas le retour du STR.</p>
+<p>Avec un Vardump, on va se dire :  je vais attribuer ça dans une variable, et je fais le breakpoint sur la ligne 16.</p>
+<p>Xdebug propose le return breakpoint avec le Step Into. On voit ici que j’ai le retour des fonctions natives qui s’affichent. Je vois le retour de ma fonction, on est passé à l’étape suivante, l’éléphant PHP.</p>
+<p>Notre fonction filter Elephants, on pourrait l’écrire en une seule ligne.</p>
+<p>On utilise des closure entre autres.</p>
+<p>Si je vais mettre des Vardump, je dois modifier mon code, tout découper. On modifie l’exécution, c’est normal, on est des humains.</p>
+<p>En faisant comme ça, je vais pouvoir voir l’évolution des variables. Babar devient Babar majuscule, Dumbo aussi, jusqu’à arriver au STR Content qui nous renvoie des False, etc.</p>
+<p>On va attaquer maintenant sur un Drupal. On a un petit Drupal ici, tout ce qui est de plus classique. On est sur une install. On a un plugin ici. Les articles, c’est des Nodes. Pas de surprise.</p>
+<p>Ici, on a une page gérée par un contrôleur.</p>
+<p>On peut voir qu’on a un souci sur notre plugin. J’avais 3 articles, et là, je n’en ai plus qu’un seul.</p>
+<p>Le code custom qui génère tout ça, il est ici. On a un repository. On a une class abstrait qui présente un constructeur, et ensuite, elle permet de sensitytype. A priori, je veux passer une entity pour Node et récupérer le storage correspondant.</p>
+<p>Rien de bien compliqué. On récupère les trois derniers nodes, les termes, on les envoie sur un template ici.</p>
+<p>Rien de compliqué ici.</p>
+<p>Markup… Ici, c’est le plus simple. On a le build ici, on récupère les nodes, on envoie via un sprint.</p>
+<p>Là, a priori, le code est assez simple, je ne vois pas d’où vient le problème.</p>
+<p>Première chose qu’on peut se dire :  c’est peut-être un problème de templating. Qu’est-ce qui me dit que la variable Count vaut bien 1 ? </p>
+<p>Là, je suis bien à Count. Je vois que Count vaut 1. Il y a bien un souci au niveau de mon repository.</p>
+<p>Ce que j’aime bien faire, c’est aller au plus bas niveau possible. Je veux savoir ce qui se passe au niveau de ma requête SQL.</p>
+<p>Je peux aller sur ma classe Select, du driver Post Grey*. C’est la fonction execute. Cette classe implémente Screenable.</p>
+<p>Ici, je peux faire une watch. En cliquant ici, Xdebug va garder le résultat de cette expression. Ça permet de visualiser l’évolution d’une expression au fur et à mesure de l’évolution du contexte de mon code.</p>
+<p>Typiquement, je suis sur un enchaînement de requête SQL. Il y a beaucoup de choses faites sur la base de données.</p>
+<p>Ici, sur ma page, je ne sais pas combien de requêtes SQL vont être jouées. Si je commence à faire des resolve, on repère à nouveau l’intérêt de l’outil.</p>
+<p>On veut être le plus sûr possible de ce qui se passe.</p>
+<p>Il y a une autre fonctionnalité intéressante. Je vais caler un nouveau breakpoint. Je veux voir la requête    SQL lorsque l’appel à la méthode build est fait.</p>
+<p>J’annule le breakpoint. Je retourne dans mon Ide. On doit basculer entre le navigateur et l’IDE, on a encore beaucoup trop d’actions manuelles.</p>
+<p>On va s’intéresser aux fonctionnalités évoluées.</p>
+<p>On peut ajouter une petite description sur les breakpoints. Dans des classes avec des méthodes avec beaucoup de lignes, il y aura juste le nom de classe avec le numéro de ligne. Ça peut être intéressant d’ajouter une description rapide.</p>
+<p>A droite, j’ai la condition, qu’on a vue tout à l’heure. On pourrait l’utiliser, mais on ne connaît pas ce qu’on va avoir dans la requête SQL.</p>
+<p>Je vais avoir une ligne Log avec par exemple des logs en sortie, et je peux lui demander de logger des choses plus précises.</p>
+<p>Il va m’imprimer la stacktrace en cours, ou le résultat d’une expression.</p>
+<p>A la fin, ce qui est intéressant, ce breakpoint dans le Select, on peut dire qu’on veut qu’il soit désélectionné jusqu’à ce qu’il soit atteint.</p>
+<p>Ensuite, je peux voir ce que je veux. Est-ce que je veux le laisser activé ?  J’ai le choix.</p>
+<p>On ne veut rien faire de manuel à l’extrême. Mon code va s’arrêter sur le site Information Block.</p>
+<p>Ce que je veux, c’est que ce breakpoint soit conditionnel qui n’est que là pour permettre à un autre de s’exécuter et de se résoudre au bon moment.</p>
+<p>On valide cette configuration.</p>
+<p>On y retourne.</p>
+<p>Là, je vois que j’ai ma requête SQL qui s’affiche. Je fais confiance à mon Count, à mon IDE. Je fais un Select Count. Par contre, là, c’est le from qui m’inquiète un peu plus. On fait un from sur les termes de taxonomie.</p>
+<p>D’où vient ce 1 ?  Il fait un Count sur les termes de taxonomie.</p>
+<p>Maintenant, on va essayer de comprendre pourquoi cette requête est faite sur la table des termes de taxonomie et non pas des Nodes.</p>
+<p>Pour ça, on va reprendre le code. Dans Repository, dans mon constructeur, j’ai bien un objet créé, qui va être appelé directement. Je ne devrais pas avoir de souci.</p>
+<p>Là, je reprends, j’ai mon contrôleur ici. Première fois qu’on passe par Repository, c’est par le contrôleur. Ensuite, on passe par une classe, le Container. On découvre un peu la chose, un framework. Le container, je ne lui ai pas demandé d’agir. Que fait-il ? </p>
+<p>J’ai une fonction Get. A droite, j’ai accès à toutes les variables telles qu’elles étaient assignées au moment de l’exécution précédente. Je vois que j’ai un ID.</p>
+<p>A priori, Repository Information, c’est le nom de mon service.</p>
+<p>On va copier la valeur. Je vais voir tout ce qui se passe à chaque fois que je passe par ça.</p>
+<p>On relance tout ça.</p>
+<p>Ici, celui-ci, on le retire. Execute aussi.</p>
+<p>A priori, mon Container n’a pas été appelé. Il manque des quotes. Et on relance. Cette fois-ci, on y va bien.</p>
+<p>Maintenant, je vais me servir de Xdebug pour voir ce qui se passe dans cette méthode que je ne connais pas.</p>
+<p>On avance. On passe.</p>
+<p>On continue. Il y a une définition.</p>
+<p>On continue. A priori, on n’entre pas dans ces fonctions.</p>
+<p>Je vois qu’ici, j’ai mien bon service = new class.</p>
+<p>Si on continue, logiquement, on est passé à nouveau dans la méthode Get Count avec mon entité.</p>
+<p>Je retourne dans la fonction Get, je repasse toujours avec mon service Afup…</p>
+<p>Cette fois-ci, je vois que le comportement a changé.</p>
+<p>Pour ceux qui étaient à la conférence de ce matin sur la compilation du Contener, ici, grâce à Xdebug, on va voir ce qui se passe.</p>
+<p>Niveau documentation, on est sur quelque chose de génial. Là, je peux voir les instances, comment elles sont définies, ce qu’elles contiennent.</p>
+<p>Ici, potentiellement, on se rend compte que notre souci vient peut-être de ça.</p>
+<p>L’ID existe.</p>
+<p>Le EntityType, c’était Toxonomy Term, ce qui est logique.</p>
+<p>On avait une méthode ici qui changeait l’Entity Type. A aucun moment, je ne suis repassé par le constructeur, à aucun moment mon set a été placé à Node.</p>
+<p>Je ne repasserai jamais par l’EntityType à Node.</p>
+<p>Ce sera sur le storage des Taxonomy terms.</p>
+<p>On peut se dire que, dans chaque méthode, plutôt que faire un repository…</p>
+<p>Il y a plusieurs solutions possibles. En faisant comme ça, j’ai appris un fonctionnement sur le Contener, sur le Run Time. En faisant ça, j’aurais pu régler le problème avec des Vardump, j’aurais perdu en rapidité et une occasion d’apprendre sur ce Contener et comment il évolue.</p>
+<p>On a résolu le bug. Magnifique. On peut être fier de nous.</p>
+<p>Maintenant, je vais vous montrer quelque chose. Xdebug n’est pas utile que pour résoudre des bugs. C’est intéressant de voir ce qu’on a à notre disposition.</p>
+<p>On va appeler ça XDD.</p>
+<p>Voilà. Typiquement, les premiers réflexes que j’ai eus, j’avais ma variable, je faisais un var dump. Là, j’ai une interface    graphique qui me permet de rentrer dans tout ce que j’ai dans ce tableau. Je peux même commencer à bosser avec mon API. Ma variable    node, c’est un node. Ici je peux taper des fonctions, je peux utiliser mon API.</p>
+<p>Plutôt que de bosser à l’aveugle, on a ici un guide qui nous permet de gagner en efficacité. Une fois qu’on sait tout ce qui se passe dans cette variable Xdebug devient moins utile. Il rajoute un over head, il rajoute en lenteur. Il y a plusieurs façons de contrer à ça. Maintenant avec Docker c’est simple. C’est quand même quelque chose à garder en tête. Pour finir je vais juste vous montrer la partie profiling dans Xdebug, je vais vous la partager. Je le retrouve…</p>
+<p>Le voilà.</p>
+<p>Donc il y a plusieurs outils qui permettent de faire ce profiling avec plus ou moins d’éléments de détails. Ici, je vais avoir plusieurs choses à ma disposition, le temps d’exécution et la mémoire consommée. J’ai tout ça qui me permet de voir les méthodes et les fonctions qui ont été appelées. Par exemple qu’est-ce qui a consommé le plus de ram  ?  C’est le externalise de PHP qui l’a fait.</p>
+<p>J’ai aussi l’auto-load    ici qui prend 30 % du temps de l’exécution. On peut réfléchir à des pistes d’amélioration de la perf’ grâce à ça. On va gagner beaucoup en termes de performance. Ça permet de considérer Xdebug comme un allié. Il faut passer cette étape de configuration qui n’est pas toujours simple.</p>
+<p>Il y a eu pas mal de travail sur ce point. Ils font de gros efforts là-dessus. S’il y en a qui ont gardé un traumatisme avec Xdebug il y a quelques années, ça s’améliore. J’espère vous avoir    montré que le jeu en vaut la chandelle. Merci à vous.</p>
+<p>- des questions ? </p>
+<p>- C’était hyper clair en fait.</p>
+<p>- Merci. Une petite question rapide, je fais partie des traumatisés par Xdebug avec docker. Ça donne envie de s’y remettre. Ça marche vraiment avec une stack    docker et compagnie ? </p>
+<p>- Ce projet est là-dessus. Sur celle-ci on prend un docker file, un PHP. On récupère sont container.</p>
+<p>Il y a une configuration Xdebug qui peut passer par des système    de cookies. Après, avec la méthode docker PHP, tu installes et désinstalles l’extension    comme tu veux.</p>
+<p>Vraiment, ça marche. Tu vois, ça marche bien.</p>
+<p>- Pour info, Ddev l’installe super bien de manière automatique.</p>
+<p>- Franchement, il y a de plus en plus de choses qui permettent de l’installer correctement. Il ne faut pas hésiter dès lors que le besoin est là.</p>
+<p>- Bonjour. De mémoire, il y avait step into, step in et le troisième ? </p>
+<p>- C’était step out. Tu sors, tu remontes au-dessus.</p>
+<p>- Ça sort de la fonction ? </p>
+<p>- Ça sort de la fonction. Il n’y a pas de retour en arrière possible.</p>
+<p>- Merci.</p>
+<p>- D’autres questions ?  On a le temps. Merci.</p>
+<p>- Si vous avez des questions qui vous viennent après, n’hésitez pas. Merci beaucoup.</p>
+
+        </div>
+        
+      </div>
+      
     </div>
   </div>
 </main>
@@ -420,32 +566,6 @@ Développement, outils </li>
             <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--01_gold">
               
               
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/axess/" class="sponsor-logo" title="Visiter le site du sponsor Axess">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Axess" loading="lazy"
-       src="/sponsors/axess/logo/logo-axess-2021-1_hu6c9454bf8ac227c8cfe468493aa3f663_24370_180x0_resize_box_3.png" width="180" height="48" />
-
-
-  </div>
-</a>
-</li>
-              
-              
               <li class="site-extra__sponsors-type-item"><a href="/sponsors/talan-solution/" class="sponsor-logo" title="Visiter le site du sponsor Talan Solutions">
   <div class="sponsor-logo__image-frame">
     
@@ -465,32 +585,6 @@ Développement, outils </li>
   
   <img class="sponsor-logo__image" alt="Talan Solutions" loading="lazy"
        src="/sponsors/talan-solution/logo/talan_couleur_huf50e55e89bbdefaddf420843d7cbb0b9_31064_180x0_resize_box_3.png" width="180" height="121" />
-
-
-  </div>
-</a>
-</li>
-              
-              
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/open/" class="sponsor-logo" title="Visiter le site du sponsor Open">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Open" loading="lazy"
-       src="/sponsors/open/logo/open_logotype_signature_horiz_exe_positif_rvb_hu521fb7ccabcb1ccb0147bb00633de262_43796_180x0_resize_box_3.png" width="180" height="54" />
 
 
   </div>
@@ -523,16 +617,8 @@ Développement, outils </li>
 </a>
 </li>
               
-            </ul>
-          
-          
-            
-            
-            
-            <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--02_silver">
               
-              
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/iosan/" class="sponsor-logo" title="Visiter le site du sponsor IOSAN">
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/axess/" class="sponsor-logo" title="Visiter le site du sponsor Axess">
   <div class="sponsor-logo__image-frame">
     
 
@@ -549,8 +635,68 @@ Développement, outils </li>
     
   
   
-  <img class="sponsor-logo__image" alt="IOSAN" loading="lazy"
-       src="/sponsors/iosan/logo/iosan-logo-couleurs-rvb_hucd0aae511f652fd6ad049ea07f4a1da1_78034_70x0_resize_box_3.png" width="70" height="30" />
+  <img class="sponsor-logo__image" alt="Axess" loading="lazy"
+       src="/sponsors/axess/logo/logo-axess-2021-1_hu6c9454bf8ac227c8cfe468493aa3f663_24370_180x0_resize_box_3.png" width="180" height="48" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/open/" class="sponsor-logo" title="Visiter le site du sponsor Open">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Open" loading="lazy"
+       src="/sponsors/open/logo/open_logotype_signature_horiz_exe_positif_rvb_hu521fb7ccabcb1ccb0147bb00633de262_43796_180x0_resize_box_3.png" width="180" height="54" />
+
+
+  </div>
+</a>
+</li>
+              
+            </ul>
+          
+          
+            
+            
+            
+            <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--02_silver">
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/conserto/" class="sponsor-logo" title="Visiter le site du sponsor Conserto">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Conserto" loading="lazy"
+       src="/sponsors/conserto/logo/logo-conserto-rond_hu7de0c03beb244ce40f7d5d3ee47b955b_112569_0x70_resize_box_3.png" width="61" height="70" />
 
 
   </div>
@@ -610,6 +756,32 @@ Développement, outils </li>
 </li>
               
               
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/capgemini/" class="sponsor-logo" title="Visiter le site du sponsor Capgemini">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Capgemini" loading="lazy"
+       src="/sponsors/capgemini/logo/logo-capgemini_hu9940b5194e315ad3699f4181534a992c_3847_70x0_resize_box_3.png" width="70" height="16" />
+
+
+  </div>
+</a>
+</li>
+              
+              
               <li class="site-extra__sponsors-type-item"><a href="/sponsors/ecedi/" class="sponsor-logo" title="Visiter le site du sponsor ecedi">
   <div class="sponsor-logo__image-frame">
     
@@ -629,58 +801,6 @@ Développement, outils </li>
   
   <img class="sponsor-logo__image" alt="ecedi" loading="lazy"
        src="/sponsors/ecedi/logo/ecedi_togael_cmjn_ecedi_baseline_cmjn_hu8cd43662bbf93b8515b19df83816c66d_11565_70x0_resize_box_3.png" width="70" height="24" />
-
-
-  </div>
-</a>
-</li>
-              
-              
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/conserto/" class="sponsor-logo" title="Visiter le site du sponsor Conserto">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Conserto" loading="lazy"
-       src="/sponsors/conserto/logo/logo-conserto-rond_hu7de0c03beb244ce40f7d5d3ee47b955b_112569_0x70_resize_box_3.png" width="61" height="70" />
-
-
-  </div>
-</a>
-</li>
-              
-              
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/koriolis/" class="sponsor-logo" title="Visiter le site du sponsor Koriolis">
-  <div class="sponsor-logo__image-frame">
-    
-
-
-  
-
-
-
-
-
-
-  
-  
-    
-  
-  
-  <img class="sponsor-logo__image" alt="Koriolis" loading="lazy"
-       src="/sponsors/koriolis/logo/logo-koriolis-2023_hu5e4d2e40443d53cd46797d758ab6dd0b_133466_70x0_resize_box_3.png" width="70" height="41" />
 
 
   </div>
@@ -714,7 +834,7 @@ Développement, outils </li>
 </li>
               
               
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/makina-corpus/" class="sponsor-logo" title="Visiter le site du sponsor Makina Corpus">
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/koriolis/" class="sponsor-logo" title="Visiter le site du sponsor Koriolis">
   <div class="sponsor-logo__image-frame">
     
 
@@ -731,8 +851,8 @@ Développement, outils </li>
     
   
   
-  <img class="sponsor-logo__image" alt="Makina Corpus" loading="lazy"
-       src="/sponsors/makina-corpus/logo/mc_logo_vertical_quadri_hu46525694772d97ad2fdd68cf6074b279_110553_0x70_resize_q75_box.jpg" width="67" height="70" />
+  <img class="sponsor-logo__image" alt="Koriolis" loading="lazy"
+       src="/sponsors/koriolis/logo/logo-koriolis-2023_hu5e4d2e40443d53cd46797d758ab6dd0b_133466_70x0_resize_box_3.png" width="70" height="41" />
 
 
   </div>
@@ -766,7 +886,7 @@ Développement, outils </li>
 </li>
               
               
-              <li class="site-extra__sponsors-type-item"><a href="/sponsors/capgemini/" class="sponsor-logo" title="Visiter le site du sponsor Capgemini">
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/makina-corpus/" class="sponsor-logo" title="Visiter le site du sponsor Makina Corpus">
   <div class="sponsor-logo__image-frame">
     
 
@@ -783,8 +903,34 @@ Développement, outils </li>
     
   
   
-  <img class="sponsor-logo__image" alt="Capgemini" loading="lazy"
-       src="/sponsors/capgemini/logo/logo-capgemini_hu9940b5194e315ad3699f4181534a992c_3847_70x0_resize_box_3.png" width="70" height="16" />
+  <img class="sponsor-logo__image" alt="Makina Corpus" loading="lazy"
+       src="/sponsors/makina-corpus/logo/mc_logo_vertical_quadri_hu46525694772d97ad2fdd68cf6074b279_110553_0x70_resize_q75_box.jpg" width="67" height="70" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/iosan/" class="sponsor-logo" title="Visiter le site du sponsor IOSAN">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="IOSAN" loading="lazy"
+       src="/sponsors/iosan/logo/iosan-logo-couleurs-rvb_hucd0aae511f652fd6ad049ea07f4a1da1_78034_70x0_resize_box_3.png" width="70" height="30" />
 
 
   </div>
