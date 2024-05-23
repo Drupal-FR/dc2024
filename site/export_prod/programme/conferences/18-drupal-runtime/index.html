@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+  <title>Soyons fou ! Et si Drupal faisait moins de chose au runtime ? | Drupalcamp Rennes 2024</title>
+
+  <link href="/css/main.css" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <base href="https://rennes2024.drupalcamp.fr/">
+
+	
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <meta property="og:title" content="Soyons fou ! Et si Drupal faisait moins de chose au runtime ?" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rennes2024.drupalcamp.fr/programme/conferences/18-drupal-runtime/" /><meta property="og:image" content="https://rennes2024.drupalcamp.fr/img/og-image.jpg"/><meta property="article:section" content="programme" />
+
+
+
+
+
+</head>
+
+  <body>
+    <div class="content-container">
+      
+<nav aria-label="Menu principal" class="menu" xmlns="http://www.w3.org/1999/html">
+  <a href="/" class="menu__logo" title="Page d'accueil">
+    <img src="/img/logo_hermine.svg" alt="Une hermine baptisée Yuna, symbole de la Bretagne et mascotte du Drupalcamp." />
+  </a>
+  <div class="menu__site-promoted">
+    <p class="menu__site-name">
+      <button data-js-selector="navigation" aria-controls="nav-main" aria-label="Afficher la navigation"></button> <a href="/"><img src="/img/dcrennes_title_text.svg" alt="Drupalcamp Roazhon" class="site-title"/><br />
+        <img src="/img/dcrennes_subtitle_text.svg" alt="Rennes, 28-30 mars 2024"  class="site-subtitle" />
+      </a>
+    </p>
+    <p class="menu__tickets-push" data-js-selector="nav-tickets">
+      <a href="/billetterie" title="Accéder à la billetterie et infos des tarifs">Billetterie</a>
+    </p>
+  </div>
+  <ul class="menu__items" id="nav-main">
+
+    
+    
+
+    
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+    <li class=" menu__item menu__item--submenu">
+      <a href="/actualites/">Actualités</a>
+        <ul class="menu__items menu__items--submenu">
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/presse/">Presse</a>
+    </li>
+        </ul>
+    </li>
+
+    
+    
+
+    
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+    <li class=" menu__item menu__item--submenu">
+      <a aria-current="true" class="ancestor" href="/programme/">Programme</a>
+        <ul class="menu__items menu__items--submenu">
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/programme/appel/">Appel à conférences</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/programme/accompagnement/">Accompagnement</a>
+    </li>
+        </ul>
+    </li>
+
+    
+    
+
+    
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+    <li class=" menu__item menu__item--submenu">
+      <a href="/sponsors/">Sponsors</a>
+        <ul class="menu__items menu__items--submenu">
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/sponsors/grille/">Les formules</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/sponsors/contact-sponsors/">Devenir sponsor</a>
+    </li>
+        </ul>
+    </li>
+
+    
+    
+
+    
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+    <li class=" menu__item menu__item--submenu">
+      <a href="/communaute/">Communauté</a>
+        <ul class="menu__items menu__items--submenu">
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/communaute/drupal/">Drupal, qu'est ce que c'est ?</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/communaute/adff/">L'association</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/communaute/b%C3%A9n%C3%A9voles/">Bénévoles</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/communaute/charte/">Charte de bonne conduite</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/communaute/tombola-concours/">Tombola & Concours</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/communaute/entreprise/">Convaincre mon entreprise</a>
+    </li>
+        </ul>
+    </li>
+
+    
+    
+
+    
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+    <li class=" menu__item menu__item--submenu">
+      <a href="/infos/">Infos pratiques</a>
+        <ul class="menu__items menu__items--submenu">
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/contact/">Contact</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/infos/acc%C3%A8s/">Accéder au Drupalcamp</a>
+    </li>
+
+    
+
+    
+    
+    
+      
+        
+      
+    
+    <li class=" menu__item">
+      <a href="/infos/venir-dormir/">Venir, Sortir & Dormir</a>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+
+      
+
+
+
+
+
+<main class="main-content">
+  <div class="conference-full session-level--expertise">
+    <header class="conference-full__header">
+      <h1 class="conference-full__title"><span class="session-level">Expertise</span> Soyons fou ! Et si Drupal faisait moins de chose au runtime ?</h1>
+
+      <ul class="conference-full__meta">
+        <li class="conference-full__speakers conference-full__meta-item"><svg class="icon icon--session">
+  <title></title>
+  <use xlink:href="/icons/icons-sessions.svg#sprite-icons-speaker" />
+</svg>
+beram - ekino</li>
+        <li class="conference-full__duration conference-full__meta-item"><svg class="icon icon--session">
+  <title></title>
+  <use xlink:href="/icons/icons-sessions.svg#sprite-icons-timer" />
+</svg>
+40 min </li>
+        <li class="conference-full__themes conference-full__meta-item"><svg class="icon icon--session">
+  <title></title>
+  <use xlink:href="/icons/icons-sessions.svg#sprite-icons-tags" />
+</svg>
+Développement, performance </li>
+      </ul>
+    </header>
+    <div class="conference-full__teaser">Et si nous pouvions avoir comme une phase de compilation en amont plutôt que pendant l&rsquo;exécution d&rsquo;une requête HTTP ? Et sans nécessité d&rsquo;une application installée. Quels seraient les impacts ? </div>
+    <div class="conference-full__details">
+      <div class="conference-full__description">
+        
+        <div class="conference-full__prerequisites"><h3>Pré-requis :</h3>
+          <p>Il peut être intéressant d&rsquo;avoir quelques connaissances du fonctionnement interne de Drupal et de comprendre des notions comme l&rsquo;inversion de contrôle (IoC) et le patron d&rsquo;injection de dépendance.</p>
+<p>De plus, il est préférable d&rsquo;être familier avec des termes comme Kernel ou compiler pass.</p>
+ </div>
+        
+        
+        <div class="conference-full__plan"><h3>La session parlera de :</h3>
+          <p>On va commencer par rêver en voyant ensemble ce qui pourrait simplifier notre vie en tant que développeur, simplifier le développement d&rsquo;outils comme phpstan-drupal.</p>
+<p>Puis on commencera à réfléchir à ce qu&rsquo;il faudrait faire pour atteindre ce rêve. Que faudrait-il faire pour mettre à disposions de la communauté cela ? Quel serait ce chantier ?</p>
+ </div>
+        
+        
+        <div class="conference-full__takeway"><h3>Vous aurez appris :</h3>
+          <p>Ça ne sera pas vraiment de l&rsquo;apprentissage de quelque chose en particulier. Plutôt un voyage à la poursuite d&rsquo;un rêve pour améliorer son quotidien.</p>
+<p>Après certainement qu&rsquo;il y aura des choses apprises par rapport au fonctionnement interne de Drupal, ou encore sur la difficulté de certaines fonctionnalités dans phpstan-drupal.</p>
+ </div>
+        
+      </div>
+      
+      
+      <div class="conference-full__slides"><h3>Support de la présentation :</h3>
+        <a href="/programme/conferences/slides/let-us-be-crazy-what-if-drupal-did-less-things-at-runtime-drupalcamp-rennes-2024-main.zip">Télécharger le support utilisé pendant la conférence.</a>
+      </div>
+      
+      
+    </div>
+  </div>
+</main>
+
+
+      <footer class="site-extra">
+  <div class="site-extra__wrapper">
+    <div class="site-extra__newsletter">
+      <p class="site-extra__newsletter-text">Ne manquez pas la prochaine actu !</p>
+      <a href="/newsletter" class="site-extra__newsletter-link">S'inscrire à la newsletter</a>
+    </div>
+
+    
+    
+    
+    
+
+    
+      <div class="site-extra__sponsors collection-readmore--titled">
+        <header class="collection-readmore__header">
+          <h2 class="collection-readmore__title">Merci à nos principaux sponsors</h2>
+          <a href="/sponsors" class="collection-readmore__readmore-link" title="Explorer la liste complète de nos sponsors">Voir tous nos sponsors</a>
+        </header>
+        <div class="site-extra__sponsors-collection collection-readmore__items">
+          
+            
+            
+            
+            <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--01_gold">
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/open/" class="sponsor-logo" title="Visiter le site du sponsor Open">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Open" loading="lazy"
+       src="/sponsors/open/logo/open_logotype_signature_horiz_exe_positif_rvb_hu521fb7ccabcb1ccb0147bb00633de262_43796_180x0_resize_box_3.png" width="180" height="54" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/smile/" class="sponsor-logo" title="Visiter le site du sponsor Smile">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Smile" loading="lazy"
+       src="/sponsors/smile/logo/smile-eu-logo-vector_hu40c09b5e73aaadc6796ff69275dd8971_18926_180x0_resize_box_3.png" width="180" height="180" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/talan-solution/" class="sponsor-logo" title="Visiter le site du sponsor Talan Solutions">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Talan Solutions" loading="lazy"
+       src="/sponsors/talan-solution/logo/talan_couleur_huf50e55e89bbdefaddf420843d7cbb0b9_31064_180x0_resize_box_3.png" width="180" height="121" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/axess/" class="sponsor-logo" title="Visiter le site du sponsor Axess">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Axess" loading="lazy"
+       src="/sponsors/axess/logo/logo-axess-2021-1_hu6c9454bf8ac227c8cfe468493aa3f663_24370_180x0_resize_box_3.png" width="180" height="48" />
+
+
+  </div>
+</a>
+</li>
+              
+            </ul>
+          
+          
+            
+            
+            
+            <ul class="site-extra__sponsors-type-items site-extra__sponsors-type-items--02_silver">
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/iosan/" class="sponsor-logo" title="Visiter le site du sponsor IOSAN">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="IOSAN" loading="lazy"
+       src="/sponsors/iosan/logo/iosan-logo-couleurs-rvb_hucd0aae511f652fd6ad049ea07f4a1da1_78034_70x0_resize_box_3.png" width="70" height="30" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/koriolis/" class="sponsor-logo" title="Visiter le site du sponsor Koriolis">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Koriolis" loading="lazy"
+       src="/sponsors/koriolis/logo/logo-koriolis-2023_hu5e4d2e40443d53cd46797d758ab6dd0b_133466_70x0_resize_box_3.png" width="70" height="41" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/ecedi/" class="sponsor-logo" title="Visiter le site du sponsor ecedi">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="ecedi" loading="lazy"
+       src="/sponsors/ecedi/logo/ecedi_togael_cmjn_ecedi_baseline_cmjn_hu8cd43662bbf93b8515b19df83816c66d_11565_70x0_resize_box_3.png" width="70" height="24" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/bluedrop/" class="sponsor-logo" title="Visiter le site du sponsor bluedrop.fr">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="bluedrop.fr" loading="lazy"
+       src="/sponsors/bluedrop/logo/logo-bluedrop-vertical-2-_hu7746c17d82190d8c4ef9c4e28df8b4fe_12162_70x0_resize_box_3.png" width="70" height="53" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/luminess/" class="sponsor-logo" title="Visiter le site du sponsor Luminess">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Luminess" loading="lazy"
+       src="/sponsors/luminess/logo/logo-noir-baseline_hue61e094dc2c81b18620c3729d2f2f7d3_46601_70x0_resize_box_3.png" width="70" height="22" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/capgemini/" class="sponsor-logo" title="Visiter le site du sponsor Capgemini">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Capgemini" loading="lazy"
+       src="/sponsors/capgemini/logo/logo-capgemini_hu9940b5194e315ad3699f4181534a992c_3847_70x0_resize_box_3.png" width="70" height="16" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/makina-corpus/" class="sponsor-logo" title="Visiter le site du sponsor Makina Corpus">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Makina Corpus" loading="lazy"
+       src="/sponsors/makina-corpus/logo/mc_logo_vertical_quadri_hu46525694772d97ad2fdd68cf6074b279_110553_0x70_resize_q75_box.jpg" width="67" height="70" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/acquia/" class="sponsor-logo" title="Visiter le site du sponsor Acquia">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Acquia" loading="lazy"
+       src="/sponsors/acquia/logo/logo_acquia_hu5cb157a66a67e62551113142e4581b84_7758_70x0_resize_box_3.png" width="70" height="15" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/almavia-cx/" class="sponsor-logo" title="Visiter le site du sponsor ALMAVIA CX">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="ALMAVIA CX" loading="lazy"
+       src="/sponsors/almavia-cx/logo/almaviacx-logo_bleu_hu4800cdecaeba5fa97035d2f6b176b59d_106099_70x0_resize_box_3.png" width="70" height="37" />
+
+
+  </div>
+</a>
+</li>
+              
+              
+              <li class="site-extra__sponsors-type-item"><a href="/sponsors/conserto/" class="sponsor-logo" title="Visiter le site du sponsor Conserto">
+  <div class="sponsor-logo__image-frame">
+    
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  <img class="sponsor-logo__image" alt="Conserto" loading="lazy"
+       src="/sponsors/conserto/logo/logo-conserto-rond_hu7de0c03beb244ce40f7d5d3ee47b955b_112569_0x70_resize_box_3.png" width="61" height="70" />
+
+
+  </div>
+</a>
+</li>
+              
+            </ul>
+          
+          
+        </div>
+      </div>
+    
+
+    <div class="site-extra__links_collection">
+      <div class="site-extra__column">
+        <h3 class="site-extra__column-title">Drupalcamp Rennes 2024</h3>
+        <ul class="site-extra__column-content">
+          <li class="site-extra__column-item"><a href="/billetterie">Billetterie</a></li>
+          <li class="site-extra__column-item"><a href="/sponsors">Sponsors</a></li>
+          
+          
+            
+              <li class="site-extra__column-item"><a href="/programme/appel">Appel à conférences</a></li>
+            
+          
+
+          
+          
+            
+              <li class="site-extra__column-item"><a href="/infos/accès">Accès</a></li>
+            
+          
+
+          
+          
+          <li class="site-extra__column-item"><a href="/mentions-légales">Mentions légales & confidentialité</a></li>
+        </ul>
+      </div>
+
+      <div class="site-extra__column">
+        <h3 class="site-extra__column-title">Restons en contact</h3>
+        <ul class="site-extra__column-content">
+          <li class="site-extra__column-item"><a href="/contact">Nous contacter</a></li>
+          <li class="site-extra__column-item"><a href="/newsletter">Newsletter</a></li>
+          <li class="site-extra__column-item"><a href="/actualites">Dernières informations</a></li>
+        </ul>
+        <h3 class="site-extra__column-title">Suivre l'association</h3>
+        <ul class="site-extra__column-content">
+          <li class="site-extra__column-item"><a href="https://drupal.fr" title="Accéder au site externe de l'association Drupal FR">Site officiel Drupal FR</a></li>
+        </ul>
+      </div>
+
+      <div class="site-extra__column">
+        <h3 class="site-extra__column-title">Dialoguer avec la communauté</h3>
+        <img src="/img/logo_dfr.svg" alt="Logo Drupal France" loading="lazy" />
+        <ul class="site-extra__column-content site-extra__column-content--social">
+          <li class="site-extra__column-content-link"><a href="https://drupalfrance.slack.com" class="link" title="">
+  <svg class="icon icon--social">
+    <title>Drupal FR sur Slack</title>
+    <use xlink:href="/icons/social.svg#sprite-icons-slack" />
+  </svg>
+</a>
+</li>
+          <li class="site-extra__column-content-link"><a href="https://drupal.community/@drupalfr" class="link" title="">
+  <svg class="icon icon--social">
+    <title>Drupal FR sur Mastodon</title>
+    <use xlink:href="/icons/social.svg#sprite-icons-mastodon" />
+  </svg>
+</a>
+</li>
+          <li class="site-extra__column-content-link"><a href="https://www.linkedin.com/company/drupal-france-&amp;-francophonie/" class="link" title="">
+  <svg class="icon icon--social">
+    <title>Drupal FR sur LinkedIn</title>
+    <use xlink:href="/icons/social.svg#sprite-icons-linkedin" />
+  </svg>
+</a>
+</li>
+          <li class="site-extra__column-content-link"><a href="https://twitter.com/drupalcampfr" class="link" title="">
+  <svg class="icon icon--social">
+    <title>Drupal FR sur X</title>
+    <use xlink:href="/icons/social.svg#sprite-icons-twitter" />
+  </svg>
+</a>
+</li>
+          <li class="site-extra__column-content-link"><a href="https://www.youtube.com/channel/UCIa6rzX4xvIu6eas8MZMCAw" class="link" title="">
+  <svg class="icon icon--social">
+    <title>Drupal FR sur YouTube</title>
+    <use xlink:href="/icons/social.svg#sprite-icons-youtube" />
+  </svg>
+</a>
+</li>
+          <li class="site-extra__column-content-link"><a href="https://www.facebook.com/groups/49522240874/" class="link" title="">
+  <svg class="icon icon--social">
+    <title>Drupal FR sur Facebook</title>
+    <use xlink:href="/icons/social.svg#sprite-icons-facebook" />
+  </svg>
+</a>
+</li>
+          <li class="site-extra__column-content-link"><a href="https://www.instagram.com/drupalfrance/" class="link" title="">
+  <svg class="icon icon--social">
+    <title>Drupal FR sur Instagram</title>
+    <use xlink:href="/icons/social.svg#sprite-icons-instagram" />
+  </svg>
+</a>
+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p class="images-credits">
+    Yuna, notre mascotte a été imaginée et mise en valeur par Adrien et Aliénor.<br />
+    Icônes Noun Project CC BY 3.0 : (Infos - Putri Afifah Octaviani / Externe - Astri Widiastari Ritonga / Menu - Damian Hetman / Croix - andriwidodo)<br />
+    Icônes Iconfinder CC BY 4.0 : (Tags - Icons8 Com)
+  </p>
+</footer>
+
+      
+      
+      <script src="/js/camp.js"></script>
+      
+    </div>
+  </body>
+</html>

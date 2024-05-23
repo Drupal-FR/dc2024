@@ -1,0 +1,265 @@
+backend:
+  name: git-gateway
+  branch: main
+
+#media_folder: "site/static/img" # Folder where user uploaded files should go
+media_folder: "site/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "actualites" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Actualités" # Used in the UI, ie.: "New Post"
+    label_singular: 'Actualité'
+    folder: "site/content/actualites" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true, required: false}
+      - {label: "Date de rédaction", name: "date", widget: "datetime"}
+      - {label: "Image (ratio 11:3)", name: "image", widget: "image", media_folder: "news", required: false}
+      - {label: "Accroche page de liste (3 lignes max)", name: "teaser", widget: "text"}
+      - {label: "Corps de l'actu", name: "body", widget: "markdown"}
+  - name: "conferences" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Conférences" # Used in the UI, ie.: "New Post"
+    label_singular: 'Conférence'
+    folder: "site/content/programme/conferences" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true, required: false}
+      - {label: "Identifiant de la session (format #00)", name: "session_id", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - label: Durée
+        name: duration
+        widget: "select"
+        options:
+          - { label: "20 minutes", value: "20 min" }
+          - { label: "40 minutes",  value: "40 min" }
+          - { label: "80 minutes",  value: "80 min" }
+      - label: Public visé
+        name: audience
+        widget: "select"
+        options:
+          - { label: "Découverte", value: "Découverte" }
+          - { label: "Intermédiaire", value: "Intermédiaire" }
+          - { label: "Expertise", value: "Expertise" }
+          - { label: "Plénière", value: "Plénière" }
+      - {label: "Thèmes", name: "themes", widget: "string"}
+      - {label: "Présentée par", name: "speakers", widget: "string"}
+      - {label: "Société(s)", name: "companies", widget: "string"}
+      - {label: "Accroche", name: "teaser", widget: "markdown"}
+      - {label: "Pré-requis", name: "prerequisites", widget: "markdown", required: false}
+      - {label: "Plan", name: "plan", widget: "markdown", required: false}
+      - {label: "Vous aurez appris", name: "takeway", widget: "markdown", required: false}
+      - label: Diapos fichier
+        required: false
+        name: slides_files
+        widget: file
+        media_folder: slides
+
+      - { label: "Code Video YouTube (ne mettre que l'ID XXX de la vidéo /watch?v=XXX)", name: "video", widget: string, required: false }
+      - label: Transcription
+        name: transcription
+        widget: markdown
+        required: false
+      - { label: "Template", name: "type", widget: "hidden", default: "conference" }
+  - name: sponsors
+    label: Sponsors
+    label_singular: 'Sponsor'
+    folder: "site/content/sponsors"
+    create: true
+    # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - label: Nom du sponsor
+        name: title
+        widget: string
+      - { label: "Garder en brouillon", name: "draft", widget: "boolean", default: true }
+      - label: Logo
+        name: sponsor_logo
+        widget: image
+        media_folder: logo
+      - label: Site du sponsor
+        name: sponsor_site
+        widget: string
+      - label: Niveau de sponsoring
+        name: sponsor_type
+        widget: "select"
+        options:
+          - { label: "Complète", value: "01_gold" }
+          - { label: "Galette saucisse", value: "02_silver" }
+          - { label: "Beurre sucre", value: "03_bronze" }
+      - label: Texte de présentation
+        name: body
+        widget: markdown
+      - label: Complément (offres d'emploi...)
+        name: body_extra
+        widget: markdown
+        required: false
+      - { label: "Code Video YouTube (ne mettre que l'ID XXX de la vidéo /watch?v=XXX)", name: "video", widget: string, required: false }
+      - {label: "Template", name: "type", widget: "hidden", default: "sponsors"}
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'Sous-URL interne site camp (Sera ajouté à /sponsor/)', index_file: 'index' } }
+  - name: coupures
+    label: "Coupure presse"
+    label_singular: 'Coupure'
+    folder: "site/content/presse"
+    create: true
+    # adding a nested object will show the collection folder structure
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - label: Nom de la source
+        name: title
+        widget: string
+      - { label: "Garder en brouillon", name: "draft", widget: "boolean", default: true }
+      - label: Capture de la coupure
+        name: item_image
+        widget: image
+        media_folder: ""
+      - label: Texte alternatif pour l'image
+        name: item_alt
+        widget: string
+      - label: Lien vers la coupure
+        name: item_link
+        widget: string
+      - label: Texte complémentaire
+        name: body
+        widget: markdown
+        required: false
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: 'Sous-URL interne site camp (Sera ajouté à /presse/)', index_file: 'index' } }
+  - label: "Pages statiques"
+    name: "pages"
+    files:
+      - label: "Sponsors"
+        name: "sponsors"
+        file: "site/content/sponsors/_index.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - {label: "Sponsors individuels", name: "sponsors_individuals", widget: "markdown" }
+      - label: "Tombola"
+        name: "tombola"
+        file: "site/content/communaute/tombola-concours.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - { label: "Phrase résumé page de descente", name: "summary", widget: string }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+          - { label: "Template", name: "layout", widget: "hidden", default: "noheader" }
+      - label: "Accès"
+        name: "access"
+        file: "site/content/infos/accès.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Hébergement"
+        name: "hosting"
+        file: "site/content/infos/hébergement.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Charte"
+        name: "charte"
+        file: "site/content/communaute/charte.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Asso DFR"
+        name: "adff"
+        file: "site/content/communaute/adff.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Présentation Drupal"
+        name: "drupal-a-propos"
+        file: "site/content/communaute/drupal.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Bénévoles"
+        name: "bénévoles"
+        file: "site/content/communaute/bénévoles.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Intro page de liste (2 phrases max)", name: "summary", widget: "markdown" }
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Billetterie"
+        name: "tickets"
+        file: "site/content/billetterie.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Entreprise"
+        name: "entreprise"
+        file: "site/content/communaute/entreprise.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Mentions légales"
+        name: "legal"
+        file: "site/content/mentions-légales.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Soumission"
+        name: "form-confirm"
+        file: "site/content/soumission.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Appel à conférences"
+        name: "appel-conferences"
+        file: "site/content/programme/appel.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Accompagnement"
+        name: "programme-accompagnement"
+        file: "site/content/programme/accompagnement.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+      - label: "Venir & dormir"
+        name: "venir-dormir"
+        file: "site/content/infos/venir-dormir.md"
+        fields:
+          - {label: Titre, name: title, widget: string}
+          - {label: "Garder en brouillon", name: "draft", widget: "boolean", default: true}
+          - {label: Sous-titre, name: subtitle, widget: string, required: false}
+          - {label: "Texte de la page", name: "body", widget: "markdown" }
+
